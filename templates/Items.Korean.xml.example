@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Enable only together with Items.xml.example. Destination: Languages/Korean/DefInjected/ThingDef/ -->
+<LanguageData>
+  <KoRimUtility_ExampleItem.label>예제 아이템</KoRimUtility_ExampleItem.label>
+  <KoRimUtility_ExampleItem.description>개발용 예제입니다. 활성화하기 전에 교체하세요.</KoRimUtility_ExampleItem.description>
+</LanguageData>

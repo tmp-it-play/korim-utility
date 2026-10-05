@@ -1,0 +1,15 @@
+.DS_Store
+.idea/
+__pycache__/
+*.py[cod]
+dist/
+work/
+.local/
+bin/
+obj/
+*.user
+*.dll
+*.pdb
+**/About/PublishedFileId.txt
+**/config.vdf
+**/ssfn*

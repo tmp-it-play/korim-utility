@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<rect width="640" height="360" fill="#102b38"/>
+<rect x="32" y="33" width="7" height="290" fill="#f2c66d"/>
+<g font-family="Arial, sans-serif">
+<text x="48" y="170" font-size="76" fill="#f6f2e9">KoRim</text>
+<text x="52" y="208" font-size="18" fill="#f2c66d">KOREAN LOCALIZATION &amp; UTILITIES</text>
+<path d="M52 254H588" stroke="#3b5860"/>
+<text x="52" y="289" font-size="13" fill="#8eb7be">MIT License</text></g></svg>

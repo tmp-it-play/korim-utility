@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>KoRim Utility</name>
+  <author>snowykte0426</author>
+  <packageId>snowykte0426.korimutility</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>GodlyAnnihilator.TheLowCooler</li>
+    <li>rim.job.world</li>
+  </loadAfter>
+  <description>한국인 플레이어를 위해 림월드의 부족한 부분을 채워가는 모드입니다.
+
+한국어 번역 보완부터 편의 기능, 아이템과 UI까지 조금씩 추가합니다.
+The Cooler와 RimJobWorld 번역은 해당 모드가 활성화된 경우에만 적용됩니다. 두 모드 모두 선택 사항입니다.</description>
+</ModMetaData>

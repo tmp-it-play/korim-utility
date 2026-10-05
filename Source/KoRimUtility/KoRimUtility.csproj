@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>KoRimUtility</AssemblyName>
+    <RootNamespace>KoRimUtility</RootNamespace>
+    <OutputPath>../../Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableUI>false</EnableUI>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldManagedDir)/Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldManagedDir)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(RimWorldManagedDir)/UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Compile Include="UI/**/*.cs" Condition="'$(EnableUI)' == 'true'" />
+  </ItemGroup>
+  <Target Name="CheckGameReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(EnableUI)' != 'true'" Text="UI scaffold is disabled. Use -p:EnableUI=true when starting UI development." />
+    <Error Condition="!Exists('$(RimWorldManagedDir)/Assembly-CSharp.dll')" Text="Set -p:RimWorldManagedDir to the installed game's Managed directory." />
+  </Target>
+</Project>

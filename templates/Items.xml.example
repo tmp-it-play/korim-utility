@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Not loaded by RimWorld. Copy into Defs/ThingDefs only when implementing items. -->
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>KoRimUtility_ExampleItem</defName>
+    <label>example item</label>
+    <description>A development example. Replace before enabling.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Steel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>
