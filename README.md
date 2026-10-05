@@ -8,6 +8,7 @@
 
 - [The Cooler](https://steamcommunity.com/sharedfiles/filedetails/?id=3221592105)
 - [Character Editor](https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848)
+- [Replace Stuff - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009)
 
 ## 사용 방법
 

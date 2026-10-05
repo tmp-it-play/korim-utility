@@ -1,0 +1,1087 @@
+{
+  "checked_on": "2026-10-05",
+  "game_version": "1.6",
+  "rjw_version": "6.2.1",
+  "status": "source_audit_only_no_generated_assets_or_runtime_patches",
+  "scope": "RJW 1.6/Defs/ThingDefs/Items_BodyParts; 44 body-part items and 2 material items",
+  "item_count": 46,
+  "used_texture_count": 9,
+  "proposed_texture_count": 19,
+  "category_counts": {
+    "BodyPartsNatural": 31,
+    "BodyPartsProsthetic": 5,
+    "BodyPartsBionic": 4,
+    "BodyPartsArchotech": 4,
+    "Items": 2
+  },
+  "texture_use_counts": {
+    "Things/Item/Parts/genital_male": 14,
+    "Things/Item/Parts/genital_female": 10,
+    "Things/Item/Parts/breast": 3,
+    "Things/Item/Parts/anus": 4,
+    "Things/Item/Parts/genital_male_artificial": 4,
+    "Things/Item/Parts/genital_female_artificial": 3,
+    "Things/Item/Parts/breast_artificial": 3,
+    "Things/Item/Parts/anus_artificial": 3,
+    "Things/Item/Parts/slime": 2
+  },
+  "unused_texture": "Things/Item/Parts/placeholder_part.png (64x64; no reference in the audited body-part ThingDefs)",
+  "vanilla_reference": [
+    {
+      "tier": "Natural",
+      "label": "일반·자연",
+      "tex_path": "Things/Item/Health/HealthItem",
+      "rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": "0.80",
+      "source_def": "Data/Core/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Natural.xml"
+    },
+    {
+      "tier": "Prosthetic",
+      "label": "의수·의족급",
+      "tex_path": "Things/Item/Health/HealthItem",
+      "rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": "0.80",
+      "source_def": "Data/Core/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Prosthetic.xml"
+    },
+    {
+      "tier": "Bionic",
+      "label": "생체공학",
+      "tex_path": "Things/Item/Health/HealthItem",
+      "rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": "0.80",
+      "source_def": "Data/Core/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Bionic.xml"
+    },
+    {
+      "tier": "Archotech",
+      "label": "초월공학",
+      "tex_path": "Things/Item/Health/HealthItem",
+      "rgb": [
+        155,
+        165,
+        148
+      ],
+      "draw_size": "0.80",
+      "source_def": "Data/Core/Defs/HediffDefs/BodyParts/Hediffs_BodyParts_Archotech.xml"
+    }
+  ],
+  "active_reference_mods": [
+    {
+      "package_id": "automatic.bionicicons",
+      "workshop_id": "1677616980",
+      "role": "Replaces vanilla health item graphics and UI icons with tiered boxes and body-part masks. RJW texture paths do not match its installed mappings."
+    },
+    {
+      "package_id": "gerrymon.uvt",
+      "workshop_id": "3276562906",
+      "role": "128x128 HealthItem override; Bionic icons replaces graphics for covered items."
+    },
+    {
+      "package_id": "FrozenSnowFox.VanillaBionicsExpansion",
+      "workshop_id": "1419675146",
+      "role": "Additional color mappings into Bionic icons Prosthetic/Archotech boxes."
+    },
+    {
+      "package_id": "Kilo.rjwretexture",
+      "role": "Enabled after KoRim; no Things/Item/Parts textures or Def patches in the inspected installation."
+    }
+  ],
+  "recommendation": {
+    "visual_reference": "Bionic icons tiered medical boxes, with the vanilla HealthItem silhouette and palette documented separately",
+    "design": "Natural gray, prosthetic brown, bionic muted gold, archotech muted green; consistent compact silhouette, dark edge, restrained highlight and central medical symbol",
+    "assets": "16 tier/part combinations, one separate FeaturelessChest icon, separate ResinGlob and SlimeGlob images (19 proposed images)",
+    "integration": "Assign unique KoRimUtility/RJW/Medical paths per ThingDef through RJW-conditional XML patches. Replacing the four artificial PNGs alone cannot separate prosthetic, bionic and archotech tiers.",
+    "scope": "Item graphics and UI icons together; do not change defs, stats, recipes, saves or pawn-body rendering.",
+    "generation": "Not started. Create independent transparent assets after the visual direction is agreed; originals remain reference-only.",
+    "verification": "Static source and texture audit. Exact live rendering with all active mods has not been checked in-game."
+  },
+  "source_sha256": {
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts.xml": "6846b04de401e612339211ea1809836bad7ec2216ec26a344186906b8dfe7151",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml": "bfc94343d85ce1207fbe181d057fab4e3ca8c909888b2fd216e4db8055c76359",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml": "a54faa252eef59789e2ef1db1c72658abbef0c54976821b8e022ee402c3cc0aa",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml": "8071d77a5fbf8d7479782b2291219e86aa841832851e815c9f5864ae0a4b26ef",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml": "f6d7a997dcf8bb281cf338051c2681f38270fa0ae5fcdcd4b20add382dc66f97",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Insect.xml": "1ad6961190e857b6adf1ff9f3ed571c9dd09de05885668e21e58b4651a85db4d",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
+    "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Slime.xml": "56db88bf14e2cfee790d3a11443fcb1aa32db5cc91955c1d4236c03cdfd6f5bb"
+  },
+  "items": [
+    {
+      "def_name": "HorsePenis",
+      "label_english": "equine penis",
+      "label_korean": "자지 (말)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "HorseVagina",
+      "label_english": "equine vagina",
+      "label_korean": "보지 (말)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "CatPenis",
+      "label_english": "feline penis",
+      "label_korean": "자지 (고양이)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "CatVagina",
+      "label_english": "feline vagina",
+      "label_korean": "보지 (고양이)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "DogPenis",
+      "label_english": "canine penis",
+      "label_korean": "자지 (개)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "DogVagina",
+      "label_english": "canine vagina",
+      "label_korean": "보지 (개)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "DragonPenis",
+      "label_english": "dragon penis",
+      "label_korean": "자지 (용)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "DragonVagina",
+      "label_english": "dragon vagina",
+      "label_korean": "보지 (용)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "RaccoonPenis",
+      "label_english": "procyonine penis",
+      "label_korean": "자지 (너구리)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "HemiPenis",
+      "label_english": "hemipenis",
+      "label_korean": "자지 (뱀)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "CrocodilianPenis",
+      "label_english": "crocodilian penis",
+      "label_korean": "자지 (악어)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "NarrowVagina",
+      "label_english": "narrow vagina",
+      "label_korean": "보지 (좁음)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "NeedlePenis",
+      "label_english": "needle-like penis",
+      "label_korean": "자지 (바늘)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "RodentVagina",
+      "label_english": "rodent vagina",
+      "label_korean": "보지 (설치류)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "RodentPenis",
+      "label_english": "rodent penis",
+      "label_korean": "자지 (설치류)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "CloacalPenis",
+      "label_english": "cloacal penis",
+      "label_korean": "자지 (총배설강)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "CloacalVagina",
+      "label_english": "cloacal vagina",
+      "label_korean": "보지 (총배설강)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "UdderBreasts",
+      "label_english": "udder",
+      "label_korean": "가슴 (젖통)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseBreast",
+      "tex_path": "Things/Item/Parts/breast",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "7b6114fe5d34ee9677b8de8d70c667586abd757e830ac6149e364cfef2ebace7",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Breast"
+    },
+    {
+      "def_name": "CloacalAnus",
+      "label_english": "cloacal anus",
+      "label_korean": "항문 (총배설강)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml",
+      "parent": "rjw_BodyPartNaturalBaseAnus",
+      "tex_path": "Things/Item/Parts/anus",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "09c3f0462320dbcf825d6dabe4f688ca322165aa4b8b382fa59d10fb9c63b2b3",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Anus"
+    },
+    {
+      "def_name": "DemonTentaclePenis",
+      "label_english": "demon tentacles",
+      "label_korean": "촉수 (악마)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "DemonPenis",
+      "label_english": "demon penis",
+      "label_korean": "자지 (악마)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "DemonVagina",
+      "label_english": "demon vagina",
+      "label_korean": "보지 (악마)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "DemonAnus",
+      "label_english": "demon anus",
+      "label_korean": "항문 (악마)",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml",
+      "parent": "rjw_BodyPartNaturalBaseAnus",
+      "tex_path": "Things/Item/Parts/anus",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "09c3f0462320dbcf825d6dabe4f688ca322165aa4b8b382fa59d10fb9c63b2b3",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Anus"
+    },
+    {
+      "def_name": "Penis",
+      "label_english": "penis",
+      "label_korean": "자지",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "Vagina",
+      "label_english": "vagina",
+      "label_korean": "보지",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "Breasts",
+      "label_english": "breasts",
+      "label_korean": "가슴",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml",
+      "parent": "rjw_BodyPartNaturalBaseBreast",
+      "tex_path": "Things/Item/Parts/breast",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "7b6114fe5d34ee9677b8de8d70c667586abd757e830ac6149e364cfef2ebace7",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Breast"
+    },
+    {
+      "def_name": "Anus",
+      "label_english": "anus",
+      "label_korean": "항문",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml",
+      "parent": "rjw_BodyPartNaturalBaseAnus",
+      "tex_path": "Things/Item/Parts/anus",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "09c3f0462320dbcf825d6dabe4f688ca322165aa4b8b382fa59d10fb9c63b2b3",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Anus"
+    },
+    {
+      "def_name": "FeaturelessChest",
+      "label_english": "featureless chest",
+      "label_korean": "밋밋한 가슴",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml",
+      "parent": "rjw_BodyPartNaturalBaseBreast",
+      "tex_path": "Things/Item/Parts/breast",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "7b6114fe5d34ee9677b8de8d70c667586abd757e830ac6149e364cfef2ebace7",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Chest"
+    },
+    {
+      "def_name": "PegDick",
+      "label_english": "peg dick",
+      "label_korean": "목재 자지",
+      "category": "BodyPartsProsthetic",
+      "category_korean": "의수·의족급",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4e4fb15b9862b88b6adde37c5dc9404a9e6e4ca4cf8a2e2de3a486a4f4fe2fc5",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Prosthetic_Male"
+    },
+    {
+      "def_name": "HydraulicPenis",
+      "label_english": "hydraulic penis",
+      "label_korean": "유압 자지",
+      "category": "BodyPartsProsthetic",
+      "category_korean": "의수·의족급",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4e4fb15b9862b88b6adde37c5dc9404a9e6e4ca4cf8a2e2de3a486a4f4fe2fc5",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Prosthetic_Male"
+    },
+    {
+      "def_name": "HydraulicVagina",
+      "label_english": "hydraulic vagina",
+      "label_korean": "유압 보지",
+      "category": "BodyPartsProsthetic",
+      "category_korean": "의수·의족급",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4d626a2101bc4b8fdb93a4740bd068df7ca3721a348064402bd3e92d1a340c47",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Prosthetic_Female"
+    },
+    {
+      "def_name": "HydraulicBreasts",
+      "label_english": "hydraulic breasts",
+      "label_korean": "유압 가슴",
+      "category": "BodyPartsProsthetic",
+      "category_korean": "의수·의족급",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseBreast",
+      "tex_path": "Things/Item/Parts/breast_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "794fe029ce716306fdde2062485ddb40880ebbf0cfdb434a537d986972a79bf0",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Prosthetic_Breast"
+    },
+    {
+      "def_name": "HydraulicAnus",
+      "label_english": "hydraulic anus",
+      "label_korean": "유압 항문",
+      "category": "BodyPartsProsthetic",
+      "category_korean": "의수·의족급",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseAnus",
+      "tex_path": "Things/Item/Parts/anus_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "5181e0c6481849fed0ad6e21172f2ef53d543397f8aca4520c04c9bc4faf17ac",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Prosthetic_Anus"
+    },
+    {
+      "def_name": "BionicPenis",
+      "label_english": "bionic penis",
+      "label_korean": "생체공학 자지",
+      "category": "BodyPartsBionic",
+      "category_korean": "생체공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4e4fb15b9862b88b6adde37c5dc9404a9e6e4ca4cf8a2e2de3a486a4f4fe2fc5",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Bionic_Male"
+    },
+    {
+      "def_name": "BionicVagina",
+      "label_english": "bionic vagina",
+      "label_korean": "생체공학 보지",
+      "category": "BodyPartsBionic",
+      "category_korean": "생체공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4d626a2101bc4b8fdb93a4740bd068df7ca3721a348064402bd3e92d1a340c47",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Bionic_Female"
+    },
+    {
+      "def_name": "BionicBreasts",
+      "label_english": "bionic breasts",
+      "label_korean": "생체공학 가슴",
+      "category": "BodyPartsBionic",
+      "category_korean": "생체공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseBreast",
+      "tex_path": "Things/Item/Parts/breast_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "794fe029ce716306fdde2062485ddb40880ebbf0cfdb434a537d986972a79bf0",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Bionic_Breast"
+    },
+    {
+      "def_name": "BionicAnus",
+      "label_english": "bionic anus",
+      "label_korean": "생체공학 항문",
+      "category": "BodyPartsBionic",
+      "category_korean": "생체공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseAnus",
+      "tex_path": "Things/Item/Parts/anus_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "5181e0c6481849fed0ad6e21172f2ef53d543397f8aca4520c04c9bc4faf17ac",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Bionic_Anus"
+    },
+    {
+      "def_name": "ArchotechPenis",
+      "label_english": "archotech penis",
+      "label_korean": "초월공학 자지",
+      "category": "BodyPartsArchotech",
+      "category_korean": "초월공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4e4fb15b9862b88b6adde37c5dc9404a9e6e4ca4cf8a2e2de3a486a4f4fe2fc5",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Archotech_Male"
+    },
+    {
+      "def_name": "ArchotechVagina",
+      "label_english": "archotech vagina",
+      "label_korean": "초월공학 보지",
+      "category": "BodyPartsArchotech",
+      "category_korean": "초월공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "4d626a2101bc4b8fdb93a4740bd068df7ca3721a348064402bd3e92d1a340c47",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Archotech_Female"
+    },
+    {
+      "def_name": "ArchotechBreasts",
+      "label_english": "archotech breasts",
+      "label_korean": "초월공학 가슴",
+      "category": "BodyPartsArchotech",
+      "category_korean": "초월공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseBreast",
+      "tex_path": "Things/Item/Parts/breast_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "794fe029ce716306fdde2062485ddb40880ebbf0cfdb434a537d986972a79bf0",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Archotech_Breast"
+    },
+    {
+      "def_name": "ArchotechAnus",
+      "label_english": "archotech anus",
+      "label_korean": "초월공학 항문",
+      "category": "BodyPartsArchotech",
+      "category_korean": "초월공학",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml",
+      "parent": "rjw_BodyPartArtificialBaseAnus",
+      "tex_path": "Things/Item/Parts/anus_artificial",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "5181e0c6481849fed0ad6e21172f2ef53d543397f8aca4520c04c9bc4faf17ac",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Archotech_Anus"
+    },
+    {
+      "def_name": "OvipositorM",
+      "label_english": "ovipositor (Male)",
+      "label_korean": "벌레 정낭",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Insect.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenMale",
+      "tex_path": "Things/Item/Parts/genital_male",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "1f4cd47bb2e9fb783a195cea9fa786181cf1e6024d010e1645dfac8ab4769919",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Male"
+    },
+    {
+      "def_name": "OvipositorF",
+      "label_english": "ovipositor (Female)",
+      "label_korean": "벌레 산란관",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Insect.xml",
+      "parent": "rjw_BodyPartNaturalBaseGenFemale",
+      "tex_path": "Things/Item/Parts/genital_female",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "875cc6269cffed368f3df84a5a657dfb197ab17c28fc5656de55118b691cfab8",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Female"
+    },
+    {
+      "def_name": "InsectAnus",
+      "label_english": "insect anus",
+      "label_korean": "벌레 배설강",
+      "category": "BodyPartsNatural",
+      "category_korean": "일반·자연",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Insect.xml",
+      "parent": "rjw_BodyPartNaturalBaseAnus",
+      "tex_path": "Things/Item/Parts/anus",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "09c3f0462320dbcf825d6dabe4f688ca322165aa4b8b382fa59d10fb9c63b2b3",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/Natural_Anus"
+    },
+    {
+      "def_name": "ResinGlob",
+      "label_english": "resin",
+      "label_korean": "수지",
+      "category": "Items",
+      "category_korean": "기타 물질",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml",
+      "parent": "ResourceBase",
+      "tex_path": "Things/Item/Parts/slime",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "0002d042571482e32dd3d84c83863a6b19c7589ffbee76d5468b14e38b6b967a",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/ResinGlob"
+    },
+    {
+      "def_name": "SlimeGlob",
+      "label_english": "slime glob",
+      "label_korean": "슬라임 덩어리",
+      "category": "Items",
+      "category_korean": "기타 물질",
+      "source_def": "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Slime.xml",
+      "parent": "ResourceBase",
+      "tex_path": "Things/Item/Parts/slime",
+      "graphic_class": "Graphic_Single",
+      "draw_size": "1 (default)",
+      "color": "(1,1,1) (default)",
+      "ui_icon_path": null,
+      "image_size": [
+        128,
+        128
+      ],
+      "image_mode": "RGBA",
+      "source_image_sha256": "0002d042571482e32dd3d84c83863a6b19c7589ffbee76d5468b14e38b6b967a",
+      "proposed_tex_path": "KoRimUtility/RJW/Medical/SlimeGlob"
+    }
+  ]
+}

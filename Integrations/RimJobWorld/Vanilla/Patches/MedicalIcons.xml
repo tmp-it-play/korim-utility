@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ArchotechAnus"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="ArchotechAnus"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ArchotechAnus"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(155,165,148)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ArchotechBreasts"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="ArchotechBreasts"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ArchotechBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(155,165,148)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ArchotechVagina"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="ArchotechVagina"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ArchotechVagina"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(155,165,148)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ArchotechPenis"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="ArchotechPenis"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ArchotechPenis"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(155,165,148)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="BionicAnus"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="BionicAnus"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BionicAnus"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(189,169,118)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="BionicBreasts"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="BionicBreasts"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BionicBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(189,169,118)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="BionicVagina"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="BionicVagina"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BionicVagina"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(189,169,118)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="BionicPenis"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="BionicPenis"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BionicPenis"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(189,169,118)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Anus" or defName="CloacalAnus" or defName="DemonAnus" or defName="InsectAnus"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Anus" or defName="CloacalAnus" or defName="DemonAnus" or defName="InsectAnus"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Anus" or defName="CloacalAnus" or defName="DemonAnus" or defName="InsectAnus"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(190,190,190)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Breasts" or defName="UdderBreasts"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Breasts" or defName="UdderBreasts"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Breasts" or defName="UdderBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(190,190,190)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FeaturelessChest"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="FeaturelessChest"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FeaturelessChest"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/FeaturelessChest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(190,190,190)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CatVagina" or defName="CloacalVagina" or defName="DemonVagina" or defName="DogVagina" or defName="DragonVagina" or defName="HorseVagina" or defName="NarrowVagina" or defName="OvipositorF" or defName="RodentVagina" or defName="Vagina"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="CatVagina" or defName="CloacalVagina" or defName="DemonVagina" or defName="DogVagina" or defName="DragonVagina" or defName="HorseVagina" or defName="NarrowVagina" or defName="OvipositorF" or defName="RodentVagina" or defName="Vagina"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CatVagina" or defName="CloacalVagina" or defName="DemonVagina" or defName="DogVagina" or defName="DragonVagina" or defName="HorseVagina" or defName="NarrowVagina" or defName="OvipositorF" or defName="RodentVagina" or defName="Vagina"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(190,190,190)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CatPenis" or defName="CloacalPenis" or defName="CrocodilianPenis" or defName="DemonPenis" or defName="DemonTentaclePenis" or defName="DogPenis" or defName="DragonPenis" or defName="HemiPenis" or defName="HorsePenis" or defName="NeedlePenis" or defName="OvipositorM" or defName="Penis" or defName="RaccoonPenis" or defName="RodentPenis"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="CatPenis" or defName="CloacalPenis" or defName="CrocodilianPenis" or defName="DemonPenis" or defName="DemonTentaclePenis" or defName="DogPenis" or defName="DragonPenis" or defName="HemiPenis" or defName="HorsePenis" or defName="NeedlePenis" or defName="OvipositorM" or defName="Penis" or defName="RaccoonPenis" or defName="RodentPenis"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CatPenis" or defName="CloacalPenis" or defName="CrocodilianPenis" or defName="DemonPenis" or defName="DemonTentaclePenis" or defName="DogPenis" or defName="DragonPenis" or defName="HemiPenis" or defName="HorsePenis" or defName="NeedlePenis" or defName="OvipositorM" or defName="Penis" or defName="RaccoonPenis" or defName="RodentPenis"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(190,190,190)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HydraulicAnus"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="HydraulicAnus"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HydraulicAnus"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(154,124,104)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HydraulicBreasts"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="HydraulicBreasts"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HydraulicBreasts"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(154,124,104)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HydraulicVagina"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="HydraulicVagina"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HydraulicVagina"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(154,124,104)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="HydraulicPenis" or defName="PegDick"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="HydraulicPenis" or defName="PegDick"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HydraulicPenis" or defName="PegDick"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(154,124,104)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ResinGlob"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="ResinGlob"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ResinGlob"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/ResinGlob</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(255,255,255)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SlimeGlob"]/graphicData</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="SlimeGlob"]/graphicData</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="SlimeGlob"]</xpath>
+        <value>
+          <graphicData Inherit="false">
+            <texPath>KoRimUtility/RJW/Vanilla/SlimeGlob</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <color>(255,255,255)</color>
+            <drawSize>(0.80,0.80)</drawSize>
+          </graphicData>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

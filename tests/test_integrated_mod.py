@@ -14,17 +14,23 @@ from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, check, combined_language,
 
 
 class IntegratedModTests(unittest.TestCase):
-    def test_eight_optional_mod_combinations(self):
+    def test_thirty_two_optional_mod_combinations(self):
         entries = ET.parse(ROOT / 'LoadFolders.xml').findall('v1.6/li')
         cooler = 'GodlyAnnihilator.TheLowCooler'
         rjw = 'rim.job.world'
         editor = 'void.charactereditor'
-        counts = {cooler: 2, rjw: 26, editor: 6}
-        active_sets = [set(group) for size in range(4) for group in combinations(counts, size)]
+        replace = 'Memegoddess.ReplaceStuff'
+        bionic_icons = 'automatic.bionicicons'
+        counts = {cooler: 2, rjw: 26, editor: 6, replace: 2, bionic_icons: 0}
+        active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:
             with self.subTest(active=active):
-                roots = [ROOT if n.text == '/' else ROOT / n.text for n in entries
-                         if not n.get('IfModActive') or n.get('IfModActive') in active]
+                def enabled(node):
+                    any_of = set(filter(None, node.get('IfModActive', '').split(',')))
+                    all_of = set(filter(None, node.get('IfModActiveAll', '').split(',')))
+                    none_of = set(filter(None, node.get('IfModNotActive', '').split(',')))
+                    return (not any_of or bool(any_of & active)) and all_of <= active and not (none_of & active)
+                roots = [ROOT if n.text == '/' else ROOT / n.text for n in entries if enabled(n)]
                 translations = combined_language(roots, 'Korean')
                 self.assertEqual(len(translations), 3 + sum(counts[mod] for mod in active))
                 self.assertEqual(('DefInjected/ThingDef', 'LingCooler.label') in translations,
@@ -35,6 +41,11 @@ class IntegratedModTests(unittest.TestCase):
                 self.assertEqual(('Keyed', 'KoRimUtility.CE.Zombrella.Label') in translations, editor in active)
                 self.assertEqual(('DefInjected/JobDef', 'EnterZGrave.reportString') in translations, editor in active)
                 self.assertEqual(ROOT / 'Translations/CharacterEditor' in roots, editor in active)
+                self.assertEqual(('DefInjected/ThingDef', 'Vent_Over2W.label') in translations, replace in active)
+                self.assertEqual(ROOT / 'Integrations/RimJobWorld/Vanilla' in roots,
+                                 rjw in active and bionic_icons not in active)
+                self.assertEqual(ROOT / 'Integrations/RimJobWorld/BionicIcons' in roots,
+                                 rjw in active and bionic_icons in active)
 
     def test_one_mod_with_no_required_translation_targets(self):
         metadata = ET.parse(ROOT / 'About/About.xml')
@@ -47,7 +58,7 @@ class IntegratedModTests(unittest.TestCase):
     def test_each_optional_source_snapshot_is_checked(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for name in ('About', 'Languages', 'Translations'):
+            for name in ('About', 'Languages', 'Translations', 'Integrations'):
                 shutil.copytree(ROOT / name, root / name)
             shutil.copyfile(ROOT / 'LoadFolders.xml', root / 'LoadFolders.xml')
             path = root / 'Translations/TheCooler/Languages/Korean/DefInjected/ThingDef/Buildings_Temperature.xml'
@@ -61,7 +72,7 @@ class IntegratedModTests(unittest.TestCase):
     def test_pack_requires_compatibility_and_excludes_upstream_assemblies(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            for name in ('About', 'Languages'):
+            for name in ('About', 'Languages', 'Integrations'):
                 shutil.copytree(ROOT / name, root / name)
             # The test must also work before a developer has built the real DLL.
             shutil.copytree(ROOT / 'Translations', root / 'Translations',

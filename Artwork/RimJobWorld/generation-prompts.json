@@ -1,0 +1,299 @@
+{
+  "created_on": "2026-10-05",
+  "assets": [
+    {
+      "key": "Vanilla/Male",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. In the attached thin medical case sprite change ONLY the Venus symbol to the dark-gray Mars symbol: a hollow circle and a short arrow pointing upper right. Match the symbol perspective to the top face. Preserve exactly the case geometry, silhouette, white-gray palette, gray rim, bottom band, scale, position, original canvas dimensions and transparency. No loose edge pixels, shadows, text, people, anatomy or additional details. One transparent PNG for a tiny RimWorld inventory item.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1402,
+        1122
+      ],
+      "source_sha256": "7c0e794b846f21ca6759597f096771d755aebbe31ae3c7a2f061adbe9f8aaec3",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Male.png",
+      "sha256": "31539b27771d701df3ebe5ccf81a22cf23085fdf86380953bb608af70b11fa6f",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/Female",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset: one tiny RimWorld medical-item sprite. Edit the attached reference into a new matching item icon. Preserve silhouette, perspective, placement, simple flat 2-3-tone shading and edge style. Sealed medical packaging only; no visible anatomy, people or explicit content. One centered object, no text, no extra symbols, no background, no outside cast shadow, no flecks. Actual transparent background and clean antialiased boundary. Remain legible at 64 pixels. Keep the thin white rectangular isometric case exactly. Add a small dark-gray Venus/female medical classification symbol (circle with a short stem and cross below), flat on the top face. Neutral grayscale only for game tinting. Match case bounds x5%-95%, y24%-81%.",
+      "references": [
+        "D:\\korim-utility\\work\\rjw-icon-audit\\vanilla\\HealthItem.png"
+      ],
+      "source_size": [
+        1402,
+        1122
+      ],
+      "source_sha256": "7b3d1cbae67889c5fbf863b490fd1745ec90a56a9e28942a56fe79f8a4839e49",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Female.png",
+      "sha256": "3bf371e5fa9cef847d464d4c569a1042be7717549b1ce31d4c2aa056ae0aa8f1",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/Breast",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this medical case sprite. Change ONLY the Venus symbol to two dark-gray shallow U-shaped curved line arcs side by side, the abstract outline of two cups. These must be simple open U lines, not filled lungs or lobes. Match their perspective to the top face. Preserve exactly the thin white-gray isometric case, dark edge, bands, neutral grayscale, size and position. No anatomical detail, no people, no text. Transparent background. One square PNG game icon readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1402,
+        1122
+      ],
+      "source_sha256": "1582f877b3e45c16a951549dbd03ce8f276494d86e5340bf70d66bdf08cdf8f3",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Breast.png",
+      "sha256": "8cd5025163bc44c978d3f73819deffb39e930e81432c085539528e989e8b5c39",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/Anus",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. In the attached thin medical case sprite change ONLY the Venus symbol to a simple dark-gray six-bladed iris aperture symbol with an open hexagonal center, like a mechanical sphincter icon. Match the symbol perspective to the top face. Preserve exactly the case geometry, silhouette, white-gray palette, gray rim, bottom band, scale, position, original canvas dimensions and transparency. No loose edge pixels, shadows, text, people, anatomy or additional details. One transparent PNG for a tiny RimWorld inventory item.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1402,
+        1122
+      ],
+      "source_sha256": "33c21c948b644c92bc5734fcf1d4f8f9901118429d1d765b53470cfb1f7a3826",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Anus.png",
+      "sha256": "0fb655d4afe7b70ec905acfda7cfb383f115b353bc473696c96ea573e5522156",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/FeaturelessChest",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this medical case sprite. Change ONLY the Venus symbol to a dark-gray outline of a squared torso plate, with a straight horizontal line across its upper middle. Flat neutral geometric medical classification, no anatomical details or people. Symbol projected flat onto the top face. Preserve exactly the thin white-gray isometric case, edge, bands, neutral grayscale, size and position. No text. Actual transparent background. One square PNG game icon readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1402,
+        1122
+      ],
+      "source_sha256": "549e23cc2046bbfa2becc828f56325bdd82043ff4d421492efa14513f2772c16",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/FeaturelessChest.png",
+      "sha256": "d03f6fd4fc460682e1be1522a9b4669c7e79db142612fa323aba0a25ff0e926a",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/ResinGlob",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Use the attached thin isometric medical box sprite ONLY as a style reference. Create ONE new RimWorld resin reagent item icon: a squat small sealed clear specimen jar with a low wide silver lid, containing a single amber honey-colored resin glob with one angular highlight. Subtle isometric top view. Thick dark gray outline and flat 2-3 tone fills, as simple as the reference game art. No label, letters, people or anatomy. No realistic glass reflections or photorealism. Single object centered at about 70% canvas size. Output one square PNG with actual transparent background, no outside shadow or scattered pixels. Legible at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "474b49d6e966848c2aa3d80271d722328e1d1ef95a883b882d28690adc04bb87",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/ResinGlob.png",
+      "sha256": "1ae2c1f11237eeb0adba6b3c54ee51de100e89ef6ee554c77d3296d4c4ea30a0",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "Vanilla/SlimeGlob",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Use the attached thin isometric medical box sprite ONLY as a style reference. Create ONE new RimWorld slime reagent item icon: a short sealed specimen jar with a low wide silver lid, holding a soft mint-green translucent gel blob with two broad rounded lobes and one subtle highlight. Subtle isometric top view. Thick dark gray outline and flat 2-3 tone fills, as simple as the reference game art. No label, letters, face, people or anatomy. No realistic glass reflections or photorealism. Single object centered at about 70% canvas size. Output one square PNG with actual transparent background, no outside shadow or scattered pixels. Legible at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-8a85d037-9b14-498d-aa2d-321222788a78.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "2c2324d325149949eb01a941c60bfc654147fc8ab368acfa87705ffb7884df3b",
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/SlimeGlob.png",
+      "sha256": "8c3ec647a4d0e51448a3c2233c43208ad615a1576f92059c3f3fd1fd60ea8782",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Male",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset: one tiny RimWorld medical-item sprite. Edit the attached reference into a new matching item icon. Preserve silhouette, perspective, placement, simple flat 2-3-tone shading and edge style. Sealed medical packaging only; no visible anatomy, people or explicit content. One centered object, no text, no extra symbols, no background, no outside cast shadow, no flecks. Actual transparent background and clean antialiased boundary. Remain legible at 64 pixels. Keep the square front-facing rounded-corner medical case with the two lower horizontal bands, dark perimeter and thick dark bottom. Add a centered dark-gray Mars/male classification symbol (circle and short northeast arrow). Make the large front panel neutral near-white and the side/bottom shading medium gray so the game can tint it to any tier; no colored pixels. Case bounds x14%-86%, y15%-85%. No isometric rotation.",
+      "references": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\1677616980\\Textures\\BionicIcons\\Boxes\\Default.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "1d9e308bce20a55e65065ba9cae7831f99a6e0be0fef3020f208f93d3df7bdb8",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Male.png",
+      "sha256": "c79115199cac3b94f83a3a8ca86e2123586694ffaaf0860055db4b368cd34a86",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Female",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this one RimWorld medical case item sprite. Change ONLY the male symbol on the front face to a dark-gray Venus symbol: one hollow circle above a short vertical stem and a horizontal crossbar. Preserve exactly the existing square case shape, white-gray neutral colors, outer dark rim, bottom bands, scale, placement, canvas size and transparency. Keep same symbol area and line thickness. One sealed medical package, no exposed anatomy or people, no text or extra decoration. Clean simple flat game icon, readable at 64px. Real transparent background, no shadow outside, no loose pixels. Output one square transparent PNG.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "72e762b27058c83dd84293e15539dd952163bb00d669441ab61e16a6de17ae85",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Female.png",
+      "sha256": "9a813307936557c916c9893ab36972a44643611effad94c12e83c331acb27acb",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Breast",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this one RimWorld medical case item sprite. Change ONLY the male symbol on the front face to two shallow U-shaped curved line arcs side by side, like the neutral geometric outline of two cups; abstract medical classification; do not draw lungs or filled lobes. Preserve exactly the existing square case shape, white-gray neutral colors, outer dark rim, bottom bands, scale, placement, canvas size and transparency. Keep same symbol area and line thickness. One sealed medical package, no exposed anatomy or people, no text or extra decoration. Clean simple flat game icon, readable at 64px. Real transparent background, no shadow outside, no loose pixels. Output one square transparent PNG.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "67f5cfa14b0c98f5de4fd4e3338b02aaeea045cf1fd8d35eeacc2944eb16b2a7",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Breast.png",
+      "sha256": "3be36a8476f7dd0b0d1b6044d24dfaa7f5e72039a8efbb287c3e4c7caa2ff24c",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Anus",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this one RimWorld medical case item sprite. Change ONLY the male symbol on the front face to a dark-gray circular six-spoke aperture ring with a clear hollow center; abstract medical mechanical classification. Preserve exactly the existing square case shape, white-gray neutral colors, outer dark rim, bottom bands, scale, placement, canvas size and transparency. Keep same symbol area and line thickness. One sealed medical package, no exposed anatomy or people, no text or extra decoration. Clean simple flat game icon, readable at 64px. Real transparent background, no shadow outside, no loose pixels. Output one square transparent PNG.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "42e92e0725ab4134821e7ea8bb8f0f03905084fbe40123f8707f2ab89ee0b45d",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Anus.png",
+      "sha256": "e9232c871ac02607ae74ec48b590d5ef367a960615bbebb897e0a76a67c05cd9",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/FeaturelessChest",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Edit this one RimWorld medical case item sprite. Change ONLY the male symbol on the front face to a dark-gray outline of a simple squared-off torso plate with one single straight horizontal line across the upper middle; entirely flat geometric shape, no circles or anatomical details. Preserve exactly the existing square case shape, white-gray neutral colors, outer dark rim, bottom bands, scale, placement, canvas size and transparency. Keep same symbol area and line thickness. One sealed medical package, no exposed anatomy or people, no text or extra decoration. Clean simple flat game icon, readable at 64px. Real transparent background, no shadow outside, no loose pixels. Output one square transparent PNG.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "be3686ab9d2065071dbf21898f112253d9db604b819102a3d541eb89fa0c7d91",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/FeaturelessChest.png",
+      "sha256": "c5f9a8e50cfb653a784b21a861222e0d9a5dbfdbc63125e9efeb53b4ad57390b",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Archotech_Male",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target, a medical item case sprite. Input 2 is a color-and-tier style reference only. Change only the casing palette of input 1 to match the archotech tier of input 2: muted gray-sage green main panel, darker sage lower sections, and a single thin pale green horizontal band across the lower front seam. Band color approximately #b9d8b0; no glow or halo. Keep input 1's central dark symbol absolutely unchanged, preserve its square shape, dark thick perimeter, relative proportions, canvas position, and transparent background. Flat 2-3-tone RimWorld game art, not realistic material. No text or extra details. One square transparent PNG, readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\1677616980\\Textures\\BionicIcons\\Boxes\\Archotech.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "18181a75b169345dbf117514383316f0a72ce1ad81410d7c7a68b91d34db0227",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Male.png",
+      "sha256": "c377d7fe900a0df4467d2fcc29ad1d03ff9ebe5c9de8f8546255a9c080e08081",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Archotech_Female",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target, a medical item case sprite. Input 2 is a color-and-tier style reference only. Change only the casing palette of input 1 to match the archotech tier of input 2: muted gray-sage green main panel, darker sage lower sections, and a single thin pale green horizontal band across the lower front seam. Band color approximately #b9d8b0; no glow or halo. Keep input 1's central dark symbol absolutely unchanged, preserve its square shape, dark thick perimeter, relative proportions, canvas position, and transparent background. Flat 2-3-tone RimWorld game art, not realistic material. No text or extra details. One square transparent PNG, readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-c0d1bdbc-f38d-4db9-9f73-6b266c34300d.png",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\1677616980\\Textures\\BionicIcons\\Boxes\\Archotech.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "0c21bf9ca5d4d1444f466fc0840a2f5db3abbc8751cfd25587f6dba1e0de8fcb",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Female.png",
+      "sha256": "147f92ac724c092317b28b0b2a99199b43fef8166a8555cb847e62c988f680d3",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Archotech_Breast",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target, a medical item case sprite. Input 2 is a color-and-tier style reference only. Change only the casing palette of input 1 to match the archotech tier of input 2: muted gray-sage green main panel, darker sage lower sections, and a single thin pale green horizontal band across the lower front seam. Band color approximately #b9d8b0; no glow or halo. Keep input 1's central dark symbol absolutely unchanged, preserve its square shape, dark thick perimeter, relative proportions, canvas position, and transparent background. Flat 2-3-tone RimWorld game art, not realistic material. No text or extra details. One square transparent PNG, readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-5de4cf34-1bfc-4404-b099-f4f0d7ffc27f.png",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\1677616980\\Textures\\BionicIcons\\Boxes\\Archotech.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "7499f22af74a51a8f39fd7dcea1d7c92e6670b6a6ba2e836bd411d92cc7274b3",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Breast.png",
+      "sha256": "f7dcdc4c2e5a0713aaa60285437f9241b06ac5ab73f9410b199aa1ebfd49673e",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/Archotech_Anus",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target, a medical item case sprite. Input 2 is a color-and-tier style reference only. Change only the casing palette of input 1 to match the archotech tier of input 2: muted gray-sage green main panel, darker sage lower sections, and a single thin pale green horizontal band across the lower front seam. Band color approximately #b9d8b0; no glow or halo. Keep input 1's central dark symbol absolutely unchanged, preserve its square shape, dark thick perimeter, relative proportions, canvas position, and transparent background. Flat 2-3-tone RimWorld game art, not realistic material. No text or extra details. One square transparent PNG, readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-83d9d152-1a2e-453d-9d01-ad39edcfaf13.png",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\1677616980\\Textures\\BionicIcons\\Boxes\\Archotech.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "a63e67b59e0f230821e3dbfe2c4b7a63fc5eec0535278721716b8c796f554ec4",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Anus.png",
+      "sha256": "c55d0555cf1d08e7b79b6fddc458f5b7de2d365b2061230a5513ea4e2951d65e",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/ResinGlob",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the square medical case edit target. Input 2 is the reference for the reagent inside. Replace ONLY the male symbol in the middle of input 1 with a simple small front viewing window showing one solid amber honey-colored resin glob with one angular pale highlight. Preserve input 1's square shape, thick dark border, pale gray panel, gray bottom bands, position and scale. The central window should have a thin dark edge and muted gray interior, occupying the same area as the old symbol. Simplified flat RimWorld item sprite, no realistic glass reflections, no text, no symbols, no people or anatomical detail. One sealed specimen case centered on a square truly transparent canvas. No outside shadow or loose pixels. Readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png",
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-9fd4456b-d258-4ff3-97b0-ece076a29bf4.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "02947afca560ab9d68bfadb8f8a8d63e411de4b232bec983fbf570a83fd3b9a6",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/ResinGlob.png",
+      "sha256": "36ab1b5b4439a1bc87a5a08705181998c777b679989c98fa395f66264915fae9",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    },
+    {
+      "key": "BionicIcons/SlimeGlob",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Input 1 is the square medical case edit target. Input 2 is the reference for the reagent inside. Replace ONLY the male symbol in the middle of input 1 with a simple small front viewing window showing a mint-green gel blob with two rounded lobes and one subtle pale highlight. Preserve input 1's square shape, thick dark border, pale gray panel, gray bottom bands, position and scale. The central window should have a thin dark edge and muted gray interior, occupying the same area as the old symbol. Simplified flat RimWorld item sprite, no realistic glass reflections, no text, no symbols, no people or anatomical detail. One sealed specimen case centered on a square truly transparent canvas. No outside shadow or loose pixels. Readable at 64px.",
+      "references": [
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-1386131f-b416-4243-830e-d05c430c581d.png",
+        "C:\\Users\\snowy\\.codex\\generated_images\\01a10b68-f6a3-72e1-b690-e073b73ea7f3\\exec-941bc790-1787-4f27-b39b-9dd8cc2449d6.png"
+      ],
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_sha256": "9b2086021fe40194b5a22787f09903e644cbfdc3e2c20839a78c311ade9d21bb",
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/SlimeGlob.png",
+      "sha256": "56db74faec616068cb8d8fb74a2edc662f87b4f53fea6b5eaac8b72174769654",
+      "conversion": "aspect-preserving Lanczos downscale and transparent square padding to 128x128 RGBA"
+    }
+  ]
+}

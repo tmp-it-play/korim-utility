@@ -10,7 +10,9 @@
     <li>Ludeon.RimWorld</li>
     <li>GodlyAnnihilator.TheLowCooler</li>
     <li>rim.job.world</li>
+    <li>automatic.bionicicons</li>
     <li>void.charactereditor</li>
+    <li>Memegoddess.ReplaceStuff</li>
   </loadAfter>
   <description>한국인 플레이어를 위해 림월드의 부족한 부분을 채워가는 모드입니다.
 한국어 번역 보완부터 편의 기능, 아이템과 UI까지 조금씩 추가합니다.
@@ -18,6 +20,7 @@
 모드 번역 안내
 • The Cooler
 • Character Editor
+• Replace Stuff - Continued
 
 사용 방법
 RimWorld 1.6용입니다. KoRim Utility 하나만 설치하면 됩니다.

@@ -42,3 +42,22 @@ are not redistributed. KoRimUtility.CharacterEditor.dll is our own
 compatibility code under LICENSE, not the original CharacterEditor.dll.
 RimWorld reference assemblies and Harmony are build dependencies only;
 neither is included in the distribution.
+
+Replace Stuff - Continued
+https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009
+Package ID: Memegoddess.ReplaceStuff
+Upstream license: MIT, Copyright (c) [2025] [Alex Tearse-Doyle].
+The full notice is in ThirdPartyNotices/ReplaceStuff-LICENSE.txt.
+Reference: installed 1.6/Defs/OverWallCoolerVent.xml, reviewed 2026-10-05.
+Includes the Vent_Over2W label and its description inherited from RimWorld
+Core's Vent ThingDef (Ludeon Studios). Source hash is in targets.json.
+
+Generated RJW medical item artwork
+Visual references: RimWorld HealthItem by Ludeon Studios, and Bionic icons
+by AUTOMATIC (https://steamcommunity.com/sharedfiles/filedetails/?id=1677616980).
+Replacement sprites were produced with the built-in image_gen tool using
+those case styles as references, then resized for the game. They use unique
+KoRimUtility texture paths. The original reference images and upstream code
+are not bundled. Bionic icons is optional; its package ID only selects the
+appropriate generated artwork. Prompts and asset hashes are in the source
+repository under Artwork/RimJobWorld/generation-prompts.json.

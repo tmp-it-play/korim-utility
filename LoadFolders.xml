@@ -4,6 +4,9 @@
     <li>/</li>
     <li IfModActive="GodlyAnnihilator.TheLowCooler">Translations/TheCooler</li>
     <li IfModActive="rim.job.world">Translations/RimJobWorld</li>
+    <li IfModActive="rim.job.world" IfModNotActive="automatic.bionicicons">Integrations/RimJobWorld/Vanilla</li>
+    <li IfModActiveAll="rim.job.world,automatic.bionicicons">Integrations/RimJobWorld/BionicIcons</li>
     <li IfModActive="void.charactereditor">Translations/CharacterEditor</li>
+    <li IfModActive="Memegoddess.ReplaceStuff">Translations/ReplaceStuff</li>
   </v1.6>
 </loadFolders>

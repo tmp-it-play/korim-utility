@@ -1,0 +1,714 @@
+{
+  "game_version": "1.6",
+  "rjw_version_audited": "6.2.1",
+  "generator": "built-in image_gen; one call per asset, followed by PNG size conversion only",
+  "activation": {
+    "Vanilla": "rim.job.world active AND automatic.bionicicons inactive",
+    "BionicIcons": "rim.job.world AND automatic.bionicicons active"
+  },
+  "item_count_per_style": 46,
+  "visual_variants_per_style": 19,
+  "unique_png_count": 18,
+  "variants": [
+    {
+      "style": "Vanilla",
+      "variant": "Archotech_Anus",
+      "tier": "Archotech",
+      "part": "Anus",
+      "def_names": [
+        "ArchotechAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Anus",
+      "color_rgb": [
+        155,
+        165,
+        148
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Anus.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Archotech_Breast",
+      "tier": "Archotech",
+      "part": "Breast",
+      "def_names": [
+        "ArchotechBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Breast",
+      "color_rgb": [
+        155,
+        165,
+        148
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Breast.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Archotech_Female",
+      "tier": "Archotech",
+      "part": "Female",
+      "def_names": [
+        "ArchotechVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Female",
+      "color_rgb": [
+        155,
+        165,
+        148
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Female.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Archotech_Male",
+      "tier": "Archotech",
+      "part": "Male",
+      "def_names": [
+        "ArchotechPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Male",
+      "color_rgb": [
+        155,
+        165,
+        148
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Male.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Bionic_Anus",
+      "tier": "Bionic",
+      "part": "Anus",
+      "def_names": [
+        "BionicAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Anus",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Anus.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Bionic_Breast",
+      "tier": "Bionic",
+      "part": "Breast",
+      "def_names": [
+        "BionicBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Breast",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Breast.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Bionic_Female",
+      "tier": "Bionic",
+      "part": "Female",
+      "def_names": [
+        "BionicVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Female",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Female.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Bionic_Male",
+      "tier": "Bionic",
+      "part": "Male",
+      "def_names": [
+        "BionicPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Male",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Male.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Natural_Anus",
+      "tier": "Natural",
+      "part": "Anus",
+      "def_names": [
+        "Anus",
+        "CloacalAnus",
+        "DemonAnus",
+        "InsectAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Anus",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Anus.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Natural_Breast",
+      "tier": "Natural",
+      "part": "Breast",
+      "def_names": [
+        "Breasts",
+        "UdderBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Breast",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Breast.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Natural_Chest",
+      "tier": "Natural",
+      "part": "FeaturelessChest",
+      "def_names": [
+        "FeaturelessChest"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/FeaturelessChest",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/FeaturelessChest.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Natural_Female",
+      "tier": "Natural",
+      "part": "Female",
+      "def_names": [
+        "CatVagina",
+        "CloacalVagina",
+        "DemonVagina",
+        "DogVagina",
+        "DragonVagina",
+        "HorseVagina",
+        "NarrowVagina",
+        "OvipositorF",
+        "RodentVagina",
+        "Vagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Female",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Female.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Natural_Male",
+      "tier": "Natural",
+      "part": "Male",
+      "def_names": [
+        "CatPenis",
+        "CloacalPenis",
+        "CrocodilianPenis",
+        "DemonPenis",
+        "DemonTentaclePenis",
+        "DogPenis",
+        "DragonPenis",
+        "HemiPenis",
+        "HorsePenis",
+        "NeedlePenis",
+        "OvipositorM",
+        "Penis",
+        "RaccoonPenis",
+        "RodentPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Male",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Male.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Prosthetic_Anus",
+      "tier": "Prosthetic",
+      "part": "Anus",
+      "def_names": [
+        "HydraulicAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Anus",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Anus.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Prosthetic_Breast",
+      "tier": "Prosthetic",
+      "part": "Breast",
+      "def_names": [
+        "HydraulicBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Breast",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Breast.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Prosthetic_Female",
+      "tier": "Prosthetic",
+      "part": "Female",
+      "def_names": [
+        "HydraulicVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Female",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Female.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "Prosthetic_Male",
+      "tier": "Prosthetic",
+      "part": "Male",
+      "def_names": [
+        "HydraulicPenis",
+        "PegDick"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/Male",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/Male.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "ResinGlob",
+      "tier": "Material",
+      "part": "ResinGlob",
+      "def_names": [
+        "ResinGlob"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/ResinGlob",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/ResinGlob.png"
+    },
+    {
+      "style": "Vanilla",
+      "variant": "SlimeGlob",
+      "tier": "Material",
+      "part": "SlimeGlob",
+      "def_names": [
+        "SlimeGlob"
+      ],
+      "tex_path": "KoRimUtility/RJW/Vanilla/SlimeGlob",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 0.8,
+      "file": "Integrations/RimJobWorld/Vanilla/Textures/KoRimUtility/RJW/Vanilla/SlimeGlob.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Archotech_Anus",
+      "tier": "Archotech",
+      "part": "Anus",
+      "def_names": [
+        "ArchotechAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Archotech_Anus",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Anus.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Archotech_Breast",
+      "tier": "Archotech",
+      "part": "Breast",
+      "def_names": [
+        "ArchotechBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Archotech_Breast",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Breast.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Archotech_Female",
+      "tier": "Archotech",
+      "part": "Female",
+      "def_names": [
+        "ArchotechVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Archotech_Female",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Female.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Archotech_Male",
+      "tier": "Archotech",
+      "part": "Male",
+      "def_names": [
+        "ArchotechPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Archotech_Male",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Archotech_Male.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Bionic_Anus",
+      "tier": "Bionic",
+      "part": "Anus",
+      "def_names": [
+        "BionicAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Anus",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Anus.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Bionic_Breast",
+      "tier": "Bionic",
+      "part": "Breast",
+      "def_names": [
+        "BionicBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Breast",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Breast.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Bionic_Female",
+      "tier": "Bionic",
+      "part": "Female",
+      "def_names": [
+        "BionicVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Female",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Female.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Bionic_Male",
+      "tier": "Bionic",
+      "part": "Male",
+      "def_names": [
+        "BionicPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Male",
+      "color_rgb": [
+        189,
+        169,
+        118
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Male.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Natural_Anus",
+      "tier": "Natural",
+      "part": "Anus",
+      "def_names": [
+        "Anus",
+        "CloacalAnus",
+        "DemonAnus",
+        "InsectAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Anus",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Anus.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Natural_Breast",
+      "tier": "Natural",
+      "part": "Breast",
+      "def_names": [
+        "Breasts",
+        "UdderBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Breast",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Breast.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Natural_Chest",
+      "tier": "Natural",
+      "part": "FeaturelessChest",
+      "def_names": [
+        "FeaturelessChest"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/FeaturelessChest",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/FeaturelessChest.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Natural_Female",
+      "tier": "Natural",
+      "part": "Female",
+      "def_names": [
+        "CatVagina",
+        "CloacalVagina",
+        "DemonVagina",
+        "DogVagina",
+        "DragonVagina",
+        "HorseVagina",
+        "NarrowVagina",
+        "OvipositorF",
+        "RodentVagina",
+        "Vagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Female",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Female.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Natural_Male",
+      "tier": "Natural",
+      "part": "Male",
+      "def_names": [
+        "CatPenis",
+        "CloacalPenis",
+        "CrocodilianPenis",
+        "DemonPenis",
+        "DemonTentaclePenis",
+        "DogPenis",
+        "DragonPenis",
+        "HemiPenis",
+        "HorsePenis",
+        "NeedlePenis",
+        "OvipositorM",
+        "Penis",
+        "RaccoonPenis",
+        "RodentPenis"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Male",
+      "color_rgb": [
+        190,
+        190,
+        190
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Male.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Prosthetic_Anus",
+      "tier": "Prosthetic",
+      "part": "Anus",
+      "def_names": [
+        "HydraulicAnus"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Anus",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Anus.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Prosthetic_Breast",
+      "tier": "Prosthetic",
+      "part": "Breast",
+      "def_names": [
+        "HydraulicBreasts"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Breast",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Breast.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Prosthetic_Female",
+      "tier": "Prosthetic",
+      "part": "Female",
+      "def_names": [
+        "HydraulicVagina"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Female",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Female.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "Prosthetic_Male",
+      "tier": "Prosthetic",
+      "part": "Male",
+      "def_names": [
+        "HydraulicPenis",
+        "PegDick"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/Male",
+      "color_rgb": [
+        154,
+        124,
+        104
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/Male.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "ResinGlob",
+      "tier": "Material",
+      "part": "ResinGlob",
+      "def_names": [
+        "ResinGlob"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/ResinGlob",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/ResinGlob.png"
+    },
+    {
+      "style": "BionicIcons",
+      "variant": "SlimeGlob",
+      "tier": "Material",
+      "part": "SlimeGlob",
+      "def_names": [
+        "SlimeGlob"
+      ],
+      "tex_path": "KoRimUtility/RJW/BionicIcons/SlimeGlob",
+      "color_rgb": [
+        255,
+        255,
+        255
+      ],
+      "draw_size": 1.0,
+      "file": "Integrations/RimJobWorld/BionicIcons/Textures/KoRimUtility/RJW/BionicIcons/SlimeGlob.png"
+    }
+  ]
+}

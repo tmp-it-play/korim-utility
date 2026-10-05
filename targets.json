@@ -65,6 +65,23 @@
       "content_root": "Translations/CharacterEditor",
       "load_condition": "IfModActive: void.charactereditor",
       "compatibility_assembly": "Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll"
+    },
+    {
+      "name": "Replace Stuff - Continued",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009",
+      "workshop_id": "3526354009",
+      "package_id": "Memegoddess.ReplaceStuff",
+      "license": "MIT",
+      "status": "partial_translation_game_test_pending",
+      "translated_entries": 2,
+      "source_def": "1.6/Defs/OverWallCoolerVent.xml",
+      "source_def_sha256": "7f5e1811b95cf7db14666bc5550a7951bfa4662cf8879fea21ca84048313b953",
+      "inherited_description_source": "RimWorld/Data/Core/Defs/ThingDefs_Buildings/Buildings_Temperature.xml: Vent.description",
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/ReplaceStuff",
+      "load_condition": "IfModActive: Memegoddess.ReplaceStuff"
     }
   ]
 }
