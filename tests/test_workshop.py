@@ -60,8 +60,9 @@ class WorkshopDeploymentTests(unittest.TestCase):
         self.assertTrue(upload_succeeded(
             'Preparing update...\nPreparing content...\nUploading content...\n'
             'Uploading preview image...\nCommitting update...\nSuccess.', '123456789'))
+        self.assertTrue(upload_succeeded('Preparing update...\nSuccess.\n', '123456789'))
         for output in ('Success. Logged in.', 'Success.', 'Success. Published item 1234567890.',
-                       'ERROR! Upload failed.', 'Preparing update...\nSuccess.',
+                       'ERROR! Upload failed.', 'Preparing update...\nUnloading Steam API...OK',
                        'Preparing update...\nERROR! Upload failed.\nCommitting update...\nSuccess.'):
             self.assertFalse(upload_succeeded(output, '123456789'))
 

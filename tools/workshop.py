@@ -71,11 +71,12 @@ def prepare(archive, destination, published_id, change_note, description):
 
 def upload_succeeded(output, published_id):
     # Older clients include the ID. Current clients print a standalone Success.
-    # only after Committing update; the caller also checks the manifest target.
+    # after Preparing update; quick uploads may skip intermediate progress labels.
+    # The caller verifies the manifest target both before and after SteamCMD.
     pattern = r'Success\.\s+Published\s+(?:item\s+|File ID:\s*)' + re.escape(published_id) + r'\b'
     if re.search(pattern, output, re.IGNORECASE):
         return True
-    progress = re.search(r'Preparing update\.\.\..*?Committing update\.\.\.\s*Success\.',
+    progress = re.search(r'Preparing update\.\.\..*?\bSuccess\.(?=\s|$)',
                          output, re.IGNORECASE | re.DOTALL)
     return progress is not None and 'error!' not in progress.group(0).lower()
 
@@ -88,6 +89,7 @@ def upload_diagnostic(output, returncode):
         'using_cached_credentials': 'using cached credentials' in lowered,
         'login_completed': 'waiting for user info...ok' in lowered,
         'upload_started': 'uploading content' in lowered or 'preparing update' in lowered,
+        'success_message_seen': bool(re.search(r'\bSuccess\.(?=\s|$)', output, re.IGNORECASE)),
         'invalid_password': 'invalid password' in lowered,
         'guard_required': any(text in lowered for text in (
             'account logon denied', 'two-factor code', 'enter the current code',
@@ -127,7 +129,9 @@ def upload(steamcmd, manifest, published_id):
                                 stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, text=True, errors='replace', timeout=600)
         final_target = re.findall(r'"publishedfileid"\s+"([0-9]+)"', manifest.read_text(encoding='utf-8'))
-        if result.returncode != 0 or final_target != [published_id] or not upload_succeeded(result.stdout, published_id):
+        if final_target != [published_id]:
+            raise ValueError('Steam 업로드 성공을 확인하지 못했습니다: 업로드 후 manifest의 대상 ID가 달라졌습니다.')
+        if result.returncode != 0 or not upload_succeeded(result.stdout, published_id):
             raise ValueError('Steam 업로드 성공을 확인하지 못했습니다. '
                              + upload_diagnostic(result.stdout, result.returncode)
                              + '. Steam Guard 세션, 항목 소유권 및 네트워크를 확인하세요. 자동 재시도하지 않습니다.')
