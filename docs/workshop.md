@@ -25,7 +25,7 @@ Character Editor의 **좀브렐라**, **좀브그렐라**는 실행 중 생성�
 
 Replace Stuff - Continued의 `Vent_Over2W`는 기존 번역의 `매립형 환풍구`, `매립형 냉방기 (와이드)`와 맞춰 **매립형 환풍구 (와이드)**로 번역합니다. 설명은 `Vent_Over`를 거쳐 순정 `Vent`에서 상속되는 원문을 대조했습니다. 이전 Replace Stuff와 패키지 ID가 다르므로 Continued에만 적용합니다.
 
-RJW 의료 부품 46개에는 기본 게임용 및 Bionic icons용 생성 이미지를 연결했습니다. Bionic icons 활성 여부에 따라 해당 그림을 자동 선택합니다. [아이콘 적용 안내](rjw-icons.md)와 [연결 목록](../Artwork/RimJobWorld/icon-manifest.json)에 색상·경로·생성 기록을 정리했습니다. 원본 조사 자료와 생성 이미지 비교표는 로컬 `work/rjw-icon-audit`에 보관하며 패키징에서 제외합니다.
+RJW 의료 부품 44개와 수지·슬라임에는 기존 의료 상자와 생성한 부위 표식을 연결했습니다. Bionic icons가 없으면 기본 게임의 `HealthItem`을, 활성화되어 있으면 해당 모드의 일반·의수·생체공학·초월공학 상자를 사용합니다. 원본 상자의 외곽선·명암·등급 색상을 유지하고, 14개 부위 마스크만 배포합니다. RJW가 없으면 아이콘 패치도 로드하지 않습니다.
 
 ## 빌드와 설치
 

@@ -12,10 +12,12 @@
         <xpath>Defs/ThingDef[defName="ArchotechAnus"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Anus</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(155,165,148)</color>
+            <colorTwo>(39,41,37)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -30,10 +32,12 @@
         <xpath>Defs/ThingDef[defName="ArchotechBreasts"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Breast</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(155,165,148)</color>
+            <colorTwo>(39,41,37)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -48,10 +52,12 @@
         <xpath>Defs/ThingDef[defName="ArchotechVagina"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Female</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(155,165,148)</color>
+            <colorTwo>(39,41,37)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -66,10 +72,12 @@
         <xpath>Defs/ThingDef[defName="ArchotechPenis"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Male</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(155,165,148)</color>
+            <colorTwo>(39,41,37)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -84,10 +92,12 @@
         <xpath>Defs/ThingDef[defName="BionicAnus"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Anus</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(189,169,118)</color>
+            <colorTwo>(47,42,30)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -102,10 +112,12 @@
         <xpath>Defs/ThingDef[defName="BionicBreasts"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Breast</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(189,169,118)</color>
+            <colorTwo>(47,42,30)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -120,10 +132,12 @@
         <xpath>Defs/ThingDef[defName="BionicVagina"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Female</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(189,169,118)</color>
+            <colorTwo>(47,42,30)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -138,10 +152,12 @@
         <xpath>Defs/ThingDef[defName="BionicPenis"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Male</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(189,169,118)</color>
+            <colorTwo>(47,42,30)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -156,10 +172,12 @@
         <xpath>Defs/ThingDef[defName="Anus" or defName="CloacalAnus" or defName="DemonAnus" or defName="InsectAnus"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Anus</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(190,190,190)</color>
+            <colorTwo>(48,48,48)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -174,10 +192,12 @@
         <xpath>Defs/ThingDef[defName="Breasts" or defName="UdderBreasts"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Breast</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(190,190,190)</color>
+            <colorTwo>(48,48,48)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -192,10 +212,12 @@
         <xpath>Defs/ThingDef[defName="FeaturelessChest"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/FeaturelessChest</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/FeaturelessChest</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(190,190,190)</color>
+            <colorTwo>(48,48,48)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -210,10 +232,12 @@
         <xpath>Defs/ThingDef[defName="CatVagina" or defName="CloacalVagina" or defName="DemonVagina" or defName="DogVagina" or defName="DragonVagina" or defName="HorseVagina" or defName="NarrowVagina" or defName="OvipositorF" or defName="RodentVagina" or defName="Vagina"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Female</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(190,190,190)</color>
+            <colorTwo>(48,48,48)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -228,10 +252,12 @@
         <xpath>Defs/ThingDef[defName="CatPenis" or defName="CloacalPenis" or defName="CrocodilianPenis" or defName="DemonPenis" or defName="DemonTentaclePenis" or defName="DogPenis" or defName="DragonPenis" or defName="HemiPenis" or defName="HorsePenis" or defName="NeedlePenis" or defName="OvipositorM" or defName="Penis" or defName="RaccoonPenis" or defName="RodentPenis"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Male</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(190,190,190)</color>
+            <colorTwo>(48,48,48)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -246,10 +272,12 @@
         <xpath>Defs/ThingDef[defName="HydraulicAnus"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Anus</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Anus</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(154,124,104)</color>
+            <colorTwo>(38,31,26)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -264,10 +292,12 @@
         <xpath>Defs/ThingDef[defName="HydraulicBreasts"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Breast</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Breast</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(154,124,104)</color>
+            <colorTwo>(38,31,26)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -282,10 +312,12 @@
         <xpath>Defs/ThingDef[defName="HydraulicVagina"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Female</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Female</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(154,124,104)</color>
+            <colorTwo>(38,31,26)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -300,10 +332,12 @@
         <xpath>Defs/ThingDef[defName="HydraulicPenis" or defName="PegDick"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/Male</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/Male</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(154,124,104)</color>
+            <colorTwo>(38,31,26)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -318,10 +352,12 @@
         <xpath>Defs/ThingDef[defName="ResinGlob"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/ResinGlob</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/ResinGlob</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
+            <colorTwo>(166,104,18)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>
@@ -336,10 +372,12 @@
         <xpath>Defs/ThingDef[defName="SlimeGlob"]</xpath>
         <value>
           <graphicData Inherit="false">
-            <texPath>KoRimUtility/RJW/Vanilla/SlimeGlob</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <maskPath>KoRimUtility/RJW/Vanilla/Masks/SlimeGlob</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
+            <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
+            <colorTwo>(65,125,77)</colorTwo>
             <drawSize>(0.80,0.80)</drawSize>
           </graphicData>
         </value>

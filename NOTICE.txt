@@ -55,9 +55,11 @@ Core's Vent ThingDef (Ludeon Studios). Source hash is in targets.json.
 Generated RJW medical item artwork
 Visual references: RimWorld HealthItem by Ludeon Studios, and Bionic icons
 by AUTOMATIC (https://steamcommunity.com/sharedfiles/filedetails/?id=1677616980).
-Replacement sprites were produced with the built-in image_gen tool using
-those case styles as references, then resized for the game. They use unique
-KoRimUtility texture paths. The original reference images and upstream code
-are not bundled. Bionic icons is optional; its package ID only selects the
-appropriate generated artwork. Prompts and asset hashes are in the source
-repository under Artwork/RimJobWorld/generation-prompts.json.
+Revision 2 reuses the existing game/mod case texture paths without redrawing
+the cases. Organ masks were regenerated with the built-in image_gen tool,
+using the original Heart, Lung, ReproductiveOrgans masks and preview as
+references. Only generated masks are bundled, at unique KoRimUtility paths.
+Bionic icons is optional; its case textures are referenced only when active.
+Its MIT notice (Copyright (c) 2018 AUTOMATIC1111) is included in
+ThirdPartyNotices/BionicIcons-LICENSE.txt. No upstream code or case textures
+are bundled.
