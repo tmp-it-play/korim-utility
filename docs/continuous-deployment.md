@@ -7,7 +7,7 @@
 ## 한 번 설정할 항목
 
 1. 원격 저장소는 [tmp-it-play/korim-utility](https://github.com/tmp-it-play/korim-utility)입니다. CD 워크플로가 포함된 브랜치를 push합니다.
-2. RimWorld에서 통합 모드를 처음 게시하고 필요한 창작마당 약관에 동의합니다. 게시물 URL의 `id=` 뒤 숫자를 기록합니다. CD는 ID가 없거나 `0`이면 중단하므로 새 항목을 반복 생성하지 않습니다.
+2. 최초 게임 내 게시는 완료했습니다. 기존 [KoRim Utility 게시물](https://steamcommunity.com/sharedfiles/filedetails/?id=3813930171)의 ID `3813930171`을 사용합니다. CD는 ID가 없거나 `0`이면 중단하므로 새 항목을 반복 생성하지 않습니다.
 3. GitHub 저장소 **Settings → Environments → `steam-workshop`** 환경을 만듭니다.
 4. 해당 환경에 아래 값을 설정합니다.
 
@@ -41,6 +41,6 @@ CD는 이 세션을 일회용 Ubuntu 러너에 복원하며 비밀번호나 2FA 
 
 SteamCMD가 성공 메시지와 올바른 게시 ID를 반환해야 성공으로 처리합니다. 반환 코드만으로 성공 처리하지 않습니다. 인증정보 보호를 위해 원시 Steam 로그를 출력하거나 아티팩트로 보관하지 않습니다. 출력 형식이 바뀌어 성공 확인이 실패했다면 창작마당 상태부터 확인하고 재실행 여부를 결정합니다.
 
-설정 파일과 로컬 테스트가 준비되어 있으며 원격 저장소도 연결되어 있습니다. 첫 게시 ID, GitHub 환경/Secrets 설정, 실제 Steam 업로드 검증은 아직 하지 않았습니다.
+설정 파일과 로컬 테스트가 준비되어 있으며 원격 저장소도 연결되어 있습니다. 2026-10-05 게임 내 최초 업로드와 구독 다운로드 파일 대조를 완료했습니다. GitHub 환경/Secrets 설정 및 CI에서의 실제 SteamCMD 업로드는 아직 검증하지 않았습니다.
 
 기술 근거: [Valve 창작마당 SteamCMD 문서](https://partner.steamgames.com/doc/features/workshop/implementation#SteamCmd), [SteamCMD 인증 세션을 이용하는 배포 액션의 설정 설명](https://github.com/m00nl1ght-dev/steam-workshop-deploy#configuration). 이 프로젝트는 해당 외부 액션 대신 자체 Python 스크립트와 Valve SteamCMD를 사용합니다.

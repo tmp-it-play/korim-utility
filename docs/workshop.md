@@ -2,6 +2,8 @@
 
 배포 파일은 **`dist/KoRimUtility.zip` 하나**입니다. `packageId`는 `snowykte0426.korimutility`이며, 모드 목록에도 KoRim Utility 하나만 표시됩니다.
 
+게시물: [KoRim Utility](https://steamcommunity.com/sharedfiles/filedetails/?id=3813930171). 이후 배포는 이 항목을 업데이트합니다.
+
 GitHub Release에서 창작마당을 자동 업데이트하는 설정은 [자동 배포 안내](continuous-deployment.md)를 참조하세요.
 
 ## 선택적 번역
@@ -34,7 +36,9 @@ ZIP 설치 시 압축을 풀어 `KoRimUtility` 폴더를 게임 `Mods`에 넣습
 4. Steam에서 실행한 게임의 모드 업로드 기능으로 게시합니다. 비공개 상태에서 구독 설치 결과를 확인한 후 공개합니다.
 5. 최초 게시 후 생성되는 `About/PublishedFileId.txt`를 보관하고 같은 항목의 업데이트에 사용합니다. 원본이나 예전 별도 모드의 게시 ID를 복사하지 않습니다.
 
-현재 실제 게임 실행과 창작마당 업로드는 하지 않았습니다. 자동 검증은 XML, 번역 키·치환 변수, 네 가지 로드 구성 및 패키지 구조를 확인하며 게임 실행 검증을 대체하지 않습니다.
+2026-10-05 Steam에서 실행한 RimWorld 1.6으로 최초 업로드를 완료하고 공개로 설정했습니다. `Translation`, `1.6` 태그와 상세 소개문을 적용했으며, 구독으로 내려받은 파일 11개(게시 ID 포함)가 업로드 원본과 SHA-256 기준으로 모두 일치함을 확인했습니다. 게시 ID `3813930171`은 로컬 `About/PublishedFileId.txt`에도 보관합니다. Git에는 이 파일을 추적하지 않습니다.
+
+게임의 모드 목록에서 이름·썸네일·설명 인식은 확인했습니다. 네 가지 로드 구성의 실제 플레이와 번역 화면 검증은 아직 하지 않았습니다. 자동 검증은 XML, 번역 키·치환 변수, 네 가지 로드 구성 및 패키지 구조를 확인하며 게임 실행 검증을 대체하지 않습니다.
 
 미리보기 원본은 사용자가 수정한 `Artwork/Preview.svg`입니다. `make preview`로 배포용 PNG를 갱신합니다. 이 명령은 librsvg의 `rsvg-convert`를 사용합니다.
 
