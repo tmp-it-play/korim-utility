@@ -1,0 +1,65 @@
+name: Deploy Steam Workshop
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Build and inspect without uploading to Steam'
+        type: boolean
+        default: true
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: steam-workshop
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || (!github.event.release.prerelease && !github.event.release.draft)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: steam-workshop
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install preview renderer
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin fonts-liberation
+      - name: Build and validate
+        run: make preview check test pack
+      - name: Prepare Workshop content
+        env:
+          STEAM_WORKSHOP_ID: ${{ vars.STEAM_WORKSHOP_ID }}
+          BUILD_REF: ${{ github.ref_name }}
+          BUILD_SHA: ${{ github.sha }}
+        run: python3 tools/workshop.py prepare
+      - name: Save build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KoRimUtility
+          path: dist/KoRimUtility.zip
+          if-no-files-found: error
+      - name: Install SteamCMD
+        if: github.event_name == 'release' || !inputs.dry_run
+        run: |
+          sudo apt-get install -y lib32gcc-s1
+          mkdir -p "$HOME/Steam"
+          curl --fail --show-error --silent --location --retry 3 \
+            https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz \
+            -o "$RUNNER_TEMP/steamcmd.tar.gz"
+          tar -xzf "$RUNNER_TEMP/steamcmd.tar.gz" -C "$HOME/Steam"
+      - name: Update existing Workshop item
+        if: github.event_name == 'release' || !inputs.dry_run
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_CONFIG_VDF: ${{ secrets.STEAM_CONFIG_VDF }}
+          STEAM_WORKSHOP_ID: ${{ vars.STEAM_WORKSHOP_ID }}
+        run: python3 tools/workshop.py upload --steamcmd "$HOME/Steam/steamcmd.sh"
