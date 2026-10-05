@@ -74,6 +74,25 @@ def upload_succeeded(output, published_id):
     return re.search(pattern, output, re.IGNORECASE) is not None
 
 
+def upload_diagnostic(output, returncode):
+    """Report fixed status labels only, never Steam's raw text or credentials."""
+    lowered = output.lower()
+    signals = {
+        'cached_credentials_missing': 'cached credentials not found' in lowered,
+        'using_cached_credentials': 'using cached credentials' in lowered,
+        'login_completed': 'waiting for user info...ok' in lowered,
+        'upload_started': 'uploading content' in lowered or 'preparing update' in lowered,
+        'invalid_password': 'invalid password' in lowered,
+        'guard_required': any(text in lowered for text in (
+            'account logon denied', 'two-factor code', 'enter the current code',
+            'steam guard code', 'authenticator code')),
+        'connection_failed': any(text in lowered for text in (
+            'no connection', 'failed to connect', 'connection timeout')),
+        'access_denied': 'access denied' in lowered or 'insufficient privilege' in lowered,
+    }
+    return f'exit={returncode}; ' + '; '.join(f'{key}={int(value)}' for key, value in signals.items())
+
+
 def upload(steamcmd, manifest, published_id):
     published_id = item_id(published_id)
     username = os.environ.get('STEAM_USERNAME', '')
@@ -102,7 +121,9 @@ def upload(steamcmd, manifest, published_id):
                                 stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, text=True, errors='replace', timeout=600)
         if result.returncode != 0 or not upload_succeeded(result.stdout, published_id):
-            raise ValueError('Steam 업로드 성공을 확인하지 못했습니다. Steam Guard 세션, 항목 소유권 및 네트워크를 확인하세요. 자동 재시도하지 않습니다.')
+            raise ValueError('Steam 업로드 성공을 확인하지 못했습니다. '
+                             + upload_diagnostic(result.stdout, result.returncode)
+                             + '. Steam Guard 세션, 항목 소유권 및 네트워크를 확인하세요. 자동 재시도하지 않습니다.')
     finally:
         config.unlink(missing_ok=True)
     print(f'창작마당 업데이트 완료: https://steamcommunity.com/sharedfiles/filedetails/?id={published_id}')

@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 from zipfile import ZipFile
 
-from tools.workshop import item_id, prepare, quote, upload, upload_succeeded
+from tools.workshop import item_id, prepare, quote, upload, upload_diagnostic, upload_succeeded
 
 
 class WorkshopDeploymentTests(unittest.TestCase):
@@ -69,6 +69,27 @@ class WorkshopDeploymentTests(unittest.TestCase):
                 self.assertNotIn('STEAM_CONFIG_VDF', run.call_args.kwargs['env'])
         self.assertNotIn('session-secret', captured.getvalue())
         self.assertFalse((self.steamcmd.parent / 'config/config.vdf').exists())
+
+    def test_diagnostic_reports_login_failure_without_raw_output(self):
+        diagnostic = upload_diagnostic(
+            "session-secret\nCached credentials not found.\n"
+            "Logging in user 'private-login' ...ERROR (Invalid Password)", 5)
+        self.assertIn('exit=5', diagnostic)
+        self.assertIn('cached_credentials_missing=1', diagnostic)
+        self.assertIn('invalid_password=1', diagnostic)
+        self.assertIn('login_completed=0', diagnostic)
+        self.assertNotIn('session-secret', diagnostic)
+        self.assertNotIn('private-login', diagnostic)
+
+    def test_diagnostic_distinguishes_authenticated_upload_failure(self):
+        diagnostic = upload_diagnostic(
+            'Using cached credentials.\nWaiting for user info...OK\n'
+            'Uploading content...ERROR (Access Denied)\nprivate-path', 9)
+        self.assertIn('using_cached_credentials=1', diagnostic)
+        self.assertIn('login_completed=1', diagnostic)
+        self.assertIn('upload_started=1', diagnostic)
+        self.assertIn('access_denied=1', diagnostic)
+        self.assertNotIn('private-path', diagnostic)
 
     def test_upload_target_mismatch_does_not_start_steam(self):
         manifest = self.prepare()
