@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RJW_Message_BecameHero>{0} is now hero of {1}</RJW_Message_BecameHero>
+  <RJW_Hero_DisabledTip>Hero Mode must be enabled in the Settings first.</RJW_Hero_DisabledTip>
+  <RJW_Hero_Ironman_AlreadyHeroTip>{PAWN_labelShort} is already designated as Hero. Due to Ironman mode being enabled, a new pawn cannot be designated.</RJW_Hero_Ironman_AlreadyHeroTip>
+  <RJW_Hero_AlreadyExistsTip>Another pawn is already designated as Hero.</RJW_Hero_AlreadyExistsTip>
+  <RJW_Hero_AlreadyHeroTip>{PAWN_labelShort} is already designated as Hero. A new pawn can be designated when {PAWN_pronoun} dies.</RJW_Hero_AlreadyHeroTip>
+  <RJW_Hero_DesignateTip>Designate {PAWN_labelShort} as Hero.</RJW_Hero_DesignateTip>
+  <RJW_Hero_DesignateDialog_Title>Designate as &lt;color=yellow&gt;Hero&lt;/color&gt;</RJW_Hero_DesignateDialog_Title>
+  <RJW_Hero_DesignateDialog_Desc>Designating a pawn as &lt;color=yellow&gt;Hero&lt;/color&gt; gives direct control over their sexual choices.</RJW_Hero_DesignateDialog_Desc>
+  <RJW_Hero_DesignateDialog_Text_Normal>A new &lt;color=yellow&gt;Hero&lt;/color&gt; can only be designated after this pawn dies.</RJW_Hero_DesignateDialog_Text_Normal>
+  <RJW_Hero_DesignateDialog_Text_Ironman>The &lt;color=yellow&gt;Hero&lt;/color&gt; can only be designated once per game, because &lt;color=yellow&gt;Hero&lt;/color&gt; Ironman mode is enabled.</RJW_Hero_DesignateDialog_Text_Ironman>
+</LanguageData>

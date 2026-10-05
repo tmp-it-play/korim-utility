@@ -1,0 +1,26 @@
+KoRim Utility
+Korean translations by snowykte0426.
+
+This is one mod with optional translations. Each translation folder loads
+only when its corresponding original mod is active. Neither original mod
+is required to use KoRim Utility. No upstream gameplay definitions,
+assemblies, textures, preview images or Workshop publication IDs are included.
+
+The Cooler
+Target: The Cooler by GodlyAnnihilator (original Cooler by LingLuo).
+https://steamcommunity.com/sharedfiles/filedetails/?id=3221592105
+Package ID: GodlyAnnihilator.TheLowCooler
+Reference: user-supplied the cooler.zip, reviewed 2026-10-05.
+Includes translations of LingCooler.label and LingCooler.description.
+The supplied archive does not specify a mod version or include a license.
+This is an unofficial translation, not a redistribution of the original mod.
+
+RimJobWorld
+Original project by Ed86 and contributors: https://gitgud.io/Ed86/rjw
+Upstream license: MIT, Copyright (c) 2017 semigimp.
+The full upstream notice is in ThirdPartyNotices/RimJobWorld-LICENSE.txt;
+it pertains to RimJobWorld-derived material, not The Cooler.
+Reference revision: ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e (6.2.1).
+Source: 1.6/Languages/English/Keyed/RimJobWorldKeys.xml, reviewed 2026-10-05.
+Includes 10 supplemental UI translations. Existing Korean entries are
+retained except RJW_Message_BecameHero, which was still in English.

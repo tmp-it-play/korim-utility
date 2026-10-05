@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-05",
+  "game_version": "1.6",
+  "targets": [
+    {
+      "name": "The Cooler",
+      "workshop_id": "3221592105",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3221592105",
+      "author": "GodlyAnnihilator",
+      "original_workshop_id": "1414246983",
+      "package_id": "GodlyAnnihilator.TheLowCooler",
+      "status": "translation_game_test_pending",
+      "license": "not_specified_in_archive",
+      "translated_entries": 2,
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "source_archive": "the cooler.zip",
+      "source_archive_sha256": "7655c54da248cf03c3ede8bb9253190c2765979eba3bc3072a4206c97bfa34f1",
+      "source_def_sha256": "c4d663dcf38736398d9b4b8c2507fbcf149aa8faa08f1fa00551347cb830a247",
+      "source_def": "Defs/Buildings_Temperature.xml",
+      "optional": true,
+      "load_condition": "IfModActive: GodlyAnnihilator.TheLowCooler",
+      "content_root": "Translations/TheCooler"
+    },
+    {
+      "name": "RimJobWorld",
+      "url": "https://gitgud.io/Ed86/rjw",
+      "package_id": "rim.job.world",
+      "mod_version": "6.2.1",
+      "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
+      "license": "MIT",
+      "status": "partial_ui_translation_game_test_pending",
+      "translated_entries": 10,
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/RimJobWorld",
+      "load_condition": "IfModActive: rim.job.world"
+    }
+  ]
+}
