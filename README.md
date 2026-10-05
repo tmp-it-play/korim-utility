@@ -7,6 +7,7 @@
 ## 모드 번역 안내
 
 - [The Cooler](https://steamcommunity.com/sharedfiles/filedetails/?id=3221592105)
+- [Character Editor](https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848)
 
 ## 사용 방법
 

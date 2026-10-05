@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_DIRS = ('About', 'Languages', 'Defs', 'Patches', 'Textures', 'Sounds')
 KEY = re.compile(r'^[A-Za-z_][A-Za-z0-9_.-]*$')
 TOKENS = re.compile(r'(?<!\{)\{[^{}]+\}(?!\})|\[[A-Za-z_][A-Za-z0-9_.]*\]|</?[A-Za-z][^<>]*>')
+CHARACTER_EDITOR_ASSEMBLY = 'Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll'
 
 
 def tokens(text):
@@ -185,6 +186,11 @@ def render_catalog(path, output):
 def pack(include_ui=False, root=ROOT):
     check(root)
     files = []
+    if (root / 'Translations/CharacterEditor').is_dir():
+        compatibility = root / CHARACTER_EDITOR_ASSEMBLY
+        if not compatibility.is_file():
+            raise ValueError('Character Editor 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
+        files.append(compatibility)
     for content in content_roots(root):
         for dirname in RUNTIME_DIRS:
             files.extend(p for p in (content / dirname).rglob('*') if p.is_file() and not p.name.startswith('.'))

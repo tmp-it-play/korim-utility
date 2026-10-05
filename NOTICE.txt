@@ -4,7 +4,7 @@ Original KoRim Utility code and translation contributions: MIT; see LICENSE.
 Third-party material remains subject to the notices below.
 
 This is one mod with optional translations. Each translation folder loads
-only when its corresponding original mod is active. Neither original mod
+only when its corresponding original mod is active. No translation target
 is required to use KoRim Utility. No upstream gameplay definitions,
 assemblies, textures, preview images or Workshop publication IDs are included.
 
@@ -24,5 +24,21 @@ The full upstream notice is in ThirdPartyNotices/RimJobWorld-LICENSE.txt;
 it pertains to RimJobWorld-derived material, not The Cooler.
 Reference revision: ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e (6.2.1).
 Source: 1.6/Languages/English/Keyed/RimJobWorldKeys.xml, reviewed 2026-10-05.
-Includes 10 supplemental UI translations. Existing Korean entries are
+Includes 10 supplemental UI translations and 16 Resin-related translations.
+Resin source: the installed 6.2.1 mod's ThingDefs, SexFluidDefs and HediffDefs,
+reviewed 2026-10-05; exact file hashes are recorded in targets.json.
+Existing Korean entries are
 retained except RJW_Message_BecameHero, which was still in English.
+
+Character Editor
+Original project by void:
+https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848
+Package ID: void.charactereditor
+Reference: installed v1.6 assembly, advertised as 1.6.3 (2025-07-21);
+About.xml modVersion is 1.6.1. Reviewed 2026-10-05.
+Includes 6 translations for Zombrella, Zombgrella and the entry action.
+The installation does not include a license file. Original code and assets
+are not redistributed. KoRimUtility.CharacterEditor.dll is our own
+compatibility code under LICENSE, not the original CharacterEditor.dll.
+RimWorld reference assemblies and Harmony are build dependencies only;
+neither is included in the distribution.

@@ -4,5 +4,6 @@
     <li>/</li>
     <li IfModActive="GodlyAnnihilator.TheLowCooler">Translations/TheCooler</li>
     <li IfModActive="rim.job.world">Translations/RimJobWorld</li>
+    <li IfModActive="void.charactereditor">Translations/CharacterEditor</li>
   </v1.6>
 </loadFolders>

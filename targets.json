@@ -29,13 +29,42 @@
       "mod_version": "6.2.1",
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
-      "status": "partial_ui_translation_game_test_pending",
-      "translated_entries": 10,
+      "status": "partial_translation_game_test_pending",
+      "translated_entries": 26,
+      "resin_source": "installed_mod_6.2.1",
+      "resin_source_sha256": {
+        "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
+        "1.6/Defs/ThingDefs/Filth_Cum.xml": "adcfa78e8a3b130d794d151ce66c065c88a378db2b57feed70cce43fb1524b2c",
+        "1.6/Defs/SexFluidDefs/Fluids.xml": "f367c9fd37c9b3d560513757b1b76359c5058b43cd7d04448a7b344e29d50ce1",
+        "1.6/Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Resin.xml": "38043a4dec0b4c5414f86ce9a96023528d3201cfb53e79b526f4f6e72559e0b4"
+      },
       "mod_root": ".",
       "distribution": "integrated_package",
       "optional": true,
       "content_root": "Translations/RimJobWorld",
       "load_condition": "IfModActive: rim.job.world"
+    },
+    {
+      "name": "Character Editor",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848",
+      "workshop_id": "1874644848",
+      "author": "void",
+      "package_id": "void.charactereditor",
+      "mod_version": "1.6.1",
+      "description_version": "1.6.3 (2025-07-21)",
+      "license": "not_specified_in_installation",
+      "status": "building_translation_game_test_pending",
+      "translated_entries": 6,
+      "source_assembly": "v1.6/Assemblies/CharacterEditor.dll",
+      "source_assembly_sha256": "bff3b2268321f8c9566e15cbbd71ca6f975e9139f976c8bd4a9e0ca924c5b457",
+      "source_def": "Defs/CharEditor.xml",
+      "source_def_sha256": "fa4c9d5bd272c150ee9d4da47cf965b3398537d5cee89f5a985f7e3d327cde59",
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/CharacterEditor",
+      "load_condition": "IfModActive: void.charactereditor",
+      "compatibility_assembly": "Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll"
     }
   ]
 }

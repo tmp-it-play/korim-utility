@@ -33,8 +33,11 @@ jobs:
           python-version: '3.12'
       - name: Install preview renderer
         run: sudo apt-get update && sudo apt-get install -y librsvg2-bin fonts-liberation
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
       - name: Build and validate
-        run: make preview check test pack
+        run: make preview check test test-compatibility pack
       - name: Prepare Workshop content
         env:
           STEAM_WORKSHOP_ID: ${{ vars.STEAM_WORKSHOP_ID }}

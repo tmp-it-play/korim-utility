@@ -1,7 +1,8 @@
 PYTHON ?= python3
+DOTNET ?= dotnet
 .DEFAULT_GOAL := check
 
-.PHONY: check test pack install preview
+.PHONY: check test test-compatibility compatibility pack install preview
 preview:
 	rsvg-convert Artwork/Preview.svg -o About/Preview.png
 
@@ -11,8 +12,14 @@ check:
 test:
 	$(PYTHON) -m unittest discover -s tests -v
 
-pack: check
+compatibility:
+	$(DOTNET) build Source/KoRimUtility.CharacterEditor -c Release
+
+test-compatibility:
+	$(DOTNET) run --project tests/CharacterEditorCompatibility -c Release -- "$(CURDIR)"
+
+pack: check compatibility
 	$(PYTHON) tools/mod.py pack
 
-install: check
+install: check compatibility
 	$(PYTHON) tools/mod.py install --mods-dir "$(MODS_DIR)"
