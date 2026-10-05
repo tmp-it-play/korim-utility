@@ -38,7 +38,8 @@ class WorkshopDeploymentTests(unittest.TestCase):
         self.assertIn(quote(str((self.destination / 'KoRimUtility').resolve())), text)
         self.assertNotIn('"visibility"', text)
         self.assertIn('test \\"note\\"', text)
-        self.assertIn('한국어\\n설명', text)
+        self.assertIn('한국어\n설명', text)
+        self.assertNotIn('한국어\\n설명', text)
         self.assertEqual((self.destination / 'KoRimUtility/About/PublishedFileId.txt').read_text().strip(), '123456789')
 
     def test_creation_and_invalid_ids_rejected(self):
@@ -56,7 +57,12 @@ class WorkshopDeploymentTests(unittest.TestCase):
     def test_only_matching_upload_success_is_accepted(self):
         self.assertTrue(upload_succeeded('Success. Published item 123456789.', '123456789'))
         self.assertTrue(upload_succeeded('Success. Published File ID: 123456789', '123456789'))
-        for output in ('Success. Logged in.', 'Success. Published item 1234567890.', 'ERROR! Upload failed.'):
+        self.assertTrue(upload_succeeded(
+            'Preparing update...\nPreparing content...\nUploading content...\n'
+            'Uploading preview image...\nCommitting update...\nSuccess.', '123456789'))
+        for output in ('Success. Logged in.', 'Success.', 'Success. Published item 1234567890.',
+                       'ERROR! Upload failed.', 'Preparing update...\nSuccess.',
+                       'Preparing update...\nERROR! Upload failed.\nCommitting update...\nSuccess.'):
             self.assertFalse(upload_succeeded(output, '123456789'))
 
     def test_failed_upload_does_not_log_session_and_cleans_config(self):
@@ -98,6 +104,18 @@ class WorkshopDeploymentTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, '대상 ID'):
                     upload(self.steamcmd, manifest, '987654321')
                 run.assert_not_called()
+
+    def test_success_for_changed_manifest_target_is_rejected(self):
+        manifest = self.prepare()
+        def change_target(*args, **kwargs):
+            manifest.write_text(manifest.read_text(encoding='utf-8').replace('123456789', '987654321'),
+                                encoding='utf-8')
+            return subprocess.CompletedProcess([], 0, 'Preparing update...\nCommitting update...\nSuccess.')
+        with patch.dict('os.environ', {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'session-secret'}):
+            with patch('tools.workshop.subprocess.run', side_effect=change_target):
+                with self.assertRaisesRegex(ValueError, '성공을 확인하지'):
+                    upload(self.steamcmd, manifest, '123456789')
+        self.assertFalse((self.steamcmd.parent / 'config/config.vdf').exists())
 
     def test_timeout_also_cleans_session(self):
         manifest = self.prepare()

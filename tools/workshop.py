@@ -23,7 +23,8 @@ def item_id(value):
 def quote(value):
     if any(ord(char) < 32 and char not in '\n\r\t' for char in value):
         raise ValueError('VDF 값에 지원하지 않는 제어 문자가 있습니다.')
-    return '"' + value.replace('\\', '\\\\').replace('"', '\\"').replace('\r', '').replace('\n', '\\n').replace('\t', '\\t') + '"'
+    # Workshop KeyValues preserves literal newlines; backslash-n is published as text.
+    return '"' + value.replace('\\', '\\\\').replace('"', '\\"').replace('\r', '') + '"'
 
 
 def prepare(archive, destination, published_id, change_note, description):
@@ -69,9 +70,14 @@ def prepare(archive, destination, published_id, change_note, description):
 
 
 def upload_succeeded(output, published_id):
-    # SteamCMD has used both message forms; an exit code alone is insufficient.
+    # Older clients include the ID. Current clients print a standalone Success.
+    # only after Committing update; the caller also checks the manifest target.
     pattern = r'Success\.\s+Published\s+(?:item\s+|File ID:\s*)' + re.escape(published_id) + r'\b'
-    return re.search(pattern, output, re.IGNORECASE) is not None
+    if re.search(pattern, output, re.IGNORECASE):
+        return True
+    progress = re.search(r'Preparing update\.\.\..*?Committing update\.\.\.\s*Success\.',
+                         output, re.IGNORECASE | re.DOTALL)
+    return progress is not None and 'error!' not in progress.group(0).lower()
 
 
 def upload_diagnostic(output, returncode):
@@ -120,7 +126,8 @@ def upload(steamcmd, manifest, published_id):
         result = subprocess.run(command, cwd=steamcmd.parent, env=environment,
                                 stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, text=True, errors='replace', timeout=600)
-        if result.returncode != 0 or not upload_succeeded(result.stdout, published_id):
+        final_target = re.findall(r'"publishedfileid"\s+"([0-9]+)"', manifest.read_text(encoding='utf-8'))
+        if result.returncode != 0 or final_target != [published_id] or not upload_succeeded(result.stdout, published_id):
             raise ValueError('Steam 업로드 성공을 확인하지 못했습니다. '
                              + upload_diagnostic(result.stdout, result.returncode)
                              + '. Steam Guard 세션, 항목 소유권 및 네트워크를 확인하세요. 자동 재시도하지 않습니다.')
