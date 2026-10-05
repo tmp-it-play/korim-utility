@@ -61,6 +61,8 @@ class WorkshopDeploymentTests(unittest.TestCase):
             'Preparing update...\nPreparing content...\nUploading content...\n'
             'Uploading preview image...\nCommitting update...\nSuccess.', '123456789'))
         self.assertTrue(upload_succeeded('Preparing update...\nSuccess.\n', '123456789'))
+        self.assertTrue(upload_succeeded('Preparing update...\nCommitting update...\nSuccess!\n', '123456789'))
+        self.assertTrue(upload_succeeded('Preparing update...\nSuccess\n', '123456789'))
         self.assertTrue(upload_succeeded(
             '\x1b[0mPreparing update...\n\x1b[32mSuccess.\x1b[0m\n', '123456789'))
         for output in ('Success. Logged in.', 'Success.', 'Success. Published item 1234567890.',

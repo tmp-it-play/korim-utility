@@ -80,9 +80,9 @@ def upload_succeeded(output, published_id):
     # The caller verifies the manifest target both before and after SteamCMD.
     output = plain_steam_output(output)
     pattern = r'Success\.\s+Published\s+(?:item\s+|File ID:\s*)' + re.escape(published_id) + r'\b'
-    if re.search(pattern, output, re.IGNORECASE):
-        return True
-    progress = re.search(r'Preparing update\.\.\..*?\bSuccess\.[ \t]*(?:\r?\n|$)',
+    if re.search(r'Success[.!]?\s+Published\b', output, re.IGNORECASE):
+        return re.search(pattern, output, re.IGNORECASE) is not None
+    progress = re.search(r'Preparing update\.\.\..*?\bSuccess[.!]?[ \t]*(?:\r?\n|$)',
                          output, re.IGNORECASE | re.DOTALL)
     return progress is not None and 'error!' not in progress.group(0).lower()
 
@@ -98,7 +98,7 @@ def upload_diagnostic(output, returncode):
         'using_cached_credentials': 'using cached credentials' in lowered,
         'login_completed': 'waiting for user info...ok' in lowered,
         'upload_started': 'uploading content' in lowered or 'preparing update' in lowered,
-        'success_message_seen': bool(re.search(r'\bSuccess\.(?=\s|$)', output, re.IGNORECASE)),
+        'success_message_seen': bool(re.search(r'\bSuccess[.!]?(?=\s|$)', output, re.IGNORECASE)),
         'success_word_present': 'success' in lowered,
         'error_word_present': 'error' in lowered,
         'invalid_password': 'invalid password' in lowered,
