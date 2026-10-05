@@ -69,22 +69,31 @@ def prepare(archive, destination, published_id, change_note, description):
     print(f'업로드 준비 완료: {content} (기존 항목 {published_id})')
 
 
+def plain_steam_output(output):
+    # Linux SteamCMD emits ANSI colors even when its output is redirected.
+    return re.sub(r'\x1b\[[0-?]*[ -/]*[@-~]', '', output)
+
+
 def upload_succeeded(output, published_id):
     # Older clients include the ID. Current clients print a standalone Success.
     # after Preparing update; quick uploads may skip intermediate progress labels.
     # The caller verifies the manifest target both before and after SteamCMD.
+    output = plain_steam_output(output)
     pattern = r'Success\.\s+Published\s+(?:item\s+|File ID:\s*)' + re.escape(published_id) + r'\b'
     if re.search(pattern, output, re.IGNORECASE):
         return True
-    progress = re.search(r'Preparing update\.\.\..*?\bSuccess\.(?=\s|$)',
+    progress = re.search(r'Preparing update\.\.\..*?\bSuccess\.[ \t]*(?:\r?\n|$)',
                          output, re.IGNORECASE | re.DOTALL)
     return progress is not None and 'error!' not in progress.group(0).lower()
 
 
 def upload_diagnostic(output, returncode):
     """Report fixed status labels only, never Steam's raw text or credentials."""
+    had_ansi = '\x1b[' in output
+    output = plain_steam_output(output)
     lowered = output.lower()
     signals = {
+        'ansi_present': had_ansi,
         'cached_credentials_missing': 'cached credentials not found' in lowered,
         'using_cached_credentials': 'using cached credentials' in lowered,
         'login_completed': 'waiting for user info...ok' in lowered,
