@@ -43,14 +43,24 @@ compatibility code under LICENSE, not the original CharacterEditor.dll.
 RimWorld reference assemblies and Harmony are build dependencies only;
 neither is included in the distribution.
 
+Replace Stuff
+https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680
+Original author: Uuugggg. Package ID: Uuugggg.ReplaceStuff.
+Reference: installed Defs/OverWallCoolerVent.xml, reviewed 2026-10-05.
+Includes shared translations for Cooler_Over, Cooler_Over2W and Vent_Over.
+The installation contains no license file. Original code/assets are not
+redistributed. Source hashes are recorded in targets.json.
+
 Replace Stuff - Continued
 https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009
 Package ID: Memegoddess.ReplaceStuff
 Upstream license: MIT, Copyright (c) [2025] [Alex Tearse-Doyle].
 The full notice is in ThirdPartyNotices/ReplaceStuff-LICENSE.txt.
 Reference: installed 1.6/Defs/OverWallCoolerVent.xml, reviewed 2026-10-05.
-Includes the Vent_Over2W label and its description inherited from RimWorld
-Core's Vent ThingDef (Ludeon Studios). Source hash is in targets.json.
+Includes shared translations for Cooler_Over, Cooler_Over2W and Vent_Over,
+plus the Continued-only Vent_Over2W label and description. Descriptions
+are inherited from RimWorld Core's Cooler/Vent ThingDefs (Ludeon Studios).
+Source hashes are in targets.json.
 
 Generated RJW medical item artwork
 Visual references: RimWorld HealthItem by Ludeon Studios, and Bionic icons

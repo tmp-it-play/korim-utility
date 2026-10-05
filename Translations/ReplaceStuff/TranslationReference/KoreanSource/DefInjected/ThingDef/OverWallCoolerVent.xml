@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <Vent_Over2W.label>over-wall vent (wide)</Vent_Over2W.label>
-  <!-- Inherited through Vent_Over from Core's Vent ThingDef. -->
-  <Vent_Over2W.description>A vent for equalizing the temperature between two rooms without allowing people to walk between them.</Vent_Over2W.description>
+  <Cooler_Over.label>over-wall cooler</Cooler_Over.label>
+  <!-- Both mods inherit these descriptions from Core's Cooler and Vent ThingDefs. -->
+  <Cooler_Over.description>An air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</Cooler_Over.description>
+  <Cooler_Over2W.label>over-wall cooler (wide)</Cooler_Over2W.label>
+  <Cooler_Over2W.description>An air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer.</Cooler_Over2W.description>
+  <Vent_Over.label>over-wall vent</Vent_Over.label>
+  <Vent_Over.description>A vent for equalizing the temperature between two rooms without allowing people to walk between them.</Vent_Over.description>
 </LanguageData>

@@ -14,15 +14,17 @@ from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, M
 
 
 class IntegratedModTests(unittest.TestCase):
-    def test_sixty_four_optional_mod_combinations(self):
+    def test_one_hundred_twenty_eight_optional_mod_combinations(self):
         entries = ET.parse(ROOT / 'LoadFolders.xml').findall('v1.6/li')
         cooler = 'GodlyAnnihilator.TheLowCooler'
         rjw = 'rim.job.world'
         editor = 'void.charactereditor'
         replace = 'Memegoddess.ReplaceStuff'
+        original_replace = 'Uuugggg.ReplaceStuff'
         bionic_icons = 'automatic.bionicicons'
         harmony = 'brrainz.harmony'
-        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, bionic_icons: 0, harmony: 0}
+        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, original_replace: 0,
+                  bionic_icons: 0, harmony: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:
             with self.subTest(active=active):
@@ -33,7 +35,9 @@ class IntegratedModTests(unittest.TestCase):
                     return (not any_of or bool(any_of & active)) and all_of <= active and not (none_of & active)
                 roots = [ROOT if n.text == '/' else ROOT / n.text for n in entries if enabled(n)]
                 translations = combined_language(roots, 'Korean')
-                self.assertEqual(len(translations), 3 + sum(counts[mod] for mod in active))
+                has_replace = bool({replace, original_replace} & active)
+                self.assertEqual(len(translations), 3 + sum(counts[mod] for mod in active)
+                                 + (6 if has_replace else 0))
                 self.assertEqual(('DefInjected/ThingDef', 'LingCooler.label') in translations,
                                  cooler in active)
                 self.assertEqual(('Keyed', 'RJW_Message_BecameHero') in translations, rjw in active)
@@ -44,6 +48,14 @@ class IntegratedModTests(unittest.TestCase):
                 self.assertEqual(('DefInjected/JobDef', 'EnterZGrave.reportString') in translations, editor in active)
                 self.assertEqual(ROOT / 'Translations/CharacterEditor' in roots, editor in active)
                 self.assertEqual(('DefInjected/ThingDef', 'Vent_Over2W.label') in translations, replace in active)
+                for def_name in ('Cooler_Over', 'Cooler_Over2W', 'Vent_Over'):
+                    for field in ('label', 'description'):
+                        self.assertEqual(('DefInjected/ThingDef', f'{def_name}.{field}') in translations,
+                                         has_replace)
+                self.assertEqual(roots.count(ROOT / 'Translations/ReplaceStuff'), int(has_replace))
+                self.assertEqual(ROOT / 'Translations/ReplaceStuffContinued' in roots, replace in active)
+                if original_replace in active and replace not in active:
+                    self.assertFalse(any(key.startswith('Vent_Over2W.') for _, key in translations))
                 self.assertEqual(ROOT / 'Integrations/RimJobWorld/Vanilla' in roots,
                                  rjw in active and bionic_icons not in active)
                 self.assertEqual(ROOT / 'Integrations/RimJobWorld/BionicIcons' in roots,

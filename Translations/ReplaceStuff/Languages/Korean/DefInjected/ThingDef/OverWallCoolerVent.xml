@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <Vent_Over2W.label>매립형 환풍구 (와이드)</Vent_Over2W.label>
-  <Vent_Over2W.description>사람이 통과할 수는 없지만, 두 방 사이의 온도를 같게 맞춰 주는 환풍구입니다.</Vent_Over2W.description>
+  <Cooler_Over.label>매립형 냉방기</Cooler_Over.label>
+  <Cooler_Over.description>벽에 설치하는 냉방기입니다. 한쪽에서는 찬 공기가 나오고 반대쪽으로는 뜨거운 공기가 배출됩니다. 여름철에 방을 시원하게 하거나 냉동고를 만드는 데 사용할 수 있습니다.</Cooler_Over.description>
+  <Cooler_Over2W.label>매립형 냉방기 (와이드)</Cooler_Over2W.label>
+  <Cooler_Over2W.description>벽에 설치하는 냉방기입니다. 한쪽에서는 찬 공기가 나오고 반대쪽으로는 뜨거운 공기가 배출됩니다. 여름철에 방을 시원하게 하거나 냉동고를 만드는 데 사용할 수 있습니다.</Cooler_Over2W.description>
+  <Vent_Over.label>매립형 환풍구</Vent_Over.label>
+  <Vent_Over.description>사람이 통과할 수는 없지만, 두 방 사이의 온도를 같게 맞춰 주는 환풍구입니다.</Vent_Over.description>
 </LanguageData>

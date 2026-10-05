@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Vent_Over2W.label>over-wall vent (wide)</Vent_Over2W.label>
+  <!-- Inherited through Vent_Over from Core's Vent ThingDef. -->
+  <Vent_Over2W.description>A vent for equalizing the temperature between two rooms without allowing people to walk between them.</Vent_Over2W.description>
+</LanguageData>
