@@ -1,5 +1,7 @@
 KoRim Utility
 Korean translations by snowykte0426.
+Original KoRim Utility code and translation contributions: MIT; see LICENSE.
+Third-party material remains subject to the notices below.
 
 This is one mod with optional translations. Each translation folder loads
 only when its corresponding original mod is active. Neither original mod

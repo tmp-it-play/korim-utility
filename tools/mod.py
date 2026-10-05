@@ -143,7 +143,7 @@ def render_catalog(path, output):
     files, seen, count = {}, set(), 0
     for row in payload['entries']:
         rel = Path(row['file'])
-        if rel.is_absolute() or '..' in rel.parts or '\\' in str(rel) or rel.suffix != '.xml':
+        if rel.is_absolute() or '..' in rel.parts or '\\' in row['file'] or rel.suffix != '.xml':
             raise ValueError(f'잘못된 파일 경로: {rel}')
         if not ((len(rel.parts) >= 2 and rel.parts[0] == 'Keyed') or
                 (len(rel.parts) >= 3 and rel.parts[0] == 'DefInjected')):
