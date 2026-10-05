@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 26,
+      "translated_entries": 60,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -42,7 +42,15 @@
       "distribution": "integrated_package",
       "optional": true,
       "content_root": "Translations/RimJobWorld",
-      "load_condition": "IfModActive: rim.job.world"
+      "load_condition": "IfModActive: rim.job.world",
+      "tab_translation_status": "runtime_verified",
+      "tab_source_sha256": {
+        "1.6/Defs/RJWTab/PawnTableDefs.xml": "9c2ed92131c6b569a9a12f9452dd838b74808d8765d6768a404dca81b02a2284",
+        "1.6/Defs/RJWTab/PawnColumnDefs/Icons.xml": "89b2c17ba5768e469b316ee8fca9c550a5658a5d1d4024580249b4e5dd102ef6",
+        "1.6/Defs/RJWTab/PawnColumnDefs/Checkboxes.xml": "be7ac9012dd9c483516a254e0c2c26eddbe9c9e5a83932fe995e07b222c6ff1a",
+        "1.6/Languages/English/Keyed/RJWMainTab.xml": "06522ae86c9c27408a840aa778393a9714ab91c8410310a0fc63a15c47470d20",
+        "1.6/Languages/English/Keyed/RimJobWorldKeys.xml": "d4bd2dae6b5eecf47fc83bc55f2fac1798916eedc3cfc8512d51a1e40d293ba7"
+      }
     },
     {
       "name": "Character Editor",
@@ -53,8 +61,8 @@
       "mod_version": "1.6.1",
       "description_version": "1.6.3 (2025-07-21)",
       "license": "not_specified_in_installation",
-      "status": "building_and_menu_translation_game_test_pending",
-      "translated_entries": 8,
+      "status": "ui_translation_runtime_verified",
+      "translated_entries": 560,
       "source_assembly": "v1.6/Assemblies/CharacterEditor.dll",
       "source_assembly_sha256": "bff3b2268321f8c9566e15cbbd71ca6f975e9139f976c8bd4a9e0ca924c5b457",
       "source_def": "Defs/CharEditor.xml",

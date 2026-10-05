@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PawnColumnWorker_RJWGender_IsHerm>Herm</PawnColumnWorker_RJWGender_IsHerm>
+  <PawnColumnWorker_IsSlave>Is pawn Slave?</PawnColumnWorker_IsSlave>
+  <PawnColumnWorker_IsPrisoner>Is pawn Prisoner?</PawnColumnWorker_IsPrisoner>
+  <PawnColumnWorker_IsComfort>Is pawn Comfort Pawn?</PawnColumnWorker_IsComfort>
+  <PawnColumnWorker_IsBreeder>Is pawn Breeder?</PawnColumnWorker_IsBreeder>
+  <RJW_BreedAnimal_SettingDisabledTip>Breeding is disabled in the mod settings.\nEnable 'Animal-on-Animal' to designate animals for breeding.</RJW_BreedAnimal_SettingDisabledTip>
+  <RJW_BreedAnimal_DisabledTip>{PAWN_labelShort} cannot be designated for breeding.</RJW_BreedAnimal_DisabledTip>
+  <RJW_BreedAnimal_OnTip>{PAWN_labelShort} is currently designated for breeding.\n\nClick here to undesignate.</RJW_BreedAnimal_OnTip>
+  <RJW_BreedAnimal_OffTip>{PAWN_labelShort} is not designated for breeding.\n\nClick here to designate.</RJW_BreedAnimal_OffTip>
+  <RJW_BreedHumanlike_SettingDisabledTip>Bestiality is disabled in the mod settings.\nEnable 'Bestiality' to designate pawns for breeding.</RJW_BreedHumanlike_SettingDisabledTip>
+  <RJW_BreedHumanlike_DisabledTip>{PAWN_labelShort} will never agree to be a breeder, since {PAWN_pronoun} is not a zoophile.</RJW_BreedHumanlike_DisabledTip>
+  <RJW_BreedHumanlike_OnTip>{PAWN_labelShort} is currently designated for breeding.\n\nClick here to undesignate.</RJW_BreedHumanlike_OnTip>
+  <RJW_BreedHumanlike_OffTip>{PAWN_labelShort} is not designated for breeding.\n\nClick here to designate.</RJW_BreedHumanlike_OffTip>
+  <RJW_BreederAnimal_SettingDisabledTip>Breeding is disabled in the mod settings.\nEnable 'Animal-on-Animal' to designate breeder animals.</RJW_BreederAnimal_SettingDisabledTip>
+  <RJW_BreederAnimal_DisabledTip>{PAWN_labelShort} cannot be designated as a breeder.</RJW_BreederAnimal_DisabledTip>
+  <RJW_BreederAnimal_OnTip>{PAWN_labelShort} is currently designated as a breeder.\n\nClick here to undesignate.</RJW_BreederAnimal_OnTip>
+  <RJW_BreederAnimal_OffTip>{PAWN_labelShort} is not designated as a breeder.\n\nClick here to designate.</RJW_BreederAnimal_OffTip>
+  <RJW_Comfort_SettingDisabledTip>Comfort pawns are disabled in the mod settings.\nEnable 'Rape' to designate comfort pawns.</RJW_Comfort_SettingDisabledTip>
+  <RJW_Comfort_DisabledTip>{PAWN_labelShort} will never agree to be a comfort pawn, since {PAWN_pronoun} is not a masochist.</RJW_Comfort_DisabledTip>
+  <RJW_Comfort_OnTip>{PAWN_labelShort} is currently designated as a comfort pawn.\n\nClick here to undesignate.</RJW_Comfort_OnTip>
+  <RJW_Comfort_OffTip>{PAWN_labelShort} is not designated as a comfort pawn.\n\nClick here to designate.</RJW_Comfort_OffTip>
+</LanguageData>

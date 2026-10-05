@@ -23,7 +23,7 @@ class IntegratedModTests(unittest.TestCase):
         original_replace = 'Uuugggg.ReplaceStuff'
         bionic_icons = 'automatic.bionicicons'
         harmony = 'brrainz.harmony'
-        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, original_replace: 0,
+        counts = {cooler: 2, rjw: 60, editor: 560, replace: 2, original_replace: 0,
                   bionic_icons: 0, harmony: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:

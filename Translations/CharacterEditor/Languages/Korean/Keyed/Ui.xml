@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.CE.UI.MUTATION_TIP>변이체로 변환\n[CTRL]을 누르면 무작위 신체 강화도 추가합니다.</KoRimUtility.CE.UI.MUTATION_TIP>
+  <KoRimUtility.CE.UI.OVERWRITE_EXISTING>기존 내용을 덮어쓸까요?</KoRimUtility.CE.UI.OVERWRITE_EXISTING>
+  <KoRimUtility.CE.UI.FLIP>선택 반전</KoRimUtility.CE.UI.FLIP>
+  <KoRimUtility.CE.UI.WRONGPAWN>같은 폰을 선택할 수 없습니다. 다른 폰이나 분류를 선택하세요.</KoRimUtility.CE.UI.WRONGPAWN>
+  <KoRimUtility.CE.UI.ABILITIES>능력</KoRimUtility.CE.UI.ABILITIES>
+  <KoRimUtility.CE.UI.ACTIVATEPLACINGMODE>배치 모드 켜기</KoRimUtility.CE.UI.ACTIVATEPLACINGMODE>
+  <KoRimUtility.CE.UI.ADD>추가</KoRimUtility.CE.UI.ADD>
+  <KoRimUtility.CE.UI.ADD_GENE>유전자 추가</KoRimUtility.CE.UI.ADD_GENE>
+  <KoRimUtility.CE.UI.ADD_HEDIFF>건강 상태</KoRimUtility.CE.UI.ADD_HEDIFF>
+  <KoRimUtility.CE.UI.ADD_THOUGHT>기억 추가</KoRimUtility.CE.UI.ADD_THOUGHT>
+  <KoRimUtility.CE.UI.ADD_TRAIT>특성</KoRimUtility.CE.UI.ADD_TRAIT>
+  <KoRimUtility.CE.UI.ADD_WEAPON>무기 추가</KoRimUtility.CE.UI.ADD_WEAPON>
+  <KoRimUtility.CE.UI.ADDICTIONCHANCEFACTOR>중독 확률 계수</KoRimUtility.CE.UI.ADDICTIONCHANCEFACTOR>
+  <KoRimUtility.CE.UI.ADDONS_INFO>인덱스 값은 폰마다 적용됩니다. 표시 크기와 성별 활성화 설정은 종족 전체에 적용됩니다. </KoRimUtility.CE.UI.ADDONS_INFO>
+  <KoRimUtility.CE.UI.ADDONS_INFO2> - 종족 전체에 적용한 변경은 현재 게임 실행 중에만 유지됩니다!</KoRimUtility.CE.UI.ADDONS_INFO2>
+  <KoRimUtility.CE.UI.ADDSTAT>능력치 추가</KoRimUtility.CE.UI.ADDSTAT>
+  <KoRimUtility.CE.UI.ALL>전체</KoRimUtility.CE.UI.ALL>
+  <KoRimUtility.CE.UI.ALLCUSTOMSWILLBEDELEATED>사용자 지정 무기·의복·아이템을 포함한 모든 사용자 지정 데이터를 삭제합니다. 계속할까요?</KoRimUtility.CE.UI.ALLCUSTOMSWILLBEDELEATED>
+  <KoRimUtility.CE.UI.ALLSLOTSWILLBECLEARED>모든 저장 슬롯을 비웁니다. 계속할까요?</KoRimUtility.CE.UI.ALLSLOTSWILLBECLEARED>
+  <KoRimUtility.CE.UI.ALLSOUNDS>모든 소리</KoRimUtility.CE.UI.ALLSOUNDS>
+  <KoRimUtility.CE.UI.ALWAYS_SKIP>다시 묻지 않기</KoRimUtility.CE.UI.ALWAYS_SKIP>
+  <KoRimUtility.CE.UI.ANAESTHETIZE>마취</KoRimUtility.CE.UI.ANAESTHETIZE>
+  <KoRimUtility.CE.UI.ANIMAL>동물</KoRimUtility.CE.UI.ANIMAL>
+  <KoRimUtility.CE.UI.ANIMALDENSITY>동물 밀도</KoRimUtility.CE.UI.ANIMALDENSITY>
+  <KoRimUtility.CE.UI.APPARELLAYER>의복 착용 층</KoRimUtility.CE.UI.APPARELLAYER>
+  <KoRimUtility.CE.UI.APPARELTAGS>의복 태그</KoRimUtility.CE.UI.APPARELTAGS>
+  <KoRimUtility.CE.UI.APPLYDAMAGETOEXPLOSIONCELLNEIGHBORS>폭발 범위 주변 칸에도 피해 적용</KoRimUtility.CE.UI.APPLYDAMAGETOEXPLOSIONCELLNEIGHBORS>
+  <KoRimUtility.CE.UI.APTITUDE>기술 적성</KoRimUtility.CE.UI.APTITUDE>
+  <KoRimUtility.CE.UI.ARCHITECAPSULES>초월공학 캡슐</KoRimUtility.CE.UI.ARCHITECAPSULES>
+  <KoRimUtility.CE.UI.ATTENTION>주의</KoRimUtility.CE.UI.ATTENTION>
+  <KoRimUtility.CE.UI.AUFDERKARTE>지도 위</KoRimUtility.CE.UI.AUFDERKARTE>
+  <KoRimUtility.CE.UI.BACKUPCONTAINER>성간 보관함</KoRimUtility.CE.UI.BACKUPCONTAINER>
+  <KoRimUtility.CE.UI.BEAMDAMAGEDEF>광선 피해 유형 </KoRimUtility.CE.UI.BEAMDAMAGEDEF>
+  <KoRimUtility.CE.UI.BEAMFULLWIDTHRANGE>광선 최대 너비 거리</KoRimUtility.CE.UI.BEAMFULLWIDTHRANGE>
+  <KoRimUtility.CE.UI.BEAMSTREUUNG>광선 분산</KoRimUtility.CE.UI.BEAMSTREUUNG>
+  <KoRimUtility.CE.UI.BEAMTARGETGROUND>광선으로 지면 조준</KoRimUtility.CE.UI.BEAMTARGETGROUND>
+  <KoRimUtility.CE.UI.BEARD>수염</KoRimUtility.CE.UI.BEARD>
+  <KoRimUtility.CE.UI.BEARDTAGS>수염 태그</KoRimUtility.CE.UI.BEARDTAGS>
+  <KoRimUtility.CE.UI.BIOAGE>생물학적 나이</KoRimUtility.CE.UI.BIOAGE>
+  <KoRimUtility.CE.UI.BIOCODED> 생체인증됨</KoRimUtility.CE.UI.BIOCODED>
+  <KoRimUtility.CE.UI.BIRTHDAY>생일</KoRimUtility.CE.UI.BIRTHDAY>
+  <KoRimUtility.CE.UI.BLADELINKTRAITS>연결 무기 특성</KoRimUtility.CE.UI.BLADELINKTRAITS>
+  <KoRimUtility.CE.UI.BODYPARTGROUPS>덮는 신체 부위</KoRimUtility.CE.UI.BODYPARTGROUPS>
+  <KoRimUtility.CE.UI.BODYSIZEFACTOR>신체 크기 계수</KoRimUtility.CE.UI.BODYSIZEFACTOR>
+  <KoRimUtility.CE.UI.BODYWIDTH>몸 너비</KoRimUtility.CE.UI.BODYWIDTH>
+  <KoRimUtility.CE.UI.BROW>눈썹</KoRimUtility.CE.UI.BROW>
+  <KoRimUtility.CE.UI.BUILDINGPREREQUISITES>선행 건물</KoRimUtility.CE.UI.BUILDINGPREREQUISITES>
+  <KoRimUtility.CE.UI.BULLET_SPEED>발사체 속도</KoRimUtility.CE.UI.BULLET_SPEED>
+  <KoRimUtility.CE.UI.BUY>구매</KoRimUtility.CE.UI.BUY>
+  <KoRimUtility.CE.UI.BUY_1>은 {1}개로 {0}을(를) 구매할까요?</KoRimUtility.CE.UI.BUY_1>
+  <KoRimUtility.CE.UI.CANGENERATEINGENESET>유전자 묶음 생성 시 포함 가능</KoRimUtility.CE.UI.CANGENERATEINGENESET>
+  <KoRimUtility.CE.UI.CANTREMOVELAYER>마지막 착용 층은 제거할 수 없습니다. 착용 층이 하나 이상 필요합니다.</KoRimUtility.CE.UI.CANTREMOVELAYER>
+  <KoRimUtility.CE.UI.CAPACITIES>신체 능력 보정</KoRimUtility.CE.UI.CAPACITIES>
+  <KoRimUtility.CE.UI.CARAVANRIDEABLE>상단 이동 시 탑승 가능</KoRimUtility.CE.UI.CARAVANRIDEABLE>
+  <KoRimUtility.CE.UI.CAUSESNEED>추가되는 욕구</KoRimUtility.CE.UI.CAUSESNEED>
+  <KoRimUtility.CE.UI.CHANGE_FACTION>세력 변경</KoRimUtility.CE.UI.CHANGE_FACTION>
+  <KoRimUtility.CE.UI.CHANGERACE>종족 변경</KoRimUtility.CE.UI.CHANGERACE>
+  <KoRimUtility.CE.UI.CHARACTER>캐릭터</KoRimUtility.CE.UI.CHARACTER>
+  <KoRimUtility.CE.UI.CHOOSE_PAWN>폰 선택</KoRimUtility.CE.UI.CHOOSE_PAWN>
+  <KoRimUtility.CE.UI.CHRONOAGE>실제 나이</KoRimUtility.CE.UI.CHRONOAGE>
+  <KoRimUtility.CE.UI.CLASSICMORTAR> (구형 박격포)</KoRimUtility.CE.UI.CLASSICMORTAR>
+  <KoRimUtility.CE.UI.CLICKTOOPENLIST>클릭하여 목록 열기</KoRimUtility.CE.UI.CLICKTOOPENLIST>
+  <KoRimUtility.CE.UI.CLONE_PAWN>폰 복제</KoRimUtility.CE.UI.CLONE_PAWN>
+  <KoRimUtility.CE.UI.CLOSE_FACIAL>외형 갱신</KoRimUtility.CE.UI.CLOSE_FACIAL>
+  <KoRimUtility.CE.UI.COLONISTS>정착민</KoRimUtility.CE.UI.COLONISTS>
+  <KoRimUtility.CE.UI.COLONISTS_ONLY>정착민만</KoRimUtility.CE.UI.COLONISTS_ONLY>
+  <KoRimUtility.CE.UI.COLONYANIMALS>정착지 동물</KoRimUtility.CE.UI.COLONYANIMALS>
+  <KoRimUtility.CE.UI.COLORA>색상 A</KoRimUtility.CE.UI.COLORA>
+  <KoRimUtility.CE.UI.COLORB>색상 B</KoRimUtility.CE.UI.COLORB>
+  <KoRimUtility.CE.UI.COMPLEXITY>복잡도</KoRimUtility.CE.UI.COMPLEXITY>
+  <KoRimUtility.CE.UI.CONFIRM_RACE_CHANGE>종족을 변경할까요?</KoRimUtility.CE.UI.CONFIRM_RACE_CHANGE>
+  <KoRimUtility.CE.UI.CONSUMEFUELPERBURST>연사당 연료 소비량</KoRimUtility.CE.UI.CONSUMEFUELPERBURST>
+  <KoRimUtility.CE.UI.CONSUMEFUELPERSHOT>발사당 연료 소비량</KoRimUtility.CE.UI.CONSUMEFUELPERSHOT>
+  <KoRimUtility.CE.UI.COSTS>제작 비용</KoRimUtility.CE.UI.COSTS>
+  <KoRimUtility.CE.UI.COSTSTUFFCOUNT>제작에 필요한 재료 수: </KoRimUtility.CE.UI.COSTSTUFFCOUNT>
+  <KoRimUtility.CE.UI.COUNT>수량: </KoRimUtility.CE.UI.COUNT>
+  <KoRimUtility.CE.UI.CREATE>생성</KoRimUtility.CE.UI.CREATE>
+  <KoRimUtility.CE.UI.CUSTOMEFFECTDESCRIPTIONS>사용자 지정 효과 설명</KoRimUtility.CE.UI.CUSTOMEFFECTDESCRIPTIONS>
+  <KoRimUtility.CE.UI.DAMAGEAMOUNTBASE>기본 피해량</KoRimUtility.CE.UI.DAMAGEAMOUNTBASE>
+  <KoRimUtility.CE.UI.DAMAGEDEF>피해 유형 </KoRimUtility.CE.UI.DAMAGEDEF>
+  <KoRimUtility.CE.UI.DAMAGEFACTOR>피해 계수</KoRimUtility.CE.UI.DAMAGEFACTOR>
+  <KoRimUtility.CE.UI.DAUER>지속 시간</KoRimUtility.CE.UI.DAUER>
+  <KoRimUtility.CE.UI.DAY>일</KoRimUtility.CE.UI.DAY>
+  <KoRimUtility.CE.UI.DAYS>일</KoRimUtility.CE.UI.DAYS>
+  <KoRimUtility.CE.UI.DELETE_CUSTOMS>사용자 지정 데이터 삭제</KoRimUtility.CE.UI.DELETE_CUSTOMS>
+  <KoRimUtility.CE.UI.DELETE_PAWN>폰 제거</KoRimUtility.CE.UI.DELETE_PAWN>
+  <KoRimUtility.CE.UI.DELETE_SLOTS>저장 슬롯 삭제</KoRimUtility.CE.UI.DELETE_SLOTS>
+  <KoRimUtility.CE.UI.DESTROY>파괴</KoRimUtility.CE.UI.DESTROY>
+  <KoRimUtility.CE.UI.DISABLEDNEEDS>비활성화할 욕구</KoRimUtility.CE.UI.DISABLEDNEEDS>
+  <KoRimUtility.CE.UI.DISABLEDSKILLS>비활성화할 기술</KoRimUtility.CE.UI.DISABLEDSKILLS>
+  <KoRimUtility.CE.UI.DISABLEDWORKTAGS>불가능한 작업 태그</KoRimUtility.CE.UI.DISABLEDWORKTAGS>
+  <KoRimUtility.CE.UI.DISLIKESSUNLIGHT>햇빛을 싫어함</KoRimUtility.CE.UI.DISLIKESSUNLIGHT>
+  <KoRimUtility.CE.UI.DISPLAYODERINCATEGORY>분류 내 표시 순서</KoRimUtility.CE.UI.DISPLAYODERINCATEGORY>
+  <KoRimUtility.CE.UI.DONTMINDRAWFOOD>날음식을 먹어도 불쾌하지 않음</KoRimUtility.CE.UI.DONTMINDRAWFOOD>
+  <KoRimUtility.CE.UI.DRAWSIZE>표시 크기: </KoRimUtility.CE.UI.DRAWSIZE>
+  <KoRimUtility.CE.UI.DROP>강하 포드 착륙 위치: </KoRimUtility.CE.UI.DROP>
+  <KoRimUtility.CE.UI.ENDOGENECATEGORY>내유전자 분류</KoRimUtility.CE.UI.ENDOGENECATEGORY>
+  <KoRimUtility.CE.UI.ENSLAVE>노예화</KoRimUtility.CE.UI.ENSLAVE>
+  <KoRimUtility.CE.UI.ENTROPY>신경열</KoRimUtility.CE.UI.ENTROPY>
+  <KoRimUtility.CE.UI.EQUIPSTATS>장착 시 능력치</KoRimUtility.CE.UI.EQUIPSTATS>
+  <KoRimUtility.CE.UI.EXCLUSIONTAGS>상호 배제 태그</KoRimUtility.CE.UI.EXCLUSIONTAGS>
+  <KoRimUtility.CE.UI.EXPL_RADIUS>폭발 반경</KoRimUtility.CE.UI.EXPL_RADIUS>
+  <KoRimUtility.CE.UI.EXPLOSIONDELAY>폭발 지연 시간</KoRimUtility.CE.UI.EXPLOSIONDELAY>
+  <KoRimUtility.CE.UI.EXPLOSIONEFFECT>폭발 효과 </KoRimUtility.CE.UI.EXPLOSIONEFFECT>
+  <KoRimUtility.CE.UI.EXPORT>내보내기</KoRimUtility.CE.UI.EXPORT>
+  <KoRimUtility.CE.UI.EXPORT_SLOTS>폰을 바탕 화면의 파일로 내보냅니다.</KoRimUtility.CE.UI.EXPORT_SLOTS>
+  <KoRimUtility.CE.UI.EXTRAS>기타</KoRimUtility.CE.UI.EXTRAS>
+  <KoRimUtility.CE.UI.EYECOLOR>눈 색상</KoRimUtility.CE.UI.EYECOLOR>
+  <KoRimUtility.CE.UI.EYESIZEFACTOR>눈 크기 계수</KoRimUtility.CE.UI.EYESIZEFACTOR>
+  <KoRimUtility.CE.UI.FACETATTOO>얼굴 문신: </KoRimUtility.CE.UI.FACETATTOO>
+  <KoRimUtility.CE.UI.FACIAL>얼굴</KoRimUtility.CE.UI.FACIAL>
+  <KoRimUtility.CE.UI.FILTERCATEGORY>분류 필터 </KoRimUtility.CE.UI.FILTERCATEGORY>
+  <KoRimUtility.CE.UI.FILTERTYPE>유형 필터 </KoRimUtility.CE.UI.FILTERTYPE>
+  <KoRimUtility.CE.UI.FIND_PAWN>폰 찾기</KoRimUtility.CE.UI.FIND_PAWN>
+  <KoRimUtility.CE.UI.FLYOVERHEAD>장애물 위로 날아가는 발사체</KoRimUtility.CE.UI.FLYOVERHEAD>
+  <KoRimUtility.CE.UI.FOCUS>집중</KoRimUtility.CE.UI.FOCUS>
+  <KoRimUtility.CE.UI.FOODMAXFACTOR>최대 포만도 계수</KoRimUtility.CE.UI.FOODMAXFACTOR>
+  <KoRimUtility.CE.UI.FORCEDHEADTYPES>고정 머리 유형</KoRimUtility.CE.UI.FORCEDHEADTYPES>
+  <KoRimUtility.CE.UI.FORCEDTRAITS>강제 적용 특성</KoRimUtility.CE.UI.FORCEDTRAITS>
+  <KoRimUtility.CE.UI.FORDIFFICULTY> - 난이도</KoRimUtility.CE.UI.FORDIFFICULTY>
+  <KoRimUtility.CE.UI.FORM>형태</KoRimUtility.CE.UI.FORM>
+  <KoRimUtility.CE.UI.FRISUR>머리 모양</KoRimUtility.CE.UI.FRISUR>
+  <KoRimUtility.CE.UI.FULLHEAL>완전 치료</KoRimUtility.CE.UI.FULLHEAL>
+  <KoRimUtility.CE.UI.FULLNEEDS>욕구 충족</KoRimUtility.CE.UI.FULLNEEDS>
+  <KoRimUtility.CE.UI.FULLYPROTECTEDFROM>보호 대상</KoRimUtility.CE.UI.FULLYPROTECTEDFROM>
+  <KoRimUtility.CE.UI.GASTYPE>가스 유형 </KoRimUtility.CE.UI.GASTYPE>
+  <KoRimUtility.CE.UI.GENECATEGORY>유전자 분류</KoRimUtility.CE.UI.GENECATEGORY>
+  <KoRimUtility.CE.UI.GENERATE_PAWN>폰 생성</KoRimUtility.CE.UI.GENERATE_PAWN>
+  <KoRimUtility.CE.UI.GENETICBODYTYPE>유전적 체형</KoRimUtility.CE.UI.GENETICBODYTYPE>
+  <KoRimUtility.CE.UI.GENETICS>유전자</KoRimUtility.CE.UI.GENETICS>
+  <KoRimUtility.CE.UI.GRAPHICS>그래픽 설정</KoRimUtility.CE.UI.GRAPHICS>
+  <KoRimUtility.CE.UI.GUNSTATS>원거리 능력치</KoRimUtility.CE.UI.GUNSTATS>
+  <KoRimUtility.CE.UI.HA_INFO>슬라이더로 추가 외형을 변경합니다. 일부 외형은 옆이나 뒤처럼 특정 방향에서만 보이며, 변경할 수 없는 외형도 있습니다.</KoRimUtility.CE.UI.HA_INFO>
+  <KoRimUtility.CE.UI.HAIR>머리카락</KoRimUtility.CE.UI.HAIR>
+  <KoRimUtility.CE.UI.HAIRCOLOR>머리색</KoRimUtility.CE.UI.HAIRCOLOR>
+  <KoRimUtility.CE.UI.HAIRCOLOROVERRIDE>머리색 덮어쓰기</KoRimUtility.CE.UI.HAIRCOLOROVERRIDE>
+  <KoRimUtility.CE.UI.HAIRTAGS>머리카락 태그</KoRimUtility.CE.UI.HAIRTAGS>
+  <KoRimUtility.CE.UI.HB_All>전체</KoRimUtility.CE.UI.HB_All>
+  <KoRimUtility.CE.UI.HB_ALLADDICTIONS>중독·약물</KoRimUtility.CE.UI.HB_ALLADDICTIONS>
+  <KoRimUtility.CE.UI.HB_ALLDISEASES>질병·유해 상태</KoRimUtility.CE.UI.HB_ALLDISEASES>
+  <KoRimUtility.CE.UI.HB_ALLIMPLANTS>이식물</KoRimUtility.CE.UI.HB_ALLIMPLANTS>
+  <KoRimUtility.CE.UI.HB_ALLINJURIES>부상</KoRimUtility.CE.UI.HB_ALLINJURIES>
+  <KoRimUtility.CE.UI.HB_ALLTIME>시간에 따른 상태</KoRimUtility.CE.UI.HB_ALLTIME>
+  <KoRimUtility.CE.UI.HB_Arm>팔</KoRimUtility.CE.UI.HB_Arm>
+  <KoRimUtility.CE.UI.HB_Brain>뇌</KoRimUtility.CE.UI.HB_Brain>
+  <KoRimUtility.CE.UI.HB_Clavicle>쇄골</KoRimUtility.CE.UI.HB_Clavicle>
+  <KoRimUtility.CE.UI.HB_Ear>귀</KoRimUtility.CE.UI.HB_Ear>
+  <KoRimUtility.CE.UI.HB_Eye>눈</KoRimUtility.CE.UI.HB_Eye>
+  <KoRimUtility.CE.UI.HB_Femur>대퇴골</KoRimUtility.CE.UI.HB_Femur>
+  <KoRimUtility.CE.UI.HB_Finger>손가락</KoRimUtility.CE.UI.HB_Finger>
+  <KoRimUtility.CE.UI.HB_Foot>발</KoRimUtility.CE.UI.HB_Foot>
+  <KoRimUtility.CE.UI.HB_Hand>손</KoRimUtility.CE.UI.HB_Hand>
+  <KoRimUtility.CE.UI.HB_Head>머리</KoRimUtility.CE.UI.HB_Head>
+  <KoRimUtility.CE.UI.HB_Heart>심장</KoRimUtility.CE.UI.HB_Heart>
+  <KoRimUtility.CE.UI.HB_Humerus>상완골</KoRimUtility.CE.UI.HB_Humerus>
+  <KoRimUtility.CE.UI.HB_Jaw>턱</KoRimUtility.CE.UI.HB_Jaw>
+  <KoRimUtility.CE.UI.HB_Kidney>신장</KoRimUtility.CE.UI.HB_Kidney>
+  <KoRimUtility.CE.UI.HB_Leg>다리</KoRimUtility.CE.UI.HB_Leg>
+  <KoRimUtility.CE.UI.HB_Liver>간</KoRimUtility.CE.UI.HB_Liver>
+  <KoRimUtility.CE.UI.HB_Lung>폐</KoRimUtility.CE.UI.HB_Lung>
+  <KoRimUtility.CE.UI.HB_Neck>목</KoRimUtility.CE.UI.HB_Neck>
+  <KoRimUtility.CE.UI.HB_Nose>코</KoRimUtility.CE.UI.HB_Nose>
+  <KoRimUtility.CE.UI.HB_Pelvis>골반</KoRimUtility.CE.UI.HB_Pelvis>
+  <KoRimUtility.CE.UI.HB_Radius>요골</KoRimUtility.CE.UI.HB_Radius>
+  <KoRimUtility.CE.UI.HB_Shoulder>어깨</KoRimUtility.CE.UI.HB_Shoulder>
+  <KoRimUtility.CE.UI.HB_Skull>두개골</KoRimUtility.CE.UI.HB_Skull>
+  <KoRimUtility.CE.UI.HB_Spine>척추</KoRimUtility.CE.UI.HB_Spine>
+  <KoRimUtility.CE.UI.HB_Sternum>흉골</KoRimUtility.CE.UI.HB_Sternum>
+  <KoRimUtility.CE.UI.HB_Stomach>위</KoRimUtility.CE.UI.HB_Stomach>
+  <KoRimUtility.CE.UI.HB_Tibia>경골</KoRimUtility.CE.UI.HB_Tibia>
+  <KoRimUtility.CE.UI.HB_Toe>발가락</KoRimUtility.CE.UI.HB_Toe>
+  <KoRimUtility.CE.UI.HB_Torso>몸통</KoRimUtility.CE.UI.HB_Torso>
+  <KoRimUtility.CE.UI.HB_Utility>보조 장비</KoRimUtility.CE.UI.HB_Utility>
+  <KoRimUtility.CE.UI.HB_UtilitySlot>보조 장비 슬롯</KoRimUtility.CE.UI.HB_UtilitySlot>
+  <KoRimUtility.CE.UI.HB_WholeBody>전신</KoRimUtility.CE.UI.HB_WholeBody>
+  <KoRimUtility.CE.UI.HB_WITHLEVEL>단계가 있는 상태</KoRimUtility.CE.UI.HB_WITHLEVEL>
+  <KoRimUtility.CE.UI.HEAD_ADDONS>추가 외형</KoRimUtility.CE.UI.HEAD_ADDONS>
+  <KoRimUtility.CE.UI.HEADSIZEFACTOR>머리 크기 계수</KoRimUtility.CE.UI.HEADSIZEFACTOR>
+  <KoRimUtility.CE.UI.HEAL>치료</KoRimUtility.CE.UI.HEAL>
+  <KoRimUtility.CE.UI.HEALTHSCALEFACTOR>신체 내구도 계수</KoRimUtility.CE.UI.HEALTHSCALEFACTOR>
+  <KoRimUtility.CE.UI.HISTORYEVENTONDEATH>사망 시 기록할 사건</KoRimUtility.CE.UI.HISTORYEVENTONDEATH>
+  <KoRimUtility.CE.UI.HOUR>시간</KoRimUtility.CE.UI.HOUR>
+  <KoRimUtility.CE.UI.HOURS>시간</KoRimUtility.CE.UI.HOURS>
+  <KoRimUtility.CE.UI.HUMANOID>인간형</KoRimUtility.CE.UI.HUMANOID>
+  <KoRimUtility.CE.UI.HUNGERRATEFACTOR>허기 증가 속도 계수</KoRimUtility.CE.UI.HUNGERRATEFACTOR>
+  <KoRimUtility.CE.UI.HURT>상처 입히기</KoRimUtility.CE.UI.HURT>
+  <KoRimUtility.CE.UI.ICONPATH>아이콘 경로</KoRimUtility.CE.UI.ICONPATH>
+  <KoRimUtility.CE.UI.IMMUNETO>면역 대상</KoRimUtility.CE.UI.IMMUNETO>
+  <KoRimUtility.CE.UI.IMMUNETOTOXGASEXPOSURE>독성 가스 면역</KoRimUtility.CE.UI.IMMUNETOTOXGASEXPOSURE>
+  <KoRimUtility.CE.UI.IMPORT>가져오기</KoRimUtility.CE.UI.IMPORT>
+  <KoRimUtility.CE.UI.IMPORT_SLOTS>파일에 저장된 폰을 저장 슬롯으로 가져옵니다.</KoRimUtility.CE.UI.IMPORT_SLOTS>
+  <KoRimUtility.CE.UI.INFO>정보</KoRimUtility.CE.UI.INFO>
+  <KoRimUtility.CE.UI.INFOD_APPAREL>선택한 의복은 염색할 수 없습니다. 확인하면 일시적으로 염색할 수 있게 됩니다. 항상 염색할 수 있게 하려면 모드 설정에서 해당 옵션을 켜고 게임을 재시작하세요.</KoRimUtility.CE.UI.INFOD_APPAREL>
+  <KoRimUtility.CE.UI.INFOD_WEAPON>선택한 무기는 색상을 바꿀 수 없습니다. 확인하면 일시적으로 색상을 바꿀 수 있게 됩니다.</KoRimUtility.CE.UI.INFOD_WEAPON>
+  <KoRimUtility.CE.UI.INFOT_MAKECOLORABLE>색상을 바꿀 수 있게 할까요?</KoRimUtility.CE.UI.INFOT_MAKECOLORABLE>
+  <KoRimUtility.CE.UI.INGESTIBLEMOD>섭취 효과 보정</KoRimUtility.CE.UI.INGESTIBLEMOD>
+  <KoRimUtility.CE.UI.INSPIRATIONS>영감</KoRimUtility.CE.UI.INSPIRATIONS>
+  <KoRimUtility.CE.UI.INTERSTELLARLINK>성간 연결</KoRimUtility.CE.UI.INTERSTELLARLINK>
+  <KoRimUtility.CE.UI.INTERSTELLARLINK_DESC>탈출 포드와 성간 연결 전환</KoRimUtility.CE.UI.INTERSTELLARLINK_DESC>
+  <KoRimUtility.CE.UI.IS>성적 지향:</KoRimUtility.CE.UI.IS>
+  <KoRimUtility.CE.UI.ISEXPLOSIVEREADONLY>폭발성 여부 (읽기 전용)</KoRimUtility.CE.UI.ISEXPLOSIVEREADONLY>
+  <KoRimUtility.CE.UI.KAPSELCONTAINER>캡슐 보관함</KoRimUtility.CE.UI.KAPSELCONTAINER>
+  <KoRimUtility.CE.UI.LABELADJ>이름 수식어</KoRimUtility.CE.UI.LABELADJ>
+  <KoRimUtility.CE.UI.LANDEDEFFECT>착륙 효과 </KoRimUtility.CE.UI.LANDEDEFFECT>
+  <KoRimUtility.CE.UI.LAYER>착용 층</KoRimUtility.CE.UI.LAYER>
+  <KoRimUtility.CE.UI.LID>눈꺼풀</KoRimUtility.CE.UI.LID>
+  <KoRimUtility.CE.UI.LIFESTAGE>성장 단계</KoRimUtility.CE.UI.LIFESTAGE>
+  <KoRimUtility.CE.UI.LOAD>적재</KoRimUtility.CE.UI.LOAD>
+  <KoRimUtility.CE.UI.LOAD_DESC>지도에 있는 모든 물건을 성간 보관함에 적재합니다.</KoRimUtility.CE.UI.LOAD_DESC>
+  <KoRimUtility.CE.UI.LOADSLOT>불러올 슬롯: </KoRimUtility.CE.UI.LOADSLOT>
+  <KoRimUtility.CE.UI.LOADXENOTYPEKEEP>이종족 불러오기\n[CTRL]을 누르면 기존 유전자를 유지합니다.</KoRimUtility.CE.UI.LOADXENOTYPEKEEP>
+  <KoRimUtility.CE.UI.LOVINMTBFACTOR>성관계 시도 간격 계수</KoRimUtility.CE.UI.LOVINMTBFACTOR>
+  <KoRimUtility.CE.UI.MAGAZIN>탄창 용량</KoRimUtility.CE.UI.MAGAZIN>
+  <KoRimUtility.CE.UI.MAINBUTTON_DESCR>캐릭터 편집기를 엽니다.</KoRimUtility.CE.UI.MAINBUTTON_DESCR>
+  <KoRimUtility.CE.UI.MAP_NOTLOADED>지도가 로드되지 않았습니다!</KoRimUtility.CE.UI.MAP_NOTLOADED>
+  <KoRimUtility.CE.UI.MARKETFACTOR>시장 가치 계수</KoRimUtility.CE.UI.MARKETFACTOR>
+  <KoRimUtility.CE.UI.MARKETVALUEFACTOR>시장 가치</KoRimUtility.CE.UI.MARKETVALUEFACTOR>
+  <KoRimUtility.CE.UI.MAX_RANDOM_BRIGHTNESS>최대 밝기</KoRimUtility.CE.UI.MAX_RANDOM_BRIGHTNESS>
+  <KoRimUtility.CE.UI.MEDICATE>의료 처치</KoRimUtility.CE.UI.MEDICATE>
+  <KoRimUtility.CE.UI.MELEE>근접</KoRimUtility.CE.UI.MELEE>
+  <KoRimUtility.CE.UI.MELEEDAMAGEFACTOR>근접 피해 계수</KoRimUtility.CE.UI.MELEEDAMAGEFACTOR>
+  <KoRimUtility.CE.UI.MENTAL>정신 상태</KoRimUtility.CE.UI.MENTAL>
+  <KoRimUtility.CE.UI.MENTALBREAKCHANCEFACTOR>정신이상 발생 확률 계수</KoRimUtility.CE.UI.MENTALBREAKCHANCEFACTOR>
+  <KoRimUtility.CE.UI.MENTALBREAKMTBDAYS>정신이상 평균 발생 간격</KoRimUtility.CE.UI.MENTALBREAKMTBDAYS>
+  <KoRimUtility.CE.UI.METABOLICEFFICIENCY>신진대사 효율</KoRimUtility.CE.UI.METABOLICEFFICIENCY>
+  <KoRimUtility.CE.UI.MIN>최소</KoRimUtility.CE.UI.MIN>
+  <KoRimUtility.CE.UI.MIN_RANDOM_BRIGHTNESS>최소 밝기</KoRimUtility.CE.UI.MIN_RANDOM_BRIGHTNESS>
+  <KoRimUtility.CE.UI.MODIFICATIONLOADED>변경 내용을 불러왔습니다.</KoRimUtility.CE.UI.MODIFICATIONLOADED>
+  <KoRimUtility.CE.UI.MOUTH>입</KoRimUtility.CE.UI.MOUTH>
+  <KoRimUtility.CE.UI.NEEDS>욕구</KoRimUtility.CE.UI.NEEDS>
+  <KoRimUtility.CE.UI.NEVERGRAYHAIR>백발이 되지 않음</KoRimUtility.CE.UI.NEVERGRAYHAIR>
+  <KoRimUtility.CE.UI.NO_BLOCKING_SKILLS>기술 제한 없음</KoRimUtility.CE.UI.NO_BLOCKING_SKILLS>
+  <KoRimUtility.CE.UI.NOMEMORIES>기억 삭제</KoRimUtility.CE.UI.NOMEMORIES>
+  <KoRimUtility.CE.UI.NONE>없음</KoRimUtility.CE.UI.NONE>
+  <KoRimUtility.CE.UI.NOT_COMPATIBLE_APPAREL>함께 착용할 수 없는 의복</KoRimUtility.CE.UI.NOT_COMPATIBLE_APPAREL>
+  <KoRimUtility.CE.UI.NUMEXTRAHITCELLS>추가 피격 칸 수</KoRimUtility.CE.UI.NUMEXTRAHITCELLS>
+  <KoRimUtility.CE.UI.O_AUTOMOVEINCOMPATIBLE>호환되지 않는 의복 자동 해제</KoRimUtility.CE.UI.O_AUTOMOVEINCOMPATIBLE>
+  <KoRimUtility.CE.UI.O_AUTOSAVECOLORS>색상 자동 저장</KoRimUtility.CE.UI.O_AUTOSAVECOLORS>
+  <KoRimUtility.CE.UI.O_CHAOSABILITY>순간이동 시 시각 효과 사용</KoRimUtility.CE.UI.O_CHAOSABILITY>
+  <KoRimUtility.CE.UI.O_CHARACTEREDITORUI>캐릭터 편집기</KoRimUtility.CE.UI.O_CHARACTEREDITORUI>
+  <KoRimUtility.CE.UI.O_COMPCOLORABLE>모든 의복 염색 허용</KoRimUtility.CE.UI.O_COMPCOLORABLE>
+  <KoRimUtility.CE.UI.O_COPYTOCLIPBOARD>클립보드에 복사</KoRimUtility.CE.UI.O_COPYTOCLIPBOARD>
+  <KoRimUtility.CE.UI.O_CREATENOINV>소지품 없이 생성</KoRimUtility.CE.UI.O_CREATENOINV>
+  <KoRimUtility.CE.UI.O_CREATENOWEAPON>무기 없이 생성</KoRimUtility.CE.UI.O_CREATENOWEAPON>
+  <KoRimUtility.CE.UI.O_CREATENUDE>의복 없이 생성</KoRimUtility.CE.UI.O_CREATENUDE>
+  <KoRimUtility.CE.UI.O_CREATERACESPECIFIC>종족에 맞는 의복으로 생성</KoRimUtility.CE.UI.O_CREATERACESPECIFIC>
+  <KoRimUtility.CE.UI.O_CUSTOMCOLOR>저장된 색상</KoRimUtility.CE.UI.O_CUSTOMCOLOR>
+  <KoRimUtility.CE.UI.O_DESC_AUTOMOVEINCOMPATIBLE>켜면 함께 착용할 수 없는 의복을 소지품으로 옮깁니다. 끄면 그대로 착용합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_AUTOMOVEINCOMPATIBLE>
+  <KoRimUtility.CE.UI.O_DESC_AUTOSAVECOLORS>게임을 저장할 때 모든 정착민의 색상을 함께 저장합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_AUTOSAVECOLORS>
+  <KoRimUtility.CE.UI.O_DESC_CHAOSABILITY>순간이동 시 시각 효과를 사용합니다.</KoRimUtility.CE.UI.O_DESC_CHAOSABILITY>
+  <KoRimUtility.CE.UI.O_DESC_CHARACTEREDITORUI>캐릭터 편집기를 엽니다.</KoRimUtility.CE.UI.O_DESC_CHARACTEREDITORUI>
+  <KoRimUtility.CE.UI.O_DESC_COMPCOLORABLE>켜면 모든 의복을 염색할 수 있습니다. 끄면 원래 염색 가능한 의복만 염색할 수 있습니다. 변경 사항은 게임을 재시작한 뒤 적용됩니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_COMPCOLORABLE>
+  <KoRimUtility.CE.UI.O_DESC_CREATENOINV>소지품이 비어 있는 폰을 생성합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_CREATENOINV>
+  <KoRimUtility.CE.UI.O_DESC_CREATENOWEAPON>시작 무기 없이 폰을 생성합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_CREATENOWEAPON>
+  <KoRimUtility.CE.UI.O_DESC_CREATENUDE>의복을 입지 않은 폰을 생성합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_CREATENUDE>
+  <KoRimUtility.CE.UI.O_DESC_CREATERACESPECIFIC>종족에 맞는 의복을 입은 폰을 생성합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_CREATERACESPECIFIC>
+  <KoRimUtility.CE.UI.O_DESC_CUSTOMCOLOR>모든 정착민의 색상을 저장하는 곳입니다. 색상을 보관하지 않거나 저장 내용이 너무 많아졌다면 이 항목의 내용을 지울 수 있습니다. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_CUSTOMCOLOR>
+  <KoRimUtility.CE.UI.O_DESC_DISABLEOBJ>켜면 건축 메뉴의 기타 분류에 캐릭터 편집기 건물을 표시합니다. 끄면 숨깁니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_DISABLEOBJ>
+  <KoRimUtility.CE.UI.O_DESC_DOAPPARELCHECK>의복에 누락된 텍스처가 있는지 검사합니다. 끄면 검사하지 않아 오류가 발생할 수 있습니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_DOAPPARELCHECK>
+  <KoRimUtility.CE.UI.O_DESC_EDITALLPAWNS>켜면 지도 위의 모든 폰을 편집할 수 있습니다. 끄면 좀브렐라 안의 폰만 편집할 수 있습니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_EDITALLPAWNS>
+  <KoRimUtility.CE.UI.O_DESC_EDITTABS>편집기 탭을 표시합니다. 끄면 탭을 숨깁니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_EDITTABS>
+  <KoRimUtility.CE.UI.O_DESC_EXTENDEDCOLORS>켜면 색상 채널별 최댓값을 255에서 510으로 늘립니다. 끄면 일반적인 255단계 색상 범위를 사용합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_EXTENDEDCOLORS>
+  <KoRimUtility.CE.UI.O_DESC_FORCEIMAGE>켜면 폰 미리보기를 계속 갱신합니다. 끄면 변경 사항이 있을 때만 갱신합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_FORCEIMAGE>
+  <KoRimUtility.CE.UI.O_DESC_HDR>켜면 ARGB, 끄면 HDR을 사용합니다. 기본값: ARGB</KoRimUtility.CE.UI.O_DESC_HDR>
+  <KoRimUtility.CE.UI.O_DESC_HOTKEYEDITOR>캐릭터 편집기를 여는 단축키</KoRimUtility.CE.UI.O_DESC_HOTKEYEDITOR>
+  <KoRimUtility.CE.UI.O_DESC_HOTKEYTELEPORT>폰을 즉시 순간이동시키는 단축키</KoRimUtility.CE.UI.O_DESC_HOTKEYTELEPORT>
+  <KoRimUtility.CE.UI.O_DESC_KEYCODE>단축키에 사용할 키</KoRimUtility.CE.UI.O_DESC_KEYCODE>
+  <KoRimUtility.CE.UI.O_DESC_MAPSIZE>지도 크기, 식물 밀도, 동물 밀도 설정을 표시합니다. 끄면 숨깁니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_MAPSIZE>
+  <KoRimUtility.CE.UI.O_DESC_MINI>간소화된 화면을 사용합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_MINI>
+  <KoRimUtility.CE.UI.O_DESC_MOREPAWNNAMES>이름 파일의 폰 이름을 이름 목록에 추가합니다. 끄면 추가하지 않습니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_MOREPAWNNAMES>
+  <KoRimUtility.CE.UI.O_DESC_NUMCAPSULE>사용할 캡슐 저장 슬롯 수를 지정합니다. 범위: [1..100], 기본값: 10</KoRimUtility.CE.UI.O_DESC_NUMCAPSULE>
+  <KoRimUtility.CE.UI.O_DESC_NUMSLOTS>사용할 폰 저장 슬롯 수를 지정합니다. 범위: [1..100], 기본값: 90</KoRimUtility.CE.UI.O_DESC_NUMSLOTS>
+  <KoRimUtility.CE.UI.O_DESC_PAUSEGAME>편집기를 열 때 게임을 일시정지합니다. 끄면 게임이 계속 진행됩니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_PAUSEGAME>
+  <KoRimUtility.CE.UI.O_DESC_PAWNLIST>폰 목록을 표시합니다. 끄면 숨깁니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_PAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_PAWNSLOT>저장된 폰의 데이터입니다. 내용을 이해하지 못한 상태에서 수정하지 마세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_PAWNSLOT>
+  <KoRimUtility.CE.UI.O_DESC_RESOLUTION>선택한 폰 미리보기의 해상도입니다. 값은 이미지 너비이며 높이는 자동 계산됩니다. 기본값: 800</KoRimUtility.CE.UI.O_DESC_RESOLUTION>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDARMORCHANGES>다시 불러올 때 적용할 의복 변경 내용입니다. 직접 수정할 때 주의하세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_SAVEDARMORCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDGENECHANGES>다시 불러올 때 적용할 유전자 변경 내용입니다. 직접 수정할 때 주의하세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_SAVEDGENECHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDITEMCHANGES>다시 불러올 때 적용할 아이템 변경 내용입니다. 직접 수정할 때 주의하세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_SAVEDITEMCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDLSCHANGES>다시 불러올 때 적용할 신체 크기 변경 내용입니다. 직접 수정할 때 주의하세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_SAVEDLSCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDWEAPONCHANGES>다시 불러올 때 적용할 무기 변경 내용입니다. 직접 수정할 때 주의하세요. 기본값: 비어 있음</KoRimUtility.CE.UI.O_DESC_SAVEDWEAPONCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SHORTNAME>켜면 왼쪽 위의 이름을 짧게 표시합니다. 끄면 전체 이름을 표시합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHORTNAME>
+  <KoRimUtility.CE.UI.O_DESC_SHOWBODYSIZEGENES>켜면 신체 크기 유전자를 게임에서 사용합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWBODYSIZEGENES>
+  <KoRimUtility.CE.UI.O_DESC_SHOWBUTTONINSTARTING>시작 폰 설정 화면에 편집기 버튼을 표시합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWBUTTONINSTARTING>
+  <KoRimUtility.CE.UI.O_DESC_SHOWDEADLOGO>죽은 폰에 사망 표시를 붙입니다. 끄면 숨깁니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWDEADLOGO>
+  <KoRimUtility.CE.UI.O_DESC_SHOWICONINSTARTING>시작 폰 설정 화면에 편집기 아이콘을 표시합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWICONINSTARTING>
+  <KoRimUtility.CE.UI.O_DESC_SHOWINMAINTABS>하단 메뉴에서 캐릭터 편집기를 열 수 있습니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWINMAINTABS>
+  <KoRimUtility.CE.UI.O_DESC_SHOWPAWNLIST>폰 목록 표시를 전환합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SHOWPAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_SHOWWEAPON>기본 미리보기에 무기를 표시합니다. 끄면 숨깁니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_SHOWWEAPON>
+  <KoRimUtility.CE.UI.O_DESC_SORTEDPAWNLIST>폰 목록을 정렬합니다. 끄면 정렬하지 않습니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_SORTEDPAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_STACKLIMIT>아이템 수량 슬라이더의 최댓값입니다. 범위: [1..9999]</KoRimUtility.CE.UI.O_DESC_STACKLIMIT>
+  <KoRimUtility.CE.UI.O_DESC_STAYINCASCET>켜면 누군가 좀브렐라를 열 때까지 폰이 안에 머뭅니다. 끄면 폰이 자동으로 나옵니다.</KoRimUtility.CE.UI.O_DESC_STAYINCASCET>
+  <KoRimUtility.CE.UI.O_DESC_USEALTERNATIVEHEADFINDER>머리에 맞는 텍스처를 찾을 때 다른 방식을 사용합니다. 기본값: 끔</KoRimUtility.CE.UI.O_DESC_USEALTERNATIVEHEADFINDER>
+  <KoRimUtility.CE.UI.O_DESC_USEFIXEDSHADER>켜면 피부색에 고정된 셰이더를 사용해 사용자 지정 피부색이 달라지는 것을 막습니다. 끄면 기본 게임처럼 사용자 지정 피부색에 다른 셰이더를 사용합니다.</KoRimUtility.CE.UI.O_DESC_USEFIXEDSHADER>
+  <KoRimUtility.CE.UI.O_DESC_USERIMWORLDPAWNGENERATOR>켜면 림월드의 폰 생성기를 사용합니다. 끄면 모드 자체 생성기를 사용합니다. 기본값: 켬</KoRimUtility.CE.UI.O_DESC_USERIMWORLDPAWNGENERATOR>
+  <KoRimUtility.CE.UI.O_DISABLEOBJ>건축 메뉴의 편집기 건물</KoRimUtility.CE.UI.O_DISABLEOBJ>
+  <KoRimUtility.CE.UI.O_DOAPPARELCHECK>의복 자동 검사</KoRimUtility.CE.UI.O_DOAPPARELCHECK>
+  <KoRimUtility.CE.UI.O_EDITALLPAWNS>모든 폰 편집</KoRimUtility.CE.UI.O_EDITALLPAWNS>
+  <KoRimUtility.CE.UI.O_EDITTABS>편집기 탭 표시</KoRimUtility.CE.UI.O_EDITTABS>
+  <KoRimUtility.CE.UI.O_EXTENDEDCOLORS>색상 범위 확장</KoRimUtility.CE.UI.O_EXTENDEDCOLORS>
+  <KoRimUtility.CE.UI.O_FORCEIMAGE>미리보기 상시 갱신</KoRimUtility.CE.UI.O_FORCEIMAGE>
+  <KoRimUtility.CE.UI.O_HOTKEYEDITOR>편집기 단축키</KoRimUtility.CE.UI.O_HOTKEYEDITOR>
+  <KoRimUtility.CE.UI.O_HOTKEYTELEPORT>순간이동 단축키</KoRimUtility.CE.UI.O_HOTKEYTELEPORT>
+  <KoRimUtility.CE.UI.O_MAPSIZE>추가 지도 설정</KoRimUtility.CE.UI.O_MAPSIZE>
+  <KoRimUtility.CE.UI.O_MINI>간소화 보기</KoRimUtility.CE.UI.O_MINI>
+  <KoRimUtility.CE.UI.O_MOREPAWNNAMES>이름 파일 사용</KoRimUtility.CE.UI.O_MOREPAWNNAMES>
+  <KoRimUtility.CE.UI.O_NUMCAPSULE>캡슐 저장 슬롯 수</KoRimUtility.CE.UI.O_NUMCAPSULE>
+  <KoRimUtility.CE.UI.O_NUMSLOTS>폰 저장 슬롯 수</KoRimUtility.CE.UI.O_NUMSLOTS>
+  <KoRimUtility.CE.UI.O_PAUSEGAME>편집기에서 게임 일시정지</KoRimUtility.CE.UI.O_PAUSEGAME>
+  <KoRimUtility.CE.UI.O_PAWNLIST>폰 목록 표시</KoRimUtility.CE.UI.O_PAWNLIST>
+  <KoRimUtility.CE.UI.O_PAWNSLOT>폰 저장 슬롯 {0}</KoRimUtility.CE.UI.O_PAWNSLOT>
+  <KoRimUtility.CE.UI.O_RESOLUTION>해상도</KoRimUtility.CE.UI.O_RESOLUTION>
+  <KoRimUtility.CE.UI.O_SAVEDARMORCHANGES>저장된 의복</KoRimUtility.CE.UI.O_SAVEDARMORCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDGENECHANGES>저장된 유전자</KoRimUtility.CE.UI.O_SAVEDGENECHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDITEMCHANGES>저장된 아이템</KoRimUtility.CE.UI.O_SAVEDITEMCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDLSCHANGES>저장된 신체 크기</KoRimUtility.CE.UI.O_SAVEDLSCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDWEAPONCHANGES>저장된 무기</KoRimUtility.CE.UI.O_SAVEDWEAPONCHANGES>
+  <KoRimUtility.CE.UI.O_SETTODEFAULT>기본값으로 되돌리기</KoRimUtility.CE.UI.O_SETTODEFAULT>
+  <KoRimUtility.CE.UI.O_SHORTNAME>짧은 이름 표시</KoRimUtility.CE.UI.O_SHORTNAME>
+  <KoRimUtility.CE.UI.O_SHOWBODYSIZEGENES>신체 크기 유전자 사용</KoRimUtility.CE.UI.O_SHOWBODYSIZEGENES>
+  <KoRimUtility.CE.UI.O_SHOWBUTTONINSTARTING>시작 화면에 편집기 버튼 표시</KoRimUtility.CE.UI.O_SHOWBUTTONINSTARTING>
+  <KoRimUtility.CE.UI.O_SHOWDEADLOGO>사망 표시</KoRimUtility.CE.UI.O_SHOWDEADLOGO>
+  <KoRimUtility.CE.UI.O_SHOWICONINSTARTING>시작 화면에 편집기 아이콘 표시</KoRimUtility.CE.UI.O_SHOWICONINSTARTING>
+  <KoRimUtility.CE.UI.O_SHOWINMAINTABS>하단 메뉴에 표시</KoRimUtility.CE.UI.O_SHOWINMAINTABS>
+  <KoRimUtility.CE.UI.O_SHOWWEAPON>무기 표시</KoRimUtility.CE.UI.O_SHOWWEAPON>
+  <KoRimUtility.CE.UI.O_STACKLIMIT>수량 상한</KoRimUtility.CE.UI.O_STACKLIMIT>
+  <KoRimUtility.CE.UI.O_STAYINCASCET>좀브렐라 안에 머무르기</KoRimUtility.CE.UI.O_STAYINCASCET>
+  <KoRimUtility.CE.UI.O_USEALTERNATIVEHEADFINDER>대체 머리 목록 사용</KoRimUtility.CE.UI.O_USEALTERNATIVEHEADFINDER>
+  <KoRimUtility.CE.UI.O_USEFIXEDSHADER>고정 셰이더 사용</KoRimUtility.CE.UI.O_USEFIXEDSHADER>
+  <KoRimUtility.CE.UI.O_USERIMWORLDPAWNGENERATOR>림월드 폰 생성기 사용</KoRimUtility.CE.UI.O_USERIMWORLDPAWNGENERATOR>
+  <KoRimUtility.CE.UI.O_USESORTEDPAWNLIST>폰 목록 정렬</KoRimUtility.CE.UI.O_USESORTEDPAWNLIST>
+  <KoRimUtility.CE.UI.OBJECT>아이템</KoRimUtility.CE.UI.OBJECT>
+  <KoRimUtility.CE.UI.ONLYFORSHIELD>이 능력치는 방어막에만 적용됩니다.</KoRimUtility.CE.UI.ONLYFORSHIELD>
+  <KoRimUtility.CE.UI.ONMAP>회색: 지도 위의 폰 표시\n흰색: 세계의 폰 표시</KoRimUtility.CE.UI.ONMAP>
+  <KoRimUtility.CE.UI.OPTIONS> 모드 설정</KoRimUtility.CE.UI.OPTIONS>
+  <KoRimUtility.CE.UI.OTHER>기타</KoRimUtility.CE.UI.OTHER>
+  <KoRimUtility.CE.UI.OUTFITTAGS>기본 복장 태그</KoRimUtility.CE.UI.OUTFITTAGS>
+  <KoRimUtility.CE.UI.OVERDOSECHANCEFACTOR>과다복용 확률 계수</KoRimUtility.CE.UI.OVERDOSECHANCEFACTOR>
+  <KoRimUtility.CE.UI.PAINLESS>고통 없음</KoRimUtility.CE.UI.PAINLESS>
+  <KoRimUtility.CE.UI.PARTS>탈출 캡슐 안</KoRimUtility.CE.UI.PARTS>
+  <KoRimUtility.CE.UI.PARTSANIMAL>동물 캡슐 안</KoRimUtility.CE.UI.PARTSANIMAL>
+  <KoRimUtility.CE.UI.PARTSONMAP>지도에 흩어짐</KoRimUtility.CE.UI.PARTSONMAP>
+  <KoRimUtility.CE.UI.PASSIONMODADD>열정 + </KoRimUtility.CE.UI.PASSIONMODADD>
+  <KoRimUtility.CE.UI.PASSIONMODSUB>열정 - </KoRimUtility.CE.UI.PASSIONMODSUB>
+  <KoRimUtility.CE.UI.PASSONDIRECTLY>직접 유전됨</KoRimUtility.CE.UI.PASSONDIRECTLY>
+  <KoRimUtility.CE.UI.PLACE_ITEM>배치</KoRimUtility.CE.UI.PLACE_ITEM>
+  <KoRimUtility.CE.UI.PLACE_PAWN>폰 배치</KoRimUtility.CE.UI.PLACE_PAWN>
+  <KoRimUtility.CE.UI.PLANTDENSITY>식물 밀도</KoRimUtility.CE.UI.PLANTDENSITY>
+  <KoRimUtility.CE.UI.POSITIVE_ONLY>긍정적인 것만</KoRimUtility.CE.UI.POSITIVE_ONLY>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNCHANCE>폭발 후 생성 확률</KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNCHANCE>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHING>폭발 후 생성할 물체 </KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHING>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHINGCOUNT>폭발 후 생성 수량</KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHINGCOUNT>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNCHANCE>폭발 전 생성 확률</KoRimUtility.CE.UI.PREEXPLOSIONSPAWNCHANCE>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHING>폭발 전 생성할 물체 </KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHING>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHINGCOUNT>폭발 전 생성 수량</KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHINGCOUNT>
+  <KoRimUtility.CE.UI.PREREQUISITE>선행 조건</KoRimUtility.CE.UI.PREREQUISITE>
+  <KoRimUtility.CE.UI.PREVENTPERMANENTWOUNDS>영구 부상 방지</KoRimUtility.CE.UI.PREVENTPERMANENTWOUNDS>
+  <KoRimUtility.CE.UI.PREVIEW>미리보기</KoRimUtility.CE.UI.PREVIEW>
+  <KoRimUtility.CE.UI.PRISONBREAKINTERVAL>탈옥 시도 간격</KoRimUtility.CE.UI.PRISONBREAKINTERVAL>
+  <KoRimUtility.CE.UI.PSYFOCUS>초집중</KoRimUtility.CE.UI.PSYFOCUS>
+  <KoRimUtility.CE.UI.PSYTALENTE>초능력</KoRimUtility.CE.UI.PSYTALENTE>
+  <KoRimUtility.CE.UI.QUADRUM>분기</KoRimUtility.CE.UI.QUADRUM>
+  <KoRimUtility.CE.UI.QUALITY>품질: </KoRimUtility.CE.UI.QUALITY>
+  <KoRimUtility.CE.UI.QUARTALS>분기</KoRimUtility.CE.UI.QUARTALS>
+  <KoRimUtility.CE.UI.RACESPECIFICDRESS>종족별 의복</KoRimUtility.CE.UI.RACESPECIFICDRESS>
+  <KoRimUtility.CE.UI.RANDOMBRIGHTNESSFACTOR>무작위 밝기 계수</KoRimUtility.CE.UI.RANDOMBRIGHTNESSFACTOR>
+  <KoRimUtility.CE.UI.RANDOMCHOSEN>무작위 선택</KoRimUtility.CE.UI.RANDOMCHOSEN>
+  <KoRimUtility.CE.UI.RANGED>원거리</KoRimUtility.CE.UI.RANGED>
+  <KoRimUtility.CE.UI.RECIPEPREREQUISITE>선행 제작법 </KoRimUtility.CE.UI.RECIPEPREREQUISITE>
+  <KoRimUtility.CE.UI.RECRUIT>포섭</KoRimUtility.CE.UI.RECRUIT>
+  <KoRimUtility.CE.UI.REDRESS>의복 교체</KoRimUtility.CE.UI.REDRESS>
+  <KoRimUtility.CE.UI.REEQUIP>무기 교체</KoRimUtility.CE.UI.REEQUIP>
+  <KoRimUtility.CE.UI.REINVENT>소지품 교체</KoRimUtility.CE.UI.REINVENT>
+  <KoRimUtility.CE.UI.RELATION_INFO>부모·연인처럼 직접 지정하는 관계만 편집할 수 있습니다. 형제자매·자녀·조부모처럼 다른 관계에서 파생되는 관계는 자동으로 생성됩니다.</KoRimUtility.CE.UI.RELATION_INFO>
+  <KoRimUtility.CE.UI.RELATIONS>관계</KoRimUtility.CE.UI.RELATIONS>
+  <KoRimUtility.CE.UI.RELATIONSOF>관계 대상: </KoRimUtility.CE.UI.RELATIONSOF>
+  <KoRimUtility.CE.UI.RELATIONTO>관계 상대:</KoRimUtility.CE.UI.RELATIONTO>
+  <KoRimUtility.CE.UI.RELOADTIME>재장전 시간 (CE)</KoRimUtility.CE.UI.RELOADTIME>
+  <KoRimUtility.CE.UI.REMOVE_ADDONS>추가 외형 제거</KoRimUtility.CE.UI.REMOVE_ADDONS>
+  <KoRimUtility.CE.UI.REMOVE_HEDIFF>건강 상태 제거</KoRimUtility.CE.UI.REMOVE_HEDIFF>
+  <KoRimUtility.CE.UI.REMOVEONREDRESS>생성 시 유전자 제거</KoRimUtility.CE.UI.REMOVEONREDRESS>
+  <KoRimUtility.CE.UI.REPRODUCTIVE>번식 가능</KoRimUtility.CE.UI.REPRODUCTIVE>
+  <KoRimUtility.CE.UI.REQUIRELINEOFSIGHT>시야 확보 필요</KoRimUtility.CE.UI.REQUIRELINEOFSIGHT>
+  <KoRimUtility.CE.UI.RESET>기본값으로 초기화</KoRimUtility.CE.UI.RESET>
+  <KoRimUtility.CE.UI.RESETALL>모두 기본값으로 초기화</KoRimUtility.CE.UI.RESETALL>
+  <KoRimUtility.CE.UI.RESOURCEDESC>자원 설명</KoRimUtility.CE.UI.RESOURCEDESC>
+  <KoRimUtility.CE.UI.RESOURCEGIZMOTHRESHOLD>자원 조절 눈금</KoRimUtility.CE.UI.RESOURCEGIZMOTHRESHOLD>
+  <KoRimUtility.CE.UI.RESOURCELABEL>자원 이름</KoRimUtility.CE.UI.RESOURCELABEL>
+  <KoRimUtility.CE.UI.RESOURCELOSSPERDAY>일일 자원 소모량</KoRimUtility.CE.UI.RESOURCELOSSPERDAY>
+  <KoRimUtility.CE.UI.RESURRECT>부활</KoRimUtility.CE.UI.RESURRECT>
+  <KoRimUtility.CE.UI.RETTUNGSKAPSEL>탈출 포드</KoRimUtility.CE.UI.RETTUNGSKAPSEL>
+  <KoRimUtility.CE.UI.ROTATION>회전</KoRimUtility.CE.UI.ROTATION>
+  <KoRimUtility.CE.UI.SAVE>저장</KoRimUtility.CE.UI.SAVE>
+  <KoRimUtility.CE.UI.SAVESLOT>저장할 슬롯: </KoRimUtility.CE.UI.SAVESLOT>
+  <KoRimUtility.CE.UI.SELECT_BODYPART>신체 부위 선택</KoRimUtility.CE.UI.SELECT_BODYPART>
+  <KoRimUtility.CE.UI.SELECT_COLOR>색상 선택</KoRimUtility.CE.UI.SELECT_COLOR>
+  <KoRimUtility.CE.UI.SELECT_PAWN>폰 선택</KoRimUtility.CE.UI.SELECT_PAWN>
+  <KoRimUtility.CE.UI.SELECTIONWEIGHT>선택 가중치</KoRimUtility.CE.UI.SELECTIONWEIGHT>
+  <KoRimUtility.CE.UI.SELECTIONWEIGHTDARKSKIN>어두운 피부색 선택 가중치</KoRimUtility.CE.UI.SELECTIONWEIGHTDARKSKIN>
+  <KoRimUtility.CE.UI.SETONCLICK> 클릭 시 적용</KoRimUtility.CE.UI.SETONCLICK>
+  <KoRimUtility.CE.UI.SETONMOUSEOVER> 마우스를 올리면 적용</KoRimUtility.CE.UI.SETONMOUSEOVER>
+  <KoRimUtility.CE.UI.SETROYALTITLE>작위 부여</KoRimUtility.CE.UI.SETROYALTITLE>
+  <KoRimUtility.CE.UI.SETTINGSSAVED>변경 내용을 저장했습니다.</KoRimUtility.CE.UI.SETTINGSSAVED>
+  <KoRimUtility.CE.UI.SHOW_HIDDEN>숨김 상태 표시</KoRimUtility.CE.UI.SHOW_HIDDEN>
+  <KoRimUtility.CE.UI.SHOW_IMPLICITE>파생 관계 표시</KoRimUtility.CE.UI.SHOW_IMPLICITE>
+  <KoRimUtility.CE.UI.SHOWCREATION>폰 생성 버튼과 확장 기능 표시</KoRimUtility.CE.UI.SHOWCREATION>
+  <KoRimUtility.CE.UI.SILVER_NEAR>해당 위치 주변의 은: </KoRimUtility.CE.UI.SILVER_NEAR>
+  <KoRimUtility.CE.UI.SILVER_NEEDED>, 필요한 은: </KoRimUtility.CE.UI.SILVER_NEEDED>
+  <KoRimUtility.CE.UI.SKILLGAINS>기술 보너스</KoRimUtility.CE.UI.SKILLGAINS>
+  <KoRimUtility.CE.UI.SKIN>피부: </KoRimUtility.CE.UI.SKIN>
+  <KoRimUtility.CE.UI.SKINCOLORBASE>기본 피부색</KoRimUtility.CE.UI.SKINCOLORBASE>
+  <KoRimUtility.CE.UI.SKINCOLOROVERRIDE>피부색 덮어쓰기</KoRimUtility.CE.UI.SKINCOLOROVERRIDE>
+  <KoRimUtility.CE.UI.SKIP>건너뛰기</KoRimUtility.CE.UI.SKIP>
+  <KoRimUtility.CE.UI.SOCIALFIGHTCHANCEFACTOR>사교적 싸움 확률 계수</KoRimUtility.CE.UI.SOCIALFIGHTCHANCEFACTOR>
+  <KoRimUtility.CE.UI.SOUNDAIMING>조준 소리 </KoRimUtility.CE.UI.SOUNDAIMING>
+  <KoRimUtility.CE.UI.SOUNDCALL>울음소리</KoRimUtility.CE.UI.SOUNDCALL>
+  <KoRimUtility.CE.UI.SOUNDCALLTIP>클릭하여 선택한 소리를 들어봅니다.</KoRimUtility.CE.UI.SOUNDCALLTIP>
+  <KoRimUtility.CE.UI.SOUNDCAST>발사 소리 </KoRimUtility.CE.UI.SOUNDCAST>
+  <KoRimUtility.CE.UI.SOUNDCASTBEAM>광선 발사 소리 </KoRimUtility.CE.UI.SOUNDCASTBEAM>
+  <KoRimUtility.CE.UI.SOUNDCASTTAIL>발사 잔향 </KoRimUtility.CE.UI.SOUNDCASTTAIL>
+  <KoRimUtility.CE.UI.SOUNDDEATH>사망 소리</KoRimUtility.CE.UI.SOUNDDEATH>
+  <KoRimUtility.CE.UI.SOUNDEXPLODE>폭발 소리 </KoRimUtility.CE.UI.SOUNDEXPLODE>
+  <KoRimUtility.CE.UI.SOUNDIMPACT>충돌 소리 </KoRimUtility.CE.UI.SOUNDIMPACT>
+  <KoRimUtility.CE.UI.SOUNDLANDING>착륙 소리 </KoRimUtility.CE.UI.SOUNDLANDING>
+  <KoRimUtility.CE.UI.SOUNDWOUNDED>부상 소리</KoRimUtility.CE.UI.SOUNDWOUNDED>
+  <KoRimUtility.CE.UI.SPRAYING>분산 반경</KoRimUtility.CE.UI.SPRAYING>
+  <KoRimUtility.CE.UI.START>시작</KoRimUtility.CE.UI.START>
+  <KoRimUtility.CE.UI.STARTCONTAINER>추락 지점 탐색</KoRimUtility.CE.UI.STARTCONTAINER>
+  <KoRimUtility.CE.UI.STARTSATAGE>유전자 활성화 나이</KoRimUtility.CE.UI.STARTSATAGE>
+  <KoRimUtility.CE.UI.STARTTONEWWORLDS>새로운 세계로</KoRimUtility.CE.UI.STARTTONEWWORLDS>
+  <KoRimUtility.CE.UI.STAT>능력치</KoRimUtility.CE.UI.STAT>
+  <KoRimUtility.CE.UI.STAT_FACTORS>능력치 배율</KoRimUtility.CE.UI.STAT_FACTORS>
+  <KoRimUtility.CE.UI.STAT_OFFSETS>능력치 가산값</KoRimUtility.CE.UI.STAT_OFFSETS>
+  <KoRimUtility.CE.UI.STATS>능력치</KoRimUtility.CE.UI.STATS>
+  <KoRimUtility.CE.UI.STATTYPE>능력치 유형: </KoRimUtility.CE.UI.STATTYPE>
+  <KoRimUtility.CE.UI.STEALABLE>도난 가능</KoRimUtility.CE.UI.STEALABLE>
+  <KoRimUtility.CE.UI.STERILIZE>불임</KoRimUtility.CE.UI.STERILIZE>
+  <KoRimUtility.CE.UI.STUFF>재료: </KoRimUtility.CE.UI.STUFF>
+  <KoRimUtility.CE.UI.STUFFPROPS>재료 분류</KoRimUtility.CE.UI.STUFFPROPS>
+  <KoRimUtility.CE.UI.STYLE>양식: </KoRimUtility.CE.UI.STYLE>
+  <KoRimUtility.CE.UI.SUMME>합계</KoRimUtility.CE.UI.SUMME>
+  <KoRimUtility.CE.UI.SUPPRESSEDTRAITS>억제된 특성</KoRimUtility.CE.UI.SUPPRESSEDTRAITS>
+  <KoRimUtility.CE.UI.SWAP_TO_PAWN>폰으로 전환</KoRimUtility.CE.UI.SWAP_TO_PAWN>
+  <KoRimUtility.CE.UI.TAGS>태그</KoRimUtility.CE.UI.TAGS>
+  <KoRimUtility.CE.UI.TARGET_LOCATION>지면 조준</KoRimUtility.CE.UI.TARGET_LOCATION>
+  <KoRimUtility.CE.UI.TARGETGROUND>지면 조준</KoRimUtility.CE.UI.TARGETGROUND>
+  <KoRimUtility.CE.UI.TATTOO>문신: </KoRimUtility.CE.UI.TATTOO>
+  <KoRimUtility.CE.UI.TECHLEVEL>기술 수준:</KoRimUtility.CE.UI.TECHLEVEL>
+  <KoRimUtility.CE.UI.TEILEIMSCHIFFSWRACK>우주선 잔해 속 물건</KoRimUtility.CE.UI.TEILEIMSCHIFFSWRACK>
+  <KoRimUtility.CE.UI.TELEPORT>순간이동</KoRimUtility.CE.UI.TELEPORT>
+  <KoRimUtility.CE.UI.TEXPATH>텍스처 경로: </KoRimUtility.CE.UI.TEXPATH>
+  <KoRimUtility.CE.UI.TH_MEMORY>기억</KoRimUtility.CE.UI.TH_MEMORY>
+  <KoRimUtility.CE.UI.TH_SITUATIONAL>상황</KoRimUtility.CE.UI.TH_SITUATIONAL>
+  <KoRimUtility.CE.UI.TH_SOCIAL>사교</KoRimUtility.CE.UI.TH_SOCIAL>
+  <KoRimUtility.CE.UI.TH_UNSUPPORTED>호환되지 않음</KoRimUtility.CE.UI.TH_UNSUPPORTED>
+  <KoRimUtility.CE.UI.THOUGHTS>생각</KoRimUtility.CE.UI.THOUGHTS>
+  <KoRimUtility.CE.UI.TIERKAPSEL>동물 캡슐</KoRimUtility.CE.UI.TIERKAPSEL>
+  <KoRimUtility.CE.UI.TIP_ADD_APPAREL>의복 추가·변경</KoRimUtility.CE.UI.TIP_ADD_APPAREL>
+  <KoRimUtility.CE.UI.TIP_ADD_CUSTOMPAWN>선택한 종류의 폰을 현재 목록에 추가합니다.\n[CTRL]: 지도에 배치\n[SHIFT]: 강하 포드로 투입\n[CAPS]: 복제</KoRimUtility.CE.UI.TIP_ADD_CUSTOMPAWN>
+  <KoRimUtility.CE.UI.TIP_ADD_EQUIP>장비 추가·변경</KoRimUtility.CE.UI.TIP_ADD_EQUIP>
+  <KoRimUtility.CE.UI.TIP_ADD_ITEM>아이템 추가·변경</KoRimUtility.CE.UI.TIP_ADD_ITEM>
+  <KoRimUtility.CE.UI.TIP_ADD_PAWN>무작위 폰을 현재 목록에 추가합니다.\n[CTRL]: 지도에 배치\n[SHIFT]: 강하 포드로 투입\n[CAPS]: 복제</KoRimUtility.CE.UI.TIP_ADD_PAWN>
+  <KoRimUtility.CE.UI.TIP_BUILDINGCOSTS>일부 건물의 건설 비용은 게임을 재시작한 뒤 갱신됩니다.</KoRimUtility.CE.UI.TIP_BUILDINGCOSTS>
+  <KoRimUtility.CE.UI.TIP_CHANGE_NAME>종족에 맞는 이름을 무작위로 지정합니다.</KoRimUtility.CE.UI.TIP_CHANGE_NAME>
+  <KoRimUtility.CE.UI.TIP_CHANGE_NAME_ALL>완전히 무작위인 이름을 지정합니다.</KoRimUtility.CE.UI.TIP_CHANGE_NAME_ALL>
+  <KoRimUtility.CE.UI.TIP_CLONE>선택한 폰을 복제합니다.\n[CTRL]: 지도에 배치\n[SHIFT]: 강하 포드로 투입\n[CAPS]: 추가 복제</KoRimUtility.CE.UI.TIP_CLONE>
+  <KoRimUtility.CE.UI.TIP_DELETE_PAWN>선택한 폰을 제거합니다.</KoRimUtility.CE.UI.TIP_DELETE_PAWN>
+  <KoRimUtility.CE.UI.TIP_DESTROYDROP>\n[ALT]을 누르면 떨어뜨리는 대신 파괴합니다.</KoRimUtility.CE.UI.TIP_DESTROYDROP>
+  <KoRimUtility.CE.UI.TIP_DLG_RANDOM_COLOR>색상 무작위 지정\n[CTRL]: 투명도를 포함한 색상</KoRimUtility.CE.UI.TIP_DLG_RANDOM_COLOR>
+  <KoRimUtility.CE.UI.TIP_DLG_RANDOMIZE_HAIRANDCOLOR>머리 모양과 색상을 무작위로 지정합니다.\n[CTRL]: 투명도를 포함한 색상</KoRimUtility.CE.UI.TIP_DLG_RANDOMIZE_HAIRANDCOLOR>
+  <KoRimUtility.CE.UI.TIP_HEAL>치료할 건강 상태를 선택합니다.\n[ALT]을 누르면 영구적이지 않은 부상만 치료하고 다리를 복구합니다.</KoRimUtility.CE.UI.TIP_HEAL>
+  <KoRimUtility.CE.UI.TIP_HURT>쓰러질 때까지 피해를 줍니다. 이미 쓰러진 폰은 사망할 때까지 피해를 줍니다.\n[ALT]을 누르거나 시작 폰 설정 화면에서는 무작위 부상을 추가합니다.</KoRimUtility.CE.UI.TIP_HURT>
+  <KoRimUtility.CE.UI.TIP_LOAD_PAWN_FROM_SLOT>저장 슬롯에서 폰을 불러옵니다.\n[CAPS]: 복제\n[ALT]: 모드 정보</KoRimUtility.CE.UI.TIP_LOAD_PAWN_FROM_SLOT>
+  <KoRimUtility.CE.UI.TIP_QUICKHEAL>부활 및 완전 치료\n[ALT]: 치료, [SHIFT]: 의료 처치\n[CTRL]: 마취, [CAPS]: 상처 입히기</KoRimUtility.CE.UI.TIP_QUICKHEAL>
+  <KoRimUtility.CE.UI.TIP_RANDOM_APPAREL>의복을 무작위로 지정합니다.\n[ALT]: 원래 색상\n[SHIFT]: 무작위 색상\n[CTRL]: 투명도를 포함한 무작위 색상</KoRimUtility.CE.UI.TIP_RANDOM_APPAREL>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BEARD>수염 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_BEARD>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BODY>체형 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_BODY>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BODYTATTOO>몸 문신 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_BODYTATTOO>
+  <KoRimUtility.CE.UI.TIP_RANDOM_FACETATTOO>얼굴 문신 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_FACETATTOO>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HAIR>머리 모양을 무작위로 지정합니다.\n[ALT]: 머리색도 무작위 지정\n[CTRL]: 투명도를 포함한 머리색도 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_HAIR>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HAIRCOLOR>머리색을 무작위로 지정합니다.\n[ALT]: 색상 A만\n[SHIFT]: 색상 B만\n[CTRL]: 투명도를 포함한 색상</KoRimUtility.CE.UI.TIP_RANDOM_HAIRCOLOR>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HEAD>머리 유형 무작위 지정</KoRimUtility.CE.UI.TIP_RANDOM_HEAD>
+  <KoRimUtility.CE.UI.TIP_RANDOM_SKINCOLOR>피부색을 무작위로 지정합니다.\n[ALT]: 피부색 A만\n[SHIFT]: 피부색 B만\n[CTRL]: 투명도를 포함한 색상</KoRimUtility.CE.UI.TIP_RANDOM_SKINCOLOR>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_BIO>폰을 유지하며 이름·기술·특성·성장 배경을 무작위로 지정합니다.</KoRimUtility.CE.UI.TIP_RANDOMIZE_BIO>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_BODYPARTS>폰을 유지하며 성별·머리·체형·머리카락·피부·수염·문신을 무작위로 지정합니다.\n[ALT]: 여성\n[CAPS]: 남성</KoRimUtility.CE.UI.TIP_RANDOMIZE_BODYPARTS>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_EQUIP>폰을 유지하며 의복과 무기를 무작위로 지정합니다.\n[ALT]: 의복만\n[SHIFT]: 무기만\n[CTRL]: 투명도를 포함한 색상</KoRimUtility.CE.UI.TIP_RANDOMIZE_EQUIP>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWN>폰을 새로운 무작위 폰으로 교체합니다.</KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWN>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWNKEEPRACE>폰을 같은 종족의 새로운 무작위 폰으로 교체합니다.\n[ALT]: 여성\n[CAPS]: 남성</KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWNKEEPRACE>
+  <KoRimUtility.CE.UI.TIP_REDRESS>착용 중인 의복을 모두 제거하고 새 의복을 무작위로 입힙니다.</KoRimUtility.CE.UI.TIP_REDRESS>
+  <KoRimUtility.CE.UI.TIP_REEQUIP>새 무기를 무작위로 생성해 장착합니다. 기존 무기가 교체될 수 있습니다.</KoRimUtility.CE.UI.TIP_REEQUIP>
+  <KoRimUtility.CE.UI.TIP_REINVENT>소지품을 지우고 새 아이템을 무작위로 생성해 넣습니다.</KoRimUtility.CE.UI.TIP_REINVENT>
+  <KoRimUtility.CE.UI.TIP_REMOVE_PAWN>폰 제거 버튼을 표시하거나 숨깁니다.\n[ALT]: 지도 위의 폰도 제거. 마우스 오른쪽 버튼으로 취소합니다.</KoRimUtility.CE.UI.TIP_REMOVE_PAWN>
+  <KoRimUtility.CE.UI.TIP_SAVE_PAWN_TO_SLOT>폰을 저장 슬롯에 저장합니다.\n[CTRL]: 선택한 슬롯 삭제</KoRimUtility.CE.UI.TIP_SAVE_PAWN_TO_SLOT>
+  <KoRimUtility.CE.UI.TIP_TELEPORT>선택한 폰을 순간이동시킵니다.\n[CTRL]: 다른 폰도 순간이동</KoRimUtility.CE.UI.TIP_TELEPORT>
+  <KoRimUtility.CE.UI.TIP_TODEFAULTS>폰 저장 슬롯을 제외한 모든 설정을 기본값으로 되돌립니다.</KoRimUtility.CE.UI.TIP_TODEFAULTS>
+  <KoRimUtility.CE.UI.TIP_TOGGLECATEGORIES>모든 분류와 사용 가능한 분류 사이를 전환합니다. 모든 분류를 표시하면 허용 최솟값과 최댓값을 검사하지 않습니다.</KoRimUtility.CE.UI.TIP_TOGGLECATEGORIES>
+  <KoRimUtility.CE.UI.TIP_UNDRESS>착용 중인 의복 하나를 무작위로 벗깁니다.\n[ALT]: 떨어뜨리는 대신 파괴</KoRimUtility.CE.UI.TIP_UNDRESS>
+  <KoRimUtility.CE.UI.TIPCLEARGENES>모든 유전자를 제거합니다.\n[CTRL]: 머리카락·피부 유전자 유지</KoRimUtility.CE.UI.TIPCLEARGENES>
+  <KoRimUtility.CE.UI.TODEFAULTS>기본값으로</KoRimUtility.CE.UI.TODEFAULTS>
+  <KoRimUtility.CE.UI.TOGGLEENDOXENO>내유전자·외유전자 전환</KoRimUtility.CE.UI.TOGGLEENDOXENO>
+  <KoRimUtility.CE.UI.TOGGLESELECTIONONMOUSEOVER>마우스 올리기·클릭 선택 전환</KoRimUtility.CE.UI.TOGGLESELECTIONONMOUSEOVER>
+  <KoRimUtility.CE.UI.TOLERANCEBUILDUPFACTOR>내성 증가 계수</KoRimUtility.CE.UI.TOLERANCEBUILDUPFACTOR>
+  <KoRimUtility.CE.UI.TONEWWORLD_DESC>새로운 세계로 출발합니다.</KoRimUtility.CE.UI.TONEWWORLD_DESC>
+  <KoRimUtility.CE.UI.TOOLTIP_REMOVE_ADDONS>현재 게임 실행 중 이 종족의 모든 추가 외형을 제거합니다.</KoRimUtility.CE.UI.TOOLTIP_REMOVE_ADDONS>
+  <KoRimUtility.CE.UI.TOORBIT>궤도로</KoRimUtility.CE.UI.TOORBIT>
+  <KoRimUtility.CE.UI.TOORBIT_DESC>궤도로 돌아갑니다.</KoRimUtility.CE.UI.TOORBIT_DESC>
+  <KoRimUtility.CE.UI.TRADEABILITY>거래 가능 여부:</KoRimUtility.CE.UI.TRADEABILITY>
+  <KoRimUtility.CE.UI.TRADETAGS>거래 태그</KoRimUtility.CE.UI.TRADETAGS>
+  <KoRimUtility.CE.UI.TURRET>포탑</KoRimUtility.CE.UI.TURRET>
+  <KoRimUtility.CE.UI.TURRETGUN>포탑 무기</KoRimUtility.CE.UI.TURRETGUN>
+  <KoRimUtility.CE.UI.UNAFFECTEDBYDARK>어둠이 작업 속도에 영향을 주지 않음</KoRimUtility.CE.UI.UNAFFECTEDBYDARK>
+  <KoRimUtility.CE.UI.UNDRESS>옷 하나 벗기</KoRimUtility.CE.UI.UNDRESS>
+  <KoRimUtility.CE.UI.UNLOAD>하역</KoRimUtility.CE.UI.UNLOAD>
+  <KoRimUtility.CE.UI.UNLOAD_DESC>성간 보관함의 모든 물건을 강하 포드로 내려보냅니다.</KoRimUtility.CE.UI.UNLOAD_DESC>
+  <KoRimUtility.CE.UI.VOICEPITCH>목소리 높이</KoRimUtility.CE.UI.VOICEPITCH>
+  <KoRimUtility.CE.UI.VOICEVOLUME>목소리 크기</KoRimUtility.CE.UI.VOICEVOLUME>
+  <KoRimUtility.CE.UI.VON> / </KoRimUtility.CE.UI.VON>
+  <KoRimUtility.CE.UI.WARMUP>조준 시간</KoRimUtility.CE.UI.WARMUP>
+  <KoRimUtility.CE.UI.WARMUPMAX>최대 조준 시간</KoRimUtility.CE.UI.WARMUPMAX>
+  <KoRimUtility.CE.UI.WEAPON>무기</KoRimUtility.CE.UI.WEAPON>
+  <KoRimUtility.CE.UI.WEAPONTAGS>무기 태그</KoRimUtility.CE.UI.WEAPONTAGS>
+  <KoRimUtility.CE.UI.WILDANIMALS>야생동물</KoRimUtility.CE.UI.WILDANIMALS>
+  <KoRimUtility.CE.UI.WILL_REPLACE>교체 대상</KoRimUtility.CE.UI.WILL_REPLACE>
+  <KoRimUtility.CE.UI.WOMENCANHAVEBEARDS>여성 수염 허용</KoRimUtility.CE.UI.WOMENCANHAVEBEARDS>
+  <KoRimUtility.CE.UI.WORNPATH>착용 텍스처 경로: </KoRimUtility.CE.UI.WORNPATH>
+  <KoRimUtility.CE.UI.XENOTYPEISPREFERED>이념에서 선호하는 이종족</KoRimUtility.CE.UI.XENOTYPEISPREFERED>
+  <KoRimUtility.CE.UI.YEAR>년</KoRimUtility.CE.UI.YEAR>
+  <KoRimUtility.CE.UI.YEARS>년</KoRimUtility.CE.UI.YEARS>
+</LanguageData>

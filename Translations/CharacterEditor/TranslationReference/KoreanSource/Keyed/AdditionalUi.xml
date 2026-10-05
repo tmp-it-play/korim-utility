@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.CE.Extra.Mood>mood</KoRimUtility.CE.Extra.Mood>
+  <KoRimUtility.CE.Extra.MoodValue>mood [</KoRimUtility.CE.Extra.MoodValue>
+  <KoRimUtility.CE.Extra.Opinion>opinion</KoRimUtility.CE.Extra.Opinion>
+  <KoRimUtility.CE.Extra.OpinionValue>opinion [</KoRimUtility.CE.Extra.OpinionValue>
+  <KoRimUtility.CE.Extra.Modify>Modify</KoRimUtility.CE.Extra.Modify>
+  <KoRimUtility.CE.Extra.ModifyTip>changes will be applied after some passed time</KoRimUtility.CE.Extra.ModifyTip>
+  <KoRimUtility.CE.Extra.FluidIdeology>Do not click on back button or you will need to restart your game. This is not a bug from the Editor, but because of the fluid ideo.</KoRimUtility.CE.Extra.FluidIdeology>
+  <KoRimUtility.CE.Extra.InvalidHealth>health conditions are malformed -&gt; consider to use 'full heal'</KoRimUtility.CE.Extra.InvalidHealth>
+  <KoRimUtility.CE.Extra.HealFailed>failed to heal</KoRimUtility.CE.Extra.HealFailed>
+  <KoRimUtility.CE.Extra.MinimumPawns>can't delete below the minimum number</KoRimUtility.CE.Extra.MinimumPawns>
+  <KoRimUtility.CE.Extra.ZombieInSpace>can't create zombies in space!</KoRimUtility.CE.Extra.ZombieInSpace>
+  <KoRimUtility.CE.Extra.MissingPreset>default preset not found!</KoRimUtility.CE.Extra.MissingPreset>
+  <KoRimUtility.CE.Extra.UnreadableData>no data or not readable</KoRimUtility.CE.Extra.UnreadableData>
+  <KoRimUtility.CE.Extra.InvalidScenario>error while parsing scenario file. reason -&gt; wrong or invalid data format</KoRimUtility.CE.Extra.InvalidScenario>
+  <KoRimUtility.CE.Extra.ScenarioPartsFailed>couldn't add scenario parts</KoRimUtility.CE.Extra.ScenarioPartsFailed>
+  <KoRimUtility.CE.Extra.ThoughtFailed>failed to add thought. reason = this thought or thought stage cause an exception. action was rolled back.</KoRimUtility.CE.Extra.ThoughtFailed>
+  <KoRimUtility.CE.Extra.ExportedTo>export successful to </KoRimUtility.CE.Extra.ExportedTo>
+  <KoRimUtility.CE.Extra.ImportedFrom>import successful from </KoRimUtility.CE.Extra.ImportedFrom>
+  <KoRimUtility.CE.Extra.MissingMods>Missing Mods: </KoRimUtility.CE.Extra.MissingMods>
+  <KoRimUtility.CE.Extra.MissingHair>Hair not found:</KoRimUtility.CE.Extra.MissingHair>
+  <KoRimUtility.CE.Extra.MissingBody>BodyTypeDef not found: </KoRimUtility.CE.Extra.MissingBody>
+  <KoRimUtility.CE.Extra.MissingTexture>Missing Texture=</KoRimUtility.CE.Extra.MissingTexture>
+  <KoRimUtility.CE.Extra.EmptyScenario>can't load scenario file. reason-&gt; no data in file=</KoRimUtility.CE.Extra.EmptyScenario>
+  <KoRimUtility.CE.Extra.SlotData>Data: </KoRimUtility.CE.Extra.SlotData>
+</LanguageData>

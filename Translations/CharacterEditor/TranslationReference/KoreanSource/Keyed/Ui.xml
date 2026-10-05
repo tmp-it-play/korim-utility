@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.CE.UI.MUTATION_TIP>Transform into a mutant\nHold [CTRL] to create badass mutants</KoRimUtility.CE.UI.MUTATION_TIP>
+  <KoRimUtility.CE.UI.OVERWRITE_EXISTING>Overwrite existing?</KoRimUtility.CE.UI.OVERWRITE_EXISTING>
+  <KoRimUtility.CE.UI.FLIP>Flip</KoRimUtility.CE.UI.FLIP>
+  <KoRimUtility.CE.UI.WRONGPAWN>can't be the same pawn! try other or change category.</KoRimUtility.CE.UI.WRONGPAWN>
+  <KoRimUtility.CE.UI.ABILITIES>Abilities</KoRimUtility.CE.UI.ABILITIES>
+  <KoRimUtility.CE.UI.ACTIVATEPLACINGMODE>activate placing mode</KoRimUtility.CE.UI.ACTIVATEPLACINGMODE>
+  <KoRimUtility.CE.UI.ADD>Add</KoRimUtility.CE.UI.ADD>
+  <KoRimUtility.CE.UI.ADD_GENE>Add gene</KoRimUtility.CE.UI.ADD_GENE>
+  <KoRimUtility.CE.UI.ADD_HEDIFF>Health Conditions</KoRimUtility.CE.UI.ADD_HEDIFF>
+  <KoRimUtility.CE.UI.ADD_THOUGHT>Create Memory</KoRimUtility.CE.UI.ADD_THOUGHT>
+  <KoRimUtility.CE.UI.ADD_TRAIT>Traits</KoRimUtility.CE.UI.ADD_TRAIT>
+  <KoRimUtility.CE.UI.ADD_WEAPON>Add weapon</KoRimUtility.CE.UI.ADD_WEAPON>
+  <KoRimUtility.CE.UI.ADDICTIONCHANCEFACTOR>Addiction chance factor</KoRimUtility.CE.UI.ADDICTIONCHANCEFACTOR>
+  <KoRimUtility.CE.UI.ADDONS_INFO>Index values are pawn specific. DrawSize and gender active are race specific. </KoRimUtility.CE.UI.ADDONS_INFO>
+  <KoRimUtility.CE.UI.ADDONS_INFO2> - race specific changes only stay for one game session!</KoRimUtility.CE.UI.ADDONS_INFO2>
+  <KoRimUtility.CE.UI.ADDSTAT>Add Stat</KoRimUtility.CE.UI.ADDSTAT>
+  <KoRimUtility.CE.UI.ALL>All</KoRimUtility.CE.UI.ALL>
+  <KoRimUtility.CE.UI.ALLCUSTOMSWILLBEDELEATED>All custom strings will be deleted. This include custom weapons, custom apparel and custom items. Are you sure?</KoRimUtility.CE.UI.ALLCUSTOMSWILLBEDELEATED>
+  <KoRimUtility.CE.UI.ALLSLOTSWILLBECLEARED>All slots will be cleared. Are you sure?</KoRimUtility.CE.UI.ALLSLOTSWILLBECLEARED>
+  <KoRimUtility.CE.UI.ALLSOUNDS>all sounds</KoRimUtility.CE.UI.ALLSOUNDS>
+  <KoRimUtility.CE.UI.ALWAYS_SKIP>Ask no more</KoRimUtility.CE.UI.ALWAYS_SKIP>
+  <KoRimUtility.CE.UI.ANAESTHETIZE>Anaesthetize</KoRimUtility.CE.UI.ANAESTHETIZE>
+  <KoRimUtility.CE.UI.ANIMAL>Animal</KoRimUtility.CE.UI.ANIMAL>
+  <KoRimUtility.CE.UI.ANIMALDENSITY>animal density</KoRimUtility.CE.UI.ANIMALDENSITY>
+  <KoRimUtility.CE.UI.APPARELLAYER>Apparel Layers</KoRimUtility.CE.UI.APPARELLAYER>
+  <KoRimUtility.CE.UI.APPARELTAGS>Apparel-Tags</KoRimUtility.CE.UI.APPARELTAGS>
+  <KoRimUtility.CE.UI.APPLYDAMAGETOEXPLOSIONCELLNEIGHBORS>Apply damage to explosion cell neighbors</KoRimUtility.CE.UI.APPLYDAMAGETOEXPLOSIONCELLNEIGHBORS>
+  <KoRimUtility.CE.UI.APTITUDE>Skill Aptitude</KoRimUtility.CE.UI.APTITUDE>
+  <KoRimUtility.CE.UI.ARCHITECAPSULES>Archite capsules</KoRimUtility.CE.UI.ARCHITECAPSULES>
+  <KoRimUtility.CE.UI.ATTENTION>ATTENTION</KoRimUtility.CE.UI.ATTENTION>
+  <KoRimUtility.CE.UI.AUFDERKARTE>On the map</KoRimUtility.CE.UI.AUFDERKARTE>
+  <KoRimUtility.CE.UI.BACKUPCONTAINER>Interstellar container</KoRimUtility.CE.UI.BACKUPCONTAINER>
+  <KoRimUtility.CE.UI.BEAMDAMAGEDEF>Beam damage def </KoRimUtility.CE.UI.BEAMDAMAGEDEF>
+  <KoRimUtility.CE.UI.BEAMFULLWIDTHRANGE>Beam full width range</KoRimUtility.CE.UI.BEAMFULLWIDTHRANGE>
+  <KoRimUtility.CE.UI.BEAMSTREUUNG>Beam scattering</KoRimUtility.CE.UI.BEAMSTREUUNG>
+  <KoRimUtility.CE.UI.BEAMTARGETGROUND>Beam target ground</KoRimUtility.CE.UI.BEAMTARGETGROUND>
+  <KoRimUtility.CE.UI.BEARD>Beard</KoRimUtility.CE.UI.BEARD>
+  <KoRimUtility.CE.UI.BEARDTAGS>Beard tags</KoRimUtility.CE.UI.BEARDTAGS>
+  <KoRimUtility.CE.UI.BIOAGE>Biological age</KoRimUtility.CE.UI.BIOAGE>
+  <KoRimUtility.CE.UI.BIOCODED> Biocoded</KoRimUtility.CE.UI.BIOCODED>
+  <KoRimUtility.CE.UI.BIRTHDAY>Birthday</KoRimUtility.CE.UI.BIRTHDAY>
+  <KoRimUtility.CE.UI.BLADELINKTRAITS>Blade link weapon traits</KoRimUtility.CE.UI.BLADELINKTRAITS>
+  <KoRimUtility.CE.UI.BODYPARTGROUPS>Covered body parts</KoRimUtility.CE.UI.BODYPARTGROUPS>
+  <KoRimUtility.CE.UI.BODYSIZEFACTOR>Body size factor</KoRimUtility.CE.UI.BODYSIZEFACTOR>
+  <KoRimUtility.CE.UI.BODYWIDTH>Body width</KoRimUtility.CE.UI.BODYWIDTH>
+  <KoRimUtility.CE.UI.BROW>Brow</KoRimUtility.CE.UI.BROW>
+  <KoRimUtility.CE.UI.BUILDINGPREREQUISITES>Building Prerequisites</KoRimUtility.CE.UI.BUILDINGPREREQUISITES>
+  <KoRimUtility.CE.UI.BULLET_SPEED>Projectile Speed</KoRimUtility.CE.UI.BULLET_SPEED>
+  <KoRimUtility.CE.UI.BUY>Buy</KoRimUtility.CE.UI.BUY>
+  <KoRimUtility.CE.UI.BUY_1>Buy {0} for {1} silver, accept?</KoRimUtility.CE.UI.BUY_1>
+  <KoRimUtility.CE.UI.CANGENERATEINGENESET>Can be created in the gene pool</KoRimUtility.CE.UI.CANGENERATEINGENESET>
+  <KoRimUtility.CE.UI.CANTREMOVELAYER>Last apparel layer can't be removed. At least one apparel layer must stay.</KoRimUtility.CE.UI.CANTREMOVELAYER>
+  <KoRimUtility.CE.UI.CAPACITIES>Capacity modifier</KoRimUtility.CE.UI.CAPACITIES>
+  <KoRimUtility.CE.UI.CARAVANRIDEABLE>Caravan rideable</KoRimUtility.CE.UI.CARAVANRIDEABLE>
+  <KoRimUtility.CE.UI.CAUSESNEED>Causes need</KoRimUtility.CE.UI.CAUSESNEED>
+  <KoRimUtility.CE.UI.CHANGE_FACTION>Change Faction</KoRimUtility.CE.UI.CHANGE_FACTION>
+  <KoRimUtility.CE.UI.CHANGERACE>Change race</KoRimUtility.CE.UI.CHANGERACE>
+  <KoRimUtility.CE.UI.CHARACTER>Character</KoRimUtility.CE.UI.CHARACTER>
+  <KoRimUtility.CE.UI.CHOOSE_PAWN>Choose pawn</KoRimUtility.CE.UI.CHOOSE_PAWN>
+  <KoRimUtility.CE.UI.CHRONOAGE>Chronological age</KoRimUtility.CE.UI.CHRONOAGE>
+  <KoRimUtility.CE.UI.CLASSICMORTAR> (classic mortar)</KoRimUtility.CE.UI.CLASSICMORTAR>
+  <KoRimUtility.CE.UI.CLICKTOOPENLIST>Click to open list</KoRimUtility.CE.UI.CLICKTOOPENLIST>
+  <KoRimUtility.CE.UI.CLONE_PAWN>clone pawn</KoRimUtility.CE.UI.CLONE_PAWN>
+  <KoRimUtility.CE.UI.CLOSE_FACIAL>Update pawn</KoRimUtility.CE.UI.CLOSE_FACIAL>
+  <KoRimUtility.CE.UI.COLONISTS>Colonists</KoRimUtility.CE.UI.COLONISTS>
+  <KoRimUtility.CE.UI.COLONISTS_ONLY>Colonists only</KoRimUtility.CE.UI.COLONISTS_ONLY>
+  <KoRimUtility.CE.UI.COLONYANIMALS>Colony Animals</KoRimUtility.CE.UI.COLONYANIMALS>
+  <KoRimUtility.CE.UI.COLORA>Color A</KoRimUtility.CE.UI.COLORA>
+  <KoRimUtility.CE.UI.COLORB>Color B</KoRimUtility.CE.UI.COLORB>
+  <KoRimUtility.CE.UI.COMPLEXITY>Complexity</KoRimUtility.CE.UI.COMPLEXITY>
+  <KoRimUtility.CE.UI.CONFIRM_RACE_CHANGE>Confirm race change.</KoRimUtility.CE.UI.CONFIRM_RACE_CHANGE>
+  <KoRimUtility.CE.UI.CONSUMEFUELPERBURST>Consume fuel per burst</KoRimUtility.CE.UI.CONSUMEFUELPERBURST>
+  <KoRimUtility.CE.UI.CONSUMEFUELPERSHOT>Consume fuel per shot</KoRimUtility.CE.UI.CONSUMEFUELPERSHOT>
+  <KoRimUtility.CE.UI.COSTS>Manufacturing Costs</KoRimUtility.CE.UI.COSTS>
+  <KoRimUtility.CE.UI.COSTSTUFFCOUNT>Creation costs - stuff count: </KoRimUtility.CE.UI.COSTSTUFFCOUNT>
+  <KoRimUtility.CE.UI.COUNT>Amount: </KoRimUtility.CE.UI.COUNT>
+  <KoRimUtility.CE.UI.CREATE>Create</KoRimUtility.CE.UI.CREATE>
+  <KoRimUtility.CE.UI.CUSTOMEFFECTDESCRIPTIONS>Custom effect descriptions</KoRimUtility.CE.UI.CUSTOMEFFECTDESCRIPTIONS>
+  <KoRimUtility.CE.UI.DAMAGEAMOUNTBASE>Damage amount base</KoRimUtility.CE.UI.DAMAGEAMOUNTBASE>
+  <KoRimUtility.CE.UI.DAMAGEDEF>Damage def </KoRimUtility.CE.UI.DAMAGEDEF>
+  <KoRimUtility.CE.UI.DAMAGEFACTOR>Damage factor</KoRimUtility.CE.UI.DAMAGEFACTOR>
+  <KoRimUtility.CE.UI.DAUER>Duration</KoRimUtility.CE.UI.DAUER>
+  <KoRimUtility.CE.UI.DAY>Day</KoRimUtility.CE.UI.DAY>
+  <KoRimUtility.CE.UI.DAYS>Days</KoRimUtility.CE.UI.DAYS>
+  <KoRimUtility.CE.UI.DELETE_CUSTOMS>Delete Customs</KoRimUtility.CE.UI.DELETE_CUSTOMS>
+  <KoRimUtility.CE.UI.DELETE_PAWN>remove pawn</KoRimUtility.CE.UI.DELETE_PAWN>
+  <KoRimUtility.CE.UI.DELETE_SLOTS>Delete Slots</KoRimUtility.CE.UI.DELETE_SLOTS>
+  <KoRimUtility.CE.UI.DESTROY>Destroy</KoRimUtility.CE.UI.DESTROY>
+  <KoRimUtility.CE.UI.DISABLEDNEEDS>Disabled needs</KoRimUtility.CE.UI.DISABLEDNEEDS>
+  <KoRimUtility.CE.UI.DISABLEDSKILLS>Disabled Skills</KoRimUtility.CE.UI.DISABLEDSKILLS>
+  <KoRimUtility.CE.UI.DISABLEDWORKTAGS>Disabled work tags</KoRimUtility.CE.UI.DISABLEDWORKTAGS>
+  <KoRimUtility.CE.UI.DISLIKESSUNLIGHT>Dislikes sunlight</KoRimUtility.CE.UI.DISLIKESSUNLIGHT>
+  <KoRimUtility.CE.UI.DISPLAYODERINCATEGORY>Order in the category</KoRimUtility.CE.UI.DISPLAYODERINCATEGORY>
+  <KoRimUtility.CE.UI.DONTMINDRAWFOOD>Don't mind raw food</KoRimUtility.CE.UI.DONTMINDRAWFOOD>
+  <KoRimUtility.CE.UI.DRAWSIZE>Drawsize: </KoRimUtility.CE.UI.DRAWSIZE>
+  <KoRimUtility.CE.UI.DROP>Droppod location for </KoRimUtility.CE.UI.DROP>
+  <KoRimUtility.CE.UI.ENDOGENECATEGORY>Endogene category</KoRimUtility.CE.UI.ENDOGENECATEGORY>
+  <KoRimUtility.CE.UI.ENSLAVE>Enslave</KoRimUtility.CE.UI.ENSLAVE>
+  <KoRimUtility.CE.UI.ENTROPY>Entropy</KoRimUtility.CE.UI.ENTROPY>
+  <KoRimUtility.CE.UI.EQUIPSTATS>Stats on Equip</KoRimUtility.CE.UI.EQUIPSTATS>
+  <KoRimUtility.CE.UI.EXCLUSIONTAGS>Exclusion tags</KoRimUtility.CE.UI.EXCLUSIONTAGS>
+  <KoRimUtility.CE.UI.EXPL_RADIUS>Explosion radius</KoRimUtility.CE.UI.EXPL_RADIUS>
+  <KoRimUtility.CE.UI.EXPLOSIONDELAY>Explosion delay</KoRimUtility.CE.UI.EXPLOSIONDELAY>
+  <KoRimUtility.CE.UI.EXPLOSIONEFFECT>Explosion effect </KoRimUtility.CE.UI.EXPLOSIONEFFECT>
+  <KoRimUtility.CE.UI.EXPORT>Export</KoRimUtility.CE.UI.EXPORT>
+  <KoRimUtility.CE.UI.EXPORT_SLOTS>Exports pawns to a file on the desktop</KoRimUtility.CE.UI.EXPORT_SLOTS>
+  <KoRimUtility.CE.UI.EXTRAS>Miscellaneous</KoRimUtility.CE.UI.EXTRAS>
+  <KoRimUtility.CE.UI.EYECOLOR>Eye color</KoRimUtility.CE.UI.EYECOLOR>
+  <KoRimUtility.CE.UI.EYESIZEFACTOR>Eye size factor</KoRimUtility.CE.UI.EYESIZEFACTOR>
+  <KoRimUtility.CE.UI.FACETATTOO>Face tattoo: </KoRimUtility.CE.UI.FACETATTOO>
+  <KoRimUtility.CE.UI.FACIAL>Face</KoRimUtility.CE.UI.FACIAL>
+  <KoRimUtility.CE.UI.FILTERCATEGORY>Filter category </KoRimUtility.CE.UI.FILTERCATEGORY>
+  <KoRimUtility.CE.UI.FILTERTYPE>Filter type </KoRimUtility.CE.UI.FILTERTYPE>
+  <KoRimUtility.CE.UI.FIND_PAWN>Find Pawn</KoRimUtility.CE.UI.FIND_PAWN>
+  <KoRimUtility.CE.UI.FLYOVERHEAD>Projectile overflies obstacles</KoRimUtility.CE.UI.FLYOVERHEAD>
+  <KoRimUtility.CE.UI.FOCUS>Focus</KoRimUtility.CE.UI.FOCUS>
+  <KoRimUtility.CE.UI.FOODMAXFACTOR>Food max factor</KoRimUtility.CE.UI.FOODMAXFACTOR>
+  <KoRimUtility.CE.UI.FORCEDHEADTYPES>Forced head types</KoRimUtility.CE.UI.FORCEDHEADTYPES>
+  <KoRimUtility.CE.UI.FORCEDTRAITS>Forced traits</KoRimUtility.CE.UI.FORCEDTRAITS>
+  <KoRimUtility.CE.UI.FORDIFFICULTY> for difficulty</KoRimUtility.CE.UI.FORDIFFICULTY>
+  <KoRimUtility.CE.UI.FORM>Form</KoRimUtility.CE.UI.FORM>
+  <KoRimUtility.CE.UI.FRISUR>Style</KoRimUtility.CE.UI.FRISUR>
+  <KoRimUtility.CE.UI.FULLHEAL>Full Heal</KoRimUtility.CE.UI.FULLHEAL>
+  <KoRimUtility.CE.UI.FULLNEEDS>Maximize</KoRimUtility.CE.UI.FULLNEEDS>
+  <KoRimUtility.CE.UI.FULLYPROTECTEDFROM>Protection</KoRimUtility.CE.UI.FULLYPROTECTEDFROM>
+  <KoRimUtility.CE.UI.GASTYPE>Gas type </KoRimUtility.CE.UI.GASTYPE>
+  <KoRimUtility.CE.UI.GENECATEGORY>Genetic category</KoRimUtility.CE.UI.GENECATEGORY>
+  <KoRimUtility.CE.UI.GENERATE_PAWN>Generate Pawn</KoRimUtility.CE.UI.GENERATE_PAWN>
+  <KoRimUtility.CE.UI.GENETICBODYTYPE>Genetic body type</KoRimUtility.CE.UI.GENETICBODYTYPE>
+  <KoRimUtility.CE.UI.GENETICS>Genetics</KoRimUtility.CE.UI.GENETICS>
+  <KoRimUtility.CE.UI.GRAPHICS>Graphic Data</KoRimUtility.CE.UI.GRAPHICS>
+  <KoRimUtility.CE.UI.GUNSTATS>Ranged Stats</KoRimUtility.CE.UI.GUNSTATS>
+  <KoRimUtility.CE.UI.HA_INFO>Change the slider to change addon graphics. Some addons can only be seen from fix sides (from side or back only). Some addons may not be changeable.</KoRimUtility.CE.UI.HA_INFO>
+  <KoRimUtility.CE.UI.HAIR>Hair</KoRimUtility.CE.UI.HAIR>
+  <KoRimUtility.CE.UI.HAIRCOLOR>Hair</KoRimUtility.CE.UI.HAIRCOLOR>
+  <KoRimUtility.CE.UI.HAIRCOLOROVERRIDE>Hair color override</KoRimUtility.CE.UI.HAIRCOLOROVERRIDE>
+  <KoRimUtility.CE.UI.HAIRTAGS>Hair tags</KoRimUtility.CE.UI.HAIRTAGS>
+  <KoRimUtility.CE.UI.HB_All>All</KoRimUtility.CE.UI.HB_All>
+  <KoRimUtility.CE.UI.HB_ALLADDICTIONS>Addiction or Drug</KoRimUtility.CE.UI.HB_ALLADDICTIONS>
+  <KoRimUtility.CE.UI.HB_ALLDISEASES>Sick or Bad</KoRimUtility.CE.UI.HB_ALLDISEASES>
+  <KoRimUtility.CE.UI.HB_ALLIMPLANTS>Implant</KoRimUtility.CE.UI.HB_ALLIMPLANTS>
+  <KoRimUtility.CE.UI.HB_ALLINJURIES>Injury</KoRimUtility.CE.UI.HB_ALLINJURIES>
+  <KoRimUtility.CE.UI.HB_ALLTIME>Time-based</KoRimUtility.CE.UI.HB_ALLTIME>
+  <KoRimUtility.CE.UI.HB_Arm>Arm</KoRimUtility.CE.UI.HB_Arm>
+  <KoRimUtility.CE.UI.HB_Brain>Brain</KoRimUtility.CE.UI.HB_Brain>
+  <KoRimUtility.CE.UI.HB_Clavicle>Clavicle</KoRimUtility.CE.UI.HB_Clavicle>
+  <KoRimUtility.CE.UI.HB_Ear>Ear</KoRimUtility.CE.UI.HB_Ear>
+  <KoRimUtility.CE.UI.HB_Eye>Eye</KoRimUtility.CE.UI.HB_Eye>
+  <KoRimUtility.CE.UI.HB_Femur>Femur</KoRimUtility.CE.UI.HB_Femur>
+  <KoRimUtility.CE.UI.HB_Finger>Finger</KoRimUtility.CE.UI.HB_Finger>
+  <KoRimUtility.CE.UI.HB_Foot>Foot</KoRimUtility.CE.UI.HB_Foot>
+  <KoRimUtility.CE.UI.HB_Hand>Hand</KoRimUtility.CE.UI.HB_Hand>
+  <KoRimUtility.CE.UI.HB_Head>Head</KoRimUtility.CE.UI.HB_Head>
+  <KoRimUtility.CE.UI.HB_Heart>Heart</KoRimUtility.CE.UI.HB_Heart>
+  <KoRimUtility.CE.UI.HB_Humerus>Humerus</KoRimUtility.CE.UI.HB_Humerus>
+  <KoRimUtility.CE.UI.HB_Jaw>Jaw</KoRimUtility.CE.UI.HB_Jaw>
+  <KoRimUtility.CE.UI.HB_Kidney>Kidney</KoRimUtility.CE.UI.HB_Kidney>
+  <KoRimUtility.CE.UI.HB_Leg>Leg</KoRimUtility.CE.UI.HB_Leg>
+  <KoRimUtility.CE.UI.HB_Liver>Liver</KoRimUtility.CE.UI.HB_Liver>
+  <KoRimUtility.CE.UI.HB_Lung>Lung</KoRimUtility.CE.UI.HB_Lung>
+  <KoRimUtility.CE.UI.HB_Neck>Neck</KoRimUtility.CE.UI.HB_Neck>
+  <KoRimUtility.CE.UI.HB_Nose>Nose</KoRimUtility.CE.UI.HB_Nose>
+  <KoRimUtility.CE.UI.HB_Pelvis>Pelvis</KoRimUtility.CE.UI.HB_Pelvis>
+  <KoRimUtility.CE.UI.HB_Radius>Radius</KoRimUtility.CE.UI.HB_Radius>
+  <KoRimUtility.CE.UI.HB_Shoulder>Shoulder</KoRimUtility.CE.UI.HB_Shoulder>
+  <KoRimUtility.CE.UI.HB_Skull>Skull</KoRimUtility.CE.UI.HB_Skull>
+  <KoRimUtility.CE.UI.HB_Spine>Spine</KoRimUtility.CE.UI.HB_Spine>
+  <KoRimUtility.CE.UI.HB_Sternum>Sternum</KoRimUtility.CE.UI.HB_Sternum>
+  <KoRimUtility.CE.UI.HB_Stomach>Stomach</KoRimUtility.CE.UI.HB_Stomach>
+  <KoRimUtility.CE.UI.HB_Tibia>Tibia</KoRimUtility.CE.UI.HB_Tibia>
+  <KoRimUtility.CE.UI.HB_Toe>Toe</KoRimUtility.CE.UI.HB_Toe>
+  <KoRimUtility.CE.UI.HB_Torso>Torso</KoRimUtility.CE.UI.HB_Torso>
+  <KoRimUtility.CE.UI.HB_Utility>Utility</KoRimUtility.CE.UI.HB_Utility>
+  <KoRimUtility.CE.UI.HB_UtilitySlot>UtilitySlot</KoRimUtility.CE.UI.HB_UtilitySlot>
+  <KoRimUtility.CE.UI.HB_WholeBody>WholeBody</KoRimUtility.CE.UI.HB_WholeBody>
+  <KoRimUtility.CE.UI.HB_WITHLEVEL>Level-based</KoRimUtility.CE.UI.HB_WITHLEVEL>
+  <KoRimUtility.CE.UI.HEAD_ADDONS>Addons</KoRimUtility.CE.UI.HEAD_ADDONS>
+  <KoRimUtility.CE.UI.HEADSIZEFACTOR>Head size factor</KoRimUtility.CE.UI.HEADSIZEFACTOR>
+  <KoRimUtility.CE.UI.HEAL>Heal</KoRimUtility.CE.UI.HEAL>
+  <KoRimUtility.CE.UI.HEALTHSCALEFACTOR>Health scale factor</KoRimUtility.CE.UI.HEALTHSCALEFACTOR>
+  <KoRimUtility.CE.UI.HISTORYEVENTONDEATH>History event on death</KoRimUtility.CE.UI.HISTORYEVENTONDEATH>
+  <KoRimUtility.CE.UI.HOUR>Hour</KoRimUtility.CE.UI.HOUR>
+  <KoRimUtility.CE.UI.HOURS>Hours</KoRimUtility.CE.UI.HOURS>
+  <KoRimUtility.CE.UI.HUMANOID>Humanoid</KoRimUtility.CE.UI.HUMANOID>
+  <KoRimUtility.CE.UI.HUNGERRATEFACTOR>Hunger rate factor</KoRimUtility.CE.UI.HUNGERRATEFACTOR>
+  <KoRimUtility.CE.UI.HURT>Hurt</KoRimUtility.CE.UI.HURT>
+  <KoRimUtility.CE.UI.ICONPATH>Icon path</KoRimUtility.CE.UI.ICONPATH>
+  <KoRimUtility.CE.UI.IMMUNETO>Immunity</KoRimUtility.CE.UI.IMMUNETO>
+  <KoRimUtility.CE.UI.IMMUNETOTOXGASEXPOSURE>Immune to tox gas exposure</KoRimUtility.CE.UI.IMMUNETOTOXGASEXPOSURE>
+  <KoRimUtility.CE.UI.IMPORT>Import</KoRimUtility.CE.UI.IMPORT>
+  <KoRimUtility.CE.UI.IMPORT_SLOTS>Imports pawns from a file into the slots</KoRimUtility.CE.UI.IMPORT_SLOTS>
+  <KoRimUtility.CE.UI.INFO>Info</KoRimUtility.CE.UI.INFO>
+  <KoRimUtility.CE.UI.INFOD_APPAREL>The selected apparel is not dyeable. Confirm to make it temporarily dyeable. To make it permanently dyeable, activate the corresponding option under Mod Settings and restart the game.</KoRimUtility.CE.UI.INFOD_APPAREL>
+  <KoRimUtility.CE.UI.INFOD_WEAPON>The selected weapon is not colorable. Confirm to make it temporarily colorable.</KoRimUtility.CE.UI.INFOD_WEAPON>
+  <KoRimUtility.CE.UI.INFOT_MAKECOLORABLE>Make colorable?</KoRimUtility.CE.UI.INFOT_MAKECOLORABLE>
+  <KoRimUtility.CE.UI.INGESTIBLEMOD>Ingestible Modifier</KoRimUtility.CE.UI.INGESTIBLEMOD>
+  <KoRimUtility.CE.UI.INSPIRATIONS>Inspirations</KoRimUtility.CE.UI.INSPIRATIONS>
+  <KoRimUtility.CE.UI.INTERSTELLARLINK>Interstellar Link</KoRimUtility.CE.UI.INTERSTELLARLINK>
+  <KoRimUtility.CE.UI.INTERSTELLARLINK_DESC>Switch between escape pod / interstellar link</KoRimUtility.CE.UI.INTERSTELLARLINK_DESC>
+  <KoRimUtility.CE.UI.IS>is</KoRimUtility.CE.UI.IS>
+  <KoRimUtility.CE.UI.ISEXPLOSIVEREADONLY>Is explosive (read only)</KoRimUtility.CE.UI.ISEXPLOSIVEREADONLY>
+  <KoRimUtility.CE.UI.KAPSELCONTAINER>Capsule container</KoRimUtility.CE.UI.KAPSELCONTAINER>
+  <KoRimUtility.CE.UI.LABELADJ>Label adjective</KoRimUtility.CE.UI.LABELADJ>
+  <KoRimUtility.CE.UI.LANDEDEFFECT>Landed effect </KoRimUtility.CE.UI.LANDEDEFFECT>
+  <KoRimUtility.CE.UI.LAYER>Layer</KoRimUtility.CE.UI.LAYER>
+  <KoRimUtility.CE.UI.LID>Lid</KoRimUtility.CE.UI.LID>
+  <KoRimUtility.CE.UI.LIFESTAGE>Lifestage</KoRimUtility.CE.UI.LIFESTAGE>
+  <KoRimUtility.CE.UI.LOAD>Loading</KoRimUtility.CE.UI.LOAD>
+  <KoRimUtility.CE.UI.LOAD_DESC>Load the interstellar container with all objects present on the map</KoRimUtility.CE.UI.LOAD_DESC>
+  <KoRimUtility.CE.UI.LOADSLOT>Load from slot </KoRimUtility.CE.UI.LOADSLOT>
+  <KoRimUtility.CE.UI.LOADXENOTYPEKEEP>Load xenotype\nHold [CTRL] to keep old genes</KoRimUtility.CE.UI.LOADXENOTYPEKEEP>
+  <KoRimUtility.CE.UI.LOVINMTBFACTOR>Time factor between love attempts</KoRimUtility.CE.UI.LOVINMTBFACTOR>
+  <KoRimUtility.CE.UI.MAGAZIN>Magazine size</KoRimUtility.CE.UI.MAGAZIN>
+  <KoRimUtility.CE.UI.MAINBUTTON_DESCR>Start Character Editor</KoRimUtility.CE.UI.MAINBUTTON_DESCR>
+  <KoRimUtility.CE.UI.MAP_NOTLOADED>Map is not loaded!</KoRimUtility.CE.UI.MAP_NOTLOADED>
+  <KoRimUtility.CE.UI.MARKETFACTOR>Market value factor</KoRimUtility.CE.UI.MARKETFACTOR>
+  <KoRimUtility.CE.UI.MARKETVALUEFACTOR>Market value</KoRimUtility.CE.UI.MARKETVALUEFACTOR>
+  <KoRimUtility.CE.UI.MAX_RANDOM_BRIGHTNESS>Maximum brightness</KoRimUtility.CE.UI.MAX_RANDOM_BRIGHTNESS>
+  <KoRimUtility.CE.UI.MEDICATE>Medicate</KoRimUtility.CE.UI.MEDICATE>
+  <KoRimUtility.CE.UI.MELEE>Melee</KoRimUtility.CE.UI.MELEE>
+  <KoRimUtility.CE.UI.MELEEDAMAGEFACTOR>Melee damage factor</KoRimUtility.CE.UI.MELEEDAMAGEFACTOR>
+  <KoRimUtility.CE.UI.MENTAL>Mental</KoRimUtility.CE.UI.MENTAL>
+  <KoRimUtility.CE.UI.MENTALBREAKCHANCEFACTOR>Mental breakdown chance factor</KoRimUtility.CE.UI.MENTALBREAKCHANCEFACTOR>
+  <KoRimUtility.CE.UI.MENTALBREAKMTBDAYS>Mental breakdown interval</KoRimUtility.CE.UI.MENTALBREAKMTBDAYS>
+  <KoRimUtility.CE.UI.METABOLICEFFICIENCY>Metabolic efficiency</KoRimUtility.CE.UI.METABOLICEFFICIENCY>
+  <KoRimUtility.CE.UI.MIN>Min.</KoRimUtility.CE.UI.MIN>
+  <KoRimUtility.CE.UI.MIN_RANDOM_BRIGHTNESS>Minimum brightness</KoRimUtility.CE.UI.MIN_RANDOM_BRIGHTNESS>
+  <KoRimUtility.CE.UI.MODIFICATIONLOADED>modification loaded</KoRimUtility.CE.UI.MODIFICATIONLOADED>
+  <KoRimUtility.CE.UI.MOUTH>Mouth</KoRimUtility.CE.UI.MOUTH>
+  <KoRimUtility.CE.UI.NEEDS>Needs</KoRimUtility.CE.UI.NEEDS>
+  <KoRimUtility.CE.UI.NEVERGRAYHAIR>Never gray hair</KoRimUtility.CE.UI.NEVERGRAYHAIR>
+  <KoRimUtility.CE.UI.NO_BLOCKING_SKILLS>without skill blocker</KoRimUtility.CE.UI.NO_BLOCKING_SKILLS>
+  <KoRimUtility.CE.UI.NOMEMORIES>No memories</KoRimUtility.CE.UI.NOMEMORIES>
+  <KoRimUtility.CE.UI.NONE>None</KoRimUtility.CE.UI.NONE>
+  <KoRimUtility.CE.UI.NOT_COMPATIBLE_APPAREL>Not compatible apparel</KoRimUtility.CE.UI.NOT_COMPATIBLE_APPAREL>
+  <KoRimUtility.CE.UI.NUMEXTRAHITCELLS>Num extra hit cells</KoRimUtility.CE.UI.NUMEXTRAHITCELLS>
+  <KoRimUtility.CE.UI.O_AUTOMOVEINCOMPATIBLE>Auto remove incompatible apparel</KoRimUtility.CE.UI.O_AUTOMOVEINCOMPATIBLE>
+  <KoRimUtility.CE.UI.O_AUTOSAVECOLORS>Save colors automatically</KoRimUtility.CE.UI.O_AUTOSAVECOLORS>
+  <KoRimUtility.CE.UI.O_CHAOSABILITY>Use visual effect for teleport</KoRimUtility.CE.UI.O_CHAOSABILITY>
+  <KoRimUtility.CE.UI.O_CHARACTEREDITORUI>Character Editor UI</KoRimUtility.CE.UI.O_CHARACTEREDITORUI>
+  <KoRimUtility.CE.UI.O_COMPCOLORABLE>Make all apparel colorable</KoRimUtility.CE.UI.O_COMPCOLORABLE>
+  <KoRimUtility.CE.UI.O_COPYTOCLIPBOARD>copy to clipboard</KoRimUtility.CE.UI.O_COPYTOCLIPBOARD>
+  <KoRimUtility.CE.UI.O_CREATENOINV>Create no start inventory</KoRimUtility.CE.UI.O_CREATENOINV>
+  <KoRimUtility.CE.UI.O_CREATENOWEAPON>Create no start weapon</KoRimUtility.CE.UI.O_CREATENOWEAPON>
+  <KoRimUtility.CE.UI.O_CREATENUDE>Create nude</KoRimUtility.CE.UI.O_CREATENUDE>
+  <KoRimUtility.CE.UI.O_CREATERACESPECIFIC>Create with race specific clothes</KoRimUtility.CE.UI.O_CREATERACESPECIFIC>
+  <KoRimUtility.CE.UI.O_CUSTOMCOLOR>Saved colors</KoRimUtility.CE.UI.O_CUSTOMCOLOR>
+  <KoRimUtility.CE.UI.O_DESC_AUTOMOVEINCOMPATIBLE>Active=Incompatible apparel is automatically moved to inventory. Inactive=Apparel remains on. Default=Disabled</KoRimUtility.CE.UI.O_DESC_AUTOMOVEINCOMPATIBLE>
+  <KoRimUtility.CE.UI.O_DESC_AUTOSAVECOLORS>Enabled=colors of all colonists are automatically saved whenever game is saved. Default=Enabled</KoRimUtility.CE.UI.O_DESC_AUTOSAVECOLORS>
+  <KoRimUtility.CE.UI.O_DESC_CHAOSABILITY>Use visual effect for teleport</KoRimUtility.CE.UI.O_DESC_CHAOSABILITY>
+  <KoRimUtility.CE.UI.O_DESC_CHARACTEREDITORUI>Triggers the UI</KoRimUtility.CE.UI.O_DESC_CHARACTEREDITORUI>
+  <KoRimUtility.CE.UI.O_DESC_COMPCOLORABLE>Active=enables coloring for all apparel. Inactive=static clothing cannot be dyed. Change will take effect only after restarting the game. Default=Inactive</KoRimUtility.CE.UI.O_DESC_COMPCOLORABLE>
+  <KoRimUtility.CE.UI.O_DESC_CREATENOINV>Enabled=Pawn will be created with empty inventory. Default=Disabled</KoRimUtility.CE.UI.O_DESC_CREATENOINV>
+  <KoRimUtility.CE.UI.O_DESC_CREATENOWEAPON>Enabled=Pawn will be created without starting weapon. Default=Disabled</KoRimUtility.CE.UI.O_DESC_CREATENOWEAPON>
+  <KoRimUtility.CE.UI.O_DESC_CREATENUDE>Enabled=Pawn is created nude. Default=Disabled</KoRimUtility.CE.UI.O_DESC_CREATENUDE>
+  <KoRimUtility.CE.UI.O_DESC_CREATERACESPECIFIC>Enabled=Pawn is created with race specific clothing. Default=Enabled</KoRimUtility.CE.UI.O_DESC_CREATERACESPECIFIC>
+  <KoRimUtility.CE.UI.O_DESC_CUSTOMCOLOR>The colors of all colonists are saved here. If this is not desired or if it simply becomes too much, the content of this field can be deleted. Default=Empty</KoRimUtility.CE.UI.O_DESC_CUSTOMCOLOR>
+  <KoRimUtility.CE.UI.O_DESC_DISABLEOBJ>Enabled=Show character editor objects in the architect menu misc. Inactive=hidden. Default=Enabled</KoRimUtility.CE.UI.O_DESC_DISABLEOBJ>
+  <KoRimUtility.CE.UI.O_DESC_DOAPPARELCHECK>Enabled=Checks apparel for missing textures. Disabled=No apparel check (can cause errors). Default=Enabled</KoRimUtility.CE.UI.O_DESC_DOAPPARELCHECK>
+  <KoRimUtility.CE.UI.O_DESC_EDITALLPAWNS>Enabled=All pawn on the map can be changed. Disabled=Only the pawn in the cascet can be changed. Default=Enabled</KoRimUtility.CE.UI.O_DESC_EDITALLPAWNS>
+  <KoRimUtility.CE.UI.O_DESC_EDITTABS>Enabled=tabs on. Disabled=editor tabs are not drawn. Default=Enabled</KoRimUtility.CE.UI.O_DESC_EDITTABS>
+  <KoRimUtility.CE.UI.O_DESC_EXTENDEDCOLORS>Enabled=maximum value per color channel is set to 510 instead of 255. Disabled=standard color space with 255 color gradations per channel. Default=Disabled</KoRimUtility.CE.UI.O_DESC_EXTENDEDCOLORS>
+  <KoRimUtility.CE.UI.O_DESC_FORCEIMAGE>Enabled=Pawn image is constantly updated. Disabled=Pawn image is updated only when changed. Default=Disabled</KoRimUtility.CE.UI.O_DESC_FORCEIMAGE>
+  <KoRimUtility.CE.UI.O_DESC_HDR>Active = ARGB, Inactive = HDR. Default = ARGB</KoRimUtility.CE.UI.O_DESC_HDR>
+  <KoRimUtility.CE.UI.O_DESC_HOTKEYEDITOR>KeyCode to start the UI</KoRimUtility.CE.UI.O_DESC_HOTKEYEDITOR>
+  <KoRimUtility.CE.UI.O_DESC_HOTKEYTELEPORT>Keycode for fast teleporting of pawns</KoRimUtility.CE.UI.O_DESC_HOTKEYTELEPORT>
+  <KoRimUtility.CE.UI.O_DESC_KEYCODE>KeyCode for Hotkey</KoRimUtility.CE.UI.O_DESC_KEYCODE>
+  <KoRimUtility.CE.UI.O_DESC_MAPSIZE>Enabled=Displays custom settings for map size, plant density, and animal density. Disabled=hidden. Default=Disabled</KoRimUtility.CE.UI.O_DESC_MAPSIZE>
+  <KoRimUtility.CE.UI.O_DESC_MINI>Enabled = minimalistic view. Default = Disabled</KoRimUtility.CE.UI.O_DESC_MINI>
+  <KoRimUtility.CE.UI.O_DESC_MOREPAWNNAMES>Enabled=Pawn names from the name files are integrated into the name database. Disabled=No extra names. Default=Enabled</KoRimUtility.CE.UI.O_DESC_MOREPAWNNAMES>
+  <KoRimUtility.CE.UI.O_DESC_NUMCAPSULE>Value determines how many capsule slots are available [1..100] Default=10</KoRimUtility.CE.UI.O_DESC_NUMCAPSULE>
+  <KoRimUtility.CE.UI.O_DESC_NUMSLOTS>Set the number of slots you need, range [1..100] Default = 90</KoRimUtility.CE.UI.O_DESC_NUMSLOTS>
+  <KoRimUtility.CE.UI.O_DESC_PAUSEGAME>Enabled=game is paused when starting the editor. Disabled=game continues. Default=Enabled</KoRimUtility.CE.UI.O_DESC_PAUSEGAME>
+  <KoRimUtility.CE.UI.O_DESC_PAWNLIST>Enabled=shows list of pawns. Disabled=list is hidden. Default=Enabled</KoRimUtility.CE.UI.O_DESC_PAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_PAWNSLOT>String for saveable pawn. Don't change this if you don't know what you do. Default=Empty</KoRimUtility.CE.UI.O_DESC_PAWNSLOT>
+  <KoRimUtility.CE.UI.O_DESC_RESOLUTION>Resolution to render the selected pawn. Value is the image width. Image height is calculated automatically. Default = 800</KoRimUtility.CE.UI.O_DESC_RESOLUTION>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDARMORCHANGES>Changes which will be applied after reload. If you want to change this field manually be careful. Default=Empty</KoRimUtility.CE.UI.O_DESC_SAVEDARMORCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDGENECHANGES>Changes which will be applied after reload. If you want to change this field manually be careful. Default=Empty</KoRimUtility.CE.UI.O_DESC_SAVEDGENECHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDITEMCHANGES>Changes which will be applied after reload. If you want to change this field manually be careful. Default=Empty</KoRimUtility.CE.UI.O_DESC_SAVEDITEMCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDLSCHANGES>Changes which will be applied after reload. If you want to change this field manually be careful. Default=Empty</KoRimUtility.CE.UI.O_DESC_SAVEDLSCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SAVEDWEAPONCHANGES>Changes which will be applied after reload. If you want to change this field manually be careful. Default=Empty</KoRimUtility.CE.UI.O_DESC_SAVEDWEAPONCHANGES>
+  <KoRimUtility.CE.UI.O_DESC_SHORTNAME>Enabled=Top left name will be shown in short form. Disabled=Fullname will be shown. Default=Enabled</KoRimUtility.CE.UI.O_DESC_SHORTNAME>
+  <KoRimUtility.CE.UI.O_DESC_SHOWBODYSIZEGENES>When inactive, bodysize genes will not be used ingame. Default=Active</KoRimUtility.CE.UI.O_DESC_SHOWBODYSIZEGENES>
+  <KoRimUtility.CE.UI.O_DESC_SHOWBUTTONINSTARTING>Show / hide editor button in starting screen. Default=Active</KoRimUtility.CE.UI.O_DESC_SHOWBUTTONINSTARTING>
+  <KoRimUtility.CE.UI.O_DESC_SHOWDEADLOGO>Enabled=Dead logo will be displayed for dead pawns. Disabled=no logo. Default=Enabled</KoRimUtility.CE.UI.O_DESC_SHOWDEADLOGO>
+  <KoRimUtility.CE.UI.O_DESC_SHOWICONINSTARTING>Show / hide editor icon in starting screen. Default=Active</KoRimUtility.CE.UI.O_DESC_SHOWICONINSTARTING>
+  <KoRimUtility.CE.UI.O_DESC_SHOWINMAINTABS>Enabled=Allows to start the Character Editor from main tabs. Default=Enabled</KoRimUtility.CE.UI.O_DESC_SHOWINMAINTABS>
+  <KoRimUtility.CE.UI.O_DESC_SHOWPAWNLIST>Toggles the pawn list. Default=Enabled</KoRimUtility.CE.UI.O_DESC_SHOWPAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_SHOWWEAPON>Enabled=Shows weapons in default view. Disabled=no weapons. Default=Disabled</KoRimUtility.CE.UI.O_DESC_SHOWWEAPON>
+  <KoRimUtility.CE.UI.O_DESC_SORTEDPAWNLIST>Enabled=sorted Pawn list, Disabled=list is unsorted. Default=Enabled</KoRimUtility.CE.UI.O_DESC_SORTEDPAWNLIST>
+  <KoRimUtility.CE.UI.O_DESC_STACKLIMIT>Maximum stackcount for item slider[1..9999]</KoRimUtility.CE.UI.O_DESC_STACKLIMIT>
+  <KoRimUtility.CE.UI.O_DESC_STAYINCASCET>Enabled=Pawn will not leave the cascet, until someone opens it. Disabled=Pawn will auto leave the cascet</KoRimUtility.CE.UI.O_DESC_STAYINCASCET>
+  <KoRimUtility.CE.UI.O_DESC_USEALTERNATIVEHEADFINDER>Enabled=An alternative method will be used to find suitable textures for the heads. Default=Disabled</KoRimUtility.CE.UI.O_DESC_USEALTERNATIVEHEADFINDER>
+  <KoRimUtility.CE.UI.O_DESC_USEFIXEDSHADER>Active=Uses fixed shader for skin color, to prevent skin tone change for custom skin colors. Inactive=Vanilla behaviour, which uses another shader for custom skin colors, instead of the standard shader.</KoRimUtility.CE.UI.O_DESC_USEFIXEDSHADER>
+  <KoRimUtility.CE.UI.O_DESC_USERIMWORLDPAWNGENERATOR>Enabled=Pawn is created with Rimworld Generator. Disabled=Pawn is created with own generator. Default=Enabled</KoRimUtility.CE.UI.O_DESC_USERIMWORLDPAWNGENERATOR>
+  <KoRimUtility.CE.UI.O_DISABLEOBJ>Architect menu objects</KoRimUtility.CE.UI.O_DISABLEOBJ>
+  <KoRimUtility.CE.UI.O_DOAPPARELCHECK>Automatic Apparelcheck</KoRimUtility.CE.UI.O_DOAPPARELCHECK>
+  <KoRimUtility.CE.UI.O_EDITALLPAWNS>Edit all pawns</KoRimUtility.CE.UI.O_EDITALLPAWNS>
+  <KoRimUtility.CE.UI.O_EDITTABS>Show editor tabs</KoRimUtility.CE.UI.O_EDITTABS>
+  <KoRimUtility.CE.UI.O_EXTENDEDCOLORS>Extended color space</KoRimUtility.CE.UI.O_EXTENDEDCOLORS>
+  <KoRimUtility.CE.UI.O_FORCEIMAGE>Fast image refresh</KoRimUtility.CE.UI.O_FORCEIMAGE>
+  <KoRimUtility.CE.UI.O_HOTKEYEDITOR>Hotkey UI</KoRimUtility.CE.UI.O_HOTKEYEDITOR>
+  <KoRimUtility.CE.UI.O_HOTKEYTELEPORT>Hotkey Teleport</KoRimUtility.CE.UI.O_HOTKEYTELEPORT>
+  <KoRimUtility.CE.UI.O_MAPSIZE>Optional map settings</KoRimUtility.CE.UI.O_MAPSIZE>
+  <KoRimUtility.CE.UI.O_MINI>Mini view</KoRimUtility.CE.UI.O_MINI>
+  <KoRimUtility.CE.UI.O_MOREPAWNNAMES>Use name files</KoRimUtility.CE.UI.O_MOREPAWNNAMES>
+  <KoRimUtility.CE.UI.O_NUMCAPSULE>Num capsule slots</KoRimUtility.CE.UI.O_NUMCAPSULE>
+  <KoRimUtility.CE.UI.O_NUMSLOTS>Num pawn slots</KoRimUtility.CE.UI.O_NUMSLOTS>
+  <KoRimUtility.CE.UI.O_PAUSEGAME>Editor pauses game</KoRimUtility.CE.UI.O_PAUSEGAME>
+  <KoRimUtility.CE.UI.O_PAWNLIST>Show pawn list</KoRimUtility.CE.UI.O_PAWNLIST>
+  <KoRimUtility.CE.UI.O_PAWNSLOT>Pawn slot {0}</KoRimUtility.CE.UI.O_PAWNSLOT>
+  <KoRimUtility.CE.UI.O_RESOLUTION>Resolution</KoRimUtility.CE.UI.O_RESOLUTION>
+  <KoRimUtility.CE.UI.O_SAVEDARMORCHANGES>Saved Apparel</KoRimUtility.CE.UI.O_SAVEDARMORCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDGENECHANGES>Saved Genes</KoRimUtility.CE.UI.O_SAVEDGENECHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDITEMCHANGES>Saved Items</KoRimUtility.CE.UI.O_SAVEDITEMCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDLSCHANGES>Saved BodySize</KoRimUtility.CE.UI.O_SAVEDLSCHANGES>
+  <KoRimUtility.CE.UI.O_SAVEDWEAPONCHANGES>Saved Weapons</KoRimUtility.CE.UI.O_SAVEDWEAPONCHANGES>
+  <KoRimUtility.CE.UI.O_SETTODEFAULT>set to default</KoRimUtility.CE.UI.O_SETTODEFAULT>
+  <KoRimUtility.CE.UI.O_SHORTNAME>Show short name</KoRimUtility.CE.UI.O_SHORTNAME>
+  <KoRimUtility.CE.UI.O_SHOWBODYSIZEGENES>Use bodysize genes</KoRimUtility.CE.UI.O_SHOWBODYSIZEGENES>
+  <KoRimUtility.CE.UI.O_SHOWBUTTONINSTARTING>Editor button in starting screen</KoRimUtility.CE.UI.O_SHOWBUTTONINSTARTING>
+  <KoRimUtility.CE.UI.O_SHOWDEADLOGO>Show dead logo</KoRimUtility.CE.UI.O_SHOWDEADLOGO>
+  <KoRimUtility.CE.UI.O_SHOWICONINSTARTING>Editor icon in starting screen</KoRimUtility.CE.UI.O_SHOWICONINSTARTING>
+  <KoRimUtility.CE.UI.O_SHOWINMAINTABS>Show in main tabs</KoRimUtility.CE.UI.O_SHOWINMAINTABS>
+  <KoRimUtility.CE.UI.O_SHOWWEAPON>Show weapon</KoRimUtility.CE.UI.O_SHOWWEAPON>
+  <KoRimUtility.CE.UI.O_STACKLIMIT>Stack Limit</KoRimUtility.CE.UI.O_STACKLIMIT>
+  <KoRimUtility.CE.UI.O_STAYINCASCET>Stay in cascet</KoRimUtility.CE.UI.O_STAYINCASCET>
+  <KoRimUtility.CE.UI.O_USEALTERNATIVEHEADFINDER>Use alternative head list</KoRimUtility.CE.UI.O_USEALTERNATIVEHEADFINDER>
+  <KoRimUtility.CE.UI.O_USEFIXEDSHADER>Use fixed shader</KoRimUtility.CE.UI.O_USEFIXEDSHADER>
+  <KoRimUtility.CE.UI.O_USERIMWORLDPAWNGENERATOR>Use rimworld pawn generator</KoRimUtility.CE.UI.O_USERIMWORLDPAWNGENERATOR>
+  <KoRimUtility.CE.UI.O_USESORTEDPAWNLIST>Use sorted pawn list</KoRimUtility.CE.UI.O_USESORTEDPAWNLIST>
+  <KoRimUtility.CE.UI.OBJECT>Object</KoRimUtility.CE.UI.OBJECT>
+  <KoRimUtility.CE.UI.ONLYFORSHIELD>This stat works for shields only</KoRimUtility.CE.UI.ONLYFORSHIELD>
+  <KoRimUtility.CE.UI.ONMAP>grey - show pawns on map\nwhite - show pawns in world</KoRimUtility.CE.UI.ONMAP>
+  <KoRimUtility.CE.UI.OPTIONS> MOD SETTINGS</KoRimUtility.CE.UI.OPTIONS>
+  <KoRimUtility.CE.UI.OTHER>Other</KoRimUtility.CE.UI.OTHER>
+  <KoRimUtility.CE.UI.OUTFITTAGS>Default Outfit Tags</KoRimUtility.CE.UI.OUTFITTAGS>
+  <KoRimUtility.CE.UI.OVERDOSECHANCEFACTOR>Overdose chance factor</KoRimUtility.CE.UI.OVERDOSECHANCEFACTOR>
+  <KoRimUtility.CE.UI.PAINLESS>painless</KoRimUtility.CE.UI.PAINLESS>
+  <KoRimUtility.CE.UI.PARTS>In the rescue capsule</KoRimUtility.CE.UI.PARTS>
+  <KoRimUtility.CE.UI.PARTSANIMAL>In the animal capsule</KoRimUtility.CE.UI.PARTSANIMAL>
+  <KoRimUtility.CE.UI.PARTSONMAP>Scattered</KoRimUtility.CE.UI.PARTSONMAP>
+  <KoRimUtility.CE.UI.PASSIONMODADD>Passion + </KoRimUtility.CE.UI.PASSIONMODADD>
+  <KoRimUtility.CE.UI.PASSIONMODSUB>Passion - </KoRimUtility.CE.UI.PASSIONMODSUB>
+  <KoRimUtility.CE.UI.PASSONDIRECTLY>Pass on directly</KoRimUtility.CE.UI.PASSONDIRECTLY>
+  <KoRimUtility.CE.UI.PLACE_ITEM>place</KoRimUtility.CE.UI.PLACE_ITEM>
+  <KoRimUtility.CE.UI.PLACE_PAWN>place pawn</KoRimUtility.CE.UI.PLACE_PAWN>
+  <KoRimUtility.CE.UI.PLANTDENSITY>plant density</KoRimUtility.CE.UI.PLANTDENSITY>
+  <KoRimUtility.CE.UI.POSITIVE_ONLY>Positive only</KoRimUtility.CE.UI.POSITIVE_ONLY>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNCHANCE>Post-explosion spawn chance</KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNCHANCE>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHING>Post-explosion spawn thing </KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHING>
+  <KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHINGCOUNT>Post-explosion spawn thing count</KoRimUtility.CE.UI.POSTEXPLOSIONSPAWNTHINGCOUNT>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNCHANCE>Pre-explosion spawn chance</KoRimUtility.CE.UI.PREEXPLOSIONSPAWNCHANCE>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHING>Pre-explosion spawn thing </KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHING>
+  <KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHINGCOUNT>Pre-explosion spawn thing count</KoRimUtility.CE.UI.PREEXPLOSIONSPAWNTHINGCOUNT>
+  <KoRimUtility.CE.UI.PREREQUISITE>Prerequisite</KoRimUtility.CE.UI.PREREQUISITE>
+  <KoRimUtility.CE.UI.PREVENTPERMANENTWOUNDS>Prevent permanent wounds</KoRimUtility.CE.UI.PREVENTPERMANENTWOUNDS>
+  <KoRimUtility.CE.UI.PREVIEW>Preview</KoRimUtility.CE.UI.PREVIEW>
+  <KoRimUtility.CE.UI.PRISONBREAKINTERVAL>Prison break interval</KoRimUtility.CE.UI.PRISONBREAKINTERVAL>
+  <KoRimUtility.CE.UI.PSYFOCUS>Psyfocus</KoRimUtility.CE.UI.PSYFOCUS>
+  <KoRimUtility.CE.UI.PSYTALENTE>Psy-Talents</KoRimUtility.CE.UI.PSYTALENTE>
+  <KoRimUtility.CE.UI.QUADRUM>Quadrum</KoRimUtility.CE.UI.QUADRUM>
+  <KoRimUtility.CE.UI.QUALITY>Quality: </KoRimUtility.CE.UI.QUALITY>
+  <KoRimUtility.CE.UI.QUARTALS>Quartals</KoRimUtility.CE.UI.QUARTALS>
+  <KoRimUtility.CE.UI.RACESPECIFICDRESS>Race specific dress</KoRimUtility.CE.UI.RACESPECIFICDRESS>
+  <KoRimUtility.CE.UI.RANDOMBRIGHTNESSFACTOR>Factor for random brightness</KoRimUtility.CE.UI.RANDOMBRIGHTNESSFACTOR>
+  <KoRimUtility.CE.UI.RANDOMCHOSEN>Random chosen</KoRimUtility.CE.UI.RANDOMCHOSEN>
+  <KoRimUtility.CE.UI.RANGED>Ranged</KoRimUtility.CE.UI.RANGED>
+  <KoRimUtility.CE.UI.RECIPEPREREQUISITE>Recipe prerequisite </KoRimUtility.CE.UI.RECIPEPREREQUISITE>
+  <KoRimUtility.CE.UI.RECRUIT>Recruit</KoRimUtility.CE.UI.RECRUIT>
+  <KoRimUtility.CE.UI.REDRESS>Dress up</KoRimUtility.CE.UI.REDRESS>
+  <KoRimUtility.CE.UI.REEQUIP>Arm</KoRimUtility.CE.UI.REEQUIP>
+  <KoRimUtility.CE.UI.REINVENT>Cargo</KoRimUtility.CE.UI.REINVENT>
+  <KoRimUtility.CE.UI.RELATION_INFO>Only explicite relations can be edited (like mother, father, lover, ..). Implicite relations (like sister, son, grandma, ..) will be generated automatically.</KoRimUtility.CE.UI.RELATION_INFO>
+  <KoRimUtility.CE.UI.RELATIONS>Relationships</KoRimUtility.CE.UI.RELATIONS>
+  <KoRimUtility.CE.UI.RELATIONSOF>Relations of </KoRimUtility.CE.UI.RELATIONSOF>
+  <KoRimUtility.CE.UI.RELATIONTO>Relation to:</KoRimUtility.CE.UI.RELATIONTO>
+  <KoRimUtility.CE.UI.RELOADTIME>Reload Time CE</KoRimUtility.CE.UI.RELOADTIME>
+  <KoRimUtility.CE.UI.REMOVE_ADDONS>Remove Addons</KoRimUtility.CE.UI.REMOVE_ADDONS>
+  <KoRimUtility.CE.UI.REMOVE_HEDIFF>Remove Handicap</KoRimUtility.CE.UI.REMOVE_HEDIFF>
+  <KoRimUtility.CE.UI.REMOVEONREDRESS>Remove gene when creating</KoRimUtility.CE.UI.REMOVEONREDRESS>
+  <KoRimUtility.CE.UI.REPRODUCTIVE>Reproductive</KoRimUtility.CE.UI.REPRODUCTIVE>
+  <KoRimUtility.CE.UI.REQUIRELINEOFSIGHT>Require line of sight</KoRimUtility.CE.UI.REQUIRELINEOFSIGHT>
+  <KoRimUtility.CE.UI.RESET>Reset to Default</KoRimUtility.CE.UI.RESET>
+  <KoRimUtility.CE.UI.RESETALL>Reset all to Default</KoRimUtility.CE.UI.RESETALL>
+  <KoRimUtility.CE.UI.RESOURCEDESC>Resource description</KoRimUtility.CE.UI.RESOURCEDESC>
+  <KoRimUtility.CE.UI.RESOURCEGIZMOTHRESHOLD>Resource gizmo thresholds</KoRimUtility.CE.UI.RESOURCEGIZMOTHRESHOLD>
+  <KoRimUtility.CE.UI.RESOURCELABEL>Resource label</KoRimUtility.CE.UI.RESOURCELABEL>
+  <KoRimUtility.CE.UI.RESOURCELOSSPERDAY>Resource consumption per day</KoRimUtility.CE.UI.RESOURCELOSSPERDAY>
+  <KoRimUtility.CE.UI.RESURRECT>Resurrect</KoRimUtility.CE.UI.RESURRECT>
+  <KoRimUtility.CE.UI.RETTUNGSKAPSEL>Escape pod</KoRimUtility.CE.UI.RETTUNGSKAPSEL>
+  <KoRimUtility.CE.UI.ROTATION>Rotation</KoRimUtility.CE.UI.ROTATION>
+  <KoRimUtility.CE.UI.SAVE>Save</KoRimUtility.CE.UI.SAVE>
+  <KoRimUtility.CE.UI.SAVESLOT>Save to slot </KoRimUtility.CE.UI.SAVESLOT>
+  <KoRimUtility.CE.UI.SELECT_BODYPART>Select Body Part</KoRimUtility.CE.UI.SELECT_BODYPART>
+  <KoRimUtility.CE.UI.SELECT_COLOR>Select Color</KoRimUtility.CE.UI.SELECT_COLOR>
+  <KoRimUtility.CE.UI.SELECT_PAWN>select pawn</KoRimUtility.CE.UI.SELECT_PAWN>
+  <KoRimUtility.CE.UI.SELECTIONWEIGHT>Selection factor</KoRimUtility.CE.UI.SELECTIONWEIGHT>
+  <KoRimUtility.CE.UI.SELECTIONWEIGHTDARKSKIN>Selection factor for dark skin</KoRimUtility.CE.UI.SELECTIONWEIGHTDARKSKIN>
+  <KoRimUtility.CE.UI.SETONCLICK> set on click</KoRimUtility.CE.UI.SETONCLICK>
+  <KoRimUtility.CE.UI.SETONMOUSEOVER> set on mouseover</KoRimUtility.CE.UI.SETONMOUSEOVER>
+  <KoRimUtility.CE.UI.SETROYALTITLE>Lend title</KoRimUtility.CE.UI.SETROYALTITLE>
+  <KoRimUtility.CE.UI.SETTINGSSAVED>modification saved</KoRimUtility.CE.UI.SETTINGSSAVED>
+  <KoRimUtility.CE.UI.SHOW_HIDDEN>Show Hidden</KoRimUtility.CE.UI.SHOW_HIDDEN>
+  <KoRimUtility.CE.UI.SHOW_IMPLICITE>Show implicite relations</KoRimUtility.CE.UI.SHOW_IMPLICITE>
+  <KoRimUtility.CE.UI.SHOWCREATION>show pawn creation buttons and extended functions</KoRimUtility.CE.UI.SHOWCREATION>
+  <KoRimUtility.CE.UI.SILVER_NEAR>Silver amount near to location </KoRimUtility.CE.UI.SILVER_NEAR>
+  <KoRimUtility.CE.UI.SILVER_NEEDED>, needed </KoRimUtility.CE.UI.SILVER_NEEDED>
+  <KoRimUtility.CE.UI.SKILLGAINS>Skillgains</KoRimUtility.CE.UI.SKILLGAINS>
+  <KoRimUtility.CE.UI.SKIN>Skin: </KoRimUtility.CE.UI.SKIN>
+  <KoRimUtility.CE.UI.SKINCOLORBASE>Skin color base</KoRimUtility.CE.UI.SKINCOLORBASE>
+  <KoRimUtility.CE.UI.SKINCOLOROVERRIDE>Skin color override</KoRimUtility.CE.UI.SKINCOLOROVERRIDE>
+  <KoRimUtility.CE.UI.SKIP>Skip</KoRimUtility.CE.UI.SKIP>
+  <KoRimUtility.CE.UI.SOCIALFIGHTCHANCEFACTOR>Social fight chance factor</KoRimUtility.CE.UI.SOCIALFIGHTCHANCEFACTOR>
+  <KoRimUtility.CE.UI.SOUNDAIMING>Sound aiming </KoRimUtility.CE.UI.SOUNDAIMING>
+  <KoRimUtility.CE.UI.SOUNDCALL>Sound call</KoRimUtility.CE.UI.SOUNDCALL>
+  <KoRimUtility.CE.UI.SOUNDCALLTIP>Click to listen to the selected sound</KoRimUtility.CE.UI.SOUNDCALLTIP>
+  <KoRimUtility.CE.UI.SOUNDCAST>Sound cast </KoRimUtility.CE.UI.SOUNDCAST>
+  <KoRimUtility.CE.UI.SOUNDCASTBEAM>Sound cast beam </KoRimUtility.CE.UI.SOUNDCASTBEAM>
+  <KoRimUtility.CE.UI.SOUNDCASTTAIL>Sound cast tail </KoRimUtility.CE.UI.SOUNDCASTTAIL>
+  <KoRimUtility.CE.UI.SOUNDDEATH>Sound dead</KoRimUtility.CE.UI.SOUNDDEATH>
+  <KoRimUtility.CE.UI.SOUNDEXPLODE>Sound explode </KoRimUtility.CE.UI.SOUNDEXPLODE>
+  <KoRimUtility.CE.UI.SOUNDIMPACT>Sound impact </KoRimUtility.CE.UI.SOUNDIMPACT>
+  <KoRimUtility.CE.UI.SOUNDLANDING>Sound landing </KoRimUtility.CE.UI.SOUNDLANDING>
+  <KoRimUtility.CE.UI.SOUNDWOUNDED>Sound wounded</KoRimUtility.CE.UI.SOUNDWOUNDED>
+  <KoRimUtility.CE.UI.SPRAYING>Scatter radius</KoRimUtility.CE.UI.SPRAYING>
+  <KoRimUtility.CE.UI.START>START</KoRimUtility.CE.UI.START>
+  <KoRimUtility.CE.UI.STARTCONTAINER>Scan of crash site</KoRimUtility.CE.UI.STARTCONTAINER>
+  <KoRimUtility.CE.UI.STARTSATAGE>Gene gets active at age</KoRimUtility.CE.UI.STARTSATAGE>
+  <KoRimUtility.CE.UI.STARTTONEWWORLDS>To new worlds</KoRimUtility.CE.UI.STARTTONEWWORLDS>
+  <KoRimUtility.CE.UI.STAT>Stat</KoRimUtility.CE.UI.STAT>
+  <KoRimUtility.CE.UI.STAT_FACTORS>Stat Factor</KoRimUtility.CE.UI.STAT_FACTORS>
+  <KoRimUtility.CE.UI.STAT_OFFSETS>Stat Offset</KoRimUtility.CE.UI.STAT_OFFSETS>
+  <KoRimUtility.CE.UI.STATS>Stats</KoRimUtility.CE.UI.STATS>
+  <KoRimUtility.CE.UI.STATTYPE>Stattype: </KoRimUtility.CE.UI.STATTYPE>
+  <KoRimUtility.CE.UI.STEALABLE>Stealable</KoRimUtility.CE.UI.STEALABLE>
+  <KoRimUtility.CE.UI.STERILIZE>Sterile</KoRimUtility.CE.UI.STERILIZE>
+  <KoRimUtility.CE.UI.STUFF>Stuff: </KoRimUtility.CE.UI.STUFF>
+  <KoRimUtility.CE.UI.STUFFPROPS>Stuff Categories</KoRimUtility.CE.UI.STUFFPROPS>
+  <KoRimUtility.CE.UI.STYLE>Style: </KoRimUtility.CE.UI.STYLE>
+  <KoRimUtility.CE.UI.SUMME>Total</KoRimUtility.CE.UI.SUMME>
+  <KoRimUtility.CE.UI.SUPPRESSEDTRAITS>Suppressed traits</KoRimUtility.CE.UI.SUPPRESSEDTRAITS>
+  <KoRimUtility.CE.UI.SWAP_TO_PAWN>Swap to Pawn</KoRimUtility.CE.UI.SWAP_TO_PAWN>
+  <KoRimUtility.CE.UI.TAGS>Tags</KoRimUtility.CE.UI.TAGS>
+  <KoRimUtility.CE.UI.TARGET_LOCATION>Target Ground</KoRimUtility.CE.UI.TARGET_LOCATION>
+  <KoRimUtility.CE.UI.TARGETGROUND>Target ground</KoRimUtility.CE.UI.TARGETGROUND>
+  <KoRimUtility.CE.UI.TATTOO>Tattoo: </KoRimUtility.CE.UI.TATTOO>
+  <KoRimUtility.CE.UI.TECHLEVEL>Tech Level:</KoRimUtility.CE.UI.TECHLEVEL>
+  <KoRimUtility.CE.UI.TEILEIMSCHIFFSWRACK>Parts in space ship wreck</KoRimUtility.CE.UI.TEILEIMSCHIFFSWRACK>
+  <KoRimUtility.CE.UI.TELEPORT>teleport</KoRimUtility.CE.UI.TELEPORT>
+  <KoRimUtility.CE.UI.TEXPATH>Texture Path: </KoRimUtility.CE.UI.TEXPATH>
+  <KoRimUtility.CE.UI.TH_MEMORY>Memory</KoRimUtility.CE.UI.TH_MEMORY>
+  <KoRimUtility.CE.UI.TH_SITUATIONAL>Situational</KoRimUtility.CE.UI.TH_SITUATIONAL>
+  <KoRimUtility.CE.UI.TH_SOCIAL>Social</KoRimUtility.CE.UI.TH_SOCIAL>
+  <KoRimUtility.CE.UI.TH_UNSUPPORTED>Not compatible</KoRimUtility.CE.UI.TH_UNSUPPORTED>
+  <KoRimUtility.CE.UI.THOUGHTS>Thoughts</KoRimUtility.CE.UI.THOUGHTS>
+  <KoRimUtility.CE.UI.TIERKAPSEL>Animal capsule</KoRimUtility.CE.UI.TIERKAPSEL>
+  <KoRimUtility.CE.UI.TIP_ADD_APPAREL>add/change apparel</KoRimUtility.CE.UI.TIP_ADD_APPAREL>
+  <KoRimUtility.CE.UI.TIP_ADD_CUSTOMPAWN>add pawn of choosen kind to current list\nhold [CTRL] to place pawn on map\nhold [SHIFT] to drop pawn with pod\nhold [CAPS] to clone</KoRimUtility.CE.UI.TIP_ADD_CUSTOMPAWN>
+  <KoRimUtility.CE.UI.TIP_ADD_EQUIP>add/change equipment</KoRimUtility.CE.UI.TIP_ADD_EQUIP>
+  <KoRimUtility.CE.UI.TIP_ADD_ITEM>add/change items</KoRimUtility.CE.UI.TIP_ADD_ITEM>
+  <KoRimUtility.CE.UI.TIP_ADD_PAWN>add random pawn to current list\nhold [CTRL] to place pawn on map\nhold [SHIFT] to drop pawn with pod\nhold [CAPS] to clone</KoRimUtility.CE.UI.TIP_ADD_PAWN>
+  <KoRimUtility.CE.UI.TIP_BUILDINGCOSTS>Hint: some building costs update only on restart</KoRimUtility.CE.UI.TIP_BUILDINGCOSTS>
+  <KoRimUtility.CE.UI.TIP_CHANGE_NAME>random race specific name</KoRimUtility.CE.UI.TIP_CHANGE_NAME>
+  <KoRimUtility.CE.UI.TIP_CHANGE_NAME_ALL>fully random name</KoRimUtility.CE.UI.TIP_CHANGE_NAME_ALL>
+  <KoRimUtility.CE.UI.TIP_CLONE>Clone selected pawn\nHold [CTRL] to place clone on map\nHold [SHIFT] for clone to land with pod\nHold [CAPS] for further cloning</KoRimUtility.CE.UI.TIP_CLONE>
+  <KoRimUtility.CE.UI.TIP_DELETE_PAWN>eliminate selected pawn</KoRimUtility.CE.UI.TIP_DELETE_PAWN>
+  <KoRimUtility.CE.UI.TIP_DESTROYDROP>\nhold [ALT] to destroy</KoRimUtility.CE.UI.TIP_DESTROYDROP>
+  <KoRimUtility.CE.UI.TIP_DLG_RANDOM_COLOR>random color\nhold [CTRL] use alpha colors</KoRimUtility.CE.UI.TIP_DLG_RANDOM_COLOR>
+  <KoRimUtility.CE.UI.TIP_DLG_RANDOMIZE_HAIRANDCOLOR>random hair and color\nhold [CTRL] use alpha colors</KoRimUtility.CE.UI.TIP_DLG_RANDOMIZE_HAIRANDCOLOR>
+  <KoRimUtility.CE.UI.TIP_HEAL>hold [ALT] to heal only non permanent injuries and restore legs</KoRimUtility.CE.UI.TIP_HEAL>
+  <KoRimUtility.CE.UI.TIP_HURT>hold [ALT] for bad / permanent injuries</KoRimUtility.CE.UI.TIP_HURT>
+  <KoRimUtility.CE.UI.TIP_LOAD_PAWN_FROM_SLOT>load pawn from slot\nhold [CAPS] to clone\nHold [ALT] for mod info</KoRimUtility.CE.UI.TIP_LOAD_PAWN_FROM_SLOT>
+  <KoRimUtility.CE.UI.TIP_QUICKHEAL>resurrect and full heal\nhold [ALT] to heal, [SHIFT] to tent\n[CTRL] to anaesthesize, [CAPS] to hurt</KoRimUtility.CE.UI.TIP_QUICKHEAL>
+  <KoRimUtility.CE.UI.TIP_RANDOM_APPAREL>random apparel\nhold [ALT] original colors\nhold [SHIFT] random colors\nhold [CTRL] random alpha colors</KoRimUtility.CE.UI.TIP_RANDOM_APPAREL>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BEARD>random beard</KoRimUtility.CE.UI.TIP_RANDOM_BEARD>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BODY>random body</KoRimUtility.CE.UI.TIP_RANDOM_BODY>
+  <KoRimUtility.CE.UI.TIP_RANDOM_BODYTATTOO>random body tattoo</KoRimUtility.CE.UI.TIP_RANDOM_BODYTATTOO>
+  <KoRimUtility.CE.UI.TIP_RANDOM_FACETATTOO>random face tattoo</KoRimUtility.CE.UI.TIP_RANDOM_FACETATTOO>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HAIR>random hair\nhold [ALT] + random hair color\nhold [CTRL] + random hair color alpha</KoRimUtility.CE.UI.TIP_RANDOM_HAIR>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HAIRCOLOR>random hair color\nhold [ALT] random colorA\nhold [SHIFT] random colorB\nhold [CTRL] use alpha colors</KoRimUtility.CE.UI.TIP_RANDOM_HAIRCOLOR>
+  <KoRimUtility.CE.UI.TIP_RANDOM_HEAD>random head</KoRimUtility.CE.UI.TIP_RANDOM_HEAD>
+  <KoRimUtility.CE.UI.TIP_RANDOM_SKINCOLOR>random skin color\nhold [ALT] for skin colorA\nhold [SHIFT] for skin colorB\nhold [CTRL] use alpha colors</KoRimUtility.CE.UI.TIP_RANDOM_SKINCOLOR>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_BIO>keep pawn, randomize bio (name, skills, traits, backstory)</KoRimUtility.CE.UI.TIP_RANDOMIZE_BIO>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_BODYPARTS>keep pawn, randomize gender, head, body, hair, skin, beard, tattoo\nhold [ALT] for female\nhold [CAPS] for male</KoRimUtility.CE.UI.TIP_RANDOMIZE_BODYPARTS>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_EQUIP>keep pawn, randomize apparel and weapon\nhold [ALT] for apparel only\nhold [SHIFT] for weapon only\nhold [CTRL] for alpha colors</KoRimUtility.CE.UI.TIP_RANDOMIZE_EQUIP>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWN>replace pawn with new random pawn</KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWN>
+  <KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWNKEEPRACE>replace pawn with new random pawn of same race\nhold [ALT] for female\nhold [CAPS] for male</KoRimUtility.CE.UI.TIP_RANDOMIZE_PAWNKEEPRACE>
+  <KoRimUtility.CE.UI.TIP_REDRESS>dress up pawn, replaces all apparel</KoRimUtility.CE.UI.TIP_REDRESS>
+  <KoRimUtility.CE.UI.TIP_REEQUIP>arm pawn, replaces old weapon/s</KoRimUtility.CE.UI.TIP_REEQUIP>
+  <KoRimUtility.CE.UI.TIP_REINVENT>preparing pawn and exchanging inventory items</KoRimUtility.CE.UI.TIP_REINVENT>
+  <KoRimUtility.CE.UI.TIP_REMOVE_PAWN>toggle remove button\nhold [ALT] to remove pawns on map. rightclick to abort</KoRimUtility.CE.UI.TIP_REMOVE_PAWN>
+  <KoRimUtility.CE.UI.TIP_SAVE_PAWN_TO_SLOT>save pawn to slot\nhold [CTRL] to delete selected slot</KoRimUtility.CE.UI.TIP_SAVE_PAWN_TO_SLOT>
+  <KoRimUtility.CE.UI.TIP_TELEPORT>Teleport selected pawn\nhold [CTRL] to teleport any pawn</KoRimUtility.CE.UI.TIP_TELEPORT>
+  <KoRimUtility.CE.UI.TIP_TODEFAULTS>reset all settings, except pawn slots, to defaults</KoRimUtility.CE.UI.TIP_TODEFAULTS>
+  <KoRimUtility.CE.UI.TIP_TOGGLECATEGORIES>Toggle all / functional categories. If active, allowed minimum and maximum values are not checked.</KoRimUtility.CE.UI.TIP_TOGGLECATEGORIES>
+  <KoRimUtility.CE.UI.TIP_UNDRESS>undress random apparel part\nhold [ALT] to destroy instead of drop</KoRimUtility.CE.UI.TIP_UNDRESS>
+  <KoRimUtility.CE.UI.TIPCLEARGENES>clear all genes\nHold [CTRL] to keep hair and skin genes</KoRimUtility.CE.UI.TIPCLEARGENES>
+  <KoRimUtility.CE.UI.TODEFAULTS>To Defaults</KoRimUtility.CE.UI.TODEFAULTS>
+  <KoRimUtility.CE.UI.TOGGLEENDOXENO>Toggle endo-/xenogenes</KoRimUtility.CE.UI.TOGGLEENDOXENO>
+  <KoRimUtility.CE.UI.TOGGLESELECTIONONMOUSEOVER>Toggle selection on mouseover/click</KoRimUtility.CE.UI.TOGGLESELECTIONONMOUSEOVER>
+  <KoRimUtility.CE.UI.TOLERANCEBUILDUPFACTOR>Tolerance build-up factor</KoRimUtility.CE.UI.TOLERANCEBUILDUPFACTOR>
+  <KoRimUtility.CE.UI.TONEWWORLD_DESC>Launch to new worlds</KoRimUtility.CE.UI.TONEWWORLD_DESC>
+  <KoRimUtility.CE.UI.TOOLTIP_REMOVE_ADDONS>Will remove all addons from this species for the current game session</KoRimUtility.CE.UI.TOOLTIP_REMOVE_ADDONS>
+  <KoRimUtility.CE.UI.TOORBIT>To orbit</KoRimUtility.CE.UI.TOORBIT>
+  <KoRimUtility.CE.UI.TOORBIT_DESC>Fly back to orbit</KoRimUtility.CE.UI.TOORBIT_DESC>
+  <KoRimUtility.CE.UI.TRADEABILITY>Tradeability:</KoRimUtility.CE.UI.TRADEABILITY>
+  <KoRimUtility.CE.UI.TRADETAGS>Trade-Tags</KoRimUtility.CE.UI.TRADETAGS>
+  <KoRimUtility.CE.UI.TURRET>Turret</KoRimUtility.CE.UI.TURRET>
+  <KoRimUtility.CE.UI.TURRETGUN>Cannon</KoRimUtility.CE.UI.TURRETGUN>
+  <KoRimUtility.CE.UI.UNAFFECTEDBYDARK>Work speed is unaffected by darkness</KoRimUtility.CE.UI.UNAFFECTEDBYDARK>
+  <KoRimUtility.CE.UI.UNDRESS>Undress</KoRimUtility.CE.UI.UNDRESS>
+  <KoRimUtility.CE.UI.UNLOAD>Unloading</KoRimUtility.CE.UI.UNLOAD>
+  <KoRimUtility.CE.UI.UNLOAD_DESC>Drop all objects from the interstellar container by droppod</KoRimUtility.CE.UI.UNLOAD_DESC>
+  <KoRimUtility.CE.UI.VOICEPITCH>Voice pitch</KoRimUtility.CE.UI.VOICEPITCH>
+  <KoRimUtility.CE.UI.VOICEVOLUME>Voice volume</KoRimUtility.CE.UI.VOICEVOLUME>
+  <KoRimUtility.CE.UI.VON> of </KoRimUtility.CE.UI.VON>
+  <KoRimUtility.CE.UI.WARMUP>Aiming Time</KoRimUtility.CE.UI.WARMUP>
+  <KoRimUtility.CE.UI.WARMUPMAX>Aiming Time Max</KoRimUtility.CE.UI.WARMUPMAX>
+  <KoRimUtility.CE.UI.WEAPON>Weapon</KoRimUtility.CE.UI.WEAPON>
+  <KoRimUtility.CE.UI.WEAPONTAGS>Weapon-Tags</KoRimUtility.CE.UI.WEAPONTAGS>
+  <KoRimUtility.CE.UI.WILDANIMALS>Wildlife</KoRimUtility.CE.UI.WILDANIMALS>
+  <KoRimUtility.CE.UI.WILL_REPLACE>replaces</KoRimUtility.CE.UI.WILL_REPLACE>
+  <KoRimUtility.CE.UI.WOMENCANHAVEBEARDS>Women beards allowed</KoRimUtility.CE.UI.WOMENCANHAVEBEARDS>
+  <KoRimUtility.CE.UI.WORNPATH>Worn Path: </KoRimUtility.CE.UI.WORNPATH>
+  <KoRimUtility.CE.UI.XENOTYPEISPREFERED>Xenotype is prefered by ideology</KoRimUtility.CE.UI.XENOTYPEISPREFERED>
+  <KoRimUtility.CE.UI.YEAR>Year</KoRimUtility.CE.UI.YEAR>
+  <KoRimUtility.CE.UI.YEARS>Years</KoRimUtility.CE.UI.YEARS>
+</LanguageData>

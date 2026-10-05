@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PawnColumnWorker_RJWGender_IsHerm>양성구유</PawnColumnWorker_RJWGender_IsHerm>
+  <PawnColumnWorker_IsSlave>노예 여부</PawnColumnWorker_IsSlave>
+  <PawnColumnWorker_IsPrisoner>죄수 여부</PawnColumnWorker_IsPrisoner>
+  <PawnColumnWorker_IsComfort>성노예 지정 여부</PawnColumnWorker_IsComfort>
+  <PawnColumnWorker_IsBreeder>교미 대상 지정 여부</PawnColumnWorker_IsBreeder>
+  <RJW_BreedAnimal_SettingDisabledTip>모드 설정에서 동물 번식이 비활성화되어 있습니다.\n동물을 교미 대상으로 지정하려면 '동물 번식 허용'을 켜세요.</RJW_BreedAnimal_SettingDisabledTip>
+  <RJW_BreedAnimal_DisabledTip>{PAWN_labelShort}을(를) 교미 대상으로 지정할 수 없습니다.</RJW_BreedAnimal_DisabledTip>
+  <RJW_BreedAnimal_OnTip>{PAWN_labelShort}은(는) 교미 대상으로 지정되어 있습니다.\n\n클릭하면 지정을 해제합니다.</RJW_BreedAnimal_OnTip>
+  <RJW_BreedAnimal_OffTip>{PAWN_labelShort}은(는) 교미 대상으로 지정되어 있지 않습니다.\n\n클릭하면 지정합니다.</RJW_BreedAnimal_OffTip>
+  <RJW_BreedHumanlike_SettingDisabledTip>모드 설정에서 수간이 비활성화되어 있습니다.\n폰을 교미 대상으로 지정하려면 '수간 허용'을 켜세요.</RJW_BreedHumanlike_SettingDisabledTip>
+  <RJW_BreedHumanlike_DisabledTip>{PAWN_labelShort}은(는) 교미 대상이 되는 데 동의하지 않습니다. {PAWN_pronoun}에게 수간 선호 특성이 없기 때문입니다.</RJW_BreedHumanlike_DisabledTip>
+  <RJW_BreedHumanlike_OnTip>{PAWN_labelShort}은(는) 교미 대상으로 지정되어 있습니다.\n\n클릭하면 지정을 해제합니다.</RJW_BreedHumanlike_OnTip>
+  <RJW_BreedHumanlike_OffTip>{PAWN_labelShort}은(는) 교미 대상으로 지정되어 있지 않습니다.\n\n클릭하면 지정합니다.</RJW_BreedHumanlike_OffTip>
+  <RJW_BreederAnimal_SettingDisabledTip>모드 설정에서 동물 번식이 비활성화되어 있습니다.\n번식용 동물을 지정하려면 '동물 번식 허용'을 켜세요.</RJW_BreederAnimal_SettingDisabledTip>
+  <RJW_BreederAnimal_DisabledTip>{PAWN_labelShort}을(를) 번식용 동물로 지정할 수 없습니다.</RJW_BreederAnimal_DisabledTip>
+  <RJW_BreederAnimal_OnTip>{PAWN_labelShort}은(는) 번식용 동물로 지정되어 있습니다.\n\n클릭하면 지정을 해제합니다.</RJW_BreederAnimal_OnTip>
+  <RJW_BreederAnimal_OffTip>{PAWN_labelShort}은(는) 번식용 동물로 지정되어 있지 않습니다.\n\n클릭하면 지정합니다.</RJW_BreederAnimal_OffTip>
+  <RJW_Comfort_SettingDisabledTip>모드 설정에서 성노예 지정이 비활성화되어 있습니다.\n성노예를 지정하려면 '강간 활성화'를 켜세요.</RJW_Comfort_SettingDisabledTip>
+  <RJW_Comfort_DisabledTip>{PAWN_labelShort}은(는) 성노예가 되는 데 동의하지 않습니다. {PAWN_pronoun}에게 마조히스트 특성이 없기 때문입니다.</RJW_Comfort_DisabledTip>
+  <RJW_Comfort_OnTip>{PAWN_labelShort}은(는) 성노예로 지정되어 있습니다.\n\n클릭하면 지정을 해제합니다.</RJW_Comfort_OnTip>
+  <RJW_Comfort_OffTip>{PAWN_labelShort}은(는) 성노예로 지정되어 있지 않습니다.\n\n클릭하면 지정합니다.</RJW_Comfort_OffTip>
+</LanguageData>

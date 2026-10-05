@@ -24,6 +24,8 @@ internal static class Program
                 Translator.Values[entry.Name.LocalName] = entry.Value;
         RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.CharacterEditorTranslation).TypeHandle);
         RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.MainButtonTranslation).TypeHandle);
+        RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.UiTranslation).TypeHandle);
+        RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.AdditionalUiTranslation).TypeHandle);
 
         // Both current and legacy Korean folder names are supported.
         foreach (var language in new[] { "Korean", "Korean (한국어)" })
@@ -67,7 +69,89 @@ internal static class Program
             Equal("original description", CharacterEditor.ThingTool.Description);
         }
         CheckMainButton();
+        CheckUi();
+        CheckAdditionalUi();
         Console.WriteLine($"Character Editor Harmony integration: {checks} checks passed (Unity/game UI not exercised).");
+    }
+
+    private static void CheckUi()
+    {
+        foreach (var name in new[] { "READONLY_LABEL", "CONSTANT_LABEL", "NUMBER" })
+            Translator.Values["KoRimUtility.CE.UI." + name] = "must not replace immutable or non-string fields";
+        foreach (var language in new[] { "Korean", "Korean (한국어)", "korean", "English", "Japanese", null })
+        {
+            LanguageDatabase.activeLanguage = language == null ? null : new LoadedLanguage { folderName = language };
+            var korean = language?.StartsWith("Korean", StringComparison.OrdinalIgnoreCase) == true;
+            for (var repeat = 0; repeat < 2; repeat++)
+            {
+                CharacterEditor.Label.UpdateLabels();
+                Equal(korean ? "정착민" : "Colonists", CharacterEditor.Label.COLONISTS);
+                Equal(korean ? "인간형" : "Humanoid", CharacterEditor.Label.HUMANOID);
+                Equal(korean ? "의료 처치" : "Medicate", CharacterEditor.Label.MEDICATE);
+                Equal(korean ? "무기 교체" : "Arm", CharacterEditor.Label.REEQUIP);
+                Equal(korean ? "머리카락" : "Hair", CharacterEditor.Label.HAIR);
+                Equal(korean ? "머리색" : "Hair", CharacterEditor.Label.HAIRCOLOR);
+                Equal(korean ? "머리 모양" : "Hairstyle", CharacterEditor.Label.FRISUR);
+                // UpdateLabels must copy the translated category, not the English fallback.
+                Equal(CharacterEditor.Label.COLONISTS, CharacterEditor.CEditor.ListName);
+                Equal("english", CharacterEditor.Label.currentLanguage);
+                Equal("Unrecognized upstream field", CharacterEditor.Label.NEW_LABEL);
+                Equal("∞", CharacterEditor.Label.INFINITE);
+                Equal("constant", CharacterEditor.Label.READONLY_LABEL);
+                Equal("literal", CharacterEditor.Label.CONSTANT_LABEL);
+                Equal("17", CharacterEditor.Label.NUMBER.ToString());
+            }
+        }
+        LanguageDatabase.activeLanguage = new LoadedLanguage { folderName = "Korean" };
+        const string key = "KoRimUtility.CE.UI.HAIR";
+        var translation = Translator.Values[key];
+        Translator.Values.Remove(key);
+        CharacterEditor.Label.UpdateLabels();
+        Equal("Hair", CharacterEditor.Label.HAIR);
+        Equal("정착민", CharacterEditor.Label.COLONISTS);
+        Translator.Values[key] = translation;
+        CharacterEditor.Label.UpdateLabels();
+        Equal(translation, CharacterEditor.Label.HAIR);
+    }
+
+    private static void CheckAdditionalUi()
+    {
+        foreach (var language in new[] { "Korean", "Korean (한국어)", "English", "Japanese", null })
+        {
+            LanguageDatabase.activeLanguage = language == null ? null : new LoadedLanguage { folderName = language };
+            var korean = language?.StartsWith("Korean") == true;
+            Equal(korean ? "무드|무드 [|호감도|호감도 [|int" : "mood|mood [|opinion|opinion [|int",
+                new CharacterEditor.DialogAddThought().DrawSlider());
+            Equal(korean ? "수정|변경 사항은 시간이 조금 지난 뒤 적용됩니다.|DrawDebugOptions" :
+                "Modify|changes will be applied after some passed time|DrawDebugOptions",
+                new CharacterEditor.DialogPsychology().DoWindowContents());
+            var type = new object();
+            CharacterEditor.MessageTool.Show("failed to heal", type);
+            Equal(korean ? "치료하지 못했습니다." : "failed to heal", CharacterEditor.MessageTool.Text);
+            Equal("True", ReferenceEquals(type, CharacterEditor.MessageTool.MessageType).ToString());
+            const string path = "C:\\Users\\Test\\my English name.pawn";
+            CharacterEditor.MessageTool.Show("export successful to " + path);
+            Equal((korean ? "내보내기 완료: " : "export successful to ") + path, CharacterEditor.MessageTool.Text);
+            CharacterEditor.MessageTool.Show("unknown message: failed to heal");
+            Equal("unknown message: failed to heal", CharacterEditor.MessageTool.Text);
+            CharacterEditor.MessageTool.Show(null);
+            Equal(null, CharacterEditor.MessageTool.Text);
+            var called = false;
+            Action confirm = () => called = true;
+            CharacterEditor.MessageTool.ShowCustomDialog("Data: Hair|Colonists|Custom", "unchanged", null, confirm, null);
+            Equal((korean ? "저장 데이터: " : "Data: ") + "Hair|Colonists|Custom", CharacterEditor.MessageTool.Text);
+            Equal("unchanged", CharacterEditor.MessageTool.Title);
+            Equal("True", ReferenceEquals(confirm, CharacterEditor.MessageTool.Confirm).ToString());
+            CharacterEditor.MessageTool.Confirm();
+            Equal("True", called.ToString());
+        }
+        LanguageDatabase.activeLanguage = new LoadedLanguage { folderName = "Korean" };
+        const string key = "KoRimUtility.CE.Extra.HealFailed";
+        var saved = Translator.Values[key];
+        Translator.Values.Remove(key);
+        CharacterEditor.MessageTool.Show("failed to heal");
+        Equal("failed to heal", CharacterEditor.MessageTool.Text);
+        Translator.Values[key] = saved;
     }
 
     private static void CheckMainButton()
@@ -138,6 +222,7 @@ namespace Verse
     {
         public static readonly Dictionary<string, string> Values = new Dictionary<string, string>();
         public static string Translate(this string key) => Values[key];
+        public static bool CanTranslate(this string key) => Values.ContainsKey(key);
     }
 }
 
@@ -179,14 +264,56 @@ namespace CharacterEditor
     internal static class Label
     {
         internal static string DESC_CASCET, DESC_GRAVE, ENTER_ZOMBGRELLA;
+        internal static string COLONISTS, HUMANOID, MEDICATE, REEQUIP, HAIR, HAIRCOLOR, FRISUR;
+        internal static string currentLanguage = "english", NEW_LABEL, INFINITE;
+        internal static readonly string READONLY_LABEL = "constant";
+        internal const string CONSTANT_LABEL = "literal";
+        internal static int NUMBER = 17;
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal static void LangEN()
+        {
+            COLONISTS = "Colonists";
+            HUMANOID = "Humanoid";
+            MEDICATE = "Medicate";
+            REEQUIP = "Arm";
+            HAIR = HAIRCOLOR = "Hair";
+            FRISUR = "Hairstyle";
+            NEW_LABEL = "Unrecognized upstream field";
+            INFINITE = "∞";
+        }
 
         [MethodImpl(MethodImplOptions.NoInlining)]
         internal static void UpdateLabels()
         {
+            LangEN();
+            CEditor.ListName = COLONISTS;
             DESC_CASCET = "original casket";
             DESC_GRAVE = "original grave";
             ENTER_ZOMBGRELLA = "original entry";
         }
+    }
+    internal static class CEditor { internal static string ListName; }
+    internal sealed class DialogAddThought
+    {
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal string DrawSlider() => string.Join("|", new[] { "mood", "mood [", "opinion", "opinion [", "int" });
+    }
+    internal sealed class DialogPsychology
+    {
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal string DoWindowContents() => string.Join("|", new[] { "Modify", "changes will be applied after some passed time", "DrawDebugOptions" });
+    }
+    internal static class MessageTool
+    {
+        internal static string Text, Title;
+        internal static object MessageType;
+        internal static Action Confirm;
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal static void Show(string info, object mt = null) { Text = info; MessageType = mt; }
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal static void ShowCustomDialog(string s, string title, Action onAbort, Action onConfirm, Action onNext)
+        { Text = s; Title = title; Confirm = onConfirm; }
     }
 }
 

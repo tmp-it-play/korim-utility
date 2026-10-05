@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RJW_Hero.headerTip>Designate pawn as the &lt;color=yellow&gt;Hero&lt;/color&gt;. A &lt;color=yellow&gt;Hero&lt;/color&gt; can be directly ordered to do lovin' with other pawns.</RJW_Hero.headerTip>
+  <RJW_Comfort.headerTip>Designate pawn as a comfort pawn. This pawn will then be used by others to relieve their pent-up needs.</RJW_Comfort.headerTip>
+  <RJW_BreedHumanlike.headerTip>Designate pawn for breeding. The colony animals will try to breed this pawn.</RJW_BreedHumanlike.headerTip>
+  <RJW_BreederAnimal.headerTip>Designate animal as a breeder. These animals will try to breed pawns designated for breeding.</RJW_BreederAnimal.headerTip>
+  <RJW_BreedAnimal.headerTip>Designate animal for breeding. The colony animals will try to breed this animal.</RJW_BreedAnimal.headerTip>
+  <RJW_Whore.headerTip>Designate pawn as a prostitute. Prostitutes provide service to guests for silver.</RJW_Whore.headerTip>
+  <RJW_IsPrisoner.headerTip>Prisoners</RJW_IsPrisoner.headerTip>
+  <RJW_IsSlave.headerTip>Slaves</RJW_IsSlave.headerTip>
+  <RJW_Gender.headerTip>Gender</RJW_Gender.headerTip>
+  <RJW_Sexuality.headerTip>Sexuality</RJW_Sexuality.headerTip>
+</LanguageData>
