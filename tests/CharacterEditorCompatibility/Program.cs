@@ -19,10 +19,11 @@ internal static class Program
 
     public static void Main(string[] args)
     {
-        var xml = XDocument.Load(Path.Combine(args[0], "Translations/CharacterEditor/Languages/Korean/Keyed/Buildings.xml"));
-        foreach (var entry in xml.Root.Elements())
-            Translator.Values[entry.Name.LocalName] = entry.Value;
+        foreach (var path in Directory.GetFiles(Path.Combine(args[0], "Translations/CharacterEditor/Languages/Korean/Keyed"), "*.xml"))
+            foreach (var entry in XDocument.Load(path).Root.Elements())
+                Translator.Values[entry.Name.LocalName] = entry.Value;
         RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.CharacterEditorTranslation).TypeHandle);
+        RuntimeHelpers.RunClassConstructor(typeof(KoRimUtility.CharacterEditor.MainButtonTranslation).TypeHandle);
 
         // Both current and legacy Korean folder names are supported.
         foreach (var language in new[] { "Korean", "Korean (한국어)" })
@@ -65,12 +66,67 @@ internal static class Program
             Equal("original label", CharacterEditor.ThingTool.Label);
             Equal("original description", CharacterEditor.ThingTool.Description);
         }
+        CheckMainButton();
         Console.WriteLine($"Character Editor Harmony integration: {checks} checks passed (Unity/game UI not exercised).");
+    }
+
+    private static void CheckMainButton()
+    {
+        foreach (var language in new[] { "Korean", "Korean (한국어)", "English", "Japanese", null })
+        {
+            CharacterEditor.DefTool.Buttons.Clear();
+            LanguageDatabase.activeLanguage = language == null ? null : new LoadedLanguage { folderName = language };
+            var korean = language?.StartsWith("Korean") == true;
+            var label = korean ? "캐릭터" : "Character";
+            var desc = korean ? "캐릭터 편집기를 엽니다." : "Start Character Editor";
+            var pack = new ModContentPack();
+            var button = CharacterEditor.DefTool.GetCreateMainButton("HotkeyEditor", "Character", "Start Character Editor", typeof(Program), pack, "F8", false);
+            Equal(label, button.LabelCap);
+            Equal(desc, button.description);
+            Equal(label, button.hotKey.LabelCap);
+            Equal(desc, button.hotKey.description);
+            Equal("HotkeyEditor", button.defName);
+            Equal("HotkeyEditor", button.hotKey.defName);
+            Equal("F8", button.hotKey.keyCode);
+            Equal("False", button.buttonVisible.ToString());
+            Equal("beditoricon", button.iconPath);
+            Equal("True", (button.tabWindowClass == typeof(Program) && button.modContentPack == pack).ToString());
+            var teleport = CharacterEditor.DefTool.GetCreateMainButton("HotkeyTeleport", "Teleport", "quick teleport", typeof(Program), pack, "F9", false);
+            Equal("Teleport", teleport.label);
+            Equal("quick teleport", teleport.description);
+            Equal("F9", teleport.hotKey.keyCode);
+        }
+        // An English Def may already exist before our Korean hook is called.
+        CharacterEditor.DefTool.Buttons.Clear();
+        LanguageDatabase.activeLanguage = new LoadedLanguage { folderName = "English" };
+        var cached = CharacterEditor.DefTool.GetCreateMainButton("HotkeyEditor", "Character", "Start Character Editor", typeof(Program), null, "F8", true);
+        Equal("Character", cached.LabelCap);
+        Equal("Character", cached.hotKey.LabelCap);
+        LanguageDatabase.activeLanguage.folderName = "Korean";
+        for (var repeat = 0; repeat < 2; repeat++)
+        {
+            var result = CharacterEditor.DefTool.GetCreateMainButton("HotkeyEditor", "Character", "Start Character Editor", typeof(Program), null, "F9", false);
+            Equal("True", ReferenceEquals(cached, result).ToString());
+            Equal("캐릭터", result.LabelCap);
+            Equal("캐릭터 편집기를 엽니다.", result.description);
+            Equal("캐릭터", result.hotKey.LabelCap);
+            Equal("캐릭터 편집기를 엽니다.", result.hotKey.description);
+            Equal("F8", result.hotKey.keyCode);
+            Equal("True", result.buttonVisible.ToString());
+        }
     }
 }
 
 namespace Verse
 {
+    public sealed class ModContentPack { }
+    public class Def
+    {
+        public string defName, label, description;
+        private string cachedLabel;
+        public string LabelCap => cachedLabel ??= label;
+        public void ClearCachedData() { cachedLabel = null; }
+    }
     public sealed class StaticConstructorOnStartupAttribute : Attribute { }
     public sealed class LoadedLanguage { public string folderName; }
     public static class LanguageDatabase { public static LoadedLanguage activeLanguage; }
@@ -87,6 +143,22 @@ namespace Verse
 
 namespace CharacterEditor
 {
+    internal static class DefTool
+    {
+        internal static readonly Dictionary<string, RimWorld.MainButtonDef> Buttons = new();
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        internal static RimWorld.MainButtonDef GetCreateMainButton(string defName, string label, string desc,
+            Type typeClass, ModContentPack pack, string keyCode, bool isVisible)
+        {
+            if (Buttons.TryGetValue(defName, out var existing)) return existing;
+            var result = new RimWorld.MainButtonDef { defName = defName, label = label, description = desc,
+                tabWindowClass = typeClass, modContentPack = pack, buttonVisible = isVisible, iconPath = "beditoricon",
+                hotKey = new RimWorld.KeyBindingDef { defName = defName, label = label, description = desc, keyCode = keyCode } };
+            Buttons.Add(defName, result);
+            return result;
+        }
+    }
     internal static class ThingTool
     {
         internal static string DefName, Label, Description, Blueprint, ReinstallBlueprint, Frame, Texture;
@@ -116,4 +188,17 @@ namespace CharacterEditor
             ENTER_ZOMBGRELLA = "original entry";
         }
     }
+}
+
+namespace RimWorld
+{
+    public sealed class MainButtonDef : Def
+    {
+        public bool buttonVisible;
+        public string iconPath;
+        public Type tabWindowClass;
+        public ModContentPack modContentPack;
+        public KeyBindingDef hotKey;
+    }
+    public sealed class KeyBindingDef : Def { public string keyCode; }
 }

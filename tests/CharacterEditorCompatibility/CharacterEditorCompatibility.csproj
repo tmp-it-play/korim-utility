@@ -5,6 +5,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.4.1" />
-    <Compile Include="../../Source/KoRimUtility.CharacterEditor/CharacterEditorTranslation.cs" Link="CharacterEditorTranslation.cs" />
+    <Compile Include="../../Source/KoRimUtility.CharacterEditor/*.cs" Link="%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>

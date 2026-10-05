@@ -21,7 +21,7 @@ class IntegratedModTests(unittest.TestCase):
         editor = 'void.charactereditor'
         replace = 'Memegoddess.ReplaceStuff'
         bionic_icons = 'automatic.bionicicons'
-        counts = {cooler: 2, rjw: 26, editor: 6, replace: 2, bionic_icons: 0}
+        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, bionic_icons: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:
             with self.subTest(active=active):
@@ -39,6 +39,7 @@ class IntegratedModTests(unittest.TestCase):
                 self.assertEqual(('DefInjected/ThingDef', 'ResinGlob.label') in translations, rjw in active)
                 self.assertEqual(('DefInjected/rjw.SexFluidDef', 'Resin.label') in translations, rjw in active)
                 self.assertEqual(('Keyed', 'KoRimUtility.CE.Zombrella.Label') in translations, editor in active)
+                self.assertEqual(('Keyed', 'KoRimUtility.CE.MainButton.Label') in translations, editor in active)
                 self.assertEqual(('DefInjected/JobDef', 'EnterZGrave.reportString') in translations, editor in active)
                 self.assertEqual(ROOT / 'Translations/CharacterEditor' in roots, editor in active)
                 self.assertEqual(('DefInjected/ThingDef', 'Vent_Over2W.label') in translations, replace in active)

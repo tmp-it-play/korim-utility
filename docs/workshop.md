@@ -12,7 +12,7 @@ GitHub Release에서 창작마당을 자동 업데이트하는 설정은 [자동
 | --- | --- | --- |
 | The Cooler | `GodlyAnnihilator.TheLowCooler` 활성화 | 냉방기 이름·설명 2개 |
 | RimJobWorld | `rim.job.world` 활성화 | 6.2.1의 UI·알림 10개, Resin 관련 이름·설명 16개 |
-| Character Editor | `void.charactereditor` 활성화 | Zombrella·Zombgrella 이름·설명·진입 문구 6개 |
+| Character Editor | `void.charactereditor` 활성화 | Zombrella·Zombgrella 이름·설명·진입 문구 6개, 하단 메뉴 이름·툴팁 2개 |
 | Replace Stuff - Continued | `Memegoddess.ReplaceStuff` 활성화 | 와이드 매립형 환풍구 이름·설명 2개 |
 
 네 대상 모두 필수가 아닙니다. `LoadFolders.xml`의 `IfModActive` 조건으로 각 대상의 `Translations` 하위 폴더를 로드합니다. 대상이 없거나 비활성화되어 있으면 해당 번역 폴더도 로드하지 않습니다. 본체의 향후 아이템·UI 틀은 그대로 유지됩니다.
@@ -22,6 +22,10 @@ GitHub Release에서 창작마당을 자동 업데이트하는 설정은 [자동
 Resin은 식물에서 얻는 물질이라는 원문에 맞춰 **수지**로 통일합니다. 아이템(`ResinGlob`), 바닥 잔여물(`ResinCum`), 체액(`Resin`)과 관련 신체 부위의 이름·설명을 포함합니다.
 
 Character Editor의 **좀브렐라**, **좀브그렐라**는 실행 중 생성되는 건물이므로 일반 `ThingDef` 번역 주입 시점에는 존재하지 않습니다. 자체 호환 DLL이 `ThingTool.CreateBuilding`의 이름·설명 인수만 한국어로 바꿉니다. 도면·재설치 도면·건설 중 표시는 원본의 생성 과정을 따릅니다. `Label.UpdateLabels` 뒤에는 설명과 진입 메뉴 문구를 적용하고, `EnterZGrave.reportString`은 일반 XML로 번역합니다. Def 이름과 저장 식별자는 유지합니다. 원본의 Harmony 의존성을 사용하며 Character Editor가 꺼져 있으면 DLL도 로드하지 않습니다.
+
+하단 바의 `Character` 버튼도 실행 중 만들어집니다. `DefTool.GetCreateMainButton`에서 `HotkeyEditor`의 이름을 **캐릭터**, 툴팁을 **캐릭터 편집기를 엽니다.**로 번역하며, 이미 생성된 버튼의 표시 캐시와 같은 이름의 단축키 설명에도 반영합니다. 메뉴 표시 설정·아이콘·단축키 조합은 유지하고 한국어에서만 적용합니다.
+
+실제 게임 엔진에서 한국어 버튼 생성·표시 캐시 갱신과 영어 문구 유지를 검증했습니다. 하단 바 전체 화면에 대한 수동 검증은 별도입니다.
 
 Replace Stuff - Continued의 `Vent_Over2W`는 기존 번역의 `매립형 환풍구`, `매립형 냉방기 (와이드)`와 맞춰 **매립형 환풍구 (와이드)**로 번역합니다. 설명은 `Vent_Over`를 거쳐 순정 `Vent`에서 상속되는 원문을 대조했습니다. 이전 Replace Stuff와 패키지 ID가 다르므로 Continued에만 적용합니다.
 
