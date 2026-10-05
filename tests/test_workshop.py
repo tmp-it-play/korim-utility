@@ -64,6 +64,8 @@ class WorkshopDeploymentTests(unittest.TestCase):
         self.assertTrue(upload_succeeded('Preparing update...\nCommitting update...\nSuccess!\n', '123456789'))
         self.assertTrue(upload_succeeded('Preparing update...\nSuccess\n', '123456789'))
         self.assertTrue(upload_succeeded(
+            'Preparing update...\nCommitting update...\nSuccess.Unloading Steam API...OK', '123456789'))
+        self.assertTrue(upload_succeeded(
             '\x1b[0mPreparing update...\n\x1b[32mSuccess.\x1b[0m\n', '123456789'))
         for output in ('Success. Logged in.', 'Success.', 'Success. Published item 1234567890.',
                        'Preparing update...\nSuccess. Published item 1234567890.',
