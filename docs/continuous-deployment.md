@@ -46,7 +46,7 @@ CD는 이 세션을 일회용 Ubuntu 러너에 복원하며 비밀번호나 2FA 
 - **수동 업로드:** 같은 화면에서 `dry_run` 체크 해제.
 - **자동 업로드:** GitHub에서 정식 Release 발행. 릴리스 태그의 커밋을 checkout하여 검사·업로드합니다. 동일 창작마당 항목의 배포가 겹치지 않도록 직렬 처리합니다.
 
-업로드 원본은 `dist/KoRimUtility.zip`을 푼 `dist/workshop/KoRimUtility`뿐입니다. 저장소, 테스트, 작업 원문은 업로드하지 않습니다. `Artwork/Preview.svg`는 매번 PNG로 렌더링하므로 SVG 변경도 배포에 반영됩니다. .NET SDK 9로 Character Editor 번역·의료 아이콘 호환 DLL을 빌드하고 두 Harmony 통합 테스트를 실행합니다. 게임·원본 모드·Harmony DLL은 배포하지 않으며, C# UI 틀은 계속 비활성 상태입니다.
+업로드 원본은 `dist/KoRimUtility.zip`을 푼 `dist/workshop/KoRimUtility`뿐입니다. 저장소, 테스트, 작업 원문은 업로드하지 않습니다. `Artwork/Preview.svg`는 매번 PNG로 렌더링하므로 SVG 변경도 배포에 반영됩니다. .NET SDK 9로 하단 메뉴 UI·Character Editor 번역·의료 아이콘 호환 DLL을 빌드하고 세 Harmony 통합 테스트를 실행합니다. 게임·원본 모드·Harmony DLL은 배포하지 않습니다. 하단 메뉴 UI는 Harmony 활성화 시 로드하며, 별도의 향후 C# UI 틀은 계속 비활성 상태입니다.
 
 SteamCMD의 업로드 준비 이후 성공 응답과 종료 코드를 확인하고, manifest의 게시 ID가 실행 전후 모두 일치해야 성공으로 처리합니다. 색상 코드, 중간 진행 단계 생략, 완료 메시지와 종료 로그 사이의 줄바꿈 유무를 처리합니다. 반환 코드만으로 성공 처리하지 않습니다. 인증정보 보호를 위해 원시 Steam 로그를 출력하거나 아티팩트로 보관하지 않습니다. 출력 형식이 바뀌어 성공 확인이 실패했다면 창작마당 상태부터 확인하고 재실행 여부를 결정합니다.
 

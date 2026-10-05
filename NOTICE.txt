@@ -69,3 +69,8 @@ It isolates RJW map texture instances to prevent atlas mask collisions and
 composes UI textures at runtime from the active game/mod artwork. Existing
 Bionic icons organ UI images retain their original masks. The upstream
 textures and BionicIcons.dll are not modified or redistributed.
+
+KoRimUtility.MainButtons.dll is original UI layout code under LICENSE.
+It assigns equal widths to visible main menu buttons while retaining the
+game and mod workers. It loads only when the Harmony mod is active.
+Harmony and RimWorld assemblies are build dependencies and are not bundled.

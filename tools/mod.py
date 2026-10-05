@@ -15,6 +15,7 @@ KEY = re.compile(r'^[A-Za-z_][A-Za-z0-9_.-]*$')
 TOKENS = re.compile(r'(?<!\{)\{[^{}]+\}(?!\})|\[[A-Za-z_][A-Za-z0-9_.]*\]|</?[A-Za-z][^<>]*>')
 CHARACTER_EDITOR_ASSEMBLY = 'Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll'
 MEDICAL_ICONS_ASSEMBLY = 'Integrations/RimJobWorld/Common/Assemblies/KoRimUtility.MedicalIcons.dll'
+MAIN_BUTTONS_ASSEMBLY = 'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll'
 
 
 def tokens(text):
@@ -196,6 +197,11 @@ def pack(include_ui=False, root=ROOT):
         compatibility = root / MEDICAL_ICONS_ASSEMBLY
         if not compatibility.is_file():
             raise ValueError('의료 아이콘 호환 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
+        files.append(compatibility)
+    if (root / 'Integrations/MainButtons').is_dir():
+        compatibility = root / MAIN_BUTTONS_ASSEMBLY
+        if not compatibility.is_file():
+            raise ValueError('하단 메뉴 UI DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
         files.append(compatibility)
     for content in content_roots(root):
         for dirname in RUNTIME_DIRS:

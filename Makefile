@@ -13,10 +13,12 @@ test:
 	$(PYTHON) -m unittest discover -s tests -v
 
 compatibility:
+	$(DOTNET) build Source/KoRimUtility.MainButtons -c Release
 	$(DOTNET) build Source/KoRimUtility.CharacterEditor -c Release
 	$(DOTNET) build Source/KoRimUtility.MedicalIcons -c Release
 
 test-compatibility:
+	$(DOTNET) run --project tests/MainButtonsCompatibility -c Release
 	$(DOTNET) run --project tests/CharacterEditorCompatibility -c Release -- "$(CURDIR)"
 	$(DOTNET) run --project tests/MedicalIconsCompatibility -c Release
 

@@ -10,18 +10,19 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, check, combined_language, pack
+from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, check, combined_language, pack
 
 
 class IntegratedModTests(unittest.TestCase):
-    def test_thirty_two_optional_mod_combinations(self):
+    def test_sixty_four_optional_mod_combinations(self):
         entries = ET.parse(ROOT / 'LoadFolders.xml').findall('v1.6/li')
         cooler = 'GodlyAnnihilator.TheLowCooler'
         rjw = 'rim.job.world'
         editor = 'void.charactereditor'
         replace = 'Memegoddess.ReplaceStuff'
         bionic_icons = 'automatic.bionicicons'
-        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, bionic_icons: 0}
+        harmony = 'brrainz.harmony'
+        counts = {cooler: 2, rjw: 26, editor: 8, replace: 2, bionic_icons: 0, harmony: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:
             with self.subTest(active=active):
@@ -48,6 +49,7 @@ class IntegratedModTests(unittest.TestCase):
                 self.assertEqual(ROOT / 'Integrations/RimJobWorld/BionicIcons' in roots,
                                  rjw in active and bionic_icons in active)
                 self.assertEqual(ROOT / 'Integrations/RimJobWorld/Common' in roots, rjw in active)
+                self.assertEqual(ROOT / 'Integrations/MainButtons' in roots, harmony in active)
 
     def test_one_mod_with_no_required_translation_targets(self):
         metadata = ET.parse(ROOT / 'About/About.xml')
@@ -94,9 +96,16 @@ class IntegratedModTests(unittest.TestCase):
                 medical.parent.mkdir(parents=True)
                 medical.write_bytes(b'test medical icon assembly')
                 (medical.parent / 'BionicIcons.dll').write_bytes(b'not for redistribution')
+                with self.assertRaisesRegex(ValueError, '하단 메뉴 UI DLL'):
+                    pack(root=root)
+                main_buttons = root / MAIN_BUTTONS_ASSEMBLY
+                main_buttons.parent.mkdir(parents=True)
+                main_buttons.write_bytes(b'test main button assembly')
+                (main_buttons.parent / '0Harmony.dll').write_bytes(b'not for redistribution')
                 pack(root=root)
             with ZipFile(root / 'dist/KoRimUtility.zip') as archive:
                 dlls = [name for name in archive.namelist() if name.endswith('.dll')]
                 self.assertEqual(sorted(dlls), sorted(['KoRimUtility/' + CHARACTER_EDITOR_ASSEMBLY,
-                                                     'KoRimUtility/' + MEDICAL_ICONS_ASSEMBLY]))
+                                                     'KoRimUtility/' + MEDICAL_ICONS_ASSEMBLY,
+                                                     'KoRimUtility/' + MAIN_BUTTONS_ASSEMBLY]))
                 self.assertFalse(any('TranslationReference' in name for name in archive.namelist()))
