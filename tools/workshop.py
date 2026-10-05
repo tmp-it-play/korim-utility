@@ -99,6 +99,8 @@ def upload_diagnostic(output, returncode):
         'login_completed': 'waiting for user info...ok' in lowered,
         'upload_started': 'uploading content' in lowered or 'preparing update' in lowered,
         'success_message_seen': bool(re.search(r'\bSuccess\.(?=\s|$)', output, re.IGNORECASE)),
+        'success_word_present': 'success' in lowered,
+        'error_word_present': 'error' in lowered,
         'invalid_password': 'invalid password' in lowered,
         'guard_required': any(text in lowered for text in (
             'account logon denied', 'two-factor code', 'enter the current code',
@@ -107,7 +109,18 @@ def upload_diagnostic(output, returncode):
             'no connection', 'failed to connect', 'connection timeout')),
         'access_denied': 'access denied' in lowered or 'insufficient privilege' in lowered,
     }
-    return f'exit={returncode}; ' + '; '.join(f'{key}={int(value)}' for key, value in signals.items())
+    # A fixed vocabulary reveals the Workshop failure stage without copying
+    # account names, paths, IDs, tokens, or arbitrary Steam output into CI logs.
+    vocabulary = {'preparing', 'update', 'content', 'uploading', 'preview', 'image',
+                  'committing', 'success', 'successfully', 'published', 'file', 'item',
+                  'workshop', 'ok', 'error', 'failed', 'complete', 'completed', 'invalid',
+                  'parameter', 'password', 'access', 'denied', 'timeout', 'limit',
+                  'exceeded', 'quota', 'service', 'unavailable', 'failure', 'result'}
+    start = lowered.rfind('preparing update')
+    stage = lowered[start:] if start >= 0 else ''
+    tokens = [word for word in re.findall(r'[a-z]+', stage) if word in vocabulary][:60]
+    return (f'exit={returncode}; ' + '; '.join(f'{key}={int(value)}' for key, value in signals.items())
+            + '; workshop_stage_tokens=' + ','.join(tokens))
 
 
 def upload(steamcmd, manifest, published_id):
