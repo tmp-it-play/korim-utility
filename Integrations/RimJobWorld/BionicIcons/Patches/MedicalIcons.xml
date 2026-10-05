@@ -14,7 +14,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Archotech</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Anus</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -34,7 +34,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Archotech</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Breast</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -54,7 +54,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Archotech</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Female</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -74,7 +74,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Archotech</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Male</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -94,7 +94,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Bionic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Anus</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -114,7 +114,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Bionic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Breast</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -134,7 +134,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Bionic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Female</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -154,7 +154,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Bionic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Male</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -174,7 +174,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Anus</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -194,7 +194,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Breast</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -214,7 +214,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/FeaturelessChest</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -234,7 +234,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Female</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -254,7 +254,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Male</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -274,7 +274,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Prosthetic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Anus</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -294,7 +294,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Prosthetic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Breast</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -314,7 +314,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Prosthetic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Female</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -334,7 +334,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Prosthetic</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/Male</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(64,64,64)</colorTwo>
@@ -354,7 +354,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/ResinGlob</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(166,104,18)</colorTwo>
@@ -374,7 +374,7 @@
           <graphicData Inherit="false">
             <texPath>BionicIcons/Boxes/Default</texPath>
             <maskPath>KoRimUtility/RJW/BionicIcons/Masks/SlimeGlob</maskPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>KoRimUtility.MedicalIcons.Graphic_MedicalIcon</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(255,255,255)</color>
             <colorTwo>(65,125,77)</colorTwo>

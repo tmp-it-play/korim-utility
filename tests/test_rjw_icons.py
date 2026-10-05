@@ -94,7 +94,7 @@ class RjwIconTests(unittest.TestCase):
                 self.assertEqual([n.tag for n in add.find('value')], ['graphicData'])
                 graphic = add.find('value/graphicData')
                 self.assertEqual(graphic.get('Inherit').lower(), 'false')
-                self.assertEqual(graphic.findtext('graphicClass'), 'Graphic_Single')
+                self.assertEqual(graphic.findtext('graphicClass'), 'KoRimUtility.MedicalIcons.Graphic_MedicalIcon')
                 self.assertEqual(graphic.findtext('shaderType'), 'CutoutComplex')
                 self.assertTrue(graphic.findtext('maskPath').startswith(f'KoRimUtility/RJW/{style}/Masks/'))
                 base = graphic.findtext('texPath')

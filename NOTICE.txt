@@ -63,3 +63,9 @@ Bionic icons is optional; its case textures are referenced only when active.
 Its MIT notice (Copyright (c) 2018 AUTOMATIC1111) is included in
 ThirdPartyNotices/BionicIcons-LICENSE.txt. No upstream code or case textures
 are bundled.
+
+KoRimUtility.MedicalIcons.dll is original compatibility code under LICENSE.
+It isolates RJW map texture instances to prevent atlas mask collisions and
+composes UI textures at runtime from the active game/mod artwork. Existing
+Bionic icons organ UI images retain their original masks. The upstream
+textures and BionicIcons.dll are not modified or redistributed.

@@ -25,7 +25,9 @@ Character Editor의 **좀브렐라**, **좀브그렐라**는 실행 중 생성�
 
 Replace Stuff - Continued의 `Vent_Over2W`는 기존 번역의 `매립형 환풍구`, `매립형 냉방기 (와이드)`와 맞춰 **매립형 환풍구 (와이드)**로 번역합니다. 설명은 `Vent_Over`를 거쳐 순정 `Vent`에서 상속되는 원문을 대조했습니다. 이전 Replace Stuff와 패키지 ID가 다르므로 Continued에만 적용합니다.
 
-RJW 의료 부품 44개와 수지·슬라임에는 기존 의료 상자와 생성한 부위 표식을 연결했습니다. Bionic icons가 없으면 기본 게임의 `HealthItem`을, 활성화되어 있으면 해당 모드의 일반·의수·생체공학·초월공학 상자를 사용합니다. 원본 상자의 외곽선·명암·등급 색상을 유지하고, 14개 부위 마스크만 배포합니다. RJW가 없으면 아이콘 패치도 로드하지 않습니다.
+RJW 의료 부품 44개와 수지·슬라임에는 기존 의료 상자와 생성한 부위 표식을 연결했습니다. Bionic icons가 없으면 기본 게임의 `HealthItem`을, 활성화되어 있으면 해당 모드의 일반·의수·생체공학·초월공학 상자를 사용합니다. 원본 상자의 외곽선·명암·등급 색상을 유지하고, 생성 마스크 14개와 자체 의료 아이콘 호환 DLL을 배포합니다. RJW가 없으면 아이콘 패치와 DLL도 로드하지 않습니다.
+
+맵에서는 부위 마스크마다 원본 상자의 독립 텍스처 인스턴스를 사용해 게임 아틀라스의 마스크 충돌을 막습니다. UI에는 실행 시 상자와 표식을 합성한 이미지를 사용하므로 텍스처만 읽는 목록에서도 표식이 유지됩니다. Character Editor의 목록과 큰 아이템 미리보기에도 적용합니다. Bionic icons가 적용한 기존 폐·심장 등도 원래 부위 표식으로 UI 이미지를 만들며, 해당 장기의 맵 그래픽과 원본 텍스처는 수정하지 않습니다. 명시적인 UI 이미지와 스타일 변경은 유지합니다. 업데이트 적용에는 게임 재시작이 필요합니다.
 
 ## 빌드와 설치
 
@@ -34,7 +36,7 @@ make check test test-compatibility pack
 make install MODS_DIR="/actual/path/to/Mods"
 ```
 
-소스 빌드에는 Python 3.10+와 .NET SDK 9가 필요합니다. `make compatibility`는 고정된 NuGet 참조(`Krafs.Rimworld.Ref` 1.6.4523, `Lib.Harmony` 2.4.1)로 자체 호환 DLL을 생성합니다. `make pack`과 `make install`도 이 빌드를 실행합니다. ZIP 사용자에게는 .NET SDK나 별도 설치가 필요하지 않습니다. 선택적 UI DLL과 달리 Character Editor 호환 DLL은 배포에 포함됩니다.
+소스 빌드에는 Python 3.10+와 .NET SDK 9가 필요합니다. `make compatibility`는 고정된 NuGet 참조(`Krafs.Rimworld.Ref` 1.6.4523, `Lib.Harmony` 2.4.1)로 Character Editor와 의료 아이콘 호환 DLL을 생성합니다. `make pack`과 `make install`도 이 빌드를 실행합니다. ZIP 사용자에게는 .NET SDK나 별도 설치가 필요하지 않습니다. 두 호환 DLL은 배포에 포함되며 각각 대상 모드가 활성화된 경우에만 로드됩니다.
 
 ZIP 설치 시 압축을 풀어 `KoRimUtility` 폴더를 게임 `Mods`에 넣습니다. 한국어로 설정하고 사용하는 번역 대상 모드보다 아래에 배치합니다. 원본 모드의 선행 모드는 원본 안내를 따릅니다.
 
@@ -52,7 +54,9 @@ ZIP 설치 시 압축을 풀어 `KoRimUtility` 폴더를 게임 `Mods`에 넣습
 
 2026-10-05 Steam에서 실행한 RimWorld 1.6으로 최초 업로드를 완료하고 공개로 설정했습니다. `Translation`, `1.6` 태그와 상세 소개문을 적용했으며, 구독으로 내려받은 파일 11개(게시 ID 포함)가 업로드 원본과 SHA-256 기준으로 모두 일치함을 확인했습니다. 게시 ID `3813930171`은 로컬 `About/PublishedFileId.txt`에도 보관합니다. Git에는 이 파일을 추적하지 않습니다.
 
-게임의 모드 목록에서 이름·썸네일·설명 인식은 최초 게시 때 확인했습니다. 현재 서른두 가지 로드 구성의 실제 플레이와 새 번역·아이콘 화면 검증은 아직 하지 않았습니다. 자동 검증은 XML, 번역 키·치환 변수, 서른두 가지 로드 구성, 아이콘 매핑 및 패키지 구조를 확인합니다. 별도 C# 검증은 실제 Harmony를 사용해 원본과 같은 메서드 형식의 테스트 대역에 번역을 적용하고, 생성 인수·파생 이름·언어 범위를 확인합니다. Unity와 실제 게임 화면 검증을 대체하지 않습니다.
+게임의 모드 목록에서 이름·썸네일·설명 인식은 최초 게시 때 확인했습니다. 자동 검증은 XML, 번역 키·치환 변수, 서른두 가지 로드 구성, 아이콘 매핑 및 패키지 구조를 확인합니다. 별도 C# 검증은 실제 Harmony와 테스트 대역을 사용해 번역 생성 인수·파생 이름·언어 범위 및 의료 아이콘 호환 동작을 확인합니다.
+
+의료 아이콘 수정은 RimWorld 1.6.4871의 별도 프로필에서 기본 게임, Bionic icons, Gerrymon's Upscaled Vanilla Textures, Bionic icons와 Character Editor를 함께 쓰는 네 구성으로 검증했습니다. 실제 엔진의 아틀라스 등록·UI 이미지 반환·Character Editor 목록 및 큰 미리보기 이미지 조회를 검사하고, 엔진에서 내보낸 아이콘의 부위 표식을 확인했습니다. 서른두 가지 전체 구성의 수동 플레이, 새 번역 화면 및 사용자의 전체 모드 조합에 대한 검증은 아직 하지 않았습니다.
 
 미리보기 원본은 사용자가 수정한 `Artwork/Preview.svg`입니다. `make preview`로 배포용 PNG를 갱신합니다. 이 명령은 librsvg의 `rsvg-convert`를 사용합니다.
 
@@ -63,6 +67,6 @@ ZIP 설치 시 압축을 풀어 `KoRimUtility` 폴더를 게임 `Mods`에 넣습
 - Resin 추가분은 설치된 RJW 6.2.1의 원본 Def와 대조했습니다. Character Editor는 설치된 1.6용 DLL과 `Defs/CharEditor.xml`을 확인했습니다. 설명상 버전은 1.6.3이며 `About.xml`에는 1.6.1로 기록되어 있습니다. 각 파일의 SHA-256은 `targets.json`에 보관합니다.
 - Replace Stuff - Continued는 설치된 1.6용 `OverWallCoolerVent.xml`과 순정 `Vent.description`을 대조했습니다. MIT 고지는 `ThirdPartyNotices/ReplaceStuff-LICENSE.txt`에 포함합니다.
 - 번역별 원문 기록은 각 `Translations/*/TranslationReference`에 유지하며 배포에서는 제외합니다. 원본 업데이트 시 재대조합니다.
-- 통합 ZIP에는 번역, 본체 리소스, 생성한 RJW 아이템 그림·XML 패치, 자체 Character Editor 호환 DLL, 로드 설정, `NOTICE.txt` 및 라이선스 고지만 포함합니다. 원본 Def·텍스처·DLL·빌드 참조·작업 파일은 포함하지 않습니다.
+- 통합 ZIP에는 번역, 본체 리소스, 생성한 RJW 부위 마스크·XML 패치, 자체 Character Editor·의료 아이콘 호환 DLL, 로드 설정, `NOTICE.txt` 및 라이선스 고지만 포함합니다. 원본 Def·텍스처·DLL·빌드 참조·작업 파일은 포함하지 않습니다.
 
 게시 전 최종 게시물에 적용되는 [Steam 사용자 생성 콘텐츠 규칙](https://help.steampowered.com/en/faqs/view/6862-8119-C23E-EA7B)을 확인합니다. 원본 라이선스와 Steam의 게시 허용 여부는 별개이며, 통합 패키지 역시 게시 허용을 보장하지 않습니다.
