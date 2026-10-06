@@ -7,5 +7,19 @@ GitHub repository in the Steam Workshop description.
 See the [GitHub brand toolkit](https://brand.github.com/foundations/logo) for usage guidance.
 GitHub and its logos are trademarks of GitHub, Inc.
 
-`Preview.svg` is the wide in-game mod preview. `Workshop-Preview.svg` is the
-640 × 640 Steam Workshop thumbnail. Run `make preview` to render all PNG files.
+Run `make preview` to render all PNG files.
+
+## Steam Workshop previews
+
+- `Workshop-Preview.svg` renders the 640 × 640 primary listing thumbnail. The
+  uploader sends `Workshop-Preview.png` through the SteamCMD `previewfile` field.
+- `Preview.svg` renders the 640 × 360 image at `About/Preview.png`. It is used
+  in-game and as the first additional image in the Workshop detail gallery.
+
+The primary thumbnail and detail gallery are separate Steam fields. Updating
+`previewfile` alone replaces the listing thumbnail, not the additional gallery
+image. When the wide artwork changes, update the first additional image through
+Steam's image editor or [UpdateItemPreviewFile](https://partner.steamgames.com/doc/api/ISteamUGC#UpdateItemPreviewFile).
+Use [AddItemPreviewFile](https://partner.steamgames.com/doc/api/ISteamUGC#AddItemPreviewFile)
+only when no gallery image exists, to avoid duplicates. Verify both the author's
+square item list and the detail page's wide gallery after changing preview images.

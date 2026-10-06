@@ -61,6 +61,8 @@ def prepare(archive, destination, published_id, change_note, description, *, pre
         'appid': '294100',
         'publishedfileid': published_id,
         'contentfolder': str(content),
+        # Primary listing thumbnail; the wide detail-gallery image is a separate
+        # additional Steam preview, preserved by these regular item updates.
         'previewfile': str(preview_file),
         'title': about.findtext('name'),
         'description': description,
