@@ -1,4 +1,4 @@
-# 노예 억압 개선
+# 정착지 관리 기능
 
 RimWorld 1.6의 기존 간수 작업 `SuppressSlave`와 복종심(`Need_Suppression`)을 확장한다.
 Ideology와 Harmony가 모두 활성화된 경우에만 기능, 정의, 설정을 로드한다.
