@@ -3,6 +3,7 @@
   <v1.6>
     <li>/</li>
     <li IfModActive="brrainz.harmony">Integrations/MainButtons</li>
+    <li IfModActiveAll="brrainz.harmony,Ludeon.RimWorld.Ideology">Integrations/SlaveSuppression</li>
     <li IfModActive="Ling.TheLowCooler,GodlyAnnihilator.TheLowCooler">Translations/TheCooler</li>
     <li IfModActive="rim.job.world">Translations/RimJobWorld</li>
     <li IfModActive="rim.job.world">Integrations/RimJobWorld/Common</li>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.Suppression.SettingsTitle>Slave suppression</KoRimUtility.Suppression.SettingsTitle>
+  <KoRimUtility.Suppression.GainSetting>Suppression gain multiplier: ×{0}</KoRimUtility.Suppression.GainSetting>
+  <KoRimUtility.Suppression.GainHelp>Changes suppression gained on a successful attempt. Does not change eligibility or success chance.</KoRimUtility.Suppression.GainHelp>
+  <KoRimUtility.Suppression.DifficultySetting>Suppression difficulty: ×{0}</KoRimUtility.Suppression.DifficultySetting>
+  <KoRimUtility.Suppression.DifficultyHelp>Lower values increase success chance. The minimum requirements remain Social {0} and suppression power {1}. Slaves with stronger combat abilities and lower suppression are harder to suppress.</KoRimUtility.Suppression.DifficultyHelp>
+  <KoRimUtility.Suppression.MoodHelp>Successful suppression gives the slave a non-stacking mood effect for one day. Penalties are -5, -10 or -15, based on suppression before the attempt. Slavery: Honorable halves the penalty. Masochists instead receive a fixed +5. A new success replaces the effect and restarts its duration. Failure changes neither suppression nor mood.</KoRimUtility.Suppression.MoodHelp>
+  <KoRimUtility.Suppression.ResetSettings>Restore defaults</KoRimUtility.Suppression.ResetSettings>
+  <KoRimUtility.Suppression.Requirements>Requires Social {0}, suppression power {1}, and the ability to perform warden work, speak and manipulate.</KoRimUtility.Suppression.Requirements>
+  <KoRimUtility.Suppression.Power>{0}: +{1}</KoRimUtility.Suppression.Power>
+  <KoRimUtility.Suppression.Combat>Combat skills</KoRimUtility.Suppression.Combat>
+  <KoRimUtility.Suppression.Weapon>Weapon and attack performance</KoRimUtility.Suppression.Weapon>
+  <KoRimUtility.Suppression.Armor>Armor protection</KoRimUtility.Suppression.Armor>
+  <KoRimUtility.Suppression.Augmentation>Enhanced physical capacities</KoRimUtility.Suppression.Augmentation>
+  <KoRimUtility.Suppression.Status>Title or ideology role</KoRimUtility.Suppression.Status>
+  <KoRimUtility.Suppression.Wealth>Colony wealth</KoRimUtility.Suppression.Wealth>
+  <KoRimUtility.Suppression.AlertLabel>Difficulty suppressing slaves</KoRimUtility.Suppression.AlertLabel>
+  <KoRimUtility.Suppression.AlertExplanation>These slaves need suppression, but no capable colonist on their map is assigned to warden work. A warden needs at least Social {0}, suppression power {1}, and the ability to speak and manipulate. Check work assignments, skills, equipment and health. Sleeping, other jobs and the normal one-day suppression interval do not trigger this warning by themselves.</KoRimUtility.Suppression.AlertExplanation>
+</LanguageData>

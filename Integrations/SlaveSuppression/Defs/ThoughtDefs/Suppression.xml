@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>KoRimUtility_Suppressed</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stagesStack>false</stagesStack>
+    <lerpMoodToZero>false</lerpMoodToZero>
+    <showBubble>false</showBubble>
+    <stages>
+      <li>
+        <label>intimidated</label>
+        <description>A warden reminded me that I have to obey.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>coerced into obedience</label>
+        <description>I wanted to resist, but a warden forced me to back down.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>defiance crushed</label>
+        <description>I was ready to defy them. They made me submit, and I hate it.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>accepted discipline</label>
+        <description>I believe slavery has its place. Being disciplined still stings.</description>
+        <baseMoodEffect>-2.5</baseMoodEffect>
+      </li>
+      <li>
+        <label>harsh discipline</label>
+        <description>My beliefs help me accept this, but being forced to obey is unpleasant.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>painful submission</label>
+        <description>I accept slavery, yet having my defiance crushed was difficult to bear.</description>
+        <baseMoodEffect>-7.5</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoyed submission</label>
+        <description>Being made to submit was strangely satisfying.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

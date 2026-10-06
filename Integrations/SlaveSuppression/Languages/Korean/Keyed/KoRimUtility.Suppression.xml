@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.Suppression.SettingsTitle>노예 억압</KoRimUtility.Suppression.SettingsTitle>
+  <KoRimUtility.Suppression.GainSetting>복종심 상승 배율: ×{0}</KoRimUtility.Suppression.GainSetting>
+  <KoRimUtility.Suppression.GainHelp>억압에 성공했을 때 오르는 복종심의 양을 조절합니다. 작업 자격이나 성공 확률에는 영향을 주지 않습니다.</KoRimUtility.Suppression.GainHelp>
+  <KoRimUtility.Suppression.DifficultySetting>억압 난이도: ×{0}</KoRimUtility.Suppression.DifficultySetting>
+  <KoRimUtility.Suppression.DifficultyHelp>낮출수록 성공 확률이 높아집니다. 최소 조건인 사교 {0}, 억압력 {1}는 바뀌지 않습니다. 전투 능력이 뛰어나거나 복종심이 낮은 노예일수록 억압하기 어렵습니다.</KoRimUtility.Suppression.DifficultyHelp>
+  <KoRimUtility.Suppression.MoodHelp>억압에 성공하면 노예에게 1일 동안 중첩되지 않는 무드 효과가 생깁니다. 작업 전 복종심에 따라 -5, -10, -15가 적용됩니다. 노예제를 명예롭게 여기는 이념은 페널티를 절반으로 줄이고, 마조히스트는 대신 +5를 받습니다. 다시 성공하면 효과를 교체하고 지속시간을 갱신합니다. 실패하면 복종심과 무드는 변하지 않습니다.</KoRimUtility.Suppression.MoodHelp>
+  <KoRimUtility.Suppression.ResetSettings>기본값으로 복원</KoRimUtility.Suppression.ResetSettings>
+  <KoRimUtility.Suppression.Requirements>사교 {0}, 억압력 {1} 이상이며 간수 작업과 말하기, 조작이 가능해야 합니다.</KoRimUtility.Suppression.Requirements>
+  <KoRimUtility.Suppression.Power>{0}: +{1}</KoRimUtility.Suppression.Power>
+  <KoRimUtility.Suppression.Combat>전투 기술</KoRimUtility.Suppression.Combat>
+  <KoRimUtility.Suppression.Weapon>무기와 공격 성능</KoRimUtility.Suppression.Weapon>
+  <KoRimUtility.Suppression.Armor>방어구의 보호 성능</KoRimUtility.Suppression.Armor>
+  <KoRimUtility.Suppression.Augmentation>강화된 신체 능력</KoRimUtility.Suppression.Augmentation>
+  <KoRimUtility.Suppression.Status>작위 또는 이념상 지위</KoRimUtility.Suppression.Status>
+  <KoRimUtility.Suppression.Wealth>정착지 재산</KoRimUtility.Suppression.Wealth>
+  <KoRimUtility.Suppression.AlertLabel>노예 억압에 어려움</KoRimUtility.Suppression.AlertLabel>
+  <KoRimUtility.Suppression.AlertExplanation>다음 노예들은 억압이 필요하지만 같은 지도에 간수 작업을 맡은 적격 정착민이 없습니다. 사교 {0}, 억압력 {1} 이상이며 말하기와 조작이 가능한 간수가 필요합니다. 작업 배정, 기술, 장비와 건강 상태를 확인하세요. 수면이나 다른 작업, 정상적인 하루 재시도 대기만으로는 이 경고가 뜨지 않습니다.</KoRimUtility.Suppression.AlertExplanation>
+</LanguageData>

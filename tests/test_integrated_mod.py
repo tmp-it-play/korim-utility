@@ -10,7 +10,7 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, FOOD_ALERT_ASSEMBLY, check, combined_language, pack
+from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, FOOD_ALERT_ASSEMBLY, SLAVE_SUPPRESSION_ASSEMBLY, check, combined_language, pack
 
 
 class IntegratedModTests(unittest.TestCase):
@@ -148,11 +148,28 @@ class IntegratedModTests(unittest.TestCase):
                 food.parent.mkdir(parents=True)
                 food.write_bytes(b'test food translation assembly')
                 (food.parent / 'FoodAlert.dll').write_bytes(b'not for redistribution')
+                with self.assertRaisesRegex(ValueError, '노예 억압 DLL'):
+                    pack(root=root)
+                suppression = root / SLAVE_SUPPRESSION_ASSEMBLY
+                suppression.parent.mkdir(parents=True)
+                suppression.write_bytes(b'test suppression assembly')
+                (suppression.parent / 'Assembly-CSharp.dll').write_bytes(b'not for redistribution')
                 pack(root=root)
             with ZipFile(root / 'dist/KoRimUtility.zip') as archive:
                 dlls = [name for name in archive.namelist() if name.endswith('.dll')]
                 self.assertEqual(sorted(dlls), sorted(['KoRimUtility/' + CHARACTER_EDITOR_ASSEMBLY,
                                                      'KoRimUtility/' + MEDICAL_ICONS_ASSEMBLY,
                                                      'KoRimUtility/' + MAIN_BUTTONS_ASSEMBLY,
-                                                     'KoRimUtility/' + FOOD_ALERT_ASSEMBLY]))
+                                                     'KoRimUtility/' + FOOD_ALERT_ASSEMBLY,
+                                                     'KoRimUtility/' + SLAVE_SUPPRESSION_ASSEMBLY]))
                 self.assertFalse(any('TranslationReference' in name for name in archive.namelist()))
+
+    def test_slave_suppression_loads_only_with_ideology_and_harmony(self):
+        node = next(n for n in ET.parse(ROOT / 'LoadFolders.xml').findall('v1.6/li')
+                    if n.text == 'Integrations/SlaveSuppression')
+        self.assertEqual(set(node.get('IfModActiveAll').lower().split(',')),
+                         {'brrainz.harmony', 'ludeon.rimworld.ideology'})
+        self.assertIsNone(node.get('IfModActive'))
+        translations = combined_language([ROOT, ROOT / node.text], 'Korean')
+        self.assertIn(('Keyed', 'KoRimUtility.Suppression.AlertLabel'), translations)
+        self.assertIn(('DefInjected/ThoughtDef', 'KoRimUtility_Suppressed.stages.6.label'), translations)

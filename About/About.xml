@@ -9,6 +9,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
     <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Ideology</li>
     <li>GodlyAnnihilator.TheLowCooler</li>
     <li>Ling.TheLowCooler</li>
     <li>rim.job.world</li>
