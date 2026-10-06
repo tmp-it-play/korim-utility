@@ -6,10 +6,12 @@
 
 ## 모드 번역 안내
 
-- [The Cooler](https://steamcommunity.com/sharedfiles/filedetails/?id=3221592105)
+- [Cooler](https://steamcommunity.com/sharedfiles/filedetails/?id=1414246983)
 - [Character Editor](https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848)
 - [Replace Stuff](https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680)
-- [Replace Stuff - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009)
+- [War Crimes Expanded 2 Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2059450213)
+- [Vanilla Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
+- [Food Alert](https://steamcommunity.com/sharedfiles/filedetails/?id=1114619043)
 
 ## 사용 방법
 
