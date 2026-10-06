@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Anus.label>항문</Anus.label>
+  <Chest.label>가슴</Chest.label>
+  <Genitals.label>생식기</Genitals.label>
+  <MechAnus.label>항문</MechAnus.label>
+  <MechChest.label>가슴</MechChest.label>
+  <MechGenitals.label>생식기</MechGenitals.label>
+</LanguageData>

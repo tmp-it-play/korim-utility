@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 203,
+      "translated_entries": 698,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -67,6 +67,33 @@
         "Source/JobDrivers/JobDriver_RapeCorpse.cs": "41d4666211c84f7885958fe5c2c251ed2b023265d9dcd7b13c0dbd227bdbd2cd",
         "Source/JobDrivers/JobDriver_BestialityForMale.cs": "b3cb9fd3ba6444825c434b7aaa566f28161c341b4979b5c55f914543b610575e",
         "Assemblies/RJW.dll": "8aab958ee0fc0df45d83d21360973b1f9010b9fe3293bf98af3dcc894bbf1e2d"
+      },
+      "medical_parts_translation_status": "runtime_verified_with_and_without_rmk",
+      "medical_parts_source_sha256": {
+        "Defs/BodyPartDefs/BodyParts_Flesh.xml": "8f50b3c88d0630a39ac0905fc65632bc078e5f4d3082fa9485867d4ce0186120",
+        "Defs/BodyPartDefs/BodyParts_Mech.xml": "52eeb92d22847ef5369aa3341d72c5c4b45a00c3610b94c30f10371217a590c3",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts.xml": "82971a30d4c614e82253bb4964269a2c4c88be6028bf52c7c9080f2be5db88df",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Animal.xml": "4cdd0f39b7b761f359e5505fc2bc9f2d5dc1808c35f001a6914e1f837654bbf6",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Demon.xml": "ee531a6c7d4442afe35c0f8819f72bea58fa0e2b6f22136c054b7b9b34475d8f",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Human.xml": "4b52ca178cc6723d85b6081af91494c17926e4b7119a7e3d9af0265aac7d8839",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Implants.xml": "5deda0ca47b618a36801d318039dfcd3d106fffc96a7e4e0a4f16fcc5eca2fbc",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Insect.xml": "6c663c49319caa9832e21be399b9b24eb797715f9e14872977d6aac9b40369e5",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Mech.xml": "1e97abcc99a1e1403190793b47e1c5466b6fc7a11356bc033d4edcd39da76bdc",
+        "Defs/HediffDefs/Hediffs_PrivateParts/Hediffs_PrivateParts_Slime.xml": "73644db960aa5f8674f2ae42c02ad23c8dfceb90e0f35a7b4ab039f3e8233087",
+        "Defs/RecipeDefs/Recipes_MakeProsthetics.xml": "2f071b23e7a3b5b85c073ac87971ed216c7326c5b1c8db08cce9124193a18189",
+        "Defs/RecipeDefs/Recipes_Surgery.xml": "798f3813f714fc5dd601866bf5a440b1c7f1d8b036e866d7b2a32686f51f2599",
+        "Defs/RecipeDefs/Recipes_Surgery_Artificial parts.xml": "89fe141711b79b06ad1d8f097f178322f9125c9dbd4ff3ca518c051ff2bb093c",
+        "Defs/RecipeDefs/Recipes_Surgery_Artificial_Multiparts.xml": "77eba9968467cfe5109ecaba17ffa25bc2e885560c3486e84e196dea4cd5714e",
+        "Defs/RecipeDefs/Recipes_Surgery_Natural parts.xml": "043e229fbfbdc22b44387974721f19870e6407d0794ef856745df32ef2cfc4c0",
+        "Defs/RecipeDefs/Recipes_Surgery_Natural_Multiparts.xml": "7351457d90db1722b26db9287b4df166766b2ddea3a8b898d6fb13296617e03a",
+        "Defs/RecipeDefs/Recipes_Surgery_Remove_Parts.xml": "1b640a5dbbdc4ff59f908a5a716144be70ed8e08316f45cbb68b13813c3f46e4",
+        "Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Animal.xml": "bfc94343d85ce1207fbe181d057fab4e3ca8c909888b2fd216e4db8055c76359",
+        "Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Demon.xml": "a54faa252eef59789e2ef1db1c72658abbef0c54976821b8e022ee402c3cc0aa",
+        "Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Human.xml": "8071d77a5fbf8d7479782b2291219e86aa841832851e815c9f5864ae0a4b26ef",
+        "Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Implants.xml": "f6d7a997dcf8bb281cf338051c2681f38270fa0ae5fcdcd4b20add382dc66f97",
+        "Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Insect.xml": "1ad6961190e857b6adf1ff9f3ed571c9dd09de05885668e21e58b4651a85db4d",
+        "Source/Recipes/Install_Part/Recipe_InstallPart.cs": "f6d56c808dacd4c7bd23f7c334166868612846beb73b0a89b333d87783b8b63f",
+        "Source/Recipes/Recipe_AddMultiPart.cs": "abc8f2a7b2483f94c4c1a12664b3bb290f0a41fdf57761764a873e98709ab3a0"
       }
     },
     {

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Anus.description>항문입니다.</Anus.description>
+  <Anus.label>항문</Anus.label>
+  <Anus.labelNoun>항문</Anus.labelNoun>
+  <ArchotechAnus.description>초월지능이 만든 인공 항문입니다. 강한 내구성과 자가 복구 기능을 갖추고 있습니다. 내부 작동 원리는 인간이 이해할 수 없습니다.</ArchotechAnus.description>
+  <ArchotechAnus.label>초월공학 항문</ArchotechAnus.label>
+  <ArchotechBreasts.description>초월지능이 만든 한 쌍의 인공 유방입니다. 형태를 자유롭게 바꿀 수 있으며 플라스틸보다 튼튼하고 스스로 복구됩니다. 내부 작동 원리는 인간이 이해할 수 없습니다.</ArchotechBreasts.description>
+  <ArchotechBreasts.label>초월공학 유방</ArchotechBreasts.label>
+  <ArchotechPenis.description>초월지능이 만든 인공 음경입니다. 형태와 표면을 바꿀 수 있으며 플라스틸보다 튼튼하고 스스로 복구됩니다. 신경계에 직접 연결되며, 내부 작동 원리는 인간이 이해할 수 없습니다.</ArchotechPenis.description>
+  <ArchotechPenis.label>초월공학 음경</ArchotechPenis.label>
+  <ArchotechVagina.description>초월지능이 만든 인공 질입니다. 자동 윤활, 형태 조절과 자가 복구 기능을 갖추고 있으며 대부분의 성병에 면역입니다. 내부 작동 원리는 인간이 이해할 수 없습니다.</ArchotechVagina.description>
+  <ArchotechVagina.label>초월공학 질</ArchotechVagina.label>
+  <BionicAnus.description>크기 조절 기능과 자동 윤활 장치를 갖춘 생체공학 항문입니다.</BionicAnus.description>
+  <BionicAnus.label>생체공학 항문</BionicAnus.label>
+  <BionicAnus.labelNoun>생체공학 항문</BionicAnus.labelNoun>
+  <BionicBreasts.description>크기를 조절할 수 있는 생체공학 유방입니다.</BionicBreasts.description>
+  <BionicBreasts.label>생체공학 유방</BionicBreasts.label>
+  <BionicBreasts.labelNoun>생체공학 유방</BionicBreasts.labelNoun>
+  <BionicPenis.description>압력 감지기와 신경 연결 장치를 갖춘 인공 음경입니다. 크기와 진동을 조절할 수 있습니다.</BionicPenis.description>
+  <BionicPenis.label>생체공학 음경</BionicPenis.label>
+  <BionicPenis.labelNoun>생체공학 음경</BionicPenis.labelNoun>
+  <BionicVagina.description>압력 감지기와 자동 윤활 장치를 갖춘 인공 질입니다. 내부 크기를 조절할 수 있습니다.</BionicVagina.description>
+  <BionicVagina.label>생체공학 질</BionicVagina.label>
+  <BionicVagina.labelNoun>생체공학 질</BionicVagina.labelNoun>
+  <Breasts.description>한 쌍의 유방입니다.</Breasts.description>
+  <Breasts.label>유방</Breasts.label>
+  <Breasts.labelNoun>유방</Breasts.labelNoun>
+  <CatPenis.description>고양이의 음경입니다. 길고 가늘며 표면에 가시가 있습니다.</CatPenis.description>
+  <CatPenis.label>음경 (고양이)</CatPenis.label>
+  <CatPenis.labelNoun>음경 (고양이)</CatPenis.labelNoun>
+  <CatVagina.description>고양이의 질입니다.</CatVagina.description>
+  <CatVagina.label>질 (고양이)</CatVagina.label>
+  <CatVagina.labelNoun>질 (고양이)</CatVagina.labelNoun>
+  <CloacalAnus.description>생식기관과 배설기관의 공통 출구인 총배설강에 연결된 항문입니다.</CloacalAnus.description>
+  <CloacalAnus.label>총배설강 항문</CloacalAnus.label>
+  <CloacalAnus.labelNoun>총배설강 항문</CloacalAnus.labelNoun>
+  <CloacalPenis.description>총배설강 내부에 있는 음경입니다.</CloacalPenis.description>
+  <CloacalPenis.label>총배설강 음경</CloacalPenis.label>
+  <CloacalPenis.labelNoun>총배설강 음경</CloacalPenis.labelNoun>
+  <CloacalVagina.description>총배설강과 연결된 질입니다.</CloacalVagina.description>
+  <CloacalVagina.label>총배설강 질</CloacalVagina.label>
+  <CloacalVagina.labelNoun>총배설강 질</CloacalVagina.labelNoun>
+  <CrocodilianPenis.description>악어의 음경입니다. 단단하며 기부가 두껍습니다.</CrocodilianPenis.description>
+  <CrocodilianPenis.label>음경 (악어)</CrocodilianPenis.label>
+  <CrocodilianPenis.labelNoun>음경 (악어)</CrocodilianPenis.labelNoun>
+  <DemonAnus.description>악마의 항문입니다.</DemonAnus.description>
+  <DemonAnus.label>항문 (악마)</DemonAnus.label>
+  <DemonAnus.labelNoun>항문 (악마)</DemonAnus.labelNoun>
+  <DemonPenis.description>악마의 음경입니다.</DemonPenis.description>
+  <DemonPenis.label>음경 (악마)</DemonPenis.label>
+  <DemonPenis.labelNoun>음경 (악마)</DemonPenis.labelNoun>
+  <DemonTentaclePenis.description>악마의 길고 유연한 촉수입니다.</DemonTentaclePenis.description>
+  <DemonTentaclePenis.label>악마 촉수</DemonTentaclePenis.label>
+  <DemonTentaclePenis.labelNoun>악마 촉수</DemonTentaclePenis.labelNoun>
+  <DemonVagina.description>악마의 질입니다.</DemonVagina.description>
+  <DemonVagina.label>질 (악마)</DemonVagina.label>
+  <DemonVagina.labelNoun>질 (악마)</DemonVagina.labelNoun>
+  <DogPenis.description>개의 음경입니다. 팽창하는 결절이 있습니다.</DogPenis.description>
+  <DogPenis.label>음경 (개)</DogPenis.label>
+  <DogPenis.labelNoun>음경 (개)</DogPenis.labelNoun>
+  <DogVagina.description>개의 질입니다.</DogVagina.description>
+  <DogVagina.label>질 (개)</DogVagina.label>
+  <DogVagina.labelNoun>질 (개)</DogVagina.labelNoun>
+  <DragonPenis.description>용의 음경입니다. 굵고 단단하며 결절과 주름이 있습니다.</DragonPenis.description>
+  <DragonPenis.label>음경 (용)</DragonPenis.label>
+  <DragonPenis.labelNoun>음경 (용)</DragonPenis.labelNoun>
+  <DragonVagina.description>용의 질입니다.</DragonVagina.description>
+  <DragonVagina.label>질 (용)</DragonVagina.label>
+  <DragonVagina.labelNoun>질 (용)</DragonVagina.labelNoun>
+  <FeaturelessChest.description>유두가 없는 평평한 가슴입니다. 주로 포유류가 아닌 생물에서 볼 수 있습니다.</FeaturelessChest.description>
+  <FeaturelessChest.label>평평한 가슴</FeaturelessChest.label>
+  <FeaturelessChest.labelNoun>평평한 가슴</FeaturelessChest.labelNoun>
+  <GenericAnus.description>별도로 지원되지 않는 종족에 사용하는 기본 항문입니다.</GenericAnus.description>
+  <GenericAnus.label>기본 항문</GenericAnus.label>
+  <GenericAnus.labelNoun>기본 항문</GenericAnus.labelNoun>
+  <GenericBreasts.description>별도로 지원되지 않는 종족에 사용하는 기본 유방입니다.</GenericBreasts.description>
+  <GenericBreasts.label>기본 유방</GenericBreasts.label>
+  <GenericBreasts.labelNoun>기본 유방</GenericBreasts.labelNoun>
+  <GenericPenis.description>별도로 지원되지 않는 종족에 사용하는 기본 음경입니다.</GenericPenis.description>
+  <GenericPenis.label>기본 음경</GenericPenis.label>
+  <GenericPenis.labelNoun>기본 음경</GenericPenis.labelNoun>
+  <GenericVagina.description>별도로 지원되지 않는 종족에 사용하는 기본 질입니다.</GenericVagina.description>
+  <GenericVagina.label>기본 질</GenericVagina.label>
+  <GenericVagina.labelNoun>기본 질</GenericVagina.labelNoun>
+  <HemiPenis.description>일부 파충류에서 볼 수 있는 한 쌍의 음경입니다.</HemiPenis.description>
+  <HemiPenis.label>반음경</HemiPenis.label>
+  <HemiPenis.labelNoun>반음경</HemiPenis.labelNoun>
+  <HorsePenis.description>말의 음경입니다. 인간의 것보다 큽니다.</HorsePenis.description>
+  <HorsePenis.label>음경 (말)</HorsePenis.label>
+  <HorsePenis.labelNoun>음경 (말)</HorsePenis.labelNoun>
+  <HorseVagina.description>말의 질입니다.</HorseVagina.description>
+  <HorseVagina.label>질 (말)</HorseVagina.label>
+  <HorseVagina.labelNoun>질 (말)</HorseVagina.labelNoun>
+  <HydraulicAnus.description>유압으로 수축하는 금속제 인공 항문입니다.</HydraulicAnus.description>
+  <HydraulicAnus.label>유압 항문</HydraulicAnus.label>
+  <HydraulicAnus.labelNoun>유압 항문</HydraulicAnus.labelNoun>
+  <HydraulicBreasts.description>원뿔 모양의 금속제 인공 유방입니다.</HydraulicBreasts.description>
+  <HydraulicBreasts.label>유압 유방</HydraulicBreasts.label>
+  <HydraulicBreasts.labelNoun>유압 유방</HydraulicBreasts.labelNoun>
+  <HydraulicPenis.description>유압으로 크기를 조절하는 금속제 인공 음경입니다. 체액 전달 장치가 내장되어 있습니다.</HydraulicPenis.description>
+  <HydraulicPenis.label>유압 음경</HydraulicPenis.label>
+  <HydraulicPenis.labelNoun>유압 음경</HydraulicPenis.labelNoun>
+  <HydraulicVagina.description>유압으로 내부 압력을 조절하는 금속제 인공 질입니다.</HydraulicVagina.description>
+  <HydraulicVagina.label>유압 질</HydraulicVagina.label>
+  <HydraulicVagina.labelNoun>유압 질</HydraulicVagina.labelNoun>
+  <InsectAnus.description>곤충의 항문입니다.</InsectAnus.description>
+  <InsectAnus.label>항문 (곤충)</InsectAnus.label>
+  <InsectAnus.labelNoun>항문 (곤충)</InsectAnus.labelNoun>
+  <MechAnus.description>입구의 크기를 정밀하게 조절할 수 있는 기계식 항문입니다.</MechAnus.description>
+  <MechAnus.label>메카노이드 항문</MechAnus.label>
+  <MechAnus.labelNoun>메카노이드 항문</MechAnus.labelNoun>
+  <MechBreasts.description>관절식 흉부판으로 이루어진 메카노이드 유방입니다.</MechBreasts.description>
+  <MechBreasts.label>메카노이드 유방</MechBreasts.label>
+  <MechBreasts.labelNoun>메카노이드 유방</MechBreasts.labelNoun>
+  <MechImplanter.description>유기체에 나노 기계를 주입하는 메카노이드 장치입니다.</MechImplanter.description>
+  <MechImplanter.label>메카노이드 주입기</MechImplanter.label>
+  <MechImplanter.labelNoun>메카노이드 주입기</MechImplanter.labelNoun>
+  <MechVagina.description>메카노이드 이식물을 받아들이도록 설계된 기계식 질입니다.</MechVagina.description>
+  <MechVagina.label>메카노이드 질</MechVagina.label>
+  <MechVagina.labelNoun>메카노이드 질</MechVagina.labelNoun>
+  <NarrowVagina.description>폭이 좁고 깊은 질입니다.</NarrowVagina.description>
+  <NarrowVagina.label>좁은 질</NarrowVagina.label>
+  <NarrowVagina.labelNoun>좁은 질</NarrowVagina.labelNoun>
+  <NeedlePenis.description>바늘처럼 가느다란 음경입니다.</NeedlePenis.description>
+  <NeedlePenis.label>바늘형 음경</NeedlePenis.label>
+  <NeedlePenis.labelNoun>바늘형 음경</NeedlePenis.labelNoun>
+  <OvipositorF.description>알을 낳는 데 사용하는 암컷의 산란관입니다.</OvipositorF.description>
+  <OvipositorF.label>산란관 (암컷)</OvipositorF.label>
+  <OvipositorF.labelNoun>산란관 (암컷)</OvipositorF.labelNoun>
+  <OvipositorM.description>알을 수정시키는 데 사용하는 수컷의 산란관입니다.</OvipositorM.description>
+  <OvipositorM.label>산란관 (수컷)</OvipositorM.label>
+  <OvipositorM.labelNoun>산란관 (수컷)</OvipositorM.labelNoun>
+  <PegDick.description>음경을 대신하도록 만든 고정된 형태의 목제 보형물입니다.</PegDick.description>
+  <PegDick.label>목제 음경</PegDick.label>
+  <PegDick.labelNoun>목제 음경</PegDick.labelNoun>
+  <Penis.description>음경입니다.</Penis.description>
+  <Penis.label>음경</Penis.label>
+  <Penis.labelNoun>음경</Penis.labelNoun>
+  <RaccoonPenis.description>라쿤의 음경입니다. 길고 가늘며 잘 휘어지지 않습니다.</RaccoonPenis.description>
+  <RaccoonPenis.label>음경 (라쿤)</RaccoonPenis.label>
+  <RaccoonPenis.labelNoun>음경 (라쿤)</RaccoonPenis.labelNoun>
+  <RodentPenis.description>설치류의 작은 음경입니다.</RodentPenis.description>
+  <RodentPenis.label>음경 (설치류)</RodentPenis.label>
+  <RodentPenis.labelNoun>음경 (설치류)</RodentPenis.labelNoun>
+  <RodentVagina.description>설치류의 작은 질입니다.</RodentVagina.description>
+  <RodentVagina.label>질 (설치류)</RodentVagina.label>
+  <RodentVagina.labelNoun>질 (설치류)</RodentVagina.labelNoun>
+  <SlimeAnus.description>슬라임으로 이루어진 항문입니다.</SlimeAnus.description>
+  <SlimeAnus.label>슬라임 항문</SlimeAnus.label>
+  <SlimeAnus.labelNoun>슬라임 항문</SlimeAnus.labelNoun>
+  <SlimeBreasts.description>슬라임으로 이루어진 유방입니다.</SlimeBreasts.description>
+  <SlimeBreasts.label>슬라임 유방</SlimeBreasts.label>
+  <SlimeBreasts.labelNoun>슬라임 유방</SlimeBreasts.labelNoun>
+  <SlimeTentacles.description>슬라임으로 이루어진 촉수입니다.</SlimeTentacles.description>
+  <SlimeTentacles.label>슬라임 촉수</SlimeTentacles.label>
+  <SlimeTentacles.labelNoun>슬라임 촉수</SlimeTentacles.labelNoun>
+  <SlimeVagina.description>슬라임으로 이루어진 질입니다.</SlimeVagina.description>
+  <SlimeVagina.label>슬라임 질</SlimeVagina.label>
+  <SlimeVagina.labelNoun>슬라임 질</SlimeVagina.labelNoun>
+  <UdderBreasts.description>머팔로 같은 동물에서 볼 수 있는 유방입니다. 유두가 네 개 있습니다.</UdderBreasts.description>
+  <UdderBreasts.label>유방 (가축)</UdderBreasts.label>
+  <UdderBreasts.labelNoun>유방 (가축)</UdderBreasts.labelNoun>
+  <Vagina.description>질입니다.</Vagina.description>
+  <Vagina.label>질</Vagina.label>
+  <Vagina.labelNoun>질</Vagina.labelNoun>
+</LanguageData>

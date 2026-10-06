@@ -29,7 +29,7 @@ class IntegratedModTests(unittest.TestCase):
         furniture = 'VanillaExpanded.VFECore'
         food_alert = 'Mlie.FoodAlert'
         original_food_alert = 'Mehni173.FoodHAlert'
-        counts = {cooler: 0, original_cooler: 0, rjw: 203, editor: 560, replace: 2, original_replace: 0,
+        counts = {cooler: 0, original_cooler: 0, rjw: 698, editor: 560, replace: 2, original_replace: 0,
                   bionic_icons: 0, harmony: 0, war_crimes: 35, original_war_crimes: 0,
                   furniture: 5, food_alert: 23, original_food_alert: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
