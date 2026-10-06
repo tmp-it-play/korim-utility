@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_HarvestNeutroamineGrowth.label>뉴트로아민 수확</WCE2_HarvestNeutroamineGrowth.label>
+  <WCE2_HarvestNeutroamineGrowth.description>피해자의 몸에 자란 주머니에서 뉴트로아민을 수확합니다.</WCE2_HarvestNeutroamineGrowth.description>
+  <WCE2_HarvestNeutroamineGrowth.jobString>뉴트로아민 수확 중.</WCE2_HarvestNeutroamineGrowth.jobString>
+  <WCE2_HarvestMeatyGrowth.label>고기 수확</WCE2_HarvestMeatyGrowth.label>
+  <WCE2_HarvestMeatyGrowth.description>피해자의 몸에 자란 고기 덩어리에서 고기를 수확합니다.</WCE2_HarvestMeatyGrowth.description>
+  <WCE2_HarvestMeatyGrowth.jobString>고기 수확 중.</WCE2_HarvestMeatyGrowth.jobString>
+  <WCE2_RemoveVivisection.label>해부 봉합</WCE2_RemoveVivisection.label>
+  <WCE2_RemoveVivisection.description>생체 해부를 당한 피해자의 몸을 다시 봉합합니다. 잘되기를 빌어야 합니다. 해부하는 것보다 더 어려운 수술입니다!</WCE2_RemoveVivisection.description>
+  <WCE2_RemoveVivisection.jobString>해부 봉합 중.</WCE2_RemoveVivisection.jobString>
+  <WCE2_RemoveBrand.label>노예 낙인 제거</WCE2_RemoveBrand.label>
+  <WCE2_RemoveBrand.description>다른 사람의 피부를 환자에게 이식하여 노예 낙인을 덮습니다.</WCE2_RemoveBrand.description>
+  <WCE2_RemoveBrand.jobString>피부 이식 중.</WCE2_RemoveBrand.jobString>
+  <WCE2_MangleTongue.label>혀 훼손</WCE2_MangleTongue.label>
+  <WCE2_MangleTongue.description>피해자의 혀를 고정하고 달군 쇠못으로 반복해서 찔러 붓고 구멍투성이가 되게 합니다. 혀는 붙어 있지만 흉터로 뻣뻣하게 굳어 알아들을 수 있게 말하기 어려워지고, 식사할 때마다 고통을 겪습니다.</WCE2_MangleTongue.description>
+  <WCE2_MangleTongue.jobString>혀 훼손 중.</WCE2_MangleTongue.jobString>
+  <WCE2_HarvestNeutroamineGrowth.successfullyRemovedHediffMessage>{0}이(가) {1}의 몸에서 뉴트로아민을 수확했습니다.</WCE2_HarvestNeutroamineGrowth.successfullyRemovedHediffMessage>
+  <WCE2_HarvestMeatyGrowth.successfullyRemovedHediffMessage>{0}이(가) {1}의 몸에서 고기를 수확했습니다.</WCE2_HarvestMeatyGrowth.successfullyRemovedHediffMessage>
+  <WCE2_RemoveVivisection.successfullyRemovedHediffMessage>{0}이(가) 생체 해부를 당한 {1}의 몸을 봉합했습니다.</WCE2_RemoveVivisection.successfullyRemovedHediffMessage>
+  <WCE2_RemoveBrand.successfullyRemovedHediffMessage>{0}이(가) 피부를 이식하여 {1}의 노예 낙인을 덮었습니다.</WCE2_RemoveBrand.successfullyRemovedHediffMessage>
+</LanguageData>

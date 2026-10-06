@@ -3,7 +3,7 @@
   <v1.6>
     <li>/</li>
     <li IfModActive="brrainz.harmony">Integrations/MainButtons</li>
-    <li IfModActive="GodlyAnnihilator.TheLowCooler">Translations/TheCooler</li>
+    <li IfModActive="Ling.TheLowCooler,GodlyAnnihilator.TheLowCooler">Translations/TheCooler</li>
     <li IfModActive="rim.job.world">Translations/RimJobWorld</li>
     <li IfModActive="rim.job.world">Integrations/RimJobWorld/Common</li>
     <li IfModActive="rim.job.world" IfModNotActive="automatic.bionicicons">Integrations/RimJobWorld/Vanilla</li>
@@ -11,5 +11,11 @@
     <li IfModActive="void.charactereditor">Translations/CharacterEditor</li>
     <li IfModActive="Uuugggg.ReplaceStuff,Memegoddess.ReplaceStuff">Translations/ReplaceStuff</li>
     <li IfModActive="Memegoddess.ReplaceStuff">Translations/ReplaceStuffContinued</li>
+    <li IfModActive="Crustypeanut.WCE2.Core,Mersid.WCE2Updated.Core">Translations/WarCrimesExpanded2</li>
+    <li IfModActive="Crustypeanut.WCE2.Core" IfModNotActive="Mersid.WCE2Updated.Core">Translations/WarCrimesExpanded2Original</li>
+    <li IfModActive="Mersid.WCE2Updated.Core">Translations/WarCrimesExpanded2Updated</li>
+    <li IfModActive="VanillaExpanded.VFECore">Translations/VanillaFurnitureExpanded</li>
+    <li IfModActive="Mehni173.FoodHAlert,Mlie.FoodAlert">Translations/FoodAlert</li>
+    <li IfModActive="Mlie.FoodAlert">Translations/FoodAlertContinued</li>
   </v1.6>
 </loadFolders>

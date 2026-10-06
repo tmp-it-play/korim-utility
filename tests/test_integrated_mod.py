@@ -10,21 +10,28 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, check, combined_language, pack
+from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, FOOD_ALERT_ASSEMBLY, check, combined_language, pack
 
 
 class IntegratedModTests(unittest.TestCase):
-    def test_one_hundred_twenty_eight_optional_mod_combinations(self):
+    def test_original_and_continued_mod_combinations(self):
         entries = ET.parse(ROOT / 'LoadFolders.xml').findall('v1.6/li')
         cooler = 'GodlyAnnihilator.TheLowCooler'
+        original_cooler = 'Ling.TheLowCooler'
         rjw = 'rim.job.world'
         editor = 'void.charactereditor'
         replace = 'Memegoddess.ReplaceStuff'
         original_replace = 'Uuugggg.ReplaceStuff'
         bionic_icons = 'automatic.bionicicons'
         harmony = 'brrainz.harmony'
-        counts = {cooler: 2, rjw: 60, editor: 560, replace: 2, original_replace: 0,
-                  bionic_icons: 0, harmony: 0}
+        war_crimes = 'Mersid.WCE2Updated.Core'
+        original_war_crimes = 'Crustypeanut.WCE2.Core'
+        furniture = 'VanillaExpanded.VFECore'
+        food_alert = 'Mlie.FoodAlert'
+        original_food_alert = 'Mehni173.FoodHAlert'
+        counts = {cooler: 0, original_cooler: 0, rjw: 182, editor: 560, replace: 2, original_replace: 0,
+                  bionic_icons: 0, harmony: 0, war_crimes: 35, original_war_crimes: 0,
+                  furniture: 5, food_alert: 23, original_food_alert: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
         for active in active_sets:
             with self.subTest(active=active):
@@ -36,11 +43,32 @@ class IntegratedModTests(unittest.TestCase):
                 roots = [ROOT if n.text == '/' else ROOT / n.text for n in entries if enabled(n)]
                 translations = combined_language(roots, 'Korean')
                 has_replace = bool({replace, original_replace} & active)
+                has_cooler = bool({cooler, original_cooler} & active)
+                has_war_crimes = bool({war_crimes, original_war_crimes} & active)
+                has_food_alert = bool({food_alert, original_food_alert} & active)
+                legacy_war_crimes = original_war_crimes in active and war_crimes not in active
                 self.assertEqual(len(translations), 3 + sum(counts[mod] for mod in active)
-                                 + (6 if has_replace else 0))
+                                 + (6 if has_replace else 0) + (2 if has_cooler else 0)
+                                 + (2 if has_war_crimes else 0) + (17 if legacy_war_crimes else 0)
+                                 + (7 if has_food_alert else 0))
                 self.assertEqual(('DefInjected/ThingDef', 'LingCooler.label') in translations,
-                                 cooler in active)
+                                 has_cooler)
                 self.assertEqual(('Keyed', 'RJW_Message_BecameHero') in translations, rjw in active)
+                self.assertEqual(('Keyed', 'RJW_Message_NotPregnant') in translations, rjw in active)
+                self.assertEqual(('DefInjected/RecipeDef', 'WCE2_MangleTongue.label') in translations,
+                                 war_crimes in active)
+                self.assertEqual(('DefInjected/RecipeDef', 'WCE_RemoveVivisection.label') in translations,
+                                 legacy_war_crimes)
+                self.assertEqual(('DefInjected/HediffDef', 'WCE2_NeutroamineGrowth.stages.4.label') in translations,
+                                 war_crimes in active)
+                self.assertEqual(('DefInjected/LearningDesireDef', 'VFE_ComputerLearning.label') in translations,
+                                 furniture in active)
+                self.assertEqual(('Keyed', 'LowFoodDescNew') in translations, food_alert in active)
+                self.assertEqual(ROOT / 'Translations/FoodAlert' in roots, has_food_alert)
+                self.assertEqual(ROOT / 'Translations/FoodAlertContinued' in roots, food_alert in active)
+                self.assertEqual(('Keyed', 'SomeFoodDesc') in translations, has_food_alert)
+                self.assertEqual(('Keyed', 'KoRimUtility.FoodAlert.Preferability.RawBad') in translations,
+                                 food_alert in active)
                 self.assertEqual(('DefInjected/ThingDef', 'ResinGlob.label') in translations, rjw in active)
                 self.assertEqual(('DefInjected/rjw.SexFluidDef', 'Resin.label') in translations, rjw in active)
                 self.assertEqual(('Keyed', 'KoRimUtility.CE.Zombrella.Label') in translations, editor in active)
@@ -114,10 +142,17 @@ class IntegratedModTests(unittest.TestCase):
                 main_buttons.parent.mkdir(parents=True)
                 main_buttons.write_bytes(b'test main button assembly')
                 (main_buttons.parent / '0Harmony.dll').write_bytes(b'not for redistribution')
+                with self.assertRaisesRegex(ValueError, 'Food Alert 번역 DLL'):
+                    pack(root=root)
+                food = root / FOOD_ALERT_ASSEMBLY
+                food.parent.mkdir(parents=True)
+                food.write_bytes(b'test food translation assembly')
+                (food.parent / 'FoodAlert.dll').write_bytes(b'not for redistribution')
                 pack(root=root)
             with ZipFile(root / 'dist/KoRimUtility.zip') as archive:
                 dlls = [name for name in archive.namelist() if name.endswith('.dll')]
                 self.assertEqual(sorted(dlls), sorted(['KoRimUtility/' + CHARACTER_EDITOR_ASSEMBLY,
                                                      'KoRimUtility/' + MEDICAL_ICONS_ASSEMBLY,
-                                                     'KoRimUtility/' + MAIN_BUTTONS_ASSEMBLY]))
+                                                     'KoRimUtility/' + MAIN_BUTTONS_ASSEMBLY,
+                                                     'KoRimUtility/' + FOOD_ALERT_ASSEMBLY]))
                 self.assertFalse(any('TranslationReference' in name for name in archive.namelist()))

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_NeutroamineGrowth.stages.0.label>초기</WCE2_NeutroamineGrowth.stages.0.label>
+  <WCE2_NeutroamineGrowth.stages.1.label>가벼움</WCE2_NeutroamineGrowth.stages.1.label>
+  <WCE2_NeutroamineGrowth.stages.2.label>진행됨</WCE2_NeutroamineGrowth.stages.2.label>
+  <WCE2_NeutroamineGrowth.stages.3.label>심각함</WCE2_NeutroamineGrowth.stages.3.label>
+  <WCE2_NeutroamineGrowth.stages.4.label>극심함</WCE2_NeutroamineGrowth.stages.4.label>
+  <WCE2_MangledTongue.label>훼손된 혀</WCE2_MangledTongue.label>
+  <WCE2_MangledTongue.labelNoun>훼손된 혀</WCE2_MangledTongue.labelNoun>
+  <WCE2_MangledTongue.description>찔린 흉터와 지져진 구멍으로 가득한 혀입니다. 뻣뻣하게 굳고 변형되어 말을 또렷하게 할 수 없으며, 삼킬 때마다 둔한 통증이 느껴집니다.</WCE2_MangledTongue.description>
+</LanguageData>

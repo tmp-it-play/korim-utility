@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_TortureOutcome.outcomes.1.letterLabel>Surgery failed on {PATIENT_labelShort}</WCE2_TortureOutcome.outcomes.1.letterLabel>
+  <WCE2_TortureOutcome.outcomes.1.letterText>{SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort} ({RECIPE_label}).</WCE2_TortureOutcome.outcomes.1.letterText>
+  <WCE2_TortureOutcome.outcomes.2.letterLabel>Surgery failed on {PATIENT_labelShort}</WCE2_TortureOutcome.outcomes.2.letterLabel>
+  <WCE2_TortureOutcome.outcomes.2.letterText>{SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort}, causing widespread damage ({RECIPE_label}).</WCE2_TortureOutcome.outcomes.2.letterText>
+  <WCE2_TortureOutcome.outcomes.3.letterLabel>Surgery failed on {PATIENT_labelShort}</WCE2_TortureOutcome.outcomes.3.letterLabel>
+  <WCE2_TortureOutcome.outcomes.3.letterText>{SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}).</WCE2_TortureOutcome.outcomes.3.letterText>
+</LanguageData>

@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from tools.mod import catalog, read_language, render_catalog, check, content_roots
+from tools.mod import catalog, read_language, render_catalog, check, content_roots, combined_language
 
 
 class TranslationWorkflowTests(unittest.TestCase):
@@ -46,6 +46,18 @@ class TranslationWorkflowTests(unittest.TestCase):
         (self.source / 'Keyed/Duplicate.xml').write_text('<LanguageData><Hello>Duplicate</Hello></LanguageData>')
         with self.assertRaisesRegex(ValueError, '중복'):
             read_language(self.source)
+
+    def test_same_filename_in_load_folders_rejected_even_with_different_keys(self):
+        roots = [self.root / 'Common', self.root / 'Continued']
+        for root, key in zip(roots, ('CommonLabel', 'ContinuedLabel')):
+            folder = root / 'Languages/Korean/Keyed'
+            folder.mkdir(parents=True)
+            (folder / 'UI.xml').write_text(f'<LanguageData><{key}>번역</{key}></LanguageData>', encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, '파일 경로 중복'):
+            combined_language(roots, 'Korean')
+        folder = roots[1] / 'Languages/Korean/Keyed'
+        (folder / 'UI.xml').rename(folder / 'Continued.xml')
+        self.assertEqual(len(combined_language(roots, 'Korean')), 2)
 
     def test_source_updates_rejected(self):
         self.translate('{PAWN_name}: {0} <b>완료</b>')

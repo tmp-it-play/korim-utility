@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_HarvestNeutroamine.label>harvest neutroamine</WCE2_HarvestNeutroamine.label>
+  <WCE2_HarvestNeutroamine.description>Harvest neutroamine from a growth.</WCE2_HarvestNeutroamine.description>
+  <WCE2_HarvestNeutroamine.jobString>Harvesting neutroamine.</WCE2_HarvestNeutroamine.jobString>
+  <WCE2_HarvestNeutroamine.successfullyRemovedHediffMessage>{0} has successfully harvested neutroamine from {1}</WCE2_HarvestNeutroamine.successfullyRemovedHediffMessage>
+  <WCE_RemoveVivisection.label>reverse vivisection</WCE_RemoveVivisection.label>
+  <WCE_RemoveVivisection.description>Stitch a vivisected person back up. Hopefully. More difficult than the actual vivisection!</WCE_RemoveVivisection.description>
+  <WCE_RemoveVivisection.jobString>Reversing vivisection.</WCE_RemoveVivisection.jobString>
+  <WCE_RemoveVivisection.successfullyRemovedHediffMessage>{0} has successfully stitched {1} back up after being vivisected.</WCE_RemoveVivisection.successfullyRemovedHediffMessage>
+  <WCE_RemoveBrand.label>remove slave brand</WCE_RemoveBrand.label>
+  <WCE_RemoveBrand.description>Graft someone else's skin onto the patient to cover up a slave brand.</WCE_RemoveBrand.description>
+  <WCE_RemoveBrand.jobString>Grafting skin.</WCE_RemoveBrand.jobString>
+  <WCE_RemoveBrand.successfullyRemovedHediffMessage>{0} has successfully covered {1}'s slave brand with a skin graft.</WCE_RemoveBrand.successfullyRemovedHediffMessage>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_HarvestNeutroamine.label>뉴트로아민 수확</WCE2_HarvestNeutroamine.label>
+  <WCE2_HarvestNeutroamine.description>피해자의 몸에 자란 주머니에서 뉴트로아민을 수확합니다.</WCE2_HarvestNeutroamine.description>
+  <WCE2_HarvestNeutroamine.jobString>뉴트로아민 수확 중.</WCE2_HarvestNeutroamine.jobString>
+  <WCE2_HarvestNeutroamine.successfullyRemovedHediffMessage>{0}이(가) {1}의 몸에서 뉴트로아민을 수확했습니다.</WCE2_HarvestNeutroamine.successfullyRemovedHediffMessage>
+  <WCE_RemoveVivisection.label>해부 봉합</WCE_RemoveVivisection.label>
+  <WCE_RemoveVivisection.description>생체 해부를 당한 피해자의 몸을 다시 봉합합니다. 잘되기를 빌어야 합니다. 해부하는 것보다 더 어려운 수술입니다!</WCE_RemoveVivisection.description>
+  <WCE_RemoveVivisection.jobString>해부 봉합 중.</WCE_RemoveVivisection.jobString>
+  <WCE_RemoveVivisection.successfullyRemovedHediffMessage>{0}이(가) 생체 해부를 당한 {1}의 몸을 봉합했습니다.</WCE_RemoveVivisection.successfullyRemovedHediffMessage>
+  <WCE_RemoveBrand.label>노예 낙인 제거</WCE_RemoveBrand.label>
+  <WCE_RemoveBrand.description>다른 사람의 피부를 환자에게 이식하여 노예 낙인을 덮습니다.</WCE_RemoveBrand.description>
+  <WCE_RemoveBrand.jobString>피부 이식 중.</WCE_RemoveBrand.jobString>
+  <WCE_RemoveBrand.successfullyRemovedHediffMessage>{0}이(가) 피부를 이식하여 {1}의 노예 낙인을 덮었습니다.</WCE_RemoveBrand.successfullyRemovedHediffMessage>
+</LanguageData>

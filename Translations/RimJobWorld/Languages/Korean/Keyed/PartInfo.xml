@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <PartsTag_Barbed>가시 있음</PartsTag_Barbed>
+  <PartsTag_Long>김</PartsTag_Long>
+  <PartsTag_Girthy>굵음</PartsTag_Girthy>
+  <PartsTag_Solid>단단함</PartsTag_Solid>
+  <PartsTag_Small>작음</PartsTag_Small>
+  <PartsTag_Rigid>뻣뻣함</PartsTag_Rigid>
+  <PartsTag_Thin>가늚</PartsTag_Thin>
+  <PartsTag_Sheathed>포피 있음</PartsTag_Sheathed>
+  <PartsTag_Internal>체내에 있음</PartsTag_Internal>
+  <PartsTag_Flared>끝이 벌어짐</PartsTag_Flared>
+  <PartsTag_Multiple>여러 개</PartsTag_Multiple>
+  <PartsTag_Ridged>주름 있음</PartsTag_Ridged>
+  <PartsTag_Knotted>매듭 있음</PartsTag_Knotted>
+  <PartsTag_Tapered>끝이 가늘어짐</PartsTag_Tapered>
+  <PartsTag_Glowing>빛남</PartsTag_Glowing>
+  <PartsTag_Prehensile>움켜쥘 수 있음</PartsTag_Prehensile>
+  <PartsTag_Humanlike>인간형</PartsTag_Humanlike>
+  <PartsTag_Deep>깊음</PartsTag_Deep>
+  <PartsTag_Tight>좁음</PartsTag_Tight>
+  <PartsTag_Loose>넓음</PartsTag_Loose>
+  <PartsTag_Artificial>인공</PartsTag_Artificial>
+  <PartsTag_STDImmune>성병 면역</PartsTag_STDImmune>
+  <PartsTag_Resizable>크기 조절 가능</PartsTag_Resizable>
+  <PartsTag_FertilityToggle>생식 기능 전환 가능</PartsTag_FertilityToggle>
+  <RJW_PartInfo_T_Title>부위 종류</RJW_PartInfo_T_Title>
+  <RJW_PartInfo_T_Breast>가슴</RJW_PartInfo_T_Breast>
+  <RJW_PartInfo_T_Penis>음경</RJW_PartInfo_T_Penis>
+  <RJW_PartInfo_T_Vagina>질</RJW_PartInfo_T_Vagina>
+  <RJW_PartInfo_T_Anus>항문</RJW_PartInfo_T_Anus>
+  <RJW_PartInfo_T_Ovipositor>산란관</RJW_PartInfo_T_Ovipositor>
+  <RJW_PartInfo_EggTypes>알 종류</RJW_PartInfo_EggTypes>
+</LanguageData>

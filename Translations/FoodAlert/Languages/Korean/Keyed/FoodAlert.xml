@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SomeFood>식량 비축량</SomeFood>
+  <SomeFoodDesc>당장 식량이 부족하지는 않습니다.\n\n    비축 식량의 총 영양량: {0}\n    정착민/죄수 수: {1}\n    남은 식량(일): {2}</SomeFoodDesc>
+  <FoodAlert_DaysOfFood>일분의 식량</FoodAlert_DaysOfFood>
+  <FoodAlert_Decent>\n\n당분간 먹을 식량이 있습니다.</FoodAlert_Decent>
+  <FoodAlert_Bunch>\n\n식량에 여유가 있습니다.</FoodAlert_Bunch>
+  <FoodAlert_Solid>\n\n식량이 넉넉합니다.</FoodAlert_Solid>
+  <FoodAlert_Ridiculous>\n\n식량이 엄청나게 많이 쌓여 있습니다.</FoodAlert_Ridiculous>
+</LanguageData>

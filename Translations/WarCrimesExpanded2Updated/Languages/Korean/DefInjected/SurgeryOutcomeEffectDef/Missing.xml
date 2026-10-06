@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_TortureOutcome.outcomes.1.letterLabel>{PATIENT_labelShort} 수술 실패</WCE2_TortureOutcome.outcomes.1.letterLabel>
+  <WCE2_TortureOutcome.outcomes.1.letterText>{SURGEON_labelShort}이(가) {PATIENT_labelShort}에게 {RECIPE_label} 수술을 하던 중 치명적인 실수를 저질렀습니다.</WCE2_TortureOutcome.outcomes.1.letterText>
+  <WCE2_TortureOutcome.outcomes.2.letterLabel>{PATIENT_labelShort} 수술 실패</WCE2_TortureOutcome.outcomes.2.letterLabel>
+  <WCE2_TortureOutcome.outcomes.2.letterText>{SURGEON_labelShort}이(가) {PATIENT_labelShort}에게 {RECIPE_label} 수술을 하던 중 치명적인 실수를 저질러 광범위한 손상을 입혔습니다.</WCE2_TortureOutcome.outcomes.2.letterText>
+  <WCE2_TortureOutcome.outcomes.3.letterLabel>{PATIENT_labelShort} 수술 실패</WCE2_TortureOutcome.outcomes.3.letterLabel>
+  <WCE2_TortureOutcome.outcomes.3.letterText>{SURGEON_labelShort}이(가) {PATIENT_labelShort}에게 {RECIPE_label} 수술을 하던 중 경미한 실수를 저질렀습니다.</WCE2_TortureOutcome.outcomes.3.letterText>
+</LanguageData>

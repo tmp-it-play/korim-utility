@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SomeFoodDescNew>당장 식량이 부족하지는 않습니다.\n\n    비축 식량의 총 영양량: {0}\n    정착민/죄수 수: {1}\n    하루 영양 소비량: {2}\n    남은 식량(일): {3}</SomeFoodDescNew>
+  <LowFoodDescNew>식량이 부족해지고 있습니다.\n\n    비축 식량의 총 영양량: {0}\n    정착민/죄수 수: {1}\n    하루 영양 소비량: {2}\n    남은 식량(일): {3}</LowFoodDescNew>
+  <LowFoodAddendum>\n설정한 선호도보다 낮은 등급의 식량이 남아 있을 수 있습니다.</LowFoodAddendum>
+  <FoodAlert_Poor>\n\n비축 식량이 적습니다.</FoodAlert_Poor>
+  <SettingDescription>집계할 최소 식량 선호도</SettingDescription>
+  <SettingExplanation>\n분류별 예시\n\n굶주릴 때만: 수정란, 암브로시아\n맛없는 날음식: 사료, 무정란\n맛있는 날음식: 우유, 딸기\n끔찍한 식사: 영양죽\n간단한 식사: 간단한 식사, 페미컨\n좋은 식사: 좋은 식사, 곤충 젤리\n호화로운 식사: 호화로운 식사</SettingExplanation>
+  <EstimateIngredients.label>식재료도 식량으로 환산</EstimateIngredients.label>
+  <EstimateIngredients.none>사용 안 함</EstimateIngredients.none>
+  <EstimateIngredients.auto>자동 (끔찍한 식사 ×3, 간단한 식사 ×1.8, 좋은 식사 ×1.8, 호화로운 식사 ×1)</EstimateIngredients.auto>
+  <EstimateIngredients.custom>직접 설정</EstimateIngredients.custom>
+  <EstimateIngredients.slider>식재료의 식량 환산 배율: ×{0}</EstimateIngredients.slider>
+  <FA.updatetype.label>갱신 주기</FA.updatetype.label>
+  <FA.typedynamic.label>자동 조절</FA.typedynamic.label>
+  <FA.typedynamic.description>남은 식량이 버틸 수 있는 기간에 따라 갱신 주기를 조절합니다. 식량이 오래 버틸수록 툴팁을 덜 자주 갱신하여 대규모 정착지의 성능 부담을 줄입니다.</FA.typedynamic.description>
+  <FA.typestatic.slider>게임 시간 {0}시간마다 갱신</FA.typestatic.slider>
+  <FA.modversion>설치된 모드 버전: {0}</FA.modversion>
+  <KoRimUtility.FoodAlert.Preferability.DesperateOnly>굶주릴 때만</KoRimUtility.FoodAlert.Preferability.DesperateOnly>
+  <KoRimUtility.FoodAlert.Preferability.RawBad>맛없는 날음식</KoRimUtility.FoodAlert.Preferability.RawBad>
+  <KoRimUtility.FoodAlert.Preferability.RawTasty>맛있는 날음식</KoRimUtility.FoodAlert.Preferability.RawTasty>
+  <KoRimUtility.FoodAlert.Preferability.MealAwful>끔찍한 식사</KoRimUtility.FoodAlert.Preferability.MealAwful>
+  <KoRimUtility.FoodAlert.Preferability.MealSimple>간단한 식사</KoRimUtility.FoodAlert.Preferability.MealSimple>
+  <KoRimUtility.FoodAlert.Preferability.MealFine>좋은 식사</KoRimUtility.FoodAlert.Preferability.MealFine>
+  <KoRimUtility.FoodAlert.Preferability.MealLavish>호화로운 식사</KoRimUtility.FoodAlert.Preferability.MealLavish>
+</LanguageData>

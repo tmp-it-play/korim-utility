@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RJW_Message_NotPregnant>{0} has determined {1} is not pregnant.</RJW_Message_NotPregnant>
+  <RJW_Message_Pregnant>{0} has determined {1} is pregnant and {2} is the father.</RJW_Message_Pregnant>
+  <RJW_AlertRape>{RAPIST} is trying to rape {TARGET}.</RJW_AlertRape>
+  <RJW_AlertAssault>{RAPIST} is trying to assault {TARGET}.</RJW_AlertAssault>
+  <RJW_AlertBreed>{RAPIST} is trying to breed {TARGET}.</RJW_AlertBreed>
+  <RJW_AlertRapeRelated>{RAPIST} is trying to rape {TARGET}, {RAPIST_possessive} {RELATION}.</RJW_AlertRapeRelated>
+  <RJW_AlertAssaultRelated>{RAPIST} is trying to assault {TARGET}, {RAPIST_possessive} {RELATION}.</RJW_AlertAssaultRelated>
+  <RJW_AlertBreedRelated>{RAPIST} is trying to breed {TARGET}, {RAPIST_possessive} {RELATION}.</RJW_AlertBreedRelated>
+  <RJW_AlertBeeingRaped>{TARGET} is getting raped.</RJW_AlertBeeingRaped>
+  <RJW_BG_Message_FailedRemove>{0} struggles to remove {0_possessive} {1}. It's no use!</RJW_BG_Message_FailedRemove>
+  <RJW_BG_Message_NoWear_BlockedBy>{0} can't wear {1} (blocked by {2})</RJW_BG_Message_NoWear_BlockedBy>
+  <RJW_BG_Message_Unlock>Unlocked {0}</RJW_BG_Message_Unlock>
+  <RJW_BG_Message_CouldntDrop>Couldn't drop {0}</RJW_BG_Message_CouldntDrop>
+  <RJW_BG_Message_WrongKey>The key doesn't fit!</RJW_BG_Message_WrongKey>
+  <RJW_BG_Comp_Inspect_Engraving>Engraved with the name "{0}"</RJW_BG_Comp_Inspect_Engraving>
+  <RJW_BG_Comp_Inspect_Key>Cryptostamp: {0}</RJW_BG_Comp_Inspect_Key>
+  <RJW_PregnantNormal>Have a healthy baby...</RJW_PregnantNormal>
+</LanguageData>

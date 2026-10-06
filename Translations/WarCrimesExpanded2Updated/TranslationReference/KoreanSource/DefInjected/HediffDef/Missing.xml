@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_NeutroamineGrowth.stages.0.label>minor</WCE2_NeutroamineGrowth.stages.0.label>
+  <WCE2_NeutroamineGrowth.stages.1.label>small</WCE2_NeutroamineGrowth.stages.1.label>
+  <WCE2_NeutroamineGrowth.stages.2.label>medium</WCE2_NeutroamineGrowth.stages.2.label>
+  <WCE2_NeutroamineGrowth.stages.3.label>large</WCE2_NeutroamineGrowth.stages.3.label>
+  <WCE2_NeutroamineGrowth.stages.4.label>huge</WCE2_NeutroamineGrowth.stages.4.label>
+  <WCE2_MangledTongue.label>mangled tongue</WCE2_MangledTongue.label>
+  <WCE2_MangledTongue.labelNoun>a mangled tongue</WCE2_MangledTongue.labelNoun>
+  <WCE2_MangledTongue.description>A tongue riddled with puncture scars and cauterized holes. Too stiff and malformed for clear speech, and swallowing is a constant, dull discomfort.</WCE2_MangledTongue.description>
+</LanguageData>

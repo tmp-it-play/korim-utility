@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RJW_Message_NotPregnant>{0}의 검사 결과, {1}은(는) 임신하지 않은 것으로 확인되었습니다.</RJW_Message_NotPregnant>
+  <RJW_Message_Pregnant>{0}의 검사 결과, {1}은(는) 임신 중이며 아버지는 {2}인 것으로 확인되었습니다.</RJW_Message_Pregnant>
+  <RJW_AlertRape>{RAPIST}이(가) {TARGET}을(를) 강간하려 합니다.</RJW_AlertRape>
+  <RJW_AlertAssault>{RAPIST}이(가) {TARGET}을(를) 성폭행하려 합니다.</RJW_AlertAssault>
+  <RJW_AlertBreed>{RAPIST}이(가) {TARGET}과(와) 교미하려 합니다.</RJW_AlertBreed>
+  <RJW_AlertRapeRelated>{RAPIST}이(가) {RAPIST_possessive} {RELATION}인 {TARGET}을(를) 강간하려 합니다.</RJW_AlertRapeRelated>
+  <RJW_AlertAssaultRelated>{RAPIST}이(가) {RAPIST_possessive} {RELATION}인 {TARGET}을(를) 성폭행하려 합니다.</RJW_AlertAssaultRelated>
+  <RJW_AlertBreedRelated>{RAPIST}이(가) {RAPIST_possessive} {RELATION}인 {TARGET}과(와) 교미하려 합니다.</RJW_AlertBreedRelated>
+  <RJW_AlertBeeingRaped>{TARGET}이(가) 강간당하고 있습니다.</RJW_AlertBeeingRaped>
+  <RJW_BG_Message_FailedRemove>{0}이(가) {0_possessive} {1}을(를) 벗으려 애쓰지만 소용이 없습니다!</RJW_BG_Message_FailedRemove>
+  <RJW_BG_Message_NoWear_BlockedBy>{0}은(는) {1}을(를) 착용할 수 없습니다. ({2} 때문에 착용 불가)</RJW_BG_Message_NoWear_BlockedBy>
+  <RJW_BG_Message_Unlock>{0} 잠금 해제</RJW_BG_Message_Unlock>
+  <RJW_BG_Message_CouldntDrop>{0}을(를) 버릴 수 없습니다.</RJW_BG_Message_CouldntDrop>
+  <RJW_BG_Message_WrongKey>열쇠가 맞지 않습니다!</RJW_BG_Message_WrongKey>
+  <RJW_BG_Comp_Inspect_Engraving>"{0}" 이름이 새겨져 있음</RJW_BG_Comp_Inspect_Engraving>
+  <RJW_BG_Comp_Inspect_Key>암호 각인: {0}</RJW_BG_Comp_Inspect_Key>
+  <RJW_PregnantNormal>태아는 건강해 보입니다...</RJW_PregnantNormal>
+</LanguageData>

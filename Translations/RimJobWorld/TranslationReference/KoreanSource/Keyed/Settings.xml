@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RJW_RMB_NoValidInteractions>No valid interactions found for {0}</RJW_RMB_NoValidInteractions>
+  <RJW_RMB_BG_NotWearingBondage>Not wearing locked apparel</RJW_RMB_BG_NotWearingBondage>
+  <RJWSettingsMainTitle_General>General</RJWSettingsMainTitle_General>
+  <RJWSettingsMainTitle_Audio>Audio</RJWSettingsMainTitle_Audio>
+  <RJWSettingsMainTitle_SexNeed>Sex need</RJWSettingsMainTitle_SexNeed>
+  <RJWSettingsMainTitle_Nymphomaniacs>Nymphomaniacs</RJWSettingsMainTitle_Nymphomaniacs>
+  <RJWSettingsMainTitle_PawnControl>Pawn control</RJWSettingsMainTitle_PawnControl>
+  <love_enhancer_override>Allow love enhancers to override pawns preferences.</love_enhancer_override>
+  <love_enhancer_override_desc>If enabled, love enhancers will make pawns enjoy sex acts as if they were masochists and zoophiles.</love_enhancer_override_desc>
+  <wild_mating_enabled>Enable Wild Animal Mating</wild_mating_enabled>
+  <wild_mating_enabled_desc>Allows wild (non-colony) animals to mate with each other if animal-on-animal mating is enabled.\nDoes not affect designated interspecies sex between animals.</wild_mating_enabled_desc>
+  <mechanophilia_enabled>Enable mechanophilia</mechanophilia_enabled>
+  <mechanophilia_enabled_desc>Enables mech-related sexual interactions.</mechanophilia_enabled_desc>
+  <RPG_hero_control_AI_sex_name>Hero AI</RPG_hero_control_AI_sex_name>
+  <RPG_hero_control_AI_sex_desc>Allow hero AI to initiate sex(like all other pawns).</RPG_hero_control_AI_sex_desc>
+  <RJW_ShowParts>RJW Parts Display</RJW_ShowParts>
+  <RJW_ShowParts_Extended>Extended</RJW_ShowParts_Extended>
+  <RJW_ShowParts_Extended_desc>Show additional information about the parts (e.g. fluid amount)</RJW_ShowParts_Extended_desc>
+  <RJW_ShowParts_Show>Show</RJW_ShowParts_Show>
+  <RJW_ShowParts_Show_desc>Show sexual characteristics added by RJW</RJW_ShowParts_Show_desc>
+  <RJW_ShowParts_Known>Known</RJW_ShowParts_Known>
+  <RJW_ShowParts_Hide>Hide</RJW_ShowParts_Hide>
+  <RJW_ShowParts_Hide_desc>Do not show sexual characteristics added by RJW</RJW_ShowParts_Hide_desc>
+  <RJWSettingsDebugTitle_OnlyForDevelopers>Only for developers ;)</RJWSettingsDebugTitle_OnlyForDevelopers>
+  <RMB_enabled>Enable RMB</RMB_enabled>
+  <RMB_enabled_desc>Allow use of right mouse button to give sex related commands. \nThis may cause issues with some mods.</RMB_enabled_desc>
+  <RMB_ability>Enable RMB ability</RMB_ability>
+  <RMB_ability_desc>Adds targeted ability to pawns that duplicates RMB functionality, intended for situations when RMB cant be used for any reason.</RMB_ability_desc>
+  <legacy_PartsAdder>Legacy parts Adder</legacy_PartsAdder>
+  <legacy_PartsAdder_desc>Built-in parts distributor, it tries to guess what parts Vanilla and HAR races get based on their name, maybe still useful if you dont have support patches for races.</legacy_PartsAdder_desc>
+  <DebugAttraction>RMB Explain Attraction</DebugAttraction>
+  <DebugAttraction_desc>Enables the "Explain Attraction" float menu on RMB.</DebugAttraction_desc>
+  <Hint_RMB_Meaning>Hint: RMB means "Right Mouse Button"</Hint_RMB_Meaning>
+  <DebugSupportedMods_title>Supported mods</DebugSupportedMods_title>
+  <DebugSupportedMods_desc>Other mods for which RJW contains special compatibility</DebugSupportedMods_desc>
+  <DebugSupportedModsDetected_name>Detected</DebugSupportedModsDetected_name>
+  <DebugSupportedModsNotDetected_name>Not found</DebugSupportedModsNotDetected_name>
+  <RJWSettingsPregnancyTitle_General>General</RJWSettingsPregnancyTitle_General>
+  <RJWSettingsPregnancyTitle_Eggs>Eggs</RJWSettingsPregnancyTitle_Eggs>
+  <RJWSettingsPregnancyTitle_Inheritance>Inheritance</RJWSettingsPregnancyTitle_Inheritance>
+  <RJWSettingsPregnancyTitle_Fertility>Fertility</RJWSettingsPregnancyTitle_Fertility>
+  <RJWSettingsPregnancyTitle_Duration>Duration</RJWSettingsPregnancyTitle_Duration>
+  <RJW_B_Pregnancy_Setting>Bestiality pregnancy setting</RJW_B_Pregnancy_Setting>
+  <BestialPregnancy_None>None</BestialPregnancy_None>
+  <BestialPregnancy_Limited>Limited</BestialPregnancy_Limited>
+  <BestialPregnancy_Unlimited>Unlimited</BestialPregnancy_Unlimited>
+  <BestialPregnancy_None_desc>Humanlike-Animal pregnancies not possible.</BestialPregnancy_None_desc>
+  <BestialPregnancy_Limited_desc>Humanlike-Animal pregnancies only possible with external assistance, such as fertility enhancement from archotech genitals.</BestialPregnancy_Limited_desc>
+  <BestialPregnancy_Unlimited_desc>Humanlike-Animal pregnancies possible between any fertile partners.</BestialPregnancy_Unlimited_desc>
+  <egg_pregnancy_unlimited_capacity>Orifices have near-unlimited egg capacity</egg_pregnancy_unlimited_capacity>
+  <egg_pregnancy_unlimited_capacity_desc>Pawns can be implanted with near-unlimited amount of eggs</egg_pregnancy_unlimited_capacity_desc>
+</LanguageData>

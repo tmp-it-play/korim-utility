@@ -16,6 +16,7 @@ TOKENS = re.compile(r'(?<!\{)\{[^{}]+\}(?!\})|\[[A-Za-z_][A-Za-z0-9_.]*\]|</?[A-
 CHARACTER_EDITOR_ASSEMBLY = 'Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll'
 MEDICAL_ICONS_ASSEMBLY = 'Integrations/RimJobWorld/Common/Assemblies/KoRimUtility.MedicalIcons.dll'
 MAIN_BUTTONS_ASSEMBLY = 'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll'
+FOOD_ALERT_ASSEMBLY = 'Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll'
 
 
 def tokens(text):
@@ -82,7 +83,15 @@ def content_roots(root):
 
 def combined_language(roots, language):
     entries = {}
+    files = set()
     for root in roots:
+        folder = root / 'Languages' / language
+        relative_files = {path.relative_to(folder).as_posix().lower() for path in folder.rglob('*.xml')}
+        # RimWorld merges a mod's load folders by relative file path before reading keys.
+        # A later XML with the same path hides the entire earlier file.
+        if files & relative_files:
+            raise ValueError(f'로드 폴더 간 언어 파일 경로 중복: {sorted(files & relative_files)}')
+        files.update(relative_files)
         data = read_language(root / 'Languages' / language)
         duplicate = entries.keys() & data.keys()
         if duplicate:
@@ -202,6 +211,11 @@ def pack(include_ui=False, root=ROOT):
         compatibility = root / MAIN_BUTTONS_ASSEMBLY
         if not compatibility.is_file():
             raise ValueError('하단 메뉴 UI DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
+        files.append(compatibility)
+    if (root / 'Translations/FoodAlertContinued').is_dir():
+        compatibility = root / FOOD_ALERT_ASSEMBLY
+        if not compatibility.is_file():
+            raise ValueError('Food Alert 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
         files.append(compatibility)
     for content in content_roots(root):
         for dirname in RUNTIME_DIRS:

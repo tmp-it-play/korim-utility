@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SC_title>Sexuality</SC_title>
+  <SexcardEditDevEntry>RJW: Sexuality Card NG</SexcardEditDevEntry>
+  <SC_Fertility_Enable>Enable reproduction</SC_Fertility_Enable>
+  <SC_Fertility_Enhance>Enhance fertility</SC_Fertility_Enhance>
+  <SC_Fertility_Disable>Disable reproduction</SC_Fertility_Disable>
+  <SC_FluidType>Fluid Type</SC_FluidType>
+  <SC_FluidTypeDefault> (Default)</SC_FluidTypeDefault>
+  <SC_Reroll>Reroll</SC_Reroll>
+  <SC_Gender>Gender</SC_Gender>
+  <SC_Sexuality_Asexual>Asexual</SC_Sexuality_Asexual>
+  <SC_Sexuality_Bisexual>Bisexual</SC_Sexuality_Bisexual>
+  <SC_Sexuality_Pansexual>Pansexual</SC_Sexuality_Pansexual>
+  <SC_Kinsey>Kinsey scale</SC_Kinsey>
+  <SC_Kinsey_desc>This is a visual model developed by Alfred Kinsey in 1948 that uses a range from 0 to 6 to describe a person's sexual orientation.\n\n0 - exclusively heterosexual\n3 - bisexual\n6 - exclusively homosexual\n\nNumbers 1 through 5 indicate increasing levels of homosexuality.</SC_Kinsey_desc>
+  <SC_Kinsey_Asexual>Asexual</SC_Kinsey_Asexual>
+  <SC_Kinsey_Bisexual>Equally heterosexual and homosexual (bisexual)</SC_Kinsey_Bisexual>
+  <SC_Kinsey_Heterosexual>Exclusively heterosexual</SC_Kinsey_Heterosexual>
+  <SC_Kinsey_Homosexual>Exclusively homosexual</SC_Kinsey_Homosexual>
+  <SC_Kinsey_LeaningHeterosexual>Predominantly heterosexual, but more than incidentally homosexual</SC_Kinsey_LeaningHeterosexual>
+  <SC_Kinsey_LeaningHomosexual>Predominantly homosexual, but more than incidentally heterosexual</SC_Kinsey_LeaningHomosexual>
+  <SC_Kinsey_MostlyHeterosexual>Predominantly heterosexual, only incidentally homosexual</SC_Kinsey_MostlyHeterosexual>
+  <SC_Kinsey_MostlyHomosexual>Predominantly homosexual, only incidentally heterosexual</SC_Kinsey_MostlyHomosexual>
+  <SC_Kinsey_Pansexual>Pansexual</SC_Kinsey_Pansexual>
+</LanguageData>

@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-05",
+  "checked_on": "2026-10-06",
   "game_version": "1.6",
   "targets": [
     {
@@ -9,7 +9,7 @@
       "author": "GodlyAnnihilator",
       "original_workshop_id": "1414246983",
       "package_id": "GodlyAnnihilator.TheLowCooler",
-      "status": "translation_game_test_pending",
+      "status": "translation_runtime_verified",
       "license": "not_specified_in_archive",
       "translated_entries": 2,
       "mod_root": ".",
@@ -19,7 +19,7 @@
       "source_def_sha256": "c4d663dcf38736398d9b4b8c2507fbcf149aa8faa08f1fa00551347cb830a247",
       "source_def": "Defs/Buildings_Temperature.xml",
       "optional": true,
-      "load_condition": "IfModActive: GodlyAnnihilator.TheLowCooler",
+      "load_condition": "IfModActive: Ling.TheLowCooler,GodlyAnnihilator.TheLowCooler",
       "content_root": "Translations/TheCooler"
     },
     {
@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 60,
+      "translated_entries": 182,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -44,12 +44,19 @@
       "content_root": "Translations/RimJobWorld",
       "load_condition": "IfModActive: rim.job.world",
       "tab_translation_status": "runtime_verified",
+      "ui_translation_status": "runtime_verified",
       "tab_source_sha256": {
         "1.6/Defs/RJWTab/PawnTableDefs.xml": "9c2ed92131c6b569a9a12f9452dd838b74808d8765d6768a404dca81b02a2284",
         "1.6/Defs/RJWTab/PawnColumnDefs/Icons.xml": "89b2c17ba5768e469b316ee8fca9c550a5658a5d1d4024580249b4e5dd102ef6",
         "1.6/Defs/RJWTab/PawnColumnDefs/Checkboxes.xml": "be7ac9012dd9c483516a254e0c2c26eddbe9c9e5a83932fe995e07b222c6ff1a",
         "1.6/Languages/English/Keyed/RJWMainTab.xml": "06522ae86c9c27408a840aa778393a9714ab91c8410310a0fc63a15c47470d20",
         "1.6/Languages/English/Keyed/RimJobWorldKeys.xml": "d4bd2dae6b5eecf47fc83bc55f2fac1798916eedc3cfc8512d51a1e40d293ba7"
+      },
+      "ui_source_sha256": {
+        "1.6/Languages/English/Keyed/PartTags.xml": "9588ee80aa85bba750b5a5ce90c46b303f621c96e1133228868f70463ae4205b",
+        "1.6/Languages/English/Keyed/RimJobWorldKeys.xml": "d4bd2dae6b5eecf47fc83bc55f2fac1798916eedc3cfc8512d51a1e40d293ba7",
+        "1.6/Languages/English/Keyed/SettingsKeys.xml": "3e25950e364cbc7995cd713c5cfd422fb1224b3ac07745c5971769f3b80f71d8",
+        "1.6/Languages/English/Keyed/SexualityCardKeys.xml": "722bb4e523b979e4cd4f4b27a71fbe9513fafc8957ca15408e8c5347dbb7274e"
       }
     },
     {
@@ -86,8 +93,18 @@
       "source_def": "Defs/OverWallCoolerVent.xml",
       "source_def_sha256": "c2555e89f2c16d815493245c08dada17f248d4a64638594770a7e19b0427d562",
       "source_about_sha256": "8d1041607d4567f7c718504f50342f61ce984a146a45803865f4f065c670cb00",
-      "source_supported_versions": ["1.1", "1.2", "1.3", "1.4", "1.5"],
-      "source_building_defs": ["Cooler_Over", "Cooler_Over2W", "Vent_Over"],
+      "source_supported_versions": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ],
+      "source_building_defs": [
+        "Cooler_Over",
+        "Cooler_Over2W",
+        "Vent_Over"
+      ],
       "compatibility_scope": "original_package_id_and_common_defs_only",
       "inherited_description_source": "RimWorld/Data/Core/Defs/ThingDefs_Buildings/Buildings_Temperature.xml: Cooler.description, Vent.description",
       "mod_root": ".",
@@ -106,7 +123,12 @@
       "translated_entries": 8,
       "source_def": "1.6/Defs/OverWallCoolerVent.xml",
       "source_def_sha256": "7f5e1811b95cf7db14666bc5550a7951bfa4662cf8879fea21ca84048313b953",
-      "source_building_defs": ["Cooler_Over", "Cooler_Over2W", "Vent_Over", "Vent_Over2W"],
+      "source_building_defs": [
+        "Cooler_Over",
+        "Cooler_Over2W",
+        "Vent_Over",
+        "Vent_Over2W"
+      ],
       "inherited_description_source": "RimWorld/Data/Core/Defs/ThingDefs_Buildings/Buildings_Temperature.xml: Cooler.description, Vent.description",
       "mod_root": ".",
       "distribution": "integrated_package",
@@ -114,6 +136,127 @@
       "content_root": "Translations/ReplaceStuffContinued",
       "shared_content_root": "Translations/ReplaceStuff",
       "load_condition": "IfModActive: Memegoddess.ReplaceStuff"
+    },
+    {
+      "name": "War Crimes Expanded 2 Core (Updated)",
+      "workshop_id": "3032870787",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3032870787",
+      "package_id": "Mersid.WCE2Updated.Core",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified",
+      "translated_entries": 37,
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/WarCrimesExpanded2Updated",
+      "load_condition": "IfModActive: Mersid.WCE2Updated.Core",
+      "source_about_sha256": "7d165e37a0a25476fdf142cbca59fa6359753ac5ae26f6bd27d10482fcf3df40",
+      "source_def_sha256": {
+        "1.6/Defs/WCE2_Hediffs/WCE2_Local_Growths.xml": "f630d360b5a40daee10ccd0ecb18382efb87ca2ec43eedc13d03da6b3822b7ce",
+        "1.6/Defs/WCE2_Hediffs/WCE2_Local_Mutilations.xml": "cdbdde01fb92055e57f6139b0ebccfd8faf53f5ed8a6ccbd6f71c4d3cf77fb25",
+        "1.6/Defs/WCE2_PrisonerInteractionModeDefs.xml": "cba6f96c29e7e88898f9d17de9dd658a532af82d0e0b781872fb6344f51a53fe",
+        "1.6/Defs/WCE2_Recipes/WCE2_Recipes_Harvests.xml": "e1efe5e8e276196d49d78dfe48238a1f1274dcd812bfd7d2d5f1f3361743966a",
+        "1.6/Defs/WCE2_Recipes/WCE2_Recipes_Medical.xml": "7eeeb2716ba048bb085b9923dfa9dd50e0c51e057abfc7d13c9bb480bdf6641c",
+        "1.6/Defs/WCE2_Recipes/WCE2_Recipes_Mutilations_Head.xml": "735402a883c52c6948228a334a45e0f31ad8eaf1b3afce6277c2bd475a01a40e",
+        "1.6/Defs/WCE2_Recipes/WCE2_SurgeryOutcomeEffectDefs.xml": "ea9d6d3b86bd67d657fb8f1d36c867c80f91c1614b061be31354df68a5778e30",
+        "1.6/Defs/WCE2_ThoughtDefs/WCE2_ThoughtDefs_Hediffs.xml": "4d5843c0a106285702d481fc5cefdc31cf1abb2cab2e611ea38d7a8eb4d4854a"
+      },
+      "shared_content_root": "Translations/WarCrimesExpanded2"
+    },
+    {
+      "name": "Vanilla Furniture Expanded",
+      "workshop_id": "1718190143",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143",
+      "package_id": "VanillaExpanded.VFECore",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified",
+      "translated_entries": 5,
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/VanillaFurnitureExpanded",
+      "load_condition": "IfModActive: VanillaExpanded.VFECore",
+      "source_about_sha256": "1a2f7422e60e521e9bce9fb3b4a01179c61c930cceb4bca02451486ad86b18e8",
+      "source_def_sha256": {
+        "1.6/Defs/Buildings_Furniture/Buildings_Misc.xml": "c2629befbf4d16f144a2443be7c3569001de76652277695d09507caca512cc4d",
+        "1.6/Defs/JobDefs/Jobs_Joy.xml": "7d56e0d3bc2fb558c80f55889884ab4d41804e529dfb50fc16f2815548e74bd7",
+        "1.6/Defs/JobDefs/Jobs_Learning.xml": "447e1d622a36ca508b824495ef20706879e2c61f7cebae2759bf3fe7afe21ab0"
+      }
+    },
+    {
+      "name": "Food Alert (Continued)",
+      "workshop_id": "2017538067",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2017538067",
+      "author": "Mehni; continued by Mlie",
+      "package_id": "Mlie.FoodAlert",
+      "license": "MIT",
+      "status": "ui_translation_runtime_verified",
+      "translated_entries": 30,
+      "mod_root": ".",
+      "distribution": "integrated_package",
+      "optional": true,
+      "content_root": "Translations/FoodAlertContinued",
+      "load_condition": "IfModActive: Mlie.FoodAlert",
+      "compatibility_assembly": "Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll",
+      "source_sha256": {
+        "About/About.xml": "342f534a3268ae931abe21c3a429d88dacf91dfaf6b864170367ef0398a9f366",
+        "Languages/English/Keyed/SomeFood.xml": "1ae1d8d376dccd92f2c3c4ded333a21c44e1c5fbc1531f9a659552d80b7f38c9",
+        "1.6/Assemblies/FoodAlert.dll": "8accd7329e66a4d39da5d78a8451139ca753ca23c4eb2efb58289cfae3a04cff"
+      },
+      "shared_content_root": "Translations/FoodAlert"
+    },
+    {
+      "name": "Cooler",
+      "workshop_id": "1414246983",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1414246983",
+      "package_id": "Ling.TheLowCooler",
+      "translated_entries": 2,
+      "content_root": "Translations/TheCooler",
+      "load_condition": "IfModActive: Ling.TheLowCooler,GodlyAnnihilator.TheLowCooler",
+      "status": "shared_defs_native_fixture_verified",
+      "source": "Original mod binding and LingCooler fields in installed RMK translation catalog",
+      "optional": true
+    },
+    {
+      "name": "War Crimes Expanded 2 Core",
+      "workshop_id": "2059450213",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2059450213",
+      "package_id": "Crustypeanut.WCE2.Core",
+      "translated_entries": 19,
+      "content_root": "Translations/WarCrimesExpanded2Original",
+      "shared_content_root": "Translations/WarCrimesExpanded2",
+      "load_condition": "IfModActive: Crustypeanut.WCE2.Core; IfModNotActive: Mersid.WCE2Updated.Core",
+      "status": "legacy_translation_native_fixture_verified",
+      "compatibility_scope": "original_package_id_and_legacy_translations; does_not_port_original_gameplay_to_1.6",
+      "source": "Legacy 1.4 definitions retained by Updated, corroborated with original RMK catalog",
+      "source_def_sha256": {
+        "Defs/WCE2_Hediffs/WCE2_Local_Mutilations.xml": "d00d71e48e02b1273e637e0e2f8d08940a63a22f842d7bcb479d190af456748b",
+        "Defs/WCE2_Recipes/WCE2_Surgery_Implants_Recipes.xml": "7a3fa55d4623a2e7af91297327a0eb91caab3a60310964ddb2a10a0fd923d6e6",
+        "Defs/WCE2_Recipes/WCE2_Surgery_Mutilations_Recipes.xml": "7a1429727d923a6ed48c77829991d593f67db2f2ae0410e9fe744ae8b8f9a1a1",
+        "Defs/WCE2_ThoughtDefs/WCE2_ThoughtDefs_Hediffs.xml": "91f37b064d2d5bf28d61c3a772ac49d759003e38b179965a0b680b136f8868d3"
+      },
+      "optional": true
+    },
+    {
+      "name": "Food Alert",
+      "author": "Mehni",
+      "workshop_id": "1114619043",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1114619043",
+      "source_url": "https://github.com/Mehni/FoodAlert",
+      "package_id": "Mehni173.FoodHAlert",
+      "package_id_source": "Verified with actual RimWorld 1.6 ModMetaData fallback from original About.xml (no explicit packageId)",
+      "translated_entries": 7,
+      "content_root": "Translations/FoodAlert",
+      "load_condition": "IfModActive: Mehni173.FoodHAlert,Mlie.FoodAlert",
+      "status": "legacy_readout_native_fixture_verified",
+      "compatibility_scope": "original_package_id_and_seven_key_readout; does_not_port_1.0_assembly_to_1.6",
+      "license": "MIT",
+      "source_sha256": {
+        "About/About.xml": "be9c97beed2af4314213e195e39b1466521d57c07706885ee459bdb66ce4cb9f",
+        "Languages/English/Keyed/SomeFood.xml": "3bb76b2328b3c32dd5637c270a25c207a49ce22e02045dd3d2bd9bcb5f90c1c0",
+        "Source/FoodAlert/HarmonyPatches.cs": "293c7236f37965e0f6729b1edf5ca3e337e61a8280b12e529257ecca14544c5d"
+      },
+      "optional": true
     }
   ]
 }

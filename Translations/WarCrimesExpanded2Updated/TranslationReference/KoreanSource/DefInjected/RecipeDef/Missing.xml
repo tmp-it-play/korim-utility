@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <WCE2_HarvestNeutroamineGrowth.label>harvest neutroamine growth</WCE2_HarvestNeutroamineGrowth.label>
+  <WCE2_HarvestNeutroamineGrowth.description>Harvest neutroamine from a growth on the victim's body.</WCE2_HarvestNeutroamineGrowth.description>
+  <WCE2_HarvestNeutroamineGrowth.jobString>Harvesting neutroamine growth.</WCE2_HarvestNeutroamineGrowth.jobString>
+  <WCE2_HarvestMeatyGrowth.label>harvest meaty growth</WCE2_HarvestMeatyGrowth.label>
+  <WCE2_HarvestMeatyGrowth.description>Harvest meat from a growth on the victim's body.</WCE2_HarvestMeatyGrowth.description>
+  <WCE2_HarvestMeatyGrowth.jobString>Harvesting meaty growth.</WCE2_HarvestMeatyGrowth.jobString>
+  <WCE2_RemoveVivisection.label>reverse vivisection</WCE2_RemoveVivisection.label>
+  <WCE2_RemoveVivisection.description>Stitch a vivisected victim back up. Hopefully. More difficult than the actual vivisection!</WCE2_RemoveVivisection.description>
+  <WCE2_RemoveVivisection.jobString>Reversing vivisection.</WCE2_RemoveVivisection.jobString>
+  <WCE2_RemoveBrand.label>remove slave brand</WCE2_RemoveBrand.label>
+  <WCE2_RemoveBrand.description>Graft someone else's skin onto the patient to cover up a slave brand.</WCE2_RemoveBrand.description>
+  <WCE2_RemoveBrand.jobString>Grafting skin.</WCE2_RemoveBrand.jobString>
+  <WCE2_MangleTongue.label>mangle tongue</WCE2_MangleTongue.label>
+  <WCE2_MangleTongue.description>Pin the victim's tongue and puncture it repeatedly with hot iron spikes, leaving it a swollen, hole-ridden mess. Still attached, but so scarred and stiffened that intelligible speech becomes a struggle and every meal a painful chore.</WCE2_MangleTongue.description>
+  <WCE2_MangleTongue.jobString>Mangling tongue.</WCE2_MangleTongue.jobString>
+  <WCE2_HarvestNeutroamineGrowth.successfullyRemovedHediffMessage>{0} has successfully harvested a neutroamine growth from {1}.</WCE2_HarvestNeutroamineGrowth.successfullyRemovedHediffMessage>
+  <WCE2_HarvestMeatyGrowth.successfullyRemovedHediffMessage>{0} has successfully harvested a meaty growth from {1}.</WCE2_HarvestMeatyGrowth.successfullyRemovedHediffMessage>
+  <WCE2_RemoveVivisection.successfullyRemovedHediffMessage>{0} has successfully stitched {1} back up after being vivisected.</WCE2_RemoveVivisection.successfullyRemovedHediffMessage>
+  <WCE2_RemoveBrand.successfullyRemovedHediffMessage>{0} has successfully covered {1}'s slave brand with a skin graft.</WCE2_RemoveBrand.successfullyRemovedHediffMessage>
+</LanguageData>

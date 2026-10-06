@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <RJW_RMB_NoValidInteractions>{0}에게 가능한 상호작용이 없습니다.</RJW_RMB_NoValidInteractions>
+  <RJW_RMB_BG_NotWearingBondage>잠금장치가 있는 의복을 착용하지 않음</RJW_RMB_BG_NotWearingBondage>
+  <RJWSettingsMainTitle_General>일반</RJWSettingsMainTitle_General>
+  <RJWSettingsMainTitle_Audio>소리</RJWSettingsMainTitle_Audio>
+  <RJWSettingsMainTitle_SexNeed>성욕</RJWSettingsMainTitle_SexNeed>
+  <RJWSettingsMainTitle_Nymphomaniacs>색정광</RJWSettingsMainTitle_Nymphomaniacs>
+  <RJWSettingsMainTitle_PawnControl>폰 조작</RJWSettingsMainTitle_PawnControl>
+  <love_enhancer_override>러브 인핸서가 성적 취향을 무시하도록 허용</love_enhancer_override>
+  <love_enhancer_override_desc>활성화하면 러브 인핸서를 이식한 폰이 피학적 성향이나 동물성애 특성이 있는 것처럼 성행위를 즐깁니다.</love_enhancer_override_desc>
+  <wild_mating_enabled>야생 동물 교미 허용</wild_mating_enabled>
+  <wild_mating_enabled_desc>동물 간 교미를 허용한 경우, 정착지 소유가 아닌 야생 동물끼리도 교미할 수 있습니다.\n동물에게 직접 지정한 이종 간 성행위에는 영향을 주지 않습니다.</wild_mating_enabled_desc>
+  <mechanophilia_enabled>기계성애 허용</mechanophilia_enabled>
+  <mechanophilia_enabled_desc>메카노이드와 관련된 성적 상호작용을 허용합니다.</mechanophilia_enabled_desc>
+  <RPG_hero_control_AI_sex_name>영웅의 자율 행동</RPG_hero_control_AI_sex_name>
+  <RPG_hero_control_AI_sex_desc>영웅도 다른 폰처럼 스스로 성행위를 시작할 수 있게 합니다.</RPG_hero_control_AI_sex_desc>
+  <RJW_ShowParts>RJW 신체 부위 표시</RJW_ShowParts>
+  <RJW_ShowParts_Extended>자세히 표시</RJW_ShowParts_Extended>
+  <RJW_ShowParts_Extended_desc>체액량 등 부위의 추가 정보를 표시합니다.</RJW_ShowParts_Extended_desc>
+  <RJW_ShowParts_Show>표시</RJW_ShowParts_Show>
+  <RJW_ShowParts_Show_desc>RJW가 추가한 성적 신체 특징을 표시합니다.</RJW_ShowParts_Show_desc>
+  <RJW_ShowParts_Known>알려진 것만</RJW_ShowParts_Known>
+  <RJW_ShowParts_Hide>숨기기</RJW_ShowParts_Hide>
+  <RJW_ShowParts_Hide_desc>RJW가 추가한 성적 신체 특징을 표시하지 않습니다.</RJW_ShowParts_Hide_desc>
+  <RJWSettingsDebugTitle_OnlyForDevelopers>개발자용 ;)</RJWSettingsDebugTitle_OnlyForDevelopers>
+  <RMB_enabled>우클릭 명령 사용</RMB_enabled>
+  <RMB_enabled_desc>마우스 오른쪽 버튼으로 성행위 관련 명령을 내릴 수 있습니다.\n일부 모드와 충돌할 수 있습니다.</RMB_enabled_desc>
+  <RMB_ability>우클릭 명령 대체 능력 사용</RMB_ability>
+  <RMB_ability_desc>우클릭 명령과 같은 기능을 하는 대상 지정 능력을 폰에게 추가합니다. 우클릭 명령을 사용할 수 없을 때 이용할 수 있습니다.</RMB_ability_desc>
+  <legacy_PartsAdder>기존 방식의 신체 부위 배정</legacy_PartsAdder>
+  <legacy_PartsAdder_desc>기본 게임과 HAR 종족의 이름으로 신체 부위를 추정하여 배정하는 내장 기능입니다. 해당 종족의 호환 패치가 없을 때 유용할 수 있습니다.</legacy_PartsAdder_desc>
+  <DebugAttraction>우클릭 메뉴에 매력 설명 표시</DebugAttraction>
+  <DebugAttraction_desc>우클릭 메뉴에 '매력 설명' 항목을 추가합니다.</DebugAttraction_desc>
+  <Hint_RMB_Meaning>참고: RMB는 마우스 오른쪽 버튼을 뜻합니다.</Hint_RMB_Meaning>
+  <DebugSupportedMods_title>호환 모드</DebugSupportedMods_title>
+  <DebugSupportedMods_desc>RJW에 별도 호환 처리가 포함된 모드입니다.</DebugSupportedMods_desc>
+  <DebugSupportedModsDetected_name>감지됨</DebugSupportedModsDetected_name>
+  <DebugSupportedModsNotDetected_name>찾을 수 없음</DebugSupportedModsNotDetected_name>
+  <RJWSettingsPregnancyTitle_General>일반</RJWSettingsPregnancyTitle_General>
+  <RJWSettingsPregnancyTitle_Eggs>알</RJWSettingsPregnancyTitle_Eggs>
+  <RJWSettingsPregnancyTitle_Inheritance>유전</RJWSettingsPregnancyTitle_Inheritance>
+  <RJWSettingsPregnancyTitle_Fertility>생식력</RJWSettingsPregnancyTitle_Fertility>
+  <RJWSettingsPregnancyTitle_Duration>임신 기간</RJWSettingsPregnancyTitle_Duration>
+  <RJW_B_Pregnancy_Setting>인간형과 동물 간 임신</RJW_B_Pregnancy_Setting>
+  <BestialPregnancy_None>불가</BestialPregnancy_None>
+  <BestialPregnancy_Limited>제한적으로 허용</BestialPregnancy_Limited>
+  <BestialPregnancy_Unlimited>제한 없이 허용</BestialPregnancy_Unlimited>
+  <BestialPregnancy_None_desc>인간형과 동물 사이에서는 임신할 수 없습니다.</BestialPregnancy_None_desc>
+  <BestialPregnancy_Limited_desc>초월공학 성기의 생식력 강화처럼 외부의 도움을 받아야 인간형과 동물 사이에서 임신할 수 있습니다.</BestialPregnancy_Limited_desc>
+  <BestialPregnancy_Unlimited_desc>생식 능력이 있는 인간형과 동물이라면 임신할 수 있습니다.</BestialPregnancy_Unlimited_desc>
+  <egg_pregnancy_unlimited_capacity>알 수용량을 사실상 무제한으로 설정</egg_pregnancy_unlimited_capacity>
+  <egg_pregnancy_unlimited_capacity_desc>폰에게 거의 무제한에 가까운 수의 알을 이식할 수 있습니다.</egg_pregnancy_unlimited_capacity_desc>
+</LanguageData>

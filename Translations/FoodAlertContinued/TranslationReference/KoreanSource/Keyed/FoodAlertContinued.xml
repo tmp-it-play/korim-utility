@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SomeFoodDescNew>Food is not of an immediate concern.\n\n    Full bars worth of food in storage: {0}\n    Colonists/prisoners getting food: {1}\n    Amount of food eaten per day: {2}\n    Days worth of food in storage: {3}</SomeFoodDescNew>
+  <LowFoodDescNew>Food is a concern.\n\n    Full bars worth of food in storage: {0}\n    Colonists/prisoners getting food: {1}\n    Amount of food eaten per day: {2}\n    Days worth of food in storage: {3}</LowFoodDescNew>
+  <LowFoodAddendum>\nFood of lower preferability may be available</LowFoodAddendum>
+  <FoodAlert_Poor>\n\nThat is a poor amount of food.</FoodAlert_Poor>
+  <SettingDescription>Food preferability</SettingDescription>
+  <SettingExplanation>\nExamples\n\nDesperateOnly:	fertilized eggs, ambrosia\nRawBad:		kibble, unfertilized eggs\nRawTasty:	milk, berries\nMealAwful:	nutrient paste meal\nMealSimple:	simple meal, pemmican\nMealFine:		fine meal, insect jelly\nMealLavish:	lavish meal</SettingExplanation>
+  <EstimateIngredients.label>Estimate also from ingredients</EstimateIngredients.label>
+  <EstimateIngredients.none>No</EstimateIngredients.none>
+  <EstimateIngredients.auto>Automatic (awful x3, simple x1.8, fine x1.8, lavish x1)</EstimateIngredients.auto>
+  <EstimateIngredients.custom>Custom</EstimateIngredients.custom>
+  <EstimateIngredients.slider>Ingredients to meals ratio: x{0}</EstimateIngredients.slider>
+  <FA.updatetype.label>Update frequency</FA.updatetype.label>
+  <FA.typedynamic.label>Dynamic</FA.typedynamic.label>
+  <FA.typedynamic.description>Will update the food-situation based on how many days of food is available. The more days of food is available, the less often the tooltip will update. This is to improve performance in larger colonies.</FA.typedynamic.description>
+  <FA.typestatic.slider>Update every {0} in-game hour</FA.typestatic.slider>
+  <FA.modversion>Installed mod-version: {0}</FA.modversion>
+  <KoRimUtility.FoodAlert.Preferability.DesperateOnly>DesperateOnly</KoRimUtility.FoodAlert.Preferability.DesperateOnly>
+  <KoRimUtility.FoodAlert.Preferability.RawBad>RawBad</KoRimUtility.FoodAlert.Preferability.RawBad>
+  <KoRimUtility.FoodAlert.Preferability.RawTasty>RawTasty</KoRimUtility.FoodAlert.Preferability.RawTasty>
+  <KoRimUtility.FoodAlert.Preferability.MealAwful>MealAwful</KoRimUtility.FoodAlert.Preferability.MealAwful>
+  <KoRimUtility.FoodAlert.Preferability.MealSimple>MealSimple</KoRimUtility.FoodAlert.Preferability.MealSimple>
+  <KoRimUtility.FoodAlert.Preferability.MealFine>MealFine</KoRimUtility.FoodAlert.Preferability.MealFine>
+  <KoRimUtility.FoodAlert.Preferability.MealLavish>MealLavish</KoRimUtility.FoodAlert.Preferability.MealLavish>
+</LanguageData>

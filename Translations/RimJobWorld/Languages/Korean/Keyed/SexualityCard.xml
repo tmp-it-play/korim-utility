@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SC_title>성적 특성</SC_title>
+  <SexcardEditDevEntry>RJW: 새 성적 특성 정보창</SexcardEditDevEntry>
+  <SC_Fertility_Enable>생식 기능 켜기</SC_Fertility_Enable>
+  <SC_Fertility_Enhance>생식력 강화</SC_Fertility_Enhance>
+  <SC_Fertility_Disable>생식 기능 끄기</SC_Fertility_Disable>
+  <SC_FluidType>체액 종류</SC_FluidType>
+  <SC_FluidTypeDefault> (기본값)</SC_FluidTypeDefault>
+  <SC_Reroll>다시 무작위 설정</SC_Reroll>
+  <SC_Gender>성별</SC_Gender>
+  <SC_Sexuality_Asexual>무성애</SC_Sexuality_Asexual>
+  <SC_Sexuality_Bisexual>양성애</SC_Sexuality_Bisexual>
+  <SC_Sexuality_Pansexual>범성애</SC_Sexuality_Pansexual>
+  <SC_Kinsey>킨제이 척도</SC_Kinsey>
+  <SC_Kinsey_desc>앨프리드 킨제이가 1948년에 고안한 척도로, 성적 지향을 0부터 6까지의 값으로 나타냅니다.\n\n0 - 전적으로 이성애\n3 - 양성애\n6 - 전적으로 동성애\n\n1에서 5로 갈수록 동성에게 끌리는 경향이 강해집니다.</SC_Kinsey_desc>
+  <SC_Kinsey_Asexual>무성애</SC_Kinsey_Asexual>
+  <SC_Kinsey_Bisexual>이성과 동성에게 똑같이 끌림 (양성애)</SC_Kinsey_Bisexual>
+  <SC_Kinsey_Heterosexual>전적으로 이성애</SC_Kinsey_Heterosexual>
+  <SC_Kinsey_Homosexual>전적으로 동성애</SC_Kinsey_Homosexual>
+  <SC_Kinsey_LeaningHeterosexual>주로 이성에게 끌리지만 동성에게도 어느 정도 끌림</SC_Kinsey_LeaningHeterosexual>
+  <SC_Kinsey_LeaningHomosexual>주로 동성에게 끌리지만 이성에게도 어느 정도 끌림</SC_Kinsey_LeaningHomosexual>
+  <SC_Kinsey_MostlyHeterosexual>주로 이성에게 끌리며 동성에게는 드물게 끌림</SC_Kinsey_MostlyHeterosexual>
+  <SC_Kinsey_MostlyHomosexual>주로 동성에게 끌리며 이성에게는 드물게 끌림</SC_Kinsey_MostlyHomosexual>
+  <SC_Kinsey_Pansexual>범성애</SC_Kinsey_Pansexual>
+</LanguageData>

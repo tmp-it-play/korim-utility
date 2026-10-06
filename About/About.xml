@@ -10,20 +10,29 @@
     <li>brrainz.harmony</li>
     <li>Ludeon.RimWorld</li>
     <li>GodlyAnnihilator.TheLowCooler</li>
+    <li>Ling.TheLowCooler</li>
     <li>rim.job.world</li>
     <li>automatic.bionicicons</li>
     <li>void.charactereditor</li>
     <li>Uuugggg.ReplaceStuff</li>
     <li>Memegoddess.ReplaceStuff</li>
+    <li>Mersid.WCE2Updated.Core</li>
+    <li>Crustypeanut.WCE2.Core</li>
+    <li>VanillaExpanded.VFECore</li>
+    <li>Mlie.FoodAlert</li>
+    <li>Mehni173.FoodHAlert</li>
+    <li>RMK.translation</li>
   </loadAfter>
   <description>한국인 플레이어를 위해 림월드의 부족한 부분을 채워가는 모드입니다.
 한국어 번역 보완부터 편의 기능, 아이템과 UI까지 조금씩 추가합니다.
 
 모드 번역 안내
-• The Cooler
+• Cooler
 • Character Editor
 • Replace Stuff
-• Replace Stuff - Continued
+• War Crimes Expanded 2 Core
+• Vanilla Furniture Expanded
+• Food Alert
 
 사용 방법
 RimWorld 1.6용입니다. KoRim Utility 하나만 설치하면 됩니다.

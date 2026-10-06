@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <PartsTag_Barbed>Barbed</PartsTag_Barbed>
+  <PartsTag_Long>Long</PartsTag_Long>
+  <PartsTag_Girthy>Girthy</PartsTag_Girthy>
+  <PartsTag_Solid>Solid</PartsTag_Solid>
+  <PartsTag_Small>Small</PartsTag_Small>
+  <PartsTag_Rigid>Rigid</PartsTag_Rigid>
+  <PartsTag_Thin>Thin</PartsTag_Thin>
+  <PartsTag_Sheathed>Sheathed</PartsTag_Sheathed>
+  <PartsTag_Internal>Internal</PartsTag_Internal>
+  <PartsTag_Flared>Flared</PartsTag_Flared>
+  <PartsTag_Multiple>Multiple</PartsTag_Multiple>
+  <PartsTag_Ridged>Ridged</PartsTag_Ridged>
+  <PartsTag_Knotted>Knotted</PartsTag_Knotted>
+  <PartsTag_Tapered>Tapered</PartsTag_Tapered>
+  <PartsTag_Glowing>Glowing</PartsTag_Glowing>
+  <PartsTag_Prehensile>Prehensile</PartsTag_Prehensile>
+  <PartsTag_Humanlike>Humanlike</PartsTag_Humanlike>
+  <PartsTag_Deep>Deep</PartsTag_Deep>
+  <PartsTag_Tight>Tight</PartsTag_Tight>
+  <PartsTag_Loose>Loose</PartsTag_Loose>
+  <PartsTag_Artificial>Artificial</PartsTag_Artificial>
+  <PartsTag_STDImmune>STD Immune</PartsTag_STDImmune>
+  <PartsTag_Resizable>Resizable</PartsTag_Resizable>
+  <PartsTag_FertilityToggle>Fertility Toggle</PartsTag_FertilityToggle>
+  <RJW_PartInfo_T_Title>part type</RJW_PartInfo_T_Title>
+  <RJW_PartInfo_T_Breast>Breasts</RJW_PartInfo_T_Breast>
+  <RJW_PartInfo_T_Penis>Penis</RJW_PartInfo_T_Penis>
+  <RJW_PartInfo_T_Vagina>Vagina</RJW_PartInfo_T_Vagina>
+  <RJW_PartInfo_T_Anus>Anus</RJW_PartInfo_T_Anus>
+  <RJW_PartInfo_T_Ovipositor>Ovipositor</RJW_PartInfo_T_Ovipositor>
+  <RJW_PartInfo_EggTypes>Egg Types</RJW_PartInfo_EggTypes>
+</LanguageData>
