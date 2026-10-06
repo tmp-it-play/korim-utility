@@ -28,6 +28,9 @@ Includes supplemental UI, main-tab and Resin translations.
 Resin source: the installed 6.2.1 mod's ThingDefs, SexFluidDefs and HediffDefs,
 reviewed 2026-10-05; exact file hashes are recorded in targets.json.
 Other existing Korean entries are retained.
+KoRimUtility.RimJobWorld.dll translates two hardcoded notification texts;
+it does not bundle or modify the original RJW.dll. Menu and notification
+references were checked against the installed 1.6 source on 2026-10-07.
 
 Character Editor
 Original project by void:

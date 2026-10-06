@@ -17,6 +17,7 @@ CHARACTER_EDITOR_ASSEMBLY = 'Translations/CharacterEditor/Assemblies/KoRimUtilit
 MEDICAL_ICONS_ASSEMBLY = 'Integrations/RimJobWorld/Common/Assemblies/KoRimUtility.MedicalIcons.dll'
 MAIN_BUTTONS_ASSEMBLY = 'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll'
 FOOD_ALERT_ASSEMBLY = 'Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll'
+RJW_TRANSLATION_ASSEMBLY = 'Translations/RimJobWorld/Assemblies/KoRimUtility.RimJobWorld.dll'
 SLAVE_SUPPRESSION_ASSEMBLY = 'Integrations/SlaveSuppression/Assemblies/KoRimUtility.SlaveSuppression.dll'
 
 
@@ -217,6 +218,11 @@ def pack(include_ui=False, root=ROOT):
         compatibility = root / FOOD_ALERT_ASSEMBLY
         if not compatibility.is_file():
             raise ValueError('Food Alert 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
+        files.append(compatibility)
+    if (root / 'Translations/RimJobWorld').is_dir():
+        compatibility = root / RJW_TRANSLATION_ASSEMBLY
+        if not compatibility.is_file():
+            raise ValueError('RJW 알림 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
         files.append(compatibility)
     if (root / 'Integrations/SlaveSuppression').is_dir():
         compatibility = root / SLAVE_SUPPRESSION_ASSEMBLY

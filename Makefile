@@ -19,6 +19,7 @@ compatibility:
 	$(DOTNET) build Source/KoRimUtility.CharacterEditor -c Release
 	$(DOTNET) build Source/KoRimUtility.MedicalIcons -c Release
 	$(DOTNET) build Source/KoRimUtility.FoodAlert -c Release
+	$(DOTNET) build Source/KoRimUtility.RimJobWorld -c Release
 	$(DOTNET) build Source/KoRimUtility.SlaveSuppression -c Release
 
 test-compatibility:
@@ -26,6 +27,7 @@ test-compatibility:
 	$(DOTNET) run --project tests/CharacterEditorCompatibility -c Release -- "$(CURDIR)"
 	$(DOTNET) run --project tests/MedicalIconsCompatibility -c Release
 	$(DOTNET) run --project tests/FoodAlertCompatibility -c Release -- "$(CURDIR)"
+	$(DOTNET) run --project tests/RimJobWorldCompatibility -c Release -- "$(CURDIR)"
 	$(DOTNET) run --project tests/SlaveSuppressionCompatibility -c Release -- "$(CURDIR)"
 
 pack: check compatibility

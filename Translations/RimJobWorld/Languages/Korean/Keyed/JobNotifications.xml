@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <KoRimUtility.RJW.CorpseAttempt>{ACTOR}이(가) {TARGET}의 시신에 사간을 시도하고 있습니다.</KoRimUtility.RJW.CorpseAttempt>
+  <KoRimUtility.RJW.AnimalAttack>{TARGET}이(가) {ATTACKER}에게 공격받고 있습니다.</KoRimUtility.RJW.AnimalAttack>
+</LanguageData>

@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-06",
+  "checked_on": "2026-10-07",
   "game_version": "1.6",
   "targets": [
     {
@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 182,
+      "translated_entries": 203,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -57,6 +57,16 @@
         "1.6/Languages/English/Keyed/RimJobWorldKeys.xml": "d4bd2dae6b5eecf47fc83bc55f2fac1798916eedc3cfc8512d51a1e40d293ba7",
         "1.6/Languages/English/Keyed/SettingsKeys.xml": "3e25950e364cbc7995cd713c5cfd422fb1224b3ac07745c5971769f3b80f71d8",
         "1.6/Languages/English/Keyed/SexualityCardKeys.xml": "722bb4e523b979e4cd4f4b27a71fbe9513fafc8957ca15408e8c5347dbb7274e"
+      },
+      "context_menu_translation_status": "runtime_text_and_notification_patch_verified",
+      "compatibility_assembly": "Translations/RimJobWorld/Assemblies/KoRimUtility.RimJobWorld.dll",
+      "context_menu_source_sha256": {
+        "Languages/English/Keyed/RMB.xml": "1de528d7d4b7beb42eab7c4c90e68acb5bd3d2409de63940675500996ebf01fb",
+        "Source/Common/RMB/RMB_Sex.cs": "0194f39d9c1782b2ce5118e94accdb80dae96265a3bf3434d306b86107d79bb3",
+        "Source/Common/RMB/RMB_Menu.cs": "f763fc7beed0f697c5217137a06cb3d5b6fbe2287c4fa20ea714d487d5aac7ed",
+        "Source/JobDrivers/JobDriver_RapeCorpse.cs": "41d4666211c84f7885958fe5c2c251ed2b023265d9dcd7b13c0dbd227bdbd2cd",
+        "Source/JobDrivers/JobDriver_BestialityForMale.cs": "b3cb9fd3ba6444825c434b7aaa566f28161c341b4979b5c55f914543b610575e",
+        "Assemblies/RJW.dll": "8aab958ee0fc0df45d83d21360973b1f9010b9fe3293bf98af3dcc894bbf1e2d"
       }
     },
     {

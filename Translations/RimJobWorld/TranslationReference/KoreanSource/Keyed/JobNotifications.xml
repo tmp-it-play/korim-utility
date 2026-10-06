@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <KoRimUtility.RJW.CorpseAttempt>{ACTOR} is trying to rape a corpse of {TARGET}</KoRimUtility.RJW.CorpseAttempt>
+  <KoRimUtility.RJW.AnimalAttack>{TARGET} is being attacked by {ATTACKER}.</KoRimUtility.RJW.AnimalAttack>
+</LanguageData>

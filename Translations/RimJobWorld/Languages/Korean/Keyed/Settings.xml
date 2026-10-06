@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
-  <RJW_RMB_NoValidInteractions>{0}에게 가능한 상호작용이 없습니다.</RJW_RMB_NoValidInteractions>
+  <RJW_RMB_NoValidInteractions>가능한 행동이 없습니다. ({0})</RJW_RMB_NoValidInteractions>
   <RJW_RMB_BG_NotWearingBondage>잠금장치가 있는 의복을 착용하지 않음</RJW_RMB_BG_NotWearingBondage>
   <RJWSettingsMainTitle_General>일반</RJWSettingsMainTitle_General>
   <RJWSettingsMainTitle_Audio>소리</RJWSettingsMainTitle_Audio>

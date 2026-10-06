@@ -10,7 +10,7 @@ from unittest.mock import patch
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile
 
-from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, FOOD_ALERT_ASSEMBLY, SLAVE_SUPPRESSION_ASSEMBLY, check, combined_language, pack
+from tools.mod import ROOT, CHARACTER_EDITOR_ASSEMBLY, MEDICAL_ICONS_ASSEMBLY, MAIN_BUTTONS_ASSEMBLY, FOOD_ALERT_ASSEMBLY, RJW_TRANSLATION_ASSEMBLY, SLAVE_SUPPRESSION_ASSEMBLY, check, combined_language, pack
 
 
 class IntegratedModTests(unittest.TestCase):
@@ -29,7 +29,7 @@ class IntegratedModTests(unittest.TestCase):
         furniture = 'VanillaExpanded.VFECore'
         food_alert = 'Mlie.FoodAlert'
         original_food_alert = 'Mehni173.FoodHAlert'
-        counts = {cooler: 0, original_cooler: 0, rjw: 182, editor: 560, replace: 2, original_replace: 0,
+        counts = {cooler: 0, original_cooler: 0, rjw: 203, editor: 560, replace: 2, original_replace: 0,
                   bionic_icons: 0, harmony: 0, war_crimes: 35, original_war_crimes: 0,
                   furniture: 5, food_alert: 23, original_food_alert: 0}
         active_sets = [set(group) for size in range(len(counts) + 1) for group in combinations(counts, size)]
@@ -55,6 +55,8 @@ class IntegratedModTests(unittest.TestCase):
                                  has_cooler)
                 self.assertEqual(('Keyed', 'RJW_Message_BecameHero') in translations, rjw in active)
                 self.assertEqual(('Keyed', 'RJW_Message_NotPregnant') in translations, rjw in active)
+                self.assertEqual(('Keyed', 'RJW_RMB_ReasonUnappealingPawn') in translations, rjw in active)
+                self.assertEqual(('Keyed', 'KoRimUtility.RJW.CorpseAttempt') in translations, rjw in active)
                 self.assertEqual(('DefInjected/RecipeDef', 'WCE2_MangleTongue.label') in translations,
                                  war_crimes in active)
                 self.assertEqual(('DefInjected/RecipeDef', 'WCE_RemoveVivisection.label') in translations,
@@ -148,6 +150,12 @@ class IntegratedModTests(unittest.TestCase):
                 food.parent.mkdir(parents=True)
                 food.write_bytes(b'test food translation assembly')
                 (food.parent / 'FoodAlert.dll').write_bytes(b'not for redistribution')
+                with self.assertRaisesRegex(ValueError, 'RJW 알림 번역 DLL'):
+                    pack(root=root)
+                rjw = root / RJW_TRANSLATION_ASSEMBLY
+                rjw.parent.mkdir(parents=True)
+                rjw.write_bytes(b'test RJW translation assembly')
+                (rjw.parent / 'RJW.dll').write_bytes(b'not for redistribution')
                 with self.assertRaisesRegex(ValueError, '노예 억압 DLL'):
                     pack(root=root)
                 suppression = root / SLAVE_SUPPRESSION_ASSEMBLY
@@ -161,6 +169,7 @@ class IntegratedModTests(unittest.TestCase):
                                                      'KoRimUtility/' + MEDICAL_ICONS_ASSEMBLY,
                                                      'KoRimUtility/' + MAIN_BUTTONS_ASSEMBLY,
                                                      'KoRimUtility/' + FOOD_ALERT_ASSEMBLY,
+                                                     'KoRimUtility/' + RJW_TRANSLATION_ASSEMBLY,
                                                      'KoRimUtility/' + SLAVE_SUPPRESSION_ASSEMBLY]))
                 self.assertFalse(any('TranslationReference' in name for name in archive.namelist()))
 
