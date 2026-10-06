@@ -47,6 +47,24 @@ class WorkshopDeploymentTests(unittest.TestCase):
             with self.subTest(value=value), self.assertRaises(ValueError):
                 item_id(value)
 
+    def test_workshop_thumbnail_is_separate_from_in_game_preview(self):
+        thumbnail = Path(__file__).resolve().parents[1] / 'Artwork/Workshop-Preview.png'
+        with contextlib.redirect_stdout(io.StringIO()):
+            prepare(self.archive, self.destination, '123456789', 'test', 'description',
+                    preview_path=thumbnail)
+        manifest = (self.destination / 'item.vdf').read_text(encoding='utf-8')
+        self.assertIn('"previewfile" ' + quote(str((self.destination / 'Preview.png').resolve())), manifest)
+        self.assertEqual((self.destination / 'Preview.png').read_bytes(), thumbnail.read_bytes())
+        self.assertEqual((self.destination / 'KoRimUtility/About/Preview.png').read_bytes(),
+                         b'\x89PNG\r\n\x1a\nfixture')
+
+    def test_wide_workshop_thumbnail_rejected_before_writing(self):
+        wide = Path(__file__).resolve().parents[1] / 'About/Preview.png'
+        with self.assertRaisesRegex(ValueError, '1:1'):
+            prepare(self.archive, self.destination, '123456789', 'test', 'description',
+                    preview_path=wide)
+        self.assertFalse(self.destination.exists())
+
     def test_unsafe_zip_path_rejected_before_writing(self):
         with ZipFile(self.archive, 'a') as archive:
             archive.writestr('KoRimUtility/../../escape', 'bad')

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <rect width="640" height="640" fill="#102b38"/>
+  <rect x="46" y="48" width="8" height="544" fill="#f2c66d"/>
+  <g font-family="Arial, sans-serif">
+    <text x="86" y="290" font-size="116" fill="#f6f2e9">KoRim</text>
+    <text x="92" y="350" font-size="38" letter-spacing="6" fill="#f2c66d">UTILITY</text>
+    <path d="M92 430H566" stroke="#3b5860" stroke-width="2"/>
+    <text x="92" y="475" font-size="20" letter-spacing="1" fill="#8eb7be">KOREAN LOCALIZATION</text>
+    <text x="92" y="508" font-size="20" letter-spacing="1" fill="#8eb7be">&amp; UTILITIES</text>
+  </g>
+</svg>

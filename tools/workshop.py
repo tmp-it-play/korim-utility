@@ -27,7 +27,7 @@ def quote(value):
     return '"' + value.replace('\\', '\\\\').replace('"', '\\"').replace('\r', '') + '"'
 
 
-def prepare(archive, destination, published_id, change_note, description):
+def prepare(archive, destination, published_id, change_note, description, *, preview_path=None):
     published_id = item_id(published_id)
     if destination.exists():
         raise ValueError(f'새 스테이징 폴더가 필요합니다: {destination}')
@@ -45,15 +45,23 @@ def prepare(archive, destination, published_id, change_note, description):
         about = ET.fromstring(files['KoRimUtility/About/About.xml'])
         if about.findtext('packageId') != 'snowykte0426.korimutility':
             raise ValueError('KoRim Utility 통합 패키지가 아닙니다.')
-        preview = files['KoRimUtility/About/Preview.png']
-        if not preview.startswith(b'\x89PNG\r\n\x1a\n') or len(preview) >= 1024 * 1024:
-            raise ValueError('미리보기는 1 MiB 미만의 PNG여야 합니다.')
+    preview = (preview_path.read_bytes() if preview_path is not None
+               else files['KoRimUtility/About/Preview.png'])
+    if not preview.startswith(b'\x89PNG\r\n\x1a\n') or len(preview) >= 1024 * 1024:
+        raise ValueError('미리보기는 1 MiB 미만의 PNG여야 합니다.')
+    if preview_path is not None:
+        width = int.from_bytes(preview[16:20], 'big')
+        height = int.from_bytes(preview[20:24], 'big')
+        if len(preview) < 24 or preview[12:16] != b'IHDR' or width == 0 or width != height:
+            raise ValueError('창작마당 전용 미리보기는 1:1 비율의 정사각형 PNG여야 합니다.')
     content = destination.resolve() / 'KoRimUtility'
+    preview_file = (destination.resolve() / 'Preview.png' if preview_path is not None
+                    else content / 'About/Preview.png')
     fields = {
         'appid': '294100',
         'publishedfileid': published_id,
         'contentfolder': str(content),
-        'previewfile': str(content / 'About/Preview.png'),
+        'previewfile': str(preview_file),
         'title': about.findtext('name'),
         'description': description,
         'changenote': change_note,
@@ -64,6 +72,8 @@ def prepare(archive, destination, published_id, change_note, description):
         path = destination / name
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
+    if preview_path is not None:
+        preview_file.write_bytes(preview)
     (content / 'About/PublishedFileId.txt').write_text(published_id + '\n', encoding='utf-8')
     (destination / 'item.vdf').write_text(manifest, encoding='utf-8')
     print(f'업로드 준비 완료: {content} (기존 항목 {published_id})')
@@ -175,7 +185,8 @@ def main():
         if args.command == 'prepare':
             note = f"KoRim Utility {os.environ.get('BUILD_REF', 'manual')} ({os.environ.get('BUILD_SHA', 'local')[:12]})"
             prepare(ROOT / 'dist/KoRimUtility.zip', STAGING, published_id, note,
-                    (ROOT / 'distribution/Workshop-Core.bbcode').read_text(encoding='utf-8'))
+                    (ROOT / 'distribution/Workshop-Core.bbcode').read_text(encoding='utf-8'),
+                    preview_path=ROOT / 'Artwork/Workshop-Preview.png')
         else:
             upload(args.steamcmd, MANIFEST, published_id)
     except (ValueError, OSError, KeyError, ET.ParseError, subprocess.TimeoutExpired) as exc:

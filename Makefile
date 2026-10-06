@@ -5,6 +5,8 @@ DOTNET ?= dotnet
 .PHONY: check test test-compatibility compatibility pack install preview
 preview:
 	rsvg-convert Artwork/Preview.svg -o About/Preview.png
+	rsvg-convert Artwork/Workshop-Preview.svg -o Artwork/Workshop-Preview.png
+	rsvg-convert Artwork/GitHub-Badge.svg -w 128 -o Artwork/GitHub-Badge.png
 
 check:
 	$(PYTHON) tools/mod.py check
