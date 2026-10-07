@@ -35,30 +35,30 @@ namespace KoRimUtility.CharacterEditor
             }
         }
 
-        private static bool IsKorean => LanguageDatabase.activeLanguage?.folderName != null &&
-            LanguageDatabase.activeLanguage.folderName.StartsWith("Korean", StringComparison.OrdinalIgnoreCase);
-
         private static void ButtonPrefix(string __0, ref string __1, ref string __2)
         {
-            if (__0 != ButtonName || !IsKorean) return;
+            if (__0 != ButtonName || !KoreanTranslation.IsActive)
+                return;
             __1 = "KoRimUtility.CE.MainButton.Label".Translate();
             __2 = "KoRimUtility.CE.MainButton.Description".Translate();
         }
 
         private static void ButtonPostfix(string __0, string __1, string __2, MainButtonDef __result)
         {
-            if (__0 != ButtonName || !IsKorean || __result == null) return;
+            if (__0 != ButtonName || !KoreanTranslation.IsActive || __result == null)
+                return;
             // CE returns an existing Def without updating its text. Also clear
             // LabelCap if another mod or an earlier initialization already read it.
-            __result.label = __1;
-            __result.description = __2;
-            __result.ClearCachedData();
+            UpdateLabel(__result, __1, __2);
             if (__result.hotKey?.defName == ButtonName)
-            {
-                __result.hotKey.label = __1;
-                __result.hotKey.description = __2;
-                __result.hotKey.ClearCachedData();
-            }
+                UpdateLabel(__result.hotKey, __1, __2);
+        }
+
+        private static void UpdateLabel(Def def, string label, string description)
+        {
+            def.label = label;
+            def.description = description;
+            def.ClearCachedData();
         }
     }
 }

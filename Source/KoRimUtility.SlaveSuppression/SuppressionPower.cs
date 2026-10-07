@@ -23,7 +23,8 @@ namespace KoRimUtility.SlaveSuppression
         internal static PowerBreakdown Evaluate(Pawn pawn, bool includeAuthority = true)
         {
             var result = new PowerBreakdown();
-            if (pawn?.RaceProps?.Humanlike != true) return result;
+            if (pawn?.RaceProps?.Humanlike != true)
+                return result;
             var manipulation = Capacity(pawn, PawnCapacityDefOf.Manipulation);
             var moving = Capacity(pawn, PawnCapacityDefOf.Moving);
             var sight = Capacity(pawn, PawnCapacityDefOf.Sight);
@@ -39,7 +40,8 @@ namespace KoRimUtility.SlaveSuppression
             // Count the actual capability improvement, not the price of the implant a second time.
             result.augmentation = 0.06f * Mathf.Clamp01((Mathf.Max(0f, manipulation - 1f) +
                 Mathf.Max(0f, moving - 1f) + Mathf.Max(0f, sight - 1f)) / 1.5f) * readiness;
-            if (!includeAuthority) return result;
+            if (!includeAuthority)
+                return result;
             if (ModsConfig.RoyaltyActive && pawn.royalty?.MostSeniorTitle != null)
                 result.status = SuppressionRules.TitleBonus(pawn.royalty.MostSeniorTitle.def.seniority);
             if (pawn.Ideo != null)
@@ -67,11 +69,13 @@ namespace KoRimUtility.SlaveSuppression
         {
             var best = pawn.GetStatValue(StatDefOf.MeleeDPS);
             var weapon = pawn.equipment?.Primary;
-            if (weapon?.def.Verbs == null) return best;
+            if (weapon?.def.Verbs == null)
+                return best;
             foreach (var verb in weapon.def.Verbs)
             {
                 var projectile = verb.defaultProjectile?.projectile;
-                if (projectile == null || projectile.damageDef?.harmsHealth != true) continue;
+                if (projectile == null || projectile.damageDef?.harmsHealth != true)
+                    continue;
                 var burst = Mathf.Max(1, verb.burstShotCount);
                 var cycle = verb.warmupTime * weapon.GetStatValue(StatDefOf.RangedWeapon_WarmupMultiplier) *
                     pawn.GetStatValue(StatDefOf.AimingDelayFactor) + weapon.GetStatValue(StatDefOf.RangedWeapon_Cooldown) +
@@ -87,12 +91,14 @@ namespace KoRimUtility.SlaveSuppression
         private static float Armor(Pawn pawn)
         {
             var naturalArmor = pawn.GetStatValue(StatDefOf.ArmorRating_Sharp);
-            if (pawn.apparel == null) return naturalArmor;
+            if (pawn.apparel == null)
+                return naturalArmor;
             var weighted = 0f;
             var coverage = 0f;
             foreach (var part in pawn.RaceProps.body.AllParts)
             {
-                if (part.depth != BodyPartDepth.Outside || part.coverageAbs <= 0f) continue;
+                if (part.depth != BodyPartDepth.Outside || part.coverageAbs <= 0f)
+                    continue;
                 var best = naturalArmor;
                 foreach (var apparel in pawn.apparel.WornApparel)
                     if (apparel.def.apparel.CoversBodyPart(part))
@@ -114,7 +120,8 @@ namespace KoRimUtility.SlaveSuppression
 
         public override string ExplanationPart(StatRequest req)
         {
-            if (!SuppressionPatches.Installed || !(req.Thing is Pawn pawn)) return null;
+            if (!SuppressionPatches.Installed || !(req.Thing is Pawn pawn))
+                return null;
             var values = SuppressionPower.Evaluate(pawn);
             var text = new StringBuilder();
             Add(text, "Combat", values.combat);

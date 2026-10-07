@@ -1,8 +1,11 @@
 PYTHON ?= python3
 DOTNET ?= dotnet
+COMPATIBILITY_MODULES := MainButtons CharacterEditor MedicalIcons FoodAlert RimJobWorld SlaveSuppression
+COMPATIBILITY_BUILDS := $(addprefix build-,$(COMPATIBILITY_MODULES))
 .DEFAULT_GOAL := check
 
-.PHONY: check test test-compatibility compatibility pack install preview
+.PHONY: check test test-python test-core compatibility pack install preview
+.PHONY: $(COMPATIBILITY_BUILDS)
 preview:
 	rsvg-convert Artwork/Preview.svg -o About/Preview.png
 	rsvg-convert Artwork/Workshop-Preview.svg -o Artwork/Workshop-Preview.png
@@ -11,24 +14,18 @@ preview:
 check:
 	$(PYTHON) tools/mod.py check
 
-test:
+test: test-python test-core
+
+test-python:
 	$(PYTHON) -m unittest discover -s tests -v
 
-compatibility:
-	$(DOTNET) build Source/KoRimUtility.MainButtons -c Release
-	$(DOTNET) build Source/KoRimUtility.CharacterEditor -c Release
-	$(DOTNET) build Source/KoRimUtility.MedicalIcons -c Release
-	$(DOTNET) build Source/KoRimUtility.FoodAlert -c Release
-	$(DOTNET) build Source/KoRimUtility.RimJobWorld -c Release
-	$(DOTNET) build Source/KoRimUtility.SlaveSuppression -c Release
+test-core:
+	$(DOTNET) run --project tests/CoreLogic -c Release
 
-test-compatibility:
-	$(DOTNET) run --project tests/MainButtonsCompatibility -c Release
-	$(DOTNET) run --project tests/CharacterEditorCompatibility -c Release -- "$(CURDIR)"
-	$(DOTNET) run --project tests/MedicalIconsCompatibility -c Release
-	$(DOTNET) run --project tests/FoodAlertCompatibility -c Release -- "$(CURDIR)"
-	$(DOTNET) run --project tests/RimJobWorldCompatibility -c Release -- "$(CURDIR)"
-	$(DOTNET) run --project tests/SlaveSuppressionCompatibility -c Release -- "$(CURDIR)"
+compatibility: $(COMPATIBILITY_BUILDS)
+
+$(COMPATIBILITY_BUILDS): build-%:
+	$(DOTNET) build Source/KoRimUtility.$* -c Release
 
 pack: check compatibility
 	$(PYTHON) tools/mod.py pack

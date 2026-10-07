@@ -12,6 +12,7 @@ from zipfile import ZipFile
 ROOT = Path(__file__).resolve().parents[1]
 STAGING = ROOT / 'dist/workshop'
 MANIFEST = STAGING / 'item.vdf'
+RIMWORLD_APP_ID = '294100'
 
 
 def item_id(value):
@@ -27,42 +28,50 @@ def quote(value):
     return '"' + value.replace('\\', '\\\\').replace('"', '\\"').replace('\r', '') + '"'
 
 
-def prepare(archive, destination, published_id, change_note, description, *, preview_path=None):
-    published_id = item_id(published_id)
-    if destination.exists():
-        raise ValueError(f'새 스테이징 폴더가 필요합니다: {destination}')
+def read_package(archive):
+    files = {}
     with ZipFile(archive) as zipped:
-        files = {}
         for info in zipped.infolist():
             path = PurePosixPath(info.filename)
-            if path.is_absolute() or '..' in path.parts or '\\' in info.filename or path.parts[0] != 'KoRimUtility':
+            if (not path.parts or path.is_absolute() or '..' in path.parts or
+                    '\\' in info.filename or path.parts[0] != 'KoRimUtility'):
                 raise ValueError('KoRimUtility ZIP 내부 경로가 올바르지 않습니다.')
             if info.is_dir():
                 continue
             if len(path.parts) < 2 or info.filename in files:
                 raise ValueError('중복 또는 잘못된 ZIP 파일 경로입니다.')
             files[info.filename] = zipped.read(info)
-        about = ET.fromstring(files['KoRimUtility/About/About.xml'])
-        if about.findtext('packageId') != 'snowykte0426.korimutility':
-            raise ValueError('KoRim Utility 통합 패키지가 아닙니다.')
-    preview = (preview_path.read_bytes() if preview_path is not None
-               else files['KoRimUtility/About/Preview.png'])
+    return files
+
+
+def validate_preview(preview, *, square):
     if not preview.startswith(b'\x89PNG\r\n\x1a\n') or len(preview) >= 1024 * 1024:
         raise ValueError('미리보기는 1 MiB 미만의 PNG여야 합니다.')
-    if preview_path is not None:
+    if square:
         width = int.from_bytes(preview[16:20], 'big')
         height = int.from_bytes(preview[20:24], 'big')
         if len(preview) < 24 or preview[12:16] != b'IHDR' or width == 0 or width != height:
             raise ValueError('창작마당 전용 미리보기는 1:1 비율의 정사각형 PNG여야 합니다.')
+
+
+def prepare(archive, destination, published_id, change_note, description, *, preview_path=None):
+    published_id = item_id(published_id)
+    if destination.exists():
+        raise ValueError(f'새 스테이징 폴더가 필요합니다: {destination}')
+    files = read_package(archive)
+    about = ET.fromstring(files['KoRimUtility/About/About.xml'])
+    if about.findtext('packageId') != 'snowykte0426.korimutility':
+        raise ValueError('KoRim Utility 통합 패키지가 아닙니다.')
+    preview = (preview_path.read_bytes() if preview_path is not None
+               else files['KoRimUtility/About/Preview.png'])
+    validate_preview(preview, square=preview_path is not None)
     content = destination.resolve() / 'KoRimUtility'
     preview_file = (destination.resolve() / 'Preview.png' if preview_path is not None
                     else content / 'About/Preview.png')
     fields = {
-        'appid': '294100',
+        'appid': RIMWORLD_APP_ID,
         'publishedfileid': published_id,
         'contentfolder': str(content),
-        # Primary listing thumbnail; the wide detail-gallery image is a separate
-        # additional Steam preview, preserved by these regular item updates.
         'previewfile': str(preview_file),
         'title': about.findtext('name'),
         'description': description,
@@ -122,8 +131,6 @@ def upload_diagnostic(output, returncode):
             'no connection', 'failed to connect', 'connection timeout')),
         'access_denied': 'access denied' in lowered or 'insufficient privilege' in lowered,
     }
-    # A fixed vocabulary reveals the Workshop failure stage without copying
-    # account names, paths, IDs, tokens, or arbitrary Steam output into CI logs.
     vocabulary = {'preparing', 'update', 'content', 'uploading', 'preview', 'image',
                   'committing', 'success', 'successfully', 'published', 'file', 'item',
                   'workshop', 'ok', 'error', 'failed', 'complete', 'completed', 'invalid',
@@ -136,6 +143,10 @@ def upload_diagnostic(output, returncode):
             + '; workshop_stage_tokens=' + ','.join(tokens))
 
 
+def manifest_values(text, key):
+    return re.findall(r'"' + re.escape(key) + r'"\s+"([0-9]+)"', text)
+
+
 def upload(steamcmd, manifest, published_id):
     published_id = item_id(published_id)
     username = os.environ.get('STEAM_USERNAME', '')
@@ -143,9 +154,9 @@ def upload(steamcmd, manifest, published_id):
     if not re.fullmatch(r'[A-Za-z0-9_]+', username) or not session.strip():
         raise ValueError('STEAM_USERNAME과 STEAM_CONFIG_VDF Secrets를 설정하세요.')
     config_text = manifest.read_text(encoding='utf-8')
-    if re.findall(r'"publishedfileid"\s+"([0-9]+)"', config_text) != [published_id]:
+    if manifest_values(config_text, 'publishedfileid') != [published_id]:
         raise ValueError('업로드 대상 ID가 준비된 manifest와 다릅니다.')
-    if re.findall(r'"appid"\s+"([0-9]+)"', config_text) != ['294100']:
+    if manifest_values(config_text, 'appid') != [RIMWORLD_APP_ID]:
         raise ValueError('RimWorld용 manifest가 아닙니다.')
     steamcmd = steamcmd.resolve(strict=True)
     config = steamcmd.parent / 'config/config.vdf'
@@ -163,7 +174,7 @@ def upload(steamcmd, manifest, published_id):
         result = subprocess.run(command, cwd=steamcmd.parent, env=environment,
                                 stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, text=True, errors='replace', timeout=600)
-        final_target = re.findall(r'"publishedfileid"\s+"([0-9]+)"', manifest.read_text(encoding='utf-8'))
+        final_target = manifest_values(manifest.read_text(encoding='utf-8'), 'publishedfileid')
         if final_target != [published_id]:
             raise ValueError('Steam 업로드 성공을 확인하지 못했습니다: 업로드 후 manifest의 대상 ID가 달라졌습니다.')
         if result.returncode != 0 or not upload_succeeded(result.stdout, published_id):

@@ -6,7 +6,6 @@ using Verse;
 
 namespace KoRimUtility.MedicalIcons
 {
-    // Loaded only with RJW; Harmony is already an RJW dependency.
     [StaticConstructorOnStartup]
     internal static class MedicalIconUI
     {
@@ -60,7 +59,8 @@ namespace KoRimUtility.MedicalIcons
                     if (!Baked.TryGetValue(material, out var texture))
                     {
                         texture = MedicalIconTexture.Bake(material);
-                        if (texture == null) continue;
+                        if (texture == null)
+                            continue;
                         Baked.Add(material, texture);
                     }
                     Icons[def] = texture;

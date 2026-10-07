@@ -5,13 +5,12 @@ using Verse;
 
 namespace KoRimUtility.CharacterEditor
 {
-    // This assembly is loaded only with void.charactereditor, which already requires Harmony.
     [StaticConstructorOnStartup]
     internal static class CharacterEditorTranslation
     {
-        private static FieldInfo casketDescription;
-        private static FieldInfo graveDescription;
-        private static FieldInfo enterGrave;
+        private static readonly FieldInfo CasketDescription;
+        private static readonly FieldInfo GraveDescription;
+        private static readonly FieldInfo EnterGrave;
 
         static CharacterEditorTranslation()
         {
@@ -20,11 +19,12 @@ namespace KoRimUtility.CharacterEditor
             var createBuilding = thingTool == null ? null : AccessTools.Method(thingTool, "CreateBuilding",
                 new[] { typeof(string), typeof(string), typeof(string), typeof(Type), typeof(string) });
             var updateLabels = labels == null ? null : AccessTools.Method(labels, "UpdateLabels", Type.EmptyTypes);
-            casketDescription = labels == null ? null : AccessTools.Field(labels, "DESC_CASCET");
-            graveDescription = labels == null ? null : AccessTools.Field(labels, "DESC_GRAVE");
-            enterGrave = labels == null ? null : AccessTools.Field(labels, "ENTER_ZOMBGRELLA");
+            CasketDescription = labels == null ? null : AccessTools.Field(labels, "DESC_CASCET");
+            GraveDescription = labels == null ? null : AccessTools.Field(labels, "DESC_GRAVE");
+            EnterGrave = labels == null ? null : AccessTools.Field(labels, "ENTER_ZOMBGRELLA");
             if (createBuilding == null || updateLabels == null ||
-                !IsStringField(casketDescription) || !IsStringField(graveDescription) || !IsStringField(enterGrave))
+                !LabelFields.IsWritableString(CasketDescription) || !LabelFields.IsWritableString(GraveDescription) ||
+                !LabelFields.IsWritableString(EnterGrave))
             {
                 Log.Warning("[KoRim Utility] Character Editor API changed; building translations were not installed.");
                 return;
@@ -43,19 +43,11 @@ namespace KoRimUtility.CharacterEditor
             }
         }
 
-        private static bool IsStringField(FieldInfo field)
-        {
-            return field != null && field.IsStatic && !field.IsLiteral && !field.IsInitOnly && field.FieldType == typeof(string);
-        }
-
-        private static bool IsKorean => LanguageDatabase.activeLanguage?.folderName != null &&
-            LanguageDatabase.activeLanguage.folderName.StartsWith("Korean", StringComparison.OrdinalIgnoreCase);
-
         // Translate before CE generates blueprint, reinstall blueprint and frame labels.
         // Only display arguments change; defName is also the save identifier and must stay intact.
         private static void BuildingPrefix(string __0, ref string __1, ref string __2)
         {
-            if (!IsKorean || (__0 != "Zombrella" && __0 != "Zombgrella"))
+            if (!KoreanTranslation.IsActive || (__0 != "Zombrella" && __0 != "Zombgrella"))
                 return;
             __1 = ("KoRimUtility.CE." + __0 + ".Label").Translate();
             __2 = ("KoRimUtility.CE." + __0 + ".Description").Translate();
@@ -63,11 +55,11 @@ namespace KoRimUtility.CharacterEditor
 
         private static void LabelsPostfix()
         {
-            if (!IsKorean)
+            if (!KoreanTranslation.IsActive)
                 return;
-            casketDescription.SetValue(null, "KoRimUtility.CE.Zombrella.Description".Translate().ToString());
-            graveDescription.SetValue(null, "KoRimUtility.CE.Zombgrella.Description".Translate().ToString());
-            enterGrave.SetValue(null, "KoRimUtility.CE.EnterZombgrella".Translate().ToString());
+            CasketDescription.SetValue(null, "KoRimUtility.CE.Zombrella.Description".Translate().ToString());
+            GraveDescription.SetValue(null, "KoRimUtility.CE.Zombgrella.Description".Translate().ToString());
+            EnterGrave.SetValue(null, "KoRimUtility.CE.EnterZombgrella".Translate().ToString());
         }
     }
 }

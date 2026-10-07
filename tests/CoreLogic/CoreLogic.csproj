@@ -4,7 +4,6 @@
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.4.1" />
-    <Compile Include="../../Source/KoRimUtility.CharacterEditor/*.cs" Link="%(Filename)%(Extension)" />
+    <Compile Include="../../Source/KoRimUtility.SlaveSuppression/SuppressionRules.cs" Link="SuppressionRules.cs" />
   </ItemGroup>
 </Project>

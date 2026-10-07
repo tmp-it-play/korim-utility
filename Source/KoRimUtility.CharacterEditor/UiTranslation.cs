@@ -21,7 +21,8 @@ namespace KoRimUtility.CharacterEditor
                 return;
             }
 
-            Fields = labels.GetFields(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic);
+            Fields = Array.FindAll(labels.GetFields(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic),
+                LabelFields.IsWritableString);
             var harmony = new Harmony("snowykte0426.korimutility.charactereditor.ui");
             try
             {
@@ -38,14 +39,11 @@ namespace KoRimUtility.CharacterEditor
         // COLONISTS into ListName: the faction filters compare those strings directly.
         private static void EnglishPostfix()
         {
-            var language = LanguageDatabase.activeLanguage?.folderName;
-            if (language == null || !language.StartsWith("Korean", StringComparison.OrdinalIgnoreCase))
+            if (!KoreanTranslation.IsActive)
                 return;
 
             foreach (var field in Fields)
             {
-                if (field.FieldType != typeof(string) || field.IsLiteral || field.IsInitOnly)
-                    continue;
                 var key = KeyPrefix + field.Name;
                 if (key.CanTranslate())
                     field.SetValue(null, key.Translate().ToString());

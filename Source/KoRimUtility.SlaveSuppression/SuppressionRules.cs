@@ -13,7 +13,8 @@ namespace KoRimUtility.SlaveSuppression
 
         internal static float Clamp(float value, float min, float max, float fallback = 0f)
         {
-            if (float.IsNaN(value) || float.IsInfinity(value)) value = fallback;
+            if (float.IsNaN(value) || float.IsInfinity(value))
+                value = fallback;
             return Math.Max(min, Math.Min(max, value));
         }
 
@@ -32,8 +33,8 @@ namespace KoRimUtility.SlaveSuppression
         internal static float SuccessChance(int social, float power, float slaveCombat,
             float suppression, float difficulty)
         {
-            // Difficulty changes only the odds after the fixed eligibility gate.
-            if (!MeetsMinimum(social, power)) return 0f;
+            if (!MeetsMinimum(social, power))
+                return 0f;
             var resistance = 0.12f + Clamp(slaveCombat, 0f, 0.36f) +
                 0.15f * (1f - Clamp(suppression, 0f, 1f));
             var ratio = resistance * Clamp(difficulty, MinimumDifficulty, MaximumDifficulty, 1f) /
@@ -52,7 +53,8 @@ namespace KoRimUtility.SlaveSuppression
 
         internal static int MoodStage(float previousSuppression, bool masochist, bool approvesSlavery)
         {
-            if (masochist) return 6;
+            if (masochist)
+                return 6;
             var severity = previousSuppression < 0.15f ? 2 : previousSuppression < 0.30f ? 1 : 0;
             return severity + (approvesSlavery ? 3 : 0);
         }

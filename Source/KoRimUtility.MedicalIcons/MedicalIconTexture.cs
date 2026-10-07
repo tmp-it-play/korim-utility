@@ -49,8 +49,10 @@ namespace KoRimUtility.MedicalIcons
             }
             finally
             {
-                if (readable != null && readable != source) Object.Destroy(readable);
-                if (readableMask != null && readableMask != mask) Object.Destroy(readableMask);
+                if (readable != null && readable != source)
+                    Object.Destroy(readable);
+                if (readableMask != null && readableMask != mask)
+                    Object.Destroy(readableMask);
             }
         }
     }

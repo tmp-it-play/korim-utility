@@ -9,11 +9,15 @@ namespace KoRimUtility.SlaveSuppression
     [StaticConstructorOnStartup]
     internal static class SuppressionPatches
     {
-        internal static bool Installed { get; private set; }
+        internal static bool Installed
+        {
+            get; private set;
+        }
 
         static SuppressionPatches()
         {
-            if (!ModsConfig.IdeologyActive) return;
+            if (!ModsConfig.IdeologyActive)
+                return;
             var harmony = new Harmony("snowykte0426.korimutility.slavesuppression");
             try
             {
@@ -32,7 +36,8 @@ namespace KoRimUtility.SlaveSuppression
 
         private static void JobPostfix(Pawn pawn, Thing t, ref Job __result)
         {
-            if (__result == null || !(t is Pawn slave) || !slave.IsSlaveOfColony) return;
+            if (__result == null || !(t is Pawn slave) || !slave.IsSlaveOfColony)
+                return;
             if (!SuppressionUtility.NeedsSuppression(slave))
             {
                 __result = null;
@@ -48,7 +53,8 @@ namespace KoRimUtility.SlaveSuppression
 
         private static bool InteractionPrefix(Pawn initiator, Pawn recipient)
         {
-            if (initiator?.Faction?.IsPlayer != true || recipient?.IsSlaveOfColony != true) return true;
+            if (initiator?.Faction?.IsPlayer != true || recipient?.IsSlaveOfColony != true)
+                return true;
             SuppressionUtility.TrySuppress(initiator, recipient);
             return false;
         }

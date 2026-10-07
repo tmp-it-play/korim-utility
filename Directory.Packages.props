@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" />
+    <PackageVersion Include="Krafs.Rimworld.Ref" Version="1.6.4523" />
+    <PackageVersion Include="Lib.Harmony" Version="2.4.1" />
+  </ItemGroup>
+</Project>

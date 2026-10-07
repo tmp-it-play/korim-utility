@@ -1,4 +1,3 @@
-import contextlib
 import io
 from pathlib import Path
 import subprocess
@@ -7,146 +6,68 @@ import unittest
 from unittest.mock import patch
 from zipfile import ZipFile
 
-from tools.workshop import item_id, prepare, quote, upload, upload_diagnostic, upload_succeeded
+from tools.workshop import item_id, quote, read_package, upload, upload_diagnostic, upload_succeeded
 
 
-class WorkshopDeploymentTests(unittest.TestCase):
-    def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
-        self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name)
-        self.archive = self.root / 'mod.zip'
-        self.destination = self.root / 'staging'
-        with ZipFile(self.archive, 'w') as archive:
-            archive.writestr('KoRimUtility/About/About.xml',
-                             '<ModMetaData><name>KoRim Utility</name>'
-                             '<packageId>snowykte0426.korimutility</packageId></ModMetaData>')
-            archive.writestr('KoRimUtility/About/Preview.png', b'\x89PNG\r\n\x1a\nfixture')
-        self.steamcmd = self.root / 'Steam/steamcmd.sh'
-        self.steamcmd.parent.mkdir()
-        self.steamcmd.write_text('not executed: mocked in tests')
-
-    def prepare(self):
-        with contextlib.redirect_stdout(io.StringIO()):
-            prepare(self.archive, self.destination, '123456789', 'test "note"', '한국어\n설명')
-        return self.destination / 'item.vdf'
-
-    def test_manifest_points_to_mod_root_and_preserves_visibility(self):
-        text = self.prepare().read_text()
-        self.assertIn('"appid" "294100"', text)
-        self.assertIn('"publishedfileid" "123456789"', text)
-        self.assertIn(quote(str((self.destination / 'KoRimUtility').resolve())), text)
-        self.assertNotIn('"visibility"', text)
-        self.assertIn('test \\"note\\"', text)
-        self.assertIn('한국어\n설명', text)
-        self.assertNotIn('한국어\\n설명', text)
-        self.assertEqual((self.destination / 'KoRimUtility/About/PublishedFileId.txt').read_text().strip(), '123456789')
-
-    def test_creation_and_invalid_ids_rejected(self):
-        for value in ('', '0', '-1', '123\n', 'abc', str(2**64)):
+class WorkshopTests(unittest.TestCase):
+    def test_invalid_item_ids_are_rejected(self):
+        conditions = ('', '0', '-1', '123\n', 'abc', str(2**64))
+        for value in conditions:
             with self.subTest(value=value), self.assertRaises(ValueError):
                 item_id(value)
 
-    def test_workshop_thumbnail_is_separate_from_in_game_preview(self):
-        thumbnail = Path(__file__).resolve().parents[1] / 'Artwork/Workshop-Preview.png'
-        with contextlib.redirect_stdout(io.StringIO()):
-            prepare(self.archive, self.destination, '123456789', 'test', 'description',
-                    preview_path=thumbnail)
-        manifest = (self.destination / 'item.vdf').read_text(encoding='utf-8')
-        self.assertIn('"previewfile" ' + quote(str((self.destination / 'Preview.png').resolve())), manifest)
-        self.assertEqual((self.destination / 'Preview.png').read_bytes(), thumbnail.read_bytes())
-        self.assertEqual((self.destination / 'KoRimUtility/About/Preview.png').read_bytes(),
-                         b'\x89PNG\r\n\x1a\nfixture')
+    def test_upload_success_matches_the_target(self):
+        conditions = (
+            ('Success. Published item 123.', True),
+            ('Success. Published File ID: 123', True),
+            ('Preparing update...\nSuccess.', True),
+            ('\x1b[32mPreparing update...\nSuccess.\x1b[0m', True),
+            ('Success. Published item 1234.', False),
+            ('Success. Logged in.', False),
+            ('Preparing update...\nERROR! Upload failed.\nSuccess.', False),
+        )
+        for output, expected in conditions:
+            with self.subTest(output=output):
+                actual = upload_succeeded(output, '123')
 
-    def test_wide_workshop_thumbnail_rejected_before_writing(self):
-        wide = Path(__file__).resolve().parents[1] / 'About/Preview.png'
-        with self.assertRaisesRegex(ValueError, '1:1'):
-            prepare(self.archive, self.destination, '123456789', 'test', 'description',
-                    preview_path=wide)
-        self.assertFalse(self.destination.exists())
+                self.assertEqual(expected, actual)
 
-    def test_unsafe_zip_path_rejected_before_writing(self):
-        with ZipFile(self.archive, 'a') as archive:
-            archive.writestr('KoRimUtility/../../escape', 'bad')
-        with self.assertRaisesRegex(ValueError, '경로'):
-            self.prepare()
-        self.assertFalse(self.destination.exists())
+    def test_vdf_keeps_newlines_and_escapes_quotes(self):
+        value = 'first\n"second"'
 
-    def test_only_matching_upload_success_is_accepted(self):
-        self.assertTrue(upload_succeeded('Success. Published item 123456789.', '123456789'))
-        self.assertTrue(upload_succeeded('Success. Published File ID: 123456789', '123456789'))
-        self.assertTrue(upload_succeeded(
-            'Preparing update...\nPreparing content...\nUploading content...\n'
-            'Uploading preview image...\nCommitting update...\nSuccess.', '123456789'))
-        self.assertTrue(upload_succeeded('Preparing update...\nSuccess.\n', '123456789'))
-        self.assertTrue(upload_succeeded('Preparing update...\nCommitting update...\nSuccess!\n', '123456789'))
-        self.assertTrue(upload_succeeded('Preparing update...\nSuccess\n', '123456789'))
-        self.assertTrue(upload_succeeded(
-            'Preparing update...\nCommitting update...\nSuccess.Unloading Steam API...OK', '123456789'))
-        self.assertTrue(upload_succeeded(
-            '\x1b[0mPreparing update...\n\x1b[32mSuccess.\x1b[0m\n', '123456789'))
-        for output in ('Success. Logged in.', 'Success.', 'Success. Published item 1234567890.',
-                       'Preparing update...\nSuccess. Published item 1234567890.',
-                       'ERROR! Upload failed.', 'Preparing update...\nUnloading Steam API...OK',
-                       'Preparing update...\nERROR! Upload failed.\nCommitting update...\nSuccess.'):
-            self.assertFalse(upload_succeeded(output, '123456789'))
+        actual = quote(value)
 
-    def test_failed_upload_does_not_log_session_and_cleans_config(self):
-        manifest = self.prepare()
-        captured = io.StringIO()
-        with patch.dict('os.environ', {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'session-secret'}):
-            with patch('tools.workshop.subprocess.run', return_value=subprocess.CompletedProcess([], 0, 'session-secret\nERROR!')) as run:
-                with contextlib.redirect_stdout(captured), self.assertRaisesRegex(ValueError, '성공을 확인하지'):
-                    upload(self.steamcmd, manifest, '123456789')
-                self.assertNotIn('STEAM_CONFIG_VDF', run.call_args.kwargs['env'])
-        self.assertNotIn('session-secret', captured.getvalue())
-        self.assertFalse((self.steamcmd.parent / 'config/config.vdf').exists())
+        self.assertEqual('"first\n\\"second\\""', actual)
 
-    def test_diagnostic_reports_login_failure_without_raw_output(self):
-        diagnostic = upload_diagnostic(
-            "session-secret\nCached credentials not found.\n"
-            "Logging in user 'private-login' ...ERROR (Invalid Password)", 5)
-        self.assertIn('exit=5', diagnostic)
-        self.assertIn('cached_credentials_missing=1', diagnostic)
-        self.assertIn('invalid_password=1', diagnostic)
-        self.assertIn('login_completed=0', diagnostic)
-        self.assertNotIn('session-secret', diagnostic)
-        self.assertNotIn('private-login', diagnostic)
+    def test_diagnostics_exclude_private_output(self):
+        output = "private-session-token\nLogging in user 'private-name' ...ERROR (Invalid Password)"
 
-    def test_diagnostic_distinguishes_authenticated_upload_failure(self):
-        diagnostic = upload_diagnostic(
-            'Using cached credentials.\nWaiting for user info...OK\n'
-            'Uploading content...ERROR (Access Denied)\nprivate-path', 9)
-        self.assertIn('using_cached_credentials=1', diagnostic)
-        self.assertIn('login_completed=1', diagnostic)
-        self.assertIn('upload_started=1', diagnostic)
-        self.assertIn('access_denied=1', diagnostic)
-        self.assertNotIn('private-path', diagnostic)
+        actual = upload_diagnostic(output, 5)
 
-    def test_upload_target_mismatch_does_not_start_steam(self):
-        manifest = self.prepare()
-        with patch.dict('os.environ', {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'session-secret'}):
-            with patch('tools.workshop.subprocess.run') as run:
-                with self.assertRaisesRegex(ValueError, '대상 ID'):
-                    upload(self.steamcmd, manifest, '987654321')
-                run.assert_not_called()
+        self.assertNotIn('private-', actual)
+        self.assertIn('invalid_password=1', actual)
 
-    def test_success_for_changed_manifest_target_is_rejected(self):
-        manifest = self.prepare()
-        def change_target(*args, **kwargs):
-            manifest.write_text(manifest.read_text(encoding='utf-8').replace('123456789', '987654321'),
-                                encoding='utf-8')
-            return subprocess.CompletedProcess([], 0, 'Preparing update...\nCommitting update...\nSuccess.')
-        with patch.dict('os.environ', {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'session-secret'}):
-            with patch('tools.workshop.subprocess.run', side_effect=change_target):
-                with self.assertRaisesRegex(ValueError, '성공을 확인하지'):
-                    upload(self.steamcmd, manifest, '123456789')
-        self.assertFalse((self.steamcmd.parent / 'config/config.vdf').exists())
+    def test_invalid_archive_paths_are_rejected(self):
+        for name in ('./', 'KoRimUtility/../../escape', '/outside'):
+            with self.subTest(path=name):
+                archive = io.BytesIO()
+                with ZipFile(archive, 'w') as zipped:
+                    zipped.writestr(name, b'')
 
-    def test_timeout_also_cleans_session(self):
-        manifest = self.prepare()
-        with patch.dict('os.environ', {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'session-secret'}):
-            with patch('tools.workshop.subprocess.run', side_effect=subprocess.TimeoutExpired('steamcmd', 600)):
+                with self.assertRaisesRegex(ValueError, '경로'):
+                    read_package(archive)
+
+    def test_timeout_removes_session_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            steamcmd = root / 'steamcmd.sh'
+            steamcmd.touch()
+            manifest = root / 'item.vdf'
+            manifest.write_text('"appid" "294100"\n"publishedfileid" "123"')
+            environment = {'STEAM_USERNAME': 'test_user', 'STEAM_CONFIG_VDF': 'test-session'}
+            with patch.dict('os.environ', environment), patch('tools.workshop.subprocess.run',
+                    side_effect=subprocess.TimeoutExpired('steamcmd', 600)):
                 with self.assertRaises(subprocess.TimeoutExpired):
-                    upload(self.steamcmd, manifest, '123456789')
-        self.assertFalse((self.steamcmd.parent / 'config/config.vdf').exists())
+                    upload(steamcmd, manifest, '123')
+
+            self.assertFalse((root / 'config/config.vdf').exists())

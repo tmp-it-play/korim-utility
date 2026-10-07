@@ -5,22 +5,32 @@ namespace KoRimUtility.SlaveSuppression
 {
     internal static class SuppressionUtility
     {
-        internal static bool NeedsSuppression(Pawn slave)
+        internal static bool NeedsSuppression(Pawn slave) => SuppressionNeed(slave) != null;
+
+        private static Need_Suppression SuppressionNeed(Pawn slave)
         {
-            return slave?.IsSlaveOfColony == true &&
-                slave.guest?.slaveInteractionMode == SlaveInteractionModeDefOf.Suppress &&
-                slave.needs?.TryGetNeed<Need_Suppression>()?.CanBeSuppressedNow == true;
+            if (slave?.IsSlaveOfColony != true ||
+                slave.guest?.slaveInteractionMode != SlaveInteractionModeDefOf.Suppress)
+                return null;
+            var need = slave.needs?.TryGetNeed<Need_Suppression>();
+            return need?.CanBeSuppressedNow == true ? need : null;
         }
 
-        internal static bool MeetsRequirements(Pawn pawn)
+        internal static bool MeetsRequirements(Pawn pawn) => TryGetWardenStats(pawn, out _, out _);
+
+        private static bool TryGetWardenStats(Pawn pawn, out int social, out float power)
         {
-            return pawn?.IsFreeColonist == true && !pawn.IsSlave && !pawn.IsPrisoner &&
-                !pawn.Dead && !pawn.Downed && !pawn.InMentalState &&
-                !pawn.WorkTypeIsDisabled(WorkTypeDefOf.Warden) &&
-                pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
-                pawn.health.capacities.CapableOf(PawnCapacityDefOf.Talking) &&
-                SuppressionRules.MeetsMinimum(SuppressionPower.Skill(pawn, SkillDefOf.Social),
-                    pawn.GetStatValue(StatDefOf.SuppressionPower));
+            social = 0;
+            power = 0f;
+            if (pawn?.IsFreeColonist != true || pawn.IsSlave || pawn.IsPrisoner ||
+                pawn.Dead || pawn.Downed || pawn.InMentalState ||
+                pawn.WorkTypeIsDisabled(WorkTypeDefOf.Warden) ||
+                !pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) ||
+                !pawn.health.capacities.CapableOf(PawnCapacityDefOf.Talking))
+                return false;
+            social = SuppressionPower.Skill(pawn, SkillDefOf.Social);
+            power = pawn.GetStatValue(StatDefOf.SuppressionPower);
+            return SuppressionRules.MeetsMinimum(social, power);
         }
 
         internal static bool IsAssignedWarden(Pawn pawn)
@@ -30,19 +40,20 @@ namespace KoRimUtility.SlaveSuppression
 
         internal static void TrySuppress(Pawn warden, Pawn slave)
         {
-            if (!NeedsSuppression(slave)) return;
-            var need = slave.needs?.TryGetNeed<Need_Suppression>();
-            if (!MeetsRequirements(warden)) return;
+            var need = SuppressionNeed(slave);
+            if (need == null || !TryGetWardenStats(warden, out var social, out var power))
+                return;
             var before = need.CurLevelPercentage;
-            var power = warden.GetStatValue(StatDefOf.SuppressionPower);
-            var chance = SuppressionRules.SuccessChance(SuppressionPower.Skill(warden, SkillDefOf.Social),
+            var chance = SuppressionRules.SuccessChance(social,
                 power, SuppressionPower.Evaluate(slave, false).CombatTotal, before, SuppressionMod.Settings.difficulty);
-            // Only a real interaction consumes randomness; previews and alert scans never roll.
-            if (!Rand.Chance(chance)) return;
+            if (!Rand.Chance(chance))
+                return;
             var gain = SuppressionRules.Gain(power, before, SuppressionMod.Settings.gainMultiplier);
-            if (gain <= 0f) return;
+            if (gain <= 0f)
+                return;
             SlaveRebellionUtility.IncrementSuppression(need, warden, slave, gain);
-            if (need.CurLevelPercentage > before) SuppressionMemory.Apply(slave, before);
+            if (need.CurLevelPercentage > before)
+                SuppressionMemory.Apply(slave, before);
         }
     }
 }

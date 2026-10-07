@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using Verse;
@@ -64,8 +63,10 @@ namespace KoRimUtility.CharacterEditor
             try
             {
                 var patch = new HarmonyMethod(typeof(AdditionalUiTranslation), hook);
-                if (transpiler) harmony.Patch(method, transpiler: patch);
-                else harmony.Patch(method, prefix: patch);
+                if (transpiler)
+                    harmony.Patch(method, transpiler: patch);
+                else
+                    harmony.Patch(method, prefix: patch);
             }
             catch (Exception exception)
             {
@@ -74,16 +75,11 @@ namespace KoRimUtility.CharacterEditor
             }
         }
 
-        private static bool IsKorean => LanguageDatabase.activeLanguage?.folderName != null &&
-            LanguageDatabase.activeLanguage.folderName.StartsWith("Korean", StringComparison.OrdinalIgnoreCase);
-
         private static string TranslateOrOriginal(string key, string original)
         {
-            return IsKorean && (KeyPrefix + key).CanTranslate() ? (KeyPrefix + key).Translate().ToString() : original;
+            return KoreanTranslation.TranslateOrOriginal(KeyPrefix + key, original);
         }
 
-        // Only these two CE drawing methods are patched. Identifier strings such as
-        // "int" and reflection method names must pass through unchanged.
         private static IEnumerable<CodeInstruction> LiteralTranspiler(IEnumerable<CodeInstruction> instructions)
         {
             var translate = AccessTools.Method(typeof(AdditionalUiTranslation), nameof(TranslateLiteral));
@@ -102,7 +98,8 @@ namespace KoRimUtility.CharacterEditor
 
         private static void MessagePrefix(ref string __0)
         {
-            if (!IsKorean || __0 == null) return;
+            if (!KoreanTranslation.IsActive || __0 == null)
+                return;
             if (Messages.TryGetValue(__0, out var key))
             {
                 __0 = TranslateOrOriginal(key, __0);

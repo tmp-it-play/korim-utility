@@ -18,7 +18,8 @@ namespace KoRimUtility.SlaveSuppression
         internal static void Apply(Pawn slave, float previousSuppression)
         {
             var memories = slave.needs?.mood?.thoughts?.memories;
-            if (memories == null) return;
+            if (memories == null)
+                return;
             var masochist = slave.story?.traits?.HasTrait(SuppressionDefOf.Masochist) == true;
             var approvesSlavery = slave.Ideo?.HasPrecept(SuppressionDefOf.Slavery_Honorable) == true;
             var stage = SuppressionRules.MoodStage(previousSuppression, masochist, approvesSlavery);

@@ -13,17 +13,27 @@ ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_DIRS = ('About', 'Languages', 'Defs', 'Patches', 'Textures', 'Sounds')
 KEY = re.compile(r'^[A-Za-z_][A-Za-z0-9_.-]*$')
 TOKENS = re.compile(r'(?<!\{)\{[^{}]+\}(?!\})|\[[A-Za-z_][A-Za-z0-9_.]*\]|</?[A-Za-z][^<>]*>')
-CHARACTER_EDITOR_ASSEMBLY = 'Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll'
-MEDICAL_ICONS_ASSEMBLY = 'Integrations/RimJobWorld/Common/Assemblies/KoRimUtility.MedicalIcons.dll'
-MAIN_BUTTONS_ASSEMBLY = 'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll'
-FOOD_ALERT_ASSEMBLY = 'Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll'
-RJW_TRANSLATION_ASSEMBLY = 'Translations/RimJobWorld/Assemblies/KoRimUtility.RimJobWorld.dll'
-SLAVE_SUPPRESSION_ASSEMBLY = 'Integrations/SlaveSuppression/Assemblies/KoRimUtility.SlaveSuppression.dll'
+COMPATIBILITY_ASSEMBLIES = {
+    'Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll': 'Character Editor 번역',
+    'Integrations/RimJobWorld/Common/Assemblies/KoRimUtility.MedicalIcons.dll': '의료 아이콘 호환',
+    'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll': '하단 메뉴 UI',
+    'Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll': 'Food Alert 번역',
+    'Translations/RimJobWorld/Assemblies/KoRimUtility.RimJobWorld.dll': 'RJW 알림 번역',
+    'Integrations/SlaveSuppression/Assemblies/KoRimUtility.SlaveSuppression.dll': '노예 억압',
+}
 
 
 def tokens(text):
     """Conservative comparison: placeholders, simple grammar refs and rich text."""
     return Counter(TOKENS.findall(text))
+
+
+def language_scope(path):
+    if len(path.parts) >= 2 and path.parts[0] == 'Keyed':
+        return 'Keyed'
+    if len(path.parts) >= 3 and path.parts[0] == 'DefInjected':
+        return '/'.join(path.parts[:2])
+    raise ValueError(f'지원하지 않는 번역 경로: {path}')
 
 
 def read_language(folder):
@@ -33,9 +43,7 @@ def read_language(folder):
         rel = path.relative_to(folder)
         if rel.parts[0] not in ('Keyed', 'DefInjected'):
             continue
-        if rel.parts[0] == 'DefInjected' and len(rel.parts) < 3:
-            raise ValueError(f'{path}: DefInjected에는 Def 타입 폴더가 필요합니다.')
-        scope = 'Keyed' if rel.parts[0] == 'Keyed' else '/'.join(rel.parts[:2])
+        scope = language_scope(rel)
         root = ET.parse(path).getroot()
         if root.tag != 'LanguageData':
             raise ValueError(f'{path}: 루트는 LanguageData여야 합니다.')
@@ -67,6 +75,7 @@ def content_roots(root):
     if tree.tag != 'loadFolders':
         raise ValueError('LoadFolders.xml 루트는 loadFolders여야 합니다.')
     versions = ET.parse(root / 'About/About.xml').findall('supportedVersions/li')
+    resolved_root = root.resolve()
     roots = []
     for version in versions:
         section = tree.find('v' + version.text.strip())
@@ -76,7 +85,7 @@ def content_roots(root):
             relative = (node.text or '').strip()
             path = root if relative in ('', '/') else root / relative
             resolved = path.resolve()
-            if not resolved.is_relative_to(root.resolve()) or not path.is_dir():
+            if not resolved.is_relative_to(resolved_root) or not path.is_dir():
                 raise ValueError(f'잘못된 로드 폴더: {relative}')
             if path not in roots:
                 roots.append(path)
@@ -91,10 +100,11 @@ def combined_language(roots, language):
         relative_files = {path.relative_to(folder).as_posix().lower() for path in folder.rglob('*.xml')}
         # RimWorld merges a mod's load folders by relative file path before reading keys.
         # A later XML with the same path hides the entire earlier file.
-        if files & relative_files:
-            raise ValueError(f'로드 폴더 간 언어 파일 경로 중복: {sorted(files & relative_files)}')
+        duplicate_files = files & relative_files
+        if duplicate_files:
+            raise ValueError(f'로드 폴더 간 언어 파일 경로 중복: {sorted(duplicate_files)}')
         files.update(relative_files)
-        data = read_language(root / 'Languages' / language)
+        data = read_language(folder)
         duplicate = entries.keys() & data.keys()
         if duplicate:
             raise ValueError(f'로드 폴더 간 중복 키: {sorted(duplicate)}')
@@ -141,7 +151,8 @@ def catalog(source, output):
         raise ValueError(f'기존 작업 파일을 덮어쓰지 않습니다: {output}')
     rows = [dict(file=x['file'], key=x['key'], english=x['text'], korean='') for x in data.values()]
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps({'source': str(source.resolve()), 'entries': rows}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    payload = {'source': str(source.resolve()), 'entries': rows}
+    output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'원문 {len(rows)}개 추출: {output} (korean 값을 작성하세요)')
 
 
@@ -154,16 +165,14 @@ def render_catalog(path, output):
     if not source.is_dir():
         raise ValueError(f'원문 대조를 위해 원래 언어 폴더가 필요합니다: {source}')
     originals = read_language(source)
-    files, seen, count = {}, set(), 0
+    files = {}
+    seen = set()
+    count = 0
     for row in payload['entries']:
         rel = Path(row['file'])
         if rel.is_absolute() or '..' in rel.parts or '\\' in row['file'] or rel.suffix != '.xml':
             raise ValueError(f'잘못된 파일 경로: {rel}')
-        if not ((len(rel.parts) >= 2 and rel.parts[0] == 'Keyed') or
-                (len(rel.parts) >= 3 and rel.parts[0] == 'DefInjected')):
-            raise ValueError(f'지원하지 않는 번역 경로: {rel}')
-        scope = 'Keyed' if rel.parts[0] == 'Keyed' else '/'.join(rel.parts[:2])
-        identity = (scope, row['key'])
+        identity = (language_scope(rel), row['key'])
         if identity in seen or not KEY.fullmatch(row['key']):
             raise ValueError(f'중복/잘못된 키: {identity}')
         seen.add(identity)
@@ -196,38 +205,14 @@ def render_catalog(path, output):
     print(f'완료 번역 {count}개 생성: {output}; 미번역 {len(seen) - count}개 제외')
 
 
-def pack(include_ui=False, root=ROOT):
-    check(root)
+def package_files(root, include_ui=False):
     files = []
-    if (root / 'Translations/CharacterEditor').is_dir():
-        compatibility = root / CHARACTER_EDITOR_ASSEMBLY
+    for name, label in COMPATIBILITY_ASSEMBLIES.items():
+        compatibility = root / name
+        if not compatibility.parent.parent.is_dir():
+            continue
         if not compatibility.is_file():
-            raise ValueError('Character Editor 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
-        files.append(compatibility)
-    if (root / 'Integrations/RimJobWorld/Common').is_dir():
-        compatibility = root / MEDICAL_ICONS_ASSEMBLY
-        if not compatibility.is_file():
-            raise ValueError('의료 아이콘 호환 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
-        files.append(compatibility)
-    if (root / 'Integrations/MainButtons').is_dir():
-        compatibility = root / MAIN_BUTTONS_ASSEMBLY
-        if not compatibility.is_file():
-            raise ValueError('하단 메뉴 UI DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
-        files.append(compatibility)
-    if (root / 'Translations/FoodAlertContinued').is_dir():
-        compatibility = root / FOOD_ALERT_ASSEMBLY
-        if not compatibility.is_file():
-            raise ValueError('Food Alert 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
-        files.append(compatibility)
-    if (root / 'Translations/RimJobWorld').is_dir():
-        compatibility = root / RJW_TRANSLATION_ASSEMBLY
-        if not compatibility.is_file():
-            raise ValueError('RJW 알림 번역 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
-        files.append(compatibility)
-    if (root / 'Integrations/SlaveSuppression').is_dir():
-        compatibility = root / SLAVE_SUPPRESSION_ASSEMBLY
-        if not compatibility.is_file():
-            raise ValueError('노예 억압 DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
+            raise ValueError(f'{label} DLL이 없습니다. 먼저 make compatibility를 실행하세요.')
         files.append(compatibility)
     for content in content_roots(root):
         for dirname in RUNTIME_DIRS:
@@ -241,11 +226,17 @@ def pack(include_ui=False, root=ROOT):
         if not dll.is_file():
             raise ValueError('UI DLL이 없습니다. 먼저 선택적 C# 프로젝트를 빌드하세요.')
         files.append(dll)
+    return sorted(set(files))
+
+
+def pack(include_ui=False, root=ROOT):
+    check(root)
+    files = package_files(root, include_ui)
     folder_name = 'KoRimUtility' if root == ROOT else root.name
     output = ROOT / 'dist' / (folder_name + '.zip')
     output.parent.mkdir(exist_ok=True)
     with ZipFile(output, 'w', ZIP_DEFLATED) as archive:
-        for path in sorted(files):
+        for path in files:
             archive.write(path, folder_name + '/' + path.relative_to(root).as_posix())
     print(f'패키지 생성: {output} ({len(files)}개 파일)')
 

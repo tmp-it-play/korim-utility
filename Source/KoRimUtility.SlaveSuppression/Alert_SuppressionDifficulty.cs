@@ -17,21 +17,26 @@ namespace KoRimUtility.SlaveSuppression
         private static List<Pawn> UncoveredSlaves()
         {
             var result = new List<Pawn>();
-            if (!SuppressionPatches.Installed) return result;
+            if (!SuppressionPatches.Installed)
+                return result;
             foreach (var map in Find.Maps)
             {
                 var targets = new List<Pawn>();
                 foreach (var slave in map.mapPawns.SlavesOfColonySpawned)
-                    if (SuppressionUtility.NeedsSuppression(slave)) targets.Add(slave);
-                if (targets.Count == 0) continue;
+                    if (SuppressionUtility.NeedsSuppression(slave))
+                        targets.Add(slave);
+                if (targets.Count == 0)
+                    continue;
                 var covered = false;
                 foreach (var pawn in map.mapPawns.FreeColonistsSpawned)
                 {
-                    if (!SuppressionUtility.IsAssignedWarden(pawn)) continue;
+                    if (!SuppressionUtility.IsAssignedWarden(pawn))
+                        continue;
                     covered = true;
                     break;
                 }
-                if (!covered) result.AddRange(targets);
+                if (!covered)
+                    result.AddRange(targets);
             }
             return result;
         }
@@ -42,7 +47,8 @@ namespace KoRimUtility.SlaveSuppression
         {
             var text = new StringBuilder("KoRimUtility.Suppression.AlertExplanation".Translate(
                 SuppressionRules.MinimumSocial, SuppressionRules.MinimumPower.ToStringPercent()));
-            foreach (var slave in UncoveredSlaves()) text.AppendLine().Append("  - ").Append(slave.LabelShortCap);
+            foreach (var slave in UncoveredSlaves())
+                text.AppendLine().Append("  - ").Append(slave.LabelShortCap);
             return text.ToString();
         }
     }

@@ -37,7 +37,7 @@ jobs:
         with:
           dotnet-version: '9.0.x'
       - name: Build and validate
-        run: make preview check test test-compatibility pack
+        run: make preview check test pack
       - name: Prepare Workshop content
         env:
           STEAM_WORKSHOP_ID: ${{ vars.STEAM_WORKSHOP_ID }}

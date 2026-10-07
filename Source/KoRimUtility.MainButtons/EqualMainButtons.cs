@@ -7,7 +7,6 @@ using Verse;
 
 namespace KoRimUtility.MainButtons
 {
-    // The containing folder loads only when the Harmony mod is active.
     [StaticConstructorOnStartup]
     internal static class EqualMainButtons
     {
@@ -43,25 +42,27 @@ namespace KoRimUtility.MainButtons
 
         private static bool DrawPrefix(List<MainButtonDef> ___allButtonsInOrder)
         {
-            if (___allButtonsInOrder == null) return true;
+            if (___allButtonsInOrder == null)
+                return true;
             var width = UI.screenWidth;
-            if (width <= 0) return false;
+            if (width <= 0)
+                return false;
             // Evaluate each worker's visibility once: mods can hide buttons
             // dynamically based on the selected map, world view or game state.
             var visible = new List<MainButtonWorker>(___allButtonsInOrder.Count);
             foreach (var button in ___allButtonsInOrder)
             {
                 var worker = button.Worker;
-                if (worker.Visible) visible.Add(worker);
+                if (worker.Visible)
+                    visible.Add(worker);
             }
             GUI.color = Color.white;
             for (var index = 0; index < visible.Count; index++)
             {
                 var rect = ButtonRect(index, visible.Count, width, UI.screenHeight);
-                if (rect.width > 0) visible[index].DoButton(rect);
+                if (rect.width > 0)
+                    visible[index].DoButton(rect);
             }
-            // Only replace rectangle allocation. Native workers still render
-            // and activate buttons; MainButtonsOnGUI keeps its shortcut loop.
             return false;
         }
     }

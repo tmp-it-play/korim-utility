@@ -41,14 +41,10 @@ namespace KoRimUtility.FoodAlert
 
         private static string TranslateName(string original)
         {
-            var folder = LanguageDatabase.activeLanguage?.folderName;
             var key = "KoRimUtility.FoodAlert.Preferability." + original;
-            return folder != null && folder.StartsWith("Korean", StringComparison.OrdinalIgnoreCase) && key.CanTranslate()
-                ? key.Translate().ToString() : original;
+            return KoreanTranslation.TranslateOrOriginal(key, original);
         }
 
-        // Only display conversions in Food Alert's two UI methods are changed.
-        // Enum values, saved settings and nutrition calculations remain upstream's.
         private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, MethodBase __originalMethod)
         {
             var code = instructions.ToList();

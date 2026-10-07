@@ -3,15 +3,11 @@ using Verse;
 
 namespace KoRimUtility
 {
-    // Optional scaffold. The translation-only package does not require this DLL.
     public sealed class KoRimUtilityMod : Mod
     {
         public KoRimUtilityMod(ModContentPack content) : base(content) { }
 
-        public override string SettingsCategory()
-        {
-            return "KoRimUtility.SettingsTitle".Translate();
-        }
+        public override string SettingsCategory() => "KoRimUtility.SettingsTitle".Translate();
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
