@@ -1,6 +1,6 @@
 PYTHON ?= python3
 DOTNET ?= dotnet
-COMPATIBILITY_MODULES := MainButtons CharacterEditor MedicalIcons FoodAlert RimJobWorld SlaveSuppression
+COMPATIBILITY_MODULES := MainButtons CharacterEditor MedicalIcons FoodAlert RimJobWorld SlaveSuppression MeatBlend
 COMPATIBILITY_BUILDS := $(addprefix build-,$(COMPATIBILITY_MODULES))
 .DEFAULT_GOAL := check
 

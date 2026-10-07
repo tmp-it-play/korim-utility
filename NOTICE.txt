@@ -94,6 +94,20 @@ Includes Korean food readout and settings translations, reviewed 2026-10-06.
 KoRimUtility.FoodAlert.dll is our own display compatibility code; the
 original FoodAlert.dll is not redistributed. Source hashes are in targets.json.
 
+ED-CheatReactor
+Original project by Jaxxa:
+https://steamcommunity.com/sharedfiles/filedetails/?id=710101929
+Package ID: Jaxxa.ED.CheatReactor. Reviewed 2026-10-07.
+MIT license: ThirdPartyNotices/EDCheatReactor-LICENSE.txt.
+
+Meat Blend and Meat Blend (Cheat Mode)
+Original project by Sneaks (someonesneaky):
+https://steamcommunity.com/sharedfiles/filedetails/?id=1534882140
+Package IDs: sneaks.meatblend, sneaks.meatblendcheat. Reviewed 2026-10-07.
+No license file is included in the installed mods. Original code and assets
+are not redistributed. KoRimUtility.MeatBlend.dll translates existing item
+and recipe text, including older recipe sets; source hashes are in targets.json.
+
 Generated RJW medical item artwork
 Visual references: RimWorld HealthItem by Ludeon Studios, and Bionic icons
 by AUTOMATIC (https://steamcommunity.com/sharedfiles/filedetails/?id=1677616980).

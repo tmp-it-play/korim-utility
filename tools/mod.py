@@ -19,6 +19,7 @@ COMPATIBILITY_ASSEMBLIES = {
     'Integrations/MainButtons/Assemblies/KoRimUtility.MainButtons.dll': '하단 메뉴 UI',
     'Translations/FoodAlertContinued/Assemblies/KoRimUtility.FoodAlert.dll': 'Food Alert 번역',
     'Translations/RimJobWorld/Assemblies/KoRimUtility.RimJobWorld.dll': 'RJW 알림 번역',
+    'Translations/MeatBlend/Assemblies/KoRimUtility.MeatBlend.dll': 'Meat Blend 번역',
     'Integrations/SlaveSuppression/Assemblies/KoRimUtility.SlaveSuppression.dll': '노예 억압',
 }
 

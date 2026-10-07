@@ -18,5 +18,7 @@
     <li IfModActive="VanillaExpanded.VFECore">Translations/VanillaFurnitureExpanded</li>
     <li IfModActive="Mehni173.FoodHAlert,Mlie.FoodAlert">Translations/FoodAlert</li>
     <li IfModActive="Mlie.FoodAlert">Translations/FoodAlertContinued</li>
+    <li IfModActive="Jaxxa.ED.CheatReactor">Translations/EDCheatReactor</li>
+    <li IfModActive="sneaks.meatblend,sneaks.meatblendcheat">Translations/MeatBlend</li>
   </v1.6>
 </loadFolders>

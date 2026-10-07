@@ -19,6 +19,8 @@ Ideology와 Harmony가 필요하며, 효과 배율과 난이도는 모드 설정
 - [War Crimes Expanded 2 Core](https://steamcommunity.com/sharedfiles/filedetails/?id=2059450213)
 - [Vanilla Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
 - [Food Alert](https://steamcommunity.com/sharedfiles/filedetails/?id=1114619043)
+- [ED-CheatReactor](https://steamcommunity.com/sharedfiles/filedetails/?id=710101929)
+- [Meat Blend](https://steamcommunity.com/sharedfiles/filedetails/?id=1534882140) (일반판·치트판)
 
 ## 사용 방법
 

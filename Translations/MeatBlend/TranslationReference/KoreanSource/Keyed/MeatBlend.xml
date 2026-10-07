@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.MeatBlend.Label>Meat Blend</KoRimUtility.MeatBlend.Label>
+  <KoRimUtility.MeatBlend.CheatLabel>Meat Blend (Cheat Mode)</KoRimUtility.MeatBlend.CheatLabel>
+  <KoRimUtility.MeatBlend.Description>A chopped and combined lump of various meats, perfect for cooking.</KoRimUtility.MeatBlend.Description>
+  <KoRimUtility.MeatBlend.RecipeLabel>Blend {0} meats</KoRimUtility.MeatBlend.RecipeLabel>
+  <KoRimUtility.MeatBlend.CheatRecipeLabel>Blend {0} meats (Cheat Mode)</KoRimUtility.MeatBlend.CheatRecipeLabel>
+  <KoRimUtility.MeatBlend.RecipeDescription>Chop and combine meat, making {0} meat blend for cooking.</KoRimUtility.MeatBlend.RecipeDescription>
+  <KoRimUtility.MeatBlend.Job>Blending meat.</KoRimUtility.MeatBlend.Job>
+</LanguageData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.MeatBlend.Label>혼합육</KoRimUtility.MeatBlend.Label>
+  <KoRimUtility.MeatBlend.CheatLabel>혼합육 (치트 모드)</KoRimUtility.MeatBlend.CheatLabel>
+  <KoRimUtility.MeatBlend.Description>여러 종류의 고기를 잘게 썰어 섞은 덩어리입니다. 요리 재료로 쓰기 좋습니다.</KoRimUtility.MeatBlend.Description>
+  <KoRimUtility.MeatBlend.RecipeLabel>혼합육 {0}개 만들기</KoRimUtility.MeatBlend.RecipeLabel>
+  <KoRimUtility.MeatBlend.CheatRecipeLabel>혼합육 {0}개 만들기 (치트 모드)</KoRimUtility.MeatBlend.CheatRecipeLabel>
+  <KoRimUtility.MeatBlend.RecipeDescription>고기를 잘게 썰고 섞어 요리용 혼합육 {0}개를 만듭니다.</KoRimUtility.MeatBlend.RecipeDescription>
+  <KoRimUtility.MeatBlend.Job>혼합육 만드는 중.</KoRimUtility.MeatBlend.Job>
+</LanguageData>

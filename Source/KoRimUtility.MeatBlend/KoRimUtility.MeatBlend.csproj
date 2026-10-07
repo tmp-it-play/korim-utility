@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../Compatibility.props" />
+  <PropertyGroup>
+    <OutputPath>../../Translations/MeatBlend/Assemblies/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/KoreanTranslation.cs" Link="Shared/KoreanTranslation.cs" />
+  </ItemGroup>
+</Project>
