@@ -1,6 +1,6 @@
 # KoRim Utility
 
-현재 버전: **0.3.2**
+[![Release](https://img.shields.io/github/v/release/tmp-it-play/korim-utility?logo=github)](https://github.com/tmp-it-play/korim-utility/releases/latest)
 
 한국인 플레이어를 위해 림월드의 부족한 부분을 채워가는 모드입니다.
 
@@ -10,8 +10,6 @@
 
 간수 작업에 능력과 대상의 상태에 따른 판정, 무드 효과와 상태 알림을 추가합니다.
 Ideology와 Harmony가 필요하며, 효과 배율과 난이도는 모드 설정에서 조절할 수 있습니다.
-
-자세한 계산과 판정 기준은 [설계 문서](docs/slave-suppression.md)를 참고하세요.
 
 ## 모드 번역 안내
 
