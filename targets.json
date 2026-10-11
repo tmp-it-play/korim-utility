@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 798,
+      "translated_entries": 840,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -192,6 +192,17 @@
       },
       "drug_action_inherited_source_sha256": {
         "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
+      },
+      "drug_stage_translation_status": "runtime_verified_with_and_without_rmk_and_english",
+      "drug_stage_source_sha256": {
+        "Defs/Drugs/Humpshroom.xml": "483e9ed60e122b1e4abfd3ddce72e6cdaa9b0420b34305dc40235431ae8a779d"
+      },
+      "drug_stage_inherited_source_sha256": {
+        "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
+      },
+      "loading_tip_translation_status": "runtime_verified_with_and_without_rmk_and_english",
+      "loading_tip_source_sha256": {
+        "Defs/TipSetDefs/Tips.xml": "987ec7921799ce2467e33da8be5ddecc620f7efa285511d5675a210dacd2c359"
       }
     },
     {
@@ -501,6 +512,30 @@
       },
       "inherited_source_sha256": {
         "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
+      }
+    },
+    {
+      "name": "RJW-Events",
+      "url": "https://www.loverslab.com/topic/166368-mod-rjw-orgy-event/",
+      "package_id": "c0ffee.rjw.events",
+      "author": "C0ffee",
+      "mod_version": "1.2",
+      "license": "not_specified_in_installation",
+      "status": "psychic_arouse_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 12,
+      "content_root": "Translations/RJWEvents",
+      "load_condition": "IfModActive: c0ffee.rjw.events",
+      "optional": true,
+      "distribution": "integrated_package",
+      "source_sha256": {
+        "About/About.xml": "e981f32e65668a6363f34faf778156bc54ceda58a68b6979d705f9e6febc2c02",
+        "Defs/GameConditionDefs/GameConditions_Misc.xml": "b9a710d5f81beecc96e0a9186e3cbde1e5e0a1598c258a72c2489ea018fc6c4f",
+        "Defs/IncidentDefs/Incidents_Map_Misc.xml": "9b9687b59628076f0e04d9de5dc171b1aa737bdd68d53639a3c78505c1ced01a",
+        "Defs/ThoughtDefs/Thoughts_Situation_Special.xml": "1af311ba5b77437bee2d7db8b2637668ded4c1295317e8eabbdd196e840ddb83",
+        "Source/GameConditions/GameCondition_PsychicArouse.cs": "efd40544509951a1f6336d6749948314f2d8e8108a20d0cc10d2accf6150c540",
+        "Source/IncidentWorkers/IncidentWorker_PsychicArouse.cs": "46ff0021617c858fe75610065a54bf4c0b816edb0141c294e796b841c6551f7f",
+        "Source/ThoughtWorkers/ThoughtWorker_PsychicArouse.cs": "be67804831be2bcc639070eb2b0e3b0b4090f748953aa4435f64fa04b49a9344",
+        "1.6/Assemblies/RJW-Events.dll": "2b53fa23b64668780d021abdecfd753b82c69fd00b67244c97ec75dfc7e1ce2c"
       }
     }
   ]

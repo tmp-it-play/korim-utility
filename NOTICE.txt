@@ -24,14 +24,22 @@ The full upstream notice is in ThirdPartyNotices/RimJobWorld-LICENSE.txt;
 it pertains to RimJobWorld-derived material, not The Cooler.
 Reference revision: ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e (6.2.1).
 Source: 1.6/Languages/English/Keyed/RimJobWorldKeys.xml, reviewed 2026-10-05.
-Includes supplemental UI, main-tab, interaction-menu and Resin translations.
+Includes supplemental UI, main-tab, interaction-menu, loading-tip and Resin translations.
 Resin source: the installed 6.2.1 mod's ThingDefs, SexFluidDefs and HediffDefs,
 reviewed 2026-10-05; exact file hashes are recorded in targets.json.
 Other existing Korean entries are retained.
 KoRimUtility.RimJobWorld.dll translates two hardcoded notification texts;
 it does not bundle or modify the original RJW.dll. Menu and notification
 references were checked against the installed 1.6 source on 2026-10-09.
-Drug action strings were reviewed 2026-10-11; source hashes are in targets.json.
+Drug action and tolerance stage strings were reviewed 2026-10-11;
+source hashes are in targets.json.
+
+RJW-Events
+Original project by C0ffee:
+https://www.loverslab.com/topic/166368-mod-rjw-orgy-event/
+Package ID: c0ffee.rjw.events. Psychic arouse translations reviewed 2026-10-11.
+No license file is included in the installation. Original code and assets are
+not redistributed. Source hashes are recorded in targets.json.
 
 RJW Menstruation Cycle
 Original project by lutepickle: https://gitgud.io/lutepickle/rjw_menstruation/

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <PsychicArouse.label>psychic arouse</PsychicArouse.label>
+  <PsychicArouse.description>A distant archotech is emitting psychic signals through an orbital amplifier, sexually arousing people.</PsychicArouse.description>
+  <PsychicArouse.descriptionFuture>a [psychicDroneLevel] psychic drone will buzz the area around [map_definite] for [gameConditionDuration_duration], pushing all people of the [psychicDroneGender] gender towards arousal</PsychicArouse.descriptionFuture>
+  <PsychicArouse.endMessage>The psychic drone is ending.</PsychicArouse.endMessage>
+  <PsychicArouse.letterText>Every {0} colonist blushes with arousal.\n\nSome distant engine of lust is stirring. It is projecting a psychic drone onto this site through an orbital amplifier, tuned to only affect {0}s. For a few days, every {0} will experience increased arousal and sex need.</PsychicArouse.letterText>
+</LanguageData>

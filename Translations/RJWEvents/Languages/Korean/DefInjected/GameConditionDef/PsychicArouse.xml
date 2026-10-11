@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PsychicArouse.label>최음 정신 파동</PsychicArouse.label>
+  <PsychicArouse.description>어딘가 먼 곳의 초월공학체가 궤도 증폭기를 통해 정신 파동을 방출하여 사람들을 성적으로 흥분시키고 있습니다.</PsychicArouse.description>
+  <PsychicArouse.descriptionFuture>[psychicDroneLevel] 강도의 최음 정신 파동이 [gameConditionDuration_duration] 동안 [map_definite] 주변에 퍼져 모든 [psychicDroneGender]의 성적 흥분을 높입니다</PsychicArouse.descriptionFuture>
+  <PsychicArouse.endMessage>최음 정신 파동이 끝났습니다.</PsychicArouse.endMessage>
+  <PsychicArouse.letterText>모든 {0} 정착민이 성적 흥분으로 얼굴을 붉힙니다.\n\n어딘가 먼 곳에서 욕망을 자극하는 기계가 작동하기 시작했습니다. 궤도 증폭기를 통해 이 지역에 정신 파동을 보내고 있으며, {0}에게만 영향을 주도록 조율되어 있습니다. 며칠 동안 모든 {0}의 성적 흥분과 성욕이 높아집니다.</PsychicArouse.letterText>
+</LanguageData>
