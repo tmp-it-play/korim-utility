@@ -31,6 +31,13 @@ Other existing Korean entries are retained.
 KoRimUtility.RimJobWorld.dll translates two hardcoded notification texts;
 it does not bundle or modify the original RJW.dll. Menu and notification
 references were checked against the installed 1.6 source on 2026-10-09.
+Drug action strings were reviewed 2026-10-11; source hashes are in targets.json.
+
+RJW Menstruation Cycle
+Original project by lutepickle: https://gitgud.io/lutepickle/rjw_menstruation/
+Package ID: rjw.menstruation. Drug action translations reviewed 2026-10-11.
+No license file is included in the installed mod. Original code and assets
+are not redistributed. Source hashes are in targets.json.
 
 Character Editor
 Original project by void:

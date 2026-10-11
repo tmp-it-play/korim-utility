@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RJW_FertPill.ingestible.ingestCommandString>Take {0}</RJW_FertPill.ingestible.ingestCommandString>
+  <RJW_FertPill.ingestible.ingestReportString>Taking {0}.</RJW_FertPill.ingestible.ingestReportString>
+  <RJW_Contraceptive.ingestible.ingestCommandString>Take {0}</RJW_Contraceptive.ingestible.ingestCommandString>
+  <RJW_Contraceptive.ingestible.ingestReportString>Taking {0}.</RJW_Contraceptive.ingestible.ingestReportString>
+  <Aphrodisiac.ingestible.ingestCommandString>Smoke {0}</Aphrodisiac.ingestible.ingestCommandString>
+  <Aphrodisiac.ingestible.ingestReportString>Smoking {0}.</Aphrodisiac.ingestible.ingestReportString>
+  <Aphrodisiac.ingestible.ingestReportStringEat>Consuming {0}.</Aphrodisiac.ingestible.ingestReportStringEat>
+</LanguageData>

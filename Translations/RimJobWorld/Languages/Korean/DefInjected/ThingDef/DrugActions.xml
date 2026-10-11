@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RJW_FertPill.ingestible.ingestCommandString>{0} 복용</RJW_FertPill.ingestible.ingestCommandString>
+  <RJW_FertPill.ingestible.ingestReportString>{0} 복용 중</RJW_FertPill.ingestible.ingestReportString>
+  <RJW_Contraceptive.ingestible.ingestCommandString>{0} 복용</RJW_Contraceptive.ingestible.ingestCommandString>
+  <RJW_Contraceptive.ingestible.ingestReportString>{0} 복용 중</RJW_Contraceptive.ingestible.ingestReportString>
+  <Aphrodisiac.ingestible.ingestCommandString>{0} 흡연</Aphrodisiac.ingestible.ingestCommandString>
+  <Aphrodisiac.ingestible.ingestReportString>{0} 흡연 중</Aphrodisiac.ingestible.ingestReportString>
+  <Aphrodisiac.ingestible.ingestReportStringEat>{0} 섭취 중</Aphrodisiac.ingestible.ingestReportStringEat>
+</LanguageData>

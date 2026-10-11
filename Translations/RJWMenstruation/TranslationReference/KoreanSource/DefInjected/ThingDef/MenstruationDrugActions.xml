@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <OvaryRegenerationPill.ingestible.ingestCommandString>Take {0}</OvaryRegenerationPill.ingestible.ingestCommandString>
+  <OvaryRegenerationPill.ingestible.ingestReportString>Taking {0}.</OvaryRegenerationPill.ingestible.ingestReportString>
+  <SuperovulationInducingAgent.ingestible.ingestCommandString>Take {0}</SuperovulationInducingAgent.ingestible.ingestCommandString>
+  <SuperovulationInducingAgent.ingestible.ingestReportString>Taking {0}.</SuperovulationInducingAgent.ingestible.ingestReportString>
+  <PainReliever.ingestible.ingestCommandString>Take {0}</PainReliever.ingestible.ingestCommandString>
+  <PainReliever.ingestible.ingestReportString>Taking {0}.</PainReliever.ingestible.ingestReportString>
+  <Cyclosporine.ingestible.ingestCommandString>Take {0}</Cyclosporine.ingestible.ingestCommandString>
+  <Cyclosporine.ingestible.ingestReportString>Taking {0}.</Cyclosporine.ingestible.ingestReportString>
+</LanguageData>

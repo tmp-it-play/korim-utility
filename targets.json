@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-09",
+  "checked_on": "2026-10-11",
   "game_version": "1.6",
   "targets": [
     {
@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 791,
+      "translated_entries": 798,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -183,6 +183,15 @@
         "Source/Common/RMB/RMB_Masturbate.cs": "91544ad8a23c091e8b6b0bd059e8ca0d17a13ef47d00c32ed3ad17da7bcfac76",
         "Source/Common/RMB/RMB_Menu.cs": "f763fc7beed0f697c5217137a06cb3d5b6fbe2287c4fa20ea714d487d5aac7ed",
         "Source/Interactions/SexInteractionExtension.cs": "71bd96bb8fa1af57a9ca58347b31ccdd257bd1ae1af8a30d8c72f30081a7449e"
+      },
+      "drug_action_translation_status": "runtime_verified_with_and_without_rmk_and_english",
+      "drug_action_source_sha256": {
+        "Defs/Drugs/FertPill.xml": "8000de1288933d611af3914fe3eda7dfde95b0dd763a10acbaeba37de18686ba",
+        "Defs/Drugs/Contraceptive.xml": "be30f338a581712e675dea7467a9c6a0cb4b7b3a1e1d86b5a3ae011a68bf8ee8",
+        "Defs/Drugs/Aphrodisiac.xml": "a3a0107e65127b3f78dfc9e14322bf191b21d097948adda88153f384f2f7bb76"
+      },
+      "drug_action_inherited_source_sha256": {
+        "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
       }
     },
     {
@@ -472,6 +481,27 @@
       "compatibility_assembly": "Translations/MeatBlend/Assemblies/KoRimUtility.MeatBlend.dll",
       "translated_def_fields": 17,
       "compatibility_scope": "RimWorld 1.6; original and cheat package IDs; existing recipes discovered by product, including reduced legacy recipe sets"
+    },
+    {
+      "name": "RJW Menstruation Cycle",
+      "url": "https://gitgud.io/lutepickle/rjw_menstruation/",
+      "package_id": "rjw.menstruation",
+      "author": "lutepickle",
+      "license": "not_specified_in_installation",
+      "status": "drug_actions_source_validated_runtime_startup_failed",
+      "runtime_test_limitation": "Isolated launch with RJW Menstruation aborts in RJWHookupSettings/Verse.Text graphics initialization before translation validation",
+      "translated_entries": 8,
+      "content_root": "Translations/RJWMenstruation",
+      "load_condition": "IfModActive: rjw.menstruation",
+      "optional": true,
+      "distribution": "integrated_package",
+      "source_sha256": {
+        "About/About.xml": "380ef1121db0b70d59bfb98402f489d1a509f4c20aa1af93daeb17ccb7cb4295",
+        "1.6/Defs/Drugs/Pills_Menstruation.xml": "00666e42b7aa3c3516421f1830e4bac884e11572e439d6106f779f1c49a1e6c2"
+      },
+      "inherited_source_sha256": {
+        "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
+      }
     }
   ]
 }
