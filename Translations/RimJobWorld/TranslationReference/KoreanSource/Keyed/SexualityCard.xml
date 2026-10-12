@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <SC_title>Sexuality</SC_title>
   <SexcardEditDevEntry>RJW: Sexuality Card NG</SexcardEditDevEntry>
@@ -23,4 +23,17 @@
   <SC_Kinsey_MostlyHeterosexual>Predominantly heterosexual, only incidentally homosexual</SC_Kinsey_MostlyHeterosexual>
   <SC_Kinsey_MostlyHomosexual>Predominantly homosexual, only incidentally heterosexual</SC_Kinsey_MostlyHomosexual>
   <SC_Kinsey_Pansexual>Pansexual</SC_Kinsey_Pansexual>
+  <PartsEditLabel>Edit {0}</PartsEditLabel>
+  <PartsEditFluidMultiplierLabel>Fluid Multiplier</PartsEditFluidMultiplierLabel>
+  <PartsEditDevEntry>RJW: Edit parts</PartsEditDevEntry>
+  <SC_Sexuality>Orientation</SC_Sexuality>
+  <SC_Sexuality_Heterosexual>Heterosexual</SC_Sexuality_Heterosexual>
+  <SC_Sexuality_Homosexual>Homosexual</SC_Sexuality_Homosexual>
+  <SC_Sexuality_LeaningHeterosexual>Leaning heterosexual</SC_Sexuality_LeaningHeterosexual>
+  <SC_Sexuality_LeaningHomosexual>Leaning homosexual</SC_Sexuality_LeaningHomosexual>
+  <SC_Sexuality_MostlyHeterosexual>Predominantly heterosexual</SC_Sexuality_MostlyHeterosexual>
+  <SC_Sexuality_MostlyHomosexual>Predominantly homosexual</SC_Sexuality_MostlyHomosexual>
+  <RJW_PartInfo_severity>Severity: {0}</RJW_PartInfo_severity>
+  <RJW_PartInfo_fluidMultiplier>Fluid Multiplier: {0}</RJW_PartInfo_fluidMultiplier>
+  <KoRimUtility.RJW.LegacySexuality>Orientation: {0}</KoRimUtility.RJW.LegacySexuality>
 </LanguageData>

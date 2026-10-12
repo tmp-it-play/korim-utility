@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VSIE_SoldMyBestFriend.stages.0.label>절친이 팔려감</VSIE_SoldMyBestFriend.stages.0.label>
+  <VSIE_SoldMyBestFriend.stages.0.labelSocial>내 절친을 팔아넘김</VSIE_SoldMyBestFriend.stages.0.labelSocial>
+  <VSIE_SoldMyBestFriend.stages.0.description>내 절친이 고깃덩이처럼 상인에게 팔려갔다!</VSIE_SoldMyBestFriend.stages.0.description>
+  <VSIE_KilledMyBestFriend.stages.0.label>내 절친을 죽임</VSIE_KilledMyBestFriend.stages.0.label>
+  <VSIE_MyBestFriendLost.stages.0.label>절친 {0} 실종</VSIE_MyBestFriendLost.stages.0.label>
+  <VSIE_MyBestFriendLost.stages.0.description>내 절친이 실종됐다. 언젠가는 우리 곁으로 돌아오면 좋겠다.</VSIE_MyBestFriendLost.stages.0.description>
+  <VSIE_MyBestFriendDied.stages.0.label>절친 {0} 사망</VSIE_MyBestFriendDied.stages.0.label>
+  <VSIE_MyBestFriendDied.stages.0.description>내 절친이 죽었다. 어떻게 이런 일이 일어날 수 있지!</VSIE_MyBestFriendDied.stages.0.description>
+  <VSIE_MyBestFriendLost_Female.stages.0.label>절친 {0} 실종</VSIE_MyBestFriendLost_Female.stages.0.label>
+  <VSIE_MyBestFriendLost_Female.stages.0.description>내 절친이 실종됐다. 언젠가는 우리 곁으로 돌아오면 좋겠다.</VSIE_MyBestFriendLost_Female.stages.0.description>
+  <VSIE_MyBestFriendDied_Female.stages.0.label>절친 {0} 사망</VSIE_MyBestFriendDied_Female.stages.0.label>
+  <VSIE_MyBestFriendDied_Female.stages.0.description>내 절친이 죽었다. 어떻게 이런 일이 일어날 수 있지!</VSIE_MyBestFriendDied_Female.stages.0.description>
+</LanguageData>

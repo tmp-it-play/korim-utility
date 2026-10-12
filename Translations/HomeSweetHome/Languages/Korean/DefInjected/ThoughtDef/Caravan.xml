@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HomeSweetHome_Thought.label>무사히 돌아와 안심함</HomeSweetHome_Thought.label>
+  <HomeSweetHome_Thought.stages.0.label>무사히 돌아와 안심함</HomeSweetHome_Thought.stages.0.label>
+  <HomeSweetHome_Thought.stages.0.description>모두 무사히 집으로 돌아와서 마음이 놓이고 기쁘다.</HomeSweetHome_Thought.stages.0.description>
+  <HomeSweetHome_DestinationArrival_Thought.label>목적지에 도착해 기쁨</HomeSweetHome_DestinationArrival_Thought.label>
+  <HomeSweetHome_DestinationArrival_Thought.stages.0.label>목적지에 도착해 기쁨</HomeSweetHome_DestinationArrival_Thought.stages.0.label>
+  <HomeSweetHome_DestinationArrival_Thought.stages.0.description>긴 여정 끝에 마침내 목적지에 도착해서 기쁘다.</HomeSweetHome_DestinationArrival_Thought.stages.0.description>
+  <HomeSweetHome_Thought_Great.label>오랜 여정 끝에 돌아와 크게 안심함</HomeSweetHome_Thought_Great.label>
+  <HomeSweetHome_Thought_Great.stages.0.label>오랜 여정 끝에 돌아와 크게 안심함</HomeSweetHome_Thought_Great.stages.0.label>
+  <HomeSweetHome_Thought_Great.stages.0.description>오랫동안 떠나 있던 사람들이 모두 무사히 돌아왔다. 정말 기쁘고 이제야 마음이 놓인다.</HomeSweetHome_Thought_Great.stages.0.description>
+  <HomeSweetHome_DestinationArrival_Thought_Great.label>오랜 여정 끝에 도착해 매우 기쁨</HomeSweetHome_DestinationArrival_Thought_Great.label>
+  <HomeSweetHome_DestinationArrival_Thought_Great.stages.0.label>오랜 여정 끝에 도착해 매우 기쁨</HomeSweetHome_DestinationArrival_Thought_Great.stages.0.label>
+  <HomeSweetHome_DestinationArrival_Thought_Great.stages.0.description>긴 여정 끝에 마침내 목적지에 도착했다. 벅찬 기쁨을 감출 수 없다.</HomeSweetHome_DestinationArrival_Thought_Great.stages.0.description>
+  <HomeSweetHome_Thought_Psychopath.label>상단의 귀환에 무관심함</HomeSweetHome_Thought_Psychopath.label>
+  <HomeSweetHome_Thought_Psychopath.stages.0.label>상단의 귀환에 무관심함</HomeSweetHome_Thought_Psychopath.stages.0.label>
+  <HomeSweetHome_Thought_Psychopath.stages.0.description>상단 사람들이 돌아왔지만 별다른 감흥은 없다.</HomeSweetHome_Thought_Psychopath.stages.0.description>
+  <HomeSweetHome_Thought_Dislike.label>상단의 귀환이 못마땅함</HomeSweetHome_Thought_Dislike.label>
+  <HomeSweetHome_Thought_Dislike.stages.0.label>상단의 귀환이 못마땅함</HomeSweetHome_Thought_Dislike.stages.0.label>
+  <HomeSweetHome_Thought_Dislike.stages.0.description>내가 싫어하는 상단 사람들이 돌아와서 기분이 나쁘다.</HomeSweetHome_Thought_Dislike.stages.0.description>
+  <HomeSweetHome_Thought_Neutral.label>상단의 귀환에 마음이 복잡함</HomeSweetHome_Thought_Neutral.label>
+  <HomeSweetHome_Thought_Neutral.stages.0.label>상단의 귀환에 마음이 복잡함</HomeSweetHome_Thought_Neutral.stages.0.label>
+  <HomeSweetHome_Thought_Neutral.stages.0.description>상단 사람들이 돌아온 것을 보니 여러 감정이 뒤섞인다.</HomeSweetHome_Thought_Neutral.stages.0.description>
+  <HomeSweetHome_Thought_Worried.label>상단이 걱정됨</HomeSweetHome_Thought_Worried.label>
+  <HomeSweetHome_Thought_Worried.stages.0.label>상단이 걱정됨</HomeSweetHome_Thought_Worried.stages.0.label>
+  <HomeSweetHome_Thought_Worried.stages.0.description>상단이 떠난 지 너무 오래됐다. 다들 무사한지 정말 걱정된다.</HomeSweetHome_Thought_Worried.stages.0.description>
+</LanguageData>

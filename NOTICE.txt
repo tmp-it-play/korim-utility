@@ -145,3 +145,46 @@ KoRimUtility.MainButtons.dll is original UI layout code under LICENSE.
 It assigns equal widths to visible main menu buttons while retaining the
 game and mod workers. It loads only when the Harmony mod is active.
 Harmony and RimWorld assemblies are build dependencies and are not bundled.
+
+Vanilla Expanded Framework
+https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013
+Package ID: OskarPotocki.VanillaFactionsExpanded.Core.
+Authors: Oskar Potocki, XeoNovaDan, Orion, Kikohi, Taranchuk, Sarg Bjornson, Erdelf.
+Upstream license: CC BY-NC-ND 4.0. Includes supplemental stillborn animal text.
+
+Vanilla Weapons Expanded - Non-Lethal
+https://steamcommunity.com/sharedfiles/filedetails/?id=2454918354
+Package ID: VanillaExpanded.VWENL. Author: Oskar Potocki.
+Includes supplemental dart injury text. No license file in the installation.
+
+These references were reviewed from installed 1.6 definitions on 2026-10-12.
+Original code and assets are not redistributed. Source hashes are in targets.json.
+
+Home Sweet Home
+https://steamcommunity.com/sharedfiles/filedetails/?id=3300829226
+Original author: Lewkah0. Continued by GanjaMan [NL].
+Package IDs: Lewkah0.HomeSweetHome, ganja.HomeSweetHome.
+Includes caravan mood translations. The installed Continued 1.5/1.6 definitions
+share all 24 translated fields with the original RMK translation catalog.
+Current original binaries were not available for runtime verification.
+
+Vanilla Social Interactions Expanded
+https://steamcommunity.com/sharedfiles/filedetails/?id=2439736083
+Authors: Oskar Potocki, Taranchuk.
+Package ID: VanillaExpanded.VanillaSocialInteractionsExpanded.
+Includes best-friend mood and social memory translations.
+
+References reviewed on 2026-10-12. These installations contain no license file.
+Original code/assets are not redistributed; source hashes are in targets.json.
+
+UNAGI_Hair1 / UNAGI_Hair2
+https://steamcommunity.com/sharedfiles/filedetails/?id=3244456989
+https://steamcommunity.com/sharedfiles/filedetails/?id=3248775397
+Author: UNAGI. Package IDs: UNAGI.Kawaii.hair1, UNAGI.Short.hair2.
+Includes Korean labels retaining the original hairstyle numbers.
+
+Vanilla Hair Expanded
+https://steamcommunity.com/sharedfiles/filedetails/?id=1888705256
+Authors: Oskar Potocki, XeoNovaDan. Package ID: VanillaExpanded.VHE.
+Includes Korean transliterations of the 14 Viking hairstyle names.
+Original code and textures are not redistributed.

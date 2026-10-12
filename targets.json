@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-11",
+  "checked_on": "2026-10-12",
   "game_version": "1.6",
   "targets": [
     {
@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 840,
+      "translated_entries": 855,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",
@@ -203,6 +203,15 @@
       "loading_tip_translation_status": "runtime_verified_with_and_without_rmk_and_english",
       "loading_tip_source_sha256": {
         "Defs/TipSetDefs/Tips.xml": "987ec7921799ce2467e33da8be5ddecc620f7efa285511d5675a210dacd2c359"
+      },
+      "sexuality_card_translation_status": "runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "sexuality_card_source_sha256": {
+        "Languages/English/Keyed/SexualityCardKeys.xml": "722bb4e523b979e4cd4f4b27a71fbe9513fafc8957ca15408e8c5347dbb7274e",
+        "Languages/English/Keyed/RimJobWorldKeys.xml": "d4bd2dae6b5eecf47fc83bc55f2fac1798916eedc3cfc8512d51a1e40d293ba7",
+        "Defs/StatDefs/Stats.xml": "f54850814ea601cf8fe95c99e8dc7b1288c1da2bc021aacc3e5740542d7cd6c6",
+        "Source/Harmony/SexualityCardNG.cs": "4a722292da4cb97c28fe0fbeac40a3b6d12f66276928b845805e83071c0c1949",
+        "Source/Harmony/SexualityCardInternal.cs": "b3fadfae7048fb4f6e4e422461d95f46aba636deff1f5aaad6c4f5293ef113c5",
+        "Source/Modules/Attraction/StandardPreferences/S_HumanToWildness.cs": "17f2164784a1637ebc8b7e8c31b2ed13d74094eb993228d578bebfe0d3547561"
       }
     },
     {
@@ -215,7 +224,7 @@
       "description_version": "1.6.3 (2025-07-21)",
       "license": "not_specified_in_installation",
       "status": "ui_translation_runtime_verified",
-      "translated_entries": 560,
+      "translated_entries": 601,
       "source_assembly": "v1.6/Assemblies/CharacterEditor.dll",
       "source_assembly_sha256": "bff3b2268321f8c9566e15cbbd71ca6f975e9139f976c8bd4a9e0ca924c5b457",
       "source_def": "Defs/CharEditor.xml",
@@ -225,7 +234,30 @@
       "optional": true,
       "content_root": "Translations/CharacterEditor",
       "load_condition": "IfModActive: void.charactereditor",
-      "compatibility_assembly": "Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll"
+      "compatibility_assembly": "Translations/CharacterEditor/Assemblies/KoRimUtility.CharacterEditor.dll",
+      "thought_list_translation_status": "runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "thought_list_audit": {
+        "thought_defs": 1213,
+        "remaining_english_list_names": 0,
+        "remaining_english_stage_fields": 0,
+        "excluded_mods": [
+          "zcubekr.customfonts",
+          "rjw.menstruation"
+        ]
+      },
+      "head_type_translation_status": "runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "head_type_source_sha256": {
+        "Data/Core/Defs/HeadTypeDefs/HeadTypeDefs.xml": "76a308189edf1a6b459a9d1bdca602437fae65ae122a535f08b85acabc126c7b",
+        "Data/Biotech/Defs/HeadTypeDefs/HeadTypeDefs.xml": "40963f354f00573d8c007d0975f5754596e56f59e36afa2f70ef9b1862d8f443"
+      },
+      "appearance_audit": {
+        "head_types": 27,
+        "hair_styles": 266,
+        "beards": 41,
+        "remaining_english_names": 0,
+        "profile": "installed_hair_mods_with_rmk_and_rimwaldo",
+        "verification": "headless_runtime_labels_and_head_selection; visual_ui_not_verified"
+      }
     },
     {
       "name": "Replace Stuff",
@@ -290,7 +322,7 @@
       "package_id": "Mersid.WCE2Updated.Core",
       "license": "not_specified_in_installation",
       "status": "partial_translation_runtime_verified",
-      "translated_entries": 37,
+      "translated_entries": 40,
       "mod_root": ".",
       "distribution": "integrated_package",
       "optional": true,
@@ -305,9 +337,11 @@
         "1.6/Defs/WCE2_Recipes/WCE2_Recipes_Medical.xml": "7eeeb2716ba048bb085b9923dfa9dd50e0c51e057abfc7d13c9bb480bdf6641c",
         "1.6/Defs/WCE2_Recipes/WCE2_Recipes_Mutilations_Head.xml": "735402a883c52c6948228a334a45e0f31ad8eaf1b3afce6277c2bd475a01a40e",
         "1.6/Defs/WCE2_Recipes/WCE2_SurgeryOutcomeEffectDefs.xml": "ea9d6d3b86bd67d657fb8f1d36c867c80f91c1614b061be31354df68a5778e30",
-        "1.6/Defs/WCE2_ThoughtDefs/WCE2_ThoughtDefs_Hediffs.xml": "4d5843c0a106285702d481fc5cefdc31cf1abb2cab2e611ea38d7a8eb4d4854a"
+        "1.6/Defs/WCE2_ThoughtDefs/WCE2_ThoughtDefs_Hediffs.xml": "4d5843c0a106285702d481fc5cefdc31cf1abb2cab2e611ea38d7a8eb4d4854a",
+        "1.6/Defs/WCE2_Hediffs/WCE2_Hediffs_Custom.xml": "5e6e329d4bb37a5f6060ed8e0e3c10de64f0b218de66e1d14566b47d0561a042"
       },
-      "shared_content_root": "Translations/WarCrimesExpanded2"
+      "shared_content_root": "Translations/WarCrimesExpanded2",
+      "memed_on_translation_status": "runtime_verified_with_and_without_rmk_english_and_mod_absent"
     },
     {
       "name": "Vanilla Furniture Expanded",
@@ -508,11 +542,13 @@
       "distribution": "integrated_package",
       "source_sha256": {
         "About/About.xml": "380ef1121db0b70d59bfb98402f489d1a509f4c20aa1af93daeb17ccb7cb4295",
-        "1.6/Defs/Drugs/Pills_Menstruation.xml": "00666e42b7aa3c3516421f1830e4bac884e11572e439d6106f779f1c49a1e6c2"
+        "1.6/Defs/Drugs/Pills_Menstruation.xml": "00666e42b7aa3c3516421f1830e4bac884e11572e439d6106f779f1c49a1e6c2",
+        "1.6/Defs/ThoughtDefs/Thoughts_sex.xml": "5d1809940e0e7659f47be47f5e487f7b304b3790fbc53996bf552a339008c869"
       },
       "inherited_source_sha256": {
         "Data/Core/Defs/Drugs/DrugBases.xml": "76916db512008e5a8d82d28e918bbc89c317f62d8ac63bdc2e8e796cedc2837b"
-      }
+      },
+      "existing_thought_translation_audit": "19_existing_thoughts_verified_with_rmk_in_korean_and_english_data_fixture; live_addon_startup_not_verified"
     },
     {
       "name": "RJW-Events",
@@ -522,7 +558,7 @@
       "mod_version": "1.2",
       "license": "not_specified_in_installation",
       "status": "psychic_arouse_runtime_verified_with_and_without_rmk_english_and_mod_absent",
-      "translated_entries": 12,
+      "translated_entries": 15,
       "content_root": "Translations/RJWEvents",
       "load_condition": "IfModActive: c0ffee.rjw.events",
       "optional": true,
@@ -535,8 +571,147 @@
         "Source/GameConditions/GameCondition_PsychicArouse.cs": "efd40544509951a1f6336d6749948314f2d8e8108a20d0cc10d2accf6150c540",
         "Source/IncidentWorkers/IncidentWorker_PsychicArouse.cs": "46ff0021617c858fe75610065a54bf4c0b816edb0141c294e796b841c6551f7f",
         "Source/ThoughtWorkers/ThoughtWorker_PsychicArouse.cs": "be67804831be2bcc639070eb2b0e3b0b4090f748953aa4435f64fa04b49a9344",
-        "1.6/Assemblies/RJW-Events.dll": "2b53fa23b64668780d021abdecfd753b82c69fd00b67244c97ec75dfc7e1ce2c"
-      }
+        "1.6/Assemblies/RJW-Events.dll": "2b53fa23b64668780d021abdecfd753b82c69fd00b67244c97ec75dfc7e1ce2c",
+        "Defs/ThoughtDefs/Thoughts_Sex.xml": "86d682a5a3e678b04b3c699c00c375e6be758cd5bb22d0da065adefe53cb38e8",
+        "Defs/TaleDefs/Tales_Sex.xml": "5e437112dd457d9b7131dbba80e08dfcbcd20f1874b01b98b1d074922c77135a"
+      },
+      "attended_orgy_translation_status": "runtime_verified_with_and_without_rmk_english_and_mod_absent"
+    },
+    {
+      "name": "Vanilla Expanded Framework",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013",
+      "workshop_id": "2023507013",
+      "author": "Oskar Potocki, XeoNovaDan, Orion, Kikohi, Taranchuk, Sarg Bjornson, Erdelf",
+      "package_id": "OskarPotocki.VanillaFactionsExpanded.Core",
+      "license": "CC-BY-NC-ND-4.0",
+      "status": "partial_translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 2,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/VanillaExpandedFramework",
+      "load_condition": "IfModActive: OskarPotocki.VanillaFactionsExpanded.Core",
+      "source_def": "1.6/Defs/HediffDefs/Hediffs_Global_Misc.xml",
+      "source_def_sha256": "92d40924585c5d380ddd71060c36ae9f25b3e1f7f9b52e9742564b43b1e350d3",
+      "source_about_sha256": "11f49a892573f407c51380a5287a4df0b31d120b4259ab300b5dbd25c881b630"
+    },
+    {
+      "name": "Vanilla Weapons Expanded - Non-Lethal",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2454918354",
+      "workshop_id": "2454918354",
+      "author": "Oskar Potocki",
+      "package_id": "VanillaExpanded.VWENL",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 10,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/VanillaWeaponsExpandedNonLethal",
+      "load_condition": "IfModActive: VanillaExpanded.VWENL",
+      "source_def": "1.6/Defs/HediffDefs/Hediffs_Global_NonLethal.xml",
+      "source_def_sha256": "c27d7ce5b38ef631bf667cdc25d8f88029b7756e419b24785a931974be398d9a",
+      "source_about_sha256": "0e485b36feeed9ee7085cc5df6ce865f139bb2179ca9c9ed2616af5d54fcefda"
+    },
+    {
+      "name": "Home Sweet Home (Continued)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577757539",
+      "workshop_id": "3577757539",
+      "author": "Lewkah0; continued by GanjaMan [NL]",
+      "package_id": "ganja.HomeSweetHome",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 24,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/HomeSweetHome",
+      "load_condition": "IfModActive: Lewkah0.HomeSweetHome,ganja.HomeSweetHome",
+      "source_def": "1.6/Defs/ThoughtDefs/ThoughtDefs.xml",
+      "source_def_sha256": "484e54447b4ff882153c1ee33e985367400fbed087495b66c73182e6e1ec43f0",
+      "source_about_sha256": "b2c3a26463fa57c203842e792d2fb8c503a59c23460b7dfb0a01af4c4fdeaf49"
+    },
+    {
+      "name": "Vanilla Social Interactions Expanded",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2439736083",
+      "workshop_id": "2439736083",
+      "author": "Oskar Potocki, Taranchuk",
+      "package_id": "VanillaExpanded.VanillaSocialInteractionsExpanded",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 12,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/VanillaSocialInteractionsExpanded",
+      "load_condition": "IfModActive: VanillaExpanded.VanillaSocialInteractionsExpanded",
+      "source_def": "1.6/Defs/PawnRelationDefs/PawnRelations_FamilyByChoice.xml",
+      "source_def_sha256": "a36b8abadca35e2c3f9f2dd40a414a7b7a71114064559d981cfa0a2ffe15f822",
+      "source_about_sha256": "cb560dc9bbe55ddea029e7ce8edfc24b8c4e5573668bf8968f55189689f85c48"
+    },
+    {
+      "name": "Home Sweet Home",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3300829226",
+      "workshop_id": "3300829226",
+      "author": "Lewkah0",
+      "package_id": "Lewkah0.HomeSweetHome",
+      "license": "not_verified",
+      "status": "original_package_id_and_legacy_translation_keys_verified",
+      "translated_entries": 24,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/HomeSweetHome",
+      "load_condition": "IfModActive: Lewkah0.HomeSweetHome,ganja.HomeSweetHome",
+      "compatibility_scope": "original_package_id_and_24_shared_fields; current_original_not_runtime_verified",
+      "source_legacy_catalog": "RMK/Data/Home Sweet Home - 3300829226/Languages/Korean (한국어)/DefInjected/ThoughtDef/14994.xml",
+      "source_legacy_catalog_sha256": "1e8face7fc5930bde078c2c2f6458e490fc7dfd66933e5b817b1e1dda3c80f6b"
+    },
+    {
+      "name": "UNAGI_Hair1",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3244456989",
+      "workshop_id": "3244456989",
+      "author": "UNAGI",
+      "package_id": "UNAGI.Kawaii.hair1",
+      "license": "not_specified_in_installation",
+      "status": "translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 28,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/UNAGIHair1",
+      "load_condition": "IfModActive: UNAGI.Kawaii.hair1",
+      "source_def": "1.6/Defs/HairDefs/Hairdefs.xml",
+      "source_def_sha256": "5b24b3fb6b9c9f1d34d2cbf67c9195ca0557bfb4d33c5590facf8eac7d371ffe",
+      "source_about_sha256": "0c32b6b967ff2523db4db7b6467391f194cd6a74cccce9d95dd9ccb555f9802f"
+    },
+    {
+      "name": "UNAGI_Hair2",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3248775397",
+      "workshop_id": "3248775397",
+      "author": "UNAGI",
+      "package_id": "UNAGI.Short.hair2",
+      "license": "not_specified_in_installation",
+      "status": "translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 21,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/UNAGIHair2",
+      "load_condition": "IfModActive: UNAGI.Short.hair2",
+      "source_def": "1.6/Defs/HairDefs/Hairdefs.xml",
+      "source_def_sha256": "a8cdad9f24985d78266e66622a5c92ea669449b1200cf695ae6b8da85cff8c21",
+      "source_about_sha256": "9508ea5373680e27bad877d4562ef6d34e1ac2b5b73366894daf131ec669f6fb"
+    },
+    {
+      "name": "Vanilla Hair Expanded",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1888705256",
+      "workshop_id": "1888705256",
+      "author": "Oskar Potocki, XeoNovaDan",
+      "package_id": "VanillaExpanded.VHE",
+      "license": "not_specified_in_installation",
+      "status": "partial_translation_runtime_verified_with_and_without_rmk_english_and_mod_absent",
+      "translated_entries": 14,
+      "optional": true,
+      "distribution": "integrated_package",
+      "content_root": "Translations/VanillaHairExpanded",
+      "load_condition": "IfModActive: VanillaExpanded.VHE",
+      "source_def": "1.6/Defs/HairDefs/HairsViking.xml",
+      "source_def_sha256": "d90af8f4266b994e6c47283c46c808752d23cc7c7936ceb3ed229e689672781f",
+      "source_about_sha256": "3ff6a9c0cd52b244554c3443d752e68dfc442e9cfdf5b3ca0f43b5eb09d703f0"
     }
   ]
 }

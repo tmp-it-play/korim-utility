@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VWE_Dart.label>dart wound</VWE_Dart.label>
+  <VWE_Dart.labelNoun>a dart wound</VWE_Dart.labelNoun>
+  <VWE_Dart.description>A dart wound.</VWE_Dart.description>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelTendedWell>bandaged</VWE_Dart.comps.HediffComp_TendDuration.labelTendedWell>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelTendedWellInner>sutured</VWE_Dart.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelSolidTendedWell>set</VWE_Dart.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <VWE_Dart.comps.HediffComp_GetsPermanent.permanentLabel>old dart scar</VWE_Dart.comps.HediffComp_GetsPermanent.permanentLabel>
+  <VWE_Dart.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>permanent dart injury</VWE_Dart.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <VWE_Dart.injuryProps.destroyedLabel>Shot off</VWE_Dart.injuryProps.destroyedLabel>
+  <VWE_Dart.injuryProps.destroyedOutLabel>Shot out</VWE_Dart.injuryProps.destroyedOutLabel>
+</LanguageData>

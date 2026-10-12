@@ -22,5 +22,12 @@
     <li IfModActive="Mlie.FoodAlert">Translations/FoodAlertContinued</li>
     <li IfModActive="Jaxxa.ED.CheatReactor">Translations/EDCheatReactor</li>
     <li IfModActive="sneaks.meatblend,sneaks.meatblendcheat">Translations/MeatBlend</li>
+    <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Translations/VanillaExpandedFramework</li>
+    <li IfModActive="VanillaExpanded.VWENL">Translations/VanillaWeaponsExpandedNonLethal</li>
+    <li IfModActive="Lewkah0.HomeSweetHome,ganja.HomeSweetHome">Translations/HomeSweetHome</li>
+    <li IfModActive="VanillaExpanded.VanillaSocialInteractionsExpanded">Translations/VanillaSocialInteractionsExpanded</li>
+    <li IfModActive="UNAGI.Kawaii.hair1">Translations/UNAGIHair1</li>
+    <li IfModActive="UNAGI.Short.hair2">Translations/UNAGIHair2</li>
+    <li IfModActive="VanillaExpanded.VHE">Translations/VanillaHairExpanded</li>
   </v1.6>
 </loadFolders>

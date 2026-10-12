@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HomeSweetHome_Thought.label>relieved by return</HomeSweetHome_Thought.label>
+  <HomeSweetHome_Thought.stages.0.label>relieved by return</HomeSweetHome_Thought.stages.0.label>
+  <HomeSweetHome_Thought.stages.0.description>I feel relieved and happy that everyone has made it back home safely.</HomeSweetHome_Thought.stages.0.description>
+  <HomeSweetHome_DestinationArrival_Thought.label>happy to reach destination</HomeSweetHome_DestinationArrival_Thought.label>
+  <HomeSweetHome_DestinationArrival_Thought.stages.0.label>happy to reach destination</HomeSweetHome_DestinationArrival_Thought.stages.0.label>
+  <HomeSweetHome_DestinationArrival_Thought.stages.0.description>I'm happy to have finally reached our destination after such a long journey.</HomeSweetHome_DestinationArrival_Thought.stages.0.description>
+  <HomeSweetHome_Thought_Great.label>great relief by return</HomeSweetHome_Thought_Great.label>
+  <HomeSweetHome_Thought_Great.stages.0.label>great relief by return</HomeSweetHome_Thought_Great.stages.0.label>
+  <HomeSweetHome_Thought_Great.stages.0.description>I'm overjoyed and immensely relieved to see everyone return safely after being away for so long.</HomeSweetHome_Thought_Great.stages.0.description>
+  <HomeSweetHome_DestinationArrival_Thought_Great.label>great happiness to reach destination</HomeSweetHome_DestinationArrival_Thought_Great.label>
+  <HomeSweetHome_DestinationArrival_Thought_Great.stages.0.label>great happiness to reach destination</HomeSweetHome_DestinationArrival_Thought_Great.stages.0.label>
+  <HomeSweetHome_DestinationArrival_Thought_Great.stages.0.description>The joy of finally reaching our destination after a long journey is truly overwhelming.</HomeSweetHome_DestinationArrival_Thought_Great.stages.0.description>
+  <HomeSweetHome_Thought_Psychopath.label>indifferent by return</HomeSweetHome_Thought_Psychopath.label>
+  <HomeSweetHome_Thought_Psychopath.stages.0.label>indifferent by return</HomeSweetHome_Thought_Psychopath.stages.0.label>
+  <HomeSweetHome_Thought_Psychopath.stages.0.description>I don't really feel anything about the caravan members returning.</HomeSweetHome_Thought_Psychopath.stages.0.description>
+  <HomeSweetHome_Thought_Dislike.label>upset by return</HomeSweetHome_Thought_Dislike.label>
+  <HomeSweetHome_Thought_Dislike.stages.0.label>upset by return</HomeSweetHome_Thought_Dislike.stages.0.label>
+  <HomeSweetHome_Thought_Dislike.stages.0.description>I'm upset that the caravan members I dislike have returned.</HomeSweetHome_Thought_Dislike.stages.0.description>
+  <HomeSweetHome_Thought_Neutral.label>neutral by return</HomeSweetHome_Thought_Neutral.label>
+  <HomeSweetHome_Thought_Neutral.stages.0.label>neutral by return</HomeSweetHome_Thought_Neutral.stages.0.label>
+  <HomeSweetHome_Thought_Neutral.stages.0.description>I have mixed feelings about the caravan members coming back.</HomeSweetHome_Thought_Neutral.stages.0.description>
+  <HomeSweetHome_Thought_Worried.label>worried about caravan</HomeSweetHome_Thought_Worried.label>
+  <HomeSweetHome_Thought_Worried.stages.0.label>worried about caravan</HomeSweetHome_Thought_Worried.stages.0.label>
+  <HomeSweetHome_Thought_Worried.stages.0.description>I'm really worried about the caravan being gone for so long. I hope they're okay.</HomeSweetHome_Thought_Worried.stages.0.description>
+</LanguageData>

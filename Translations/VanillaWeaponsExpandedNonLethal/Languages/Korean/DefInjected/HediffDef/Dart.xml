@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VWE_Dart.label>다트 상처</VWE_Dart.label>
+  <VWE_Dart.labelNoun>다트 상처</VWE_Dart.labelNoun>
+  <VWE_Dart.description>다트에 맞아 생긴 상처입니다.</VWE_Dart.description>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelTendedWell>붕대 감음</VWE_Dart.comps.HediffComp_TendDuration.labelTendedWell>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelTendedWellInner>봉합됨</VWE_Dart.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <VWE_Dart.comps.HediffComp_TendDuration.labelSolidTendedWell>접합됨</VWE_Dart.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <VWE_Dart.comps.HediffComp_GetsPermanent.permanentLabel>오래된 다트 흉터</VWE_Dart.comps.HediffComp_GetsPermanent.permanentLabel>
+  <VWE_Dart.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>영구적 다트 상처</VWE_Dart.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <VWE_Dart.injuryProps.destroyedLabel>다트에 맞아 잃음</VWE_Dart.injuryProps.destroyedLabel>
+  <VWE_Dart.injuryProps.destroyedOutLabel>다트에 맞아 잃음</VWE_Dart.injuryProps.destroyedOutLabel>
+</LanguageData>

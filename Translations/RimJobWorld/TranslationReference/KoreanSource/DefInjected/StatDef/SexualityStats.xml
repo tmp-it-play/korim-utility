@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SexWildnessAversion.label>wildness aversion</SexWildnessAversion.label>
+  <SexWildnessAversion.description>Determines how much the pawn is put off by the wildness of animals and wildmen when assessing potential mates.</SexWildnessAversion.description>
+</LanguageData>
