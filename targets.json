@@ -30,7 +30,7 @@
       "revision": "ce78ea5a7f43771b34b32b7b78afaa0d84b29f9e",
       "license": "MIT",
       "status": "partial_translation_game_test_pending",
-      "translated_entries": 855,
+      "translated_entries": 862,
       "resin_source": "installed_mod_6.2.1",
       "resin_source_sha256": {
         "1.6/Defs/ThingDefs/Items_BodyParts/Items_BodyParts_Resin.xml": "88bef2649b399491ea99e275cd0c931d3b3b0d2d3c6482ed64d13a115c1d802b",

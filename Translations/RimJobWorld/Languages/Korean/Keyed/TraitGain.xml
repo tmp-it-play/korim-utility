@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LetterLabelGainedTraitFromSex>특성 획득: {PAWN}</LetterLabelGainedTraitFromSex>
+  <GainedTraitFromSex>{PAWN}에게 성적 경험의 영향으로 '{TRAIT}' 특성이 생겼습니다.</GainedTraitFromSex>
+  <GainedTraitFromSexNymphomaniac>{PAWN}의 뇌가 최음제에 의한 과도한 자극으로 영구적으로 변화했습니다. {PAWN_pronoun}에게 '{TRAIT}' 특성이 생겼습니다.</GainedTraitFromSexNymphomaniac>
+  <GainedTraitFromSexFootSlut>{PAWN}에게 발에 대한 성적 집착이 생겼습니다. 이제 {PAWN}에게 '{TRAIT}' 특성이 있습니다.</GainedTraitFromSexFootSlut>
+  <LetterLabelGainedMultipleTraitsFromSex>특성 획득: {PAWN}</LetterLabelGainedMultipleTraitsFromSex>
+  <GainedMultipleTraitsFromSex>{PAWN}에게 강렬한 성적 경험의 영향으로 다음 특성이 생겼습니다:</GainedMultipleTraitsFromSex>
+  <GainedMultipleTraitsFromSexListItem>  - {0}</GainedMultipleTraitsFromSexListItem>
+</LanguageData>

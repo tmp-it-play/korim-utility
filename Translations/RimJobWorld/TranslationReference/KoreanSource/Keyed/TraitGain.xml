@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LetterLabelGainedTraitFromSex>Trait gained : {PAWN}</LetterLabelGainedTraitFromSex>
+  <GainedTraitFromSex>A sexual experience has caused {PAWN} to gain the {TRAIT} trait.</GainedTraitFromSex>
+  <GainedTraitFromSexNymphomaniac>Aphrodisiac-assisted overstimulation has permanently rewired {PAWN}'s brain. {PAWN_pronoun} has gained the {TRAIT} trait.</GainedTraitFromSexNymphomaniac>
+  <GainedTraitFromSexFootSlut>The feat of feasting on the feel of feet is feeding a fiendish new fetish in {PAWN}. {PAWN} is now a {TRAIT}</GainedTraitFromSexFootSlut>
+  <LetterLabelGainedMultipleTraitsFromSex>Traits gained: {PAWN}</LetterLabelGainedMultipleTraitsFromSex>
+  <GainedMultipleTraitsFromSex>A powerful sexual experience has caused {PAWN} to gain the following traits:</GainedMultipleTraitsFromSex>
+  <GainedMultipleTraitsFromSexListItem>  - {0}</GainedMultipleTraitsFromSexListItem>
+</LanguageData>
