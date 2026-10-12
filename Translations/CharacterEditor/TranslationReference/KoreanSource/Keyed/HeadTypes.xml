@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.CE.HeadType.Skull>Skull</KoRimUtility.CE.HeadType.Skull>
+  <KoRimUtility.CE.HeadType.Stump>Head stump</KoRimUtility.CE.HeadType.Stump>
+  <KoRimUtility.CE.HeadType.Male_AverageNormal>Male average normal</KoRimUtility.CE.HeadType.Male_AverageNormal>
+  <KoRimUtility.CE.HeadType.Male_AveragePointy>Male average pointy</KoRimUtility.CE.HeadType.Male_AveragePointy>
+  <KoRimUtility.CE.HeadType.Male_AverageWide>Male average wide</KoRimUtility.CE.HeadType.Male_AverageWide>
+  <KoRimUtility.CE.HeadType.Male_NarrowNormal>Male narrow normal</KoRimUtility.CE.HeadType.Male_NarrowNormal>
+  <KoRimUtility.CE.HeadType.Male_NarrowPointy>Male narrow pointy</KoRimUtility.CE.HeadType.Male_NarrowPointy>
+  <KoRimUtility.CE.HeadType.Male_NarrowWide>Male narrow wide</KoRimUtility.CE.HeadType.Male_NarrowWide>
+  <KoRimUtility.CE.HeadType.Female_AverageNormal>Female average normal</KoRimUtility.CE.HeadType.Female_AverageNormal>
+  <KoRimUtility.CE.HeadType.Female_AveragePointy>Female average pointy</KoRimUtility.CE.HeadType.Female_AveragePointy>
+  <KoRimUtility.CE.HeadType.Female_AverageWide>Female average wide</KoRimUtility.CE.HeadType.Female_AverageWide>
+  <KoRimUtility.CE.HeadType.Female_NarrowNormal>Female narrow normal</KoRimUtility.CE.HeadType.Female_NarrowNormal>
+  <KoRimUtility.CE.HeadType.Female_NarrowPointy>Female narrow pointy</KoRimUtility.CE.HeadType.Female_NarrowPointy>
+  <KoRimUtility.CE.HeadType.Female_NarrowWide>Female narrow wide</KoRimUtility.CE.HeadType.Female_NarrowWide>
+  <KoRimUtility.CE.HeadType.Gaunt>Gaunt</KoRimUtility.CE.HeadType.Gaunt>
+  <KoRimUtility.CE.HeadType.Male_HeavyJawNormal>Male heavy jaw</KoRimUtility.CE.HeadType.Male_HeavyJawNormal>
+  <KoRimUtility.CE.HeadType.Female_HeavyJawNormal>Female heavy jaw</KoRimUtility.CE.HeadType.Female_HeavyJawNormal>
+  <KoRimUtility.CE.HeadType.Furskin_Average1>Furskin average 1</KoRimUtility.CE.HeadType.Furskin_Average1>
+  <KoRimUtility.CE.HeadType.Furskin_Average2>Furskin average 2</KoRimUtility.CE.HeadType.Furskin_Average2>
+  <KoRimUtility.CE.HeadType.Furskin_Average3>Furskin average 3</KoRimUtility.CE.HeadType.Furskin_Average3>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow1>Furskin narrow 1</KoRimUtility.CE.HeadType.Furskin_Narrow1>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow2>Furskin narrow 2</KoRimUtility.CE.HeadType.Furskin_Narrow2>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow3>Furskin narrow 3</KoRimUtility.CE.HeadType.Furskin_Narrow3>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy1>Furskin heavy 1</KoRimUtility.CE.HeadType.Furskin_Heavy1>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy2>Furskin heavy 2</KoRimUtility.CE.HeadType.Furskin_Heavy2>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy3>Furskin heavy 3</KoRimUtility.CE.HeadType.Furskin_Heavy3>
+  <KoRimUtility.CE.HeadType.Furskin_Gaunt>Furskin gaunt</KoRimUtility.CE.HeadType.Furskin_Gaunt>
+</LanguageData>

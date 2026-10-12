@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <KoRimUtility.CE.HeadType.Skull>해골</KoRimUtility.CE.HeadType.Skull>
+  <KoRimUtility.CE.HeadType.Stump>머리 절단면</KoRimUtility.CE.HeadType.Stump>
+  <KoRimUtility.CE.HeadType.Male_AverageNormal>♂ 보통형</KoRimUtility.CE.HeadType.Male_AverageNormal>
+  <KoRimUtility.CE.HeadType.Male_AveragePointy>♂ 보통형 · 뾰족한 턱</KoRimUtility.CE.HeadType.Male_AveragePointy>
+  <KoRimUtility.CE.HeadType.Male_AverageWide>♂ 보통형 · 넓은 턱</KoRimUtility.CE.HeadType.Male_AverageWide>
+  <KoRimUtility.CE.HeadType.Male_NarrowNormal>♂ 좁은형</KoRimUtility.CE.HeadType.Male_NarrowNormal>
+  <KoRimUtility.CE.HeadType.Male_NarrowPointy>♂ 좁은형 · 뾰족한 턱</KoRimUtility.CE.HeadType.Male_NarrowPointy>
+  <KoRimUtility.CE.HeadType.Male_NarrowWide>♂ 좁은형 · 넓은 턱</KoRimUtility.CE.HeadType.Male_NarrowWide>
+  <KoRimUtility.CE.HeadType.Female_AverageNormal>♀ 보통형</KoRimUtility.CE.HeadType.Female_AverageNormal>
+  <KoRimUtility.CE.HeadType.Female_AveragePointy>♀ 보통형 · 뾰족한 턱</KoRimUtility.CE.HeadType.Female_AveragePointy>
+  <KoRimUtility.CE.HeadType.Female_AverageWide>♀ 보통형 · 넓은 턱</KoRimUtility.CE.HeadType.Female_AverageWide>
+  <KoRimUtility.CE.HeadType.Female_NarrowNormal>♀ 좁은형</KoRimUtility.CE.HeadType.Female_NarrowNormal>
+  <KoRimUtility.CE.HeadType.Female_NarrowPointy>♀ 좁은형 · 뾰족한 턱</KoRimUtility.CE.HeadType.Female_NarrowPointy>
+  <KoRimUtility.CE.HeadType.Female_NarrowWide>♀ 좁은형 · 넓은 턱</KoRimUtility.CE.HeadType.Female_NarrowWide>
+  <KoRimUtility.CE.HeadType.Gaunt>홀쭉한 머리</KoRimUtility.CE.HeadType.Gaunt>
+  <KoRimUtility.CE.HeadType.Male_HeavyJawNormal>♂ 무거운 턱</KoRimUtility.CE.HeadType.Male_HeavyJawNormal>
+  <KoRimUtility.CE.HeadType.Female_HeavyJawNormal>♀ 무거운 턱</KoRimUtility.CE.HeadType.Female_HeavyJawNormal>
+  <KoRimUtility.CE.HeadType.Furskin_Average1>털북숭이 보통형 1</KoRimUtility.CE.HeadType.Furskin_Average1>
+  <KoRimUtility.CE.HeadType.Furskin_Average2>털북숭이 보통형 2</KoRimUtility.CE.HeadType.Furskin_Average2>
+  <KoRimUtility.CE.HeadType.Furskin_Average3>털북숭이 보통형 3</KoRimUtility.CE.HeadType.Furskin_Average3>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow1>털북숭이 좁은형 1</KoRimUtility.CE.HeadType.Furskin_Narrow1>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow2>털북숭이 좁은형 2</KoRimUtility.CE.HeadType.Furskin_Narrow2>
+  <KoRimUtility.CE.HeadType.Furskin_Narrow3>털북숭이 좁은형 3</KoRimUtility.CE.HeadType.Furskin_Narrow3>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy1>털북숭이 무거운 턱 1</KoRimUtility.CE.HeadType.Furskin_Heavy1>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy2>털북숭이 무거운 턱 2</KoRimUtility.CE.HeadType.Furskin_Heavy2>
+  <KoRimUtility.CE.HeadType.Furskin_Heavy3>털북숭이 무거운 턱 3</KoRimUtility.CE.HeadType.Furskin_Heavy3>
+  <KoRimUtility.CE.HeadType.Furskin_Gaunt>털북숭이 홀쭉한 머리</KoRimUtility.CE.HeadType.Furskin_Gaunt>
+</LanguageData>
